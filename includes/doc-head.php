@@ -13,9 +13,15 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	
+	<!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />  
+	<meta name="viewport" content="width = 960px" /> 
+	
 	<!-- CSS
   ================================================== -->
 	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/ui.css">
 	<link rel="stylesheet" href="css/layout.css">
 	
 	<!-- JS (see footer for rest)
@@ -24,9 +30,6 @@
 
 </head>
 <body>
-
-<!-- Mobile viewport optimized: j.mp/bplateviewport -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 <link rel="shortcut icon" href="/favicon.ico">

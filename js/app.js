@@ -1,21 +1,24 @@
+window.scrollTo(0, 1);
+
 $(document).ready(function() {
+
 
 	/* Use this js doc for all application specific JS */
 
 	/* TABS --------------------------------- */
 	/* Remove if you don't need :) */
 	
-	var tabs = $('dl.tabs');
+	var tabs = $('ul.tabs');
 		tabsContent = $('ul.tabs-content')
 	
 	tabs.each(function(i) {
 		//Get all tabs
-		var tab = $(this).children('dd').children('a');
+		var tab = $(this).children('li').children('a');
 		tab.click(function(e) {
 			
 			//Get Location of tab's content
 			var contentLocation = $(this).attr("href")
-			contentLocation = contentLocation + "Tab";
+			contentLocation = contentLocation;
 			
 			//Let go if not a hashed one
 			if(contentLocation.charAt(0)=="#") {

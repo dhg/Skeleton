@@ -1,0 +1,258 @@
+/* 
+* Skeleton V0.1
+* Created by Dave Gamache
+* www.skeleton.gs
+* 4/30/2011
+*/
+
+
+/* Table of Content
+==================================================
+	@Reset & Basics
+	@Basic Styles
+	@Typography
+	@Links
+	@Lists
+	@Grid
+	@Tables
+	@Misc 
+*/
+
+
+/* Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+		
+		
+/* Basic Styles
+================================================== */
+	body { 
+		background: #fff;
+		font: 13px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;; ; 
+		color: #444; 
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */ }
+	
+
+/* Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 { color: #181818; font-weight: bold; line-height: 1.25 }
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1 { font-size: 46px; margin-bottom: 4px;}
+	h2 { font-size: 35px; margin-bottom: 2px; }
+	h3 { font-size: 28px; }
+	h4 { font-size: 21px; }
+	h5 { font-size: 18px; }
+	h6 { font-size: 15px; }
+	.subheader { color: #777; }
+
+	p { margin: 0 0 20px; }
+	p img { margin: 0; }
+	p.lead { font-size: 18px; line-height: 24px;  }
+	
+	em { font-style: italic; line-height: inherit; }
+	strong { font-weight: bold; line-height: inherit; }
+	small { font-size: 80%; line-height: inherit; }
+	
+/*	Blockquotes  */
+	blockquote, blockquote p { line-height: 20px; color: #777; }
+	blockquote { margin: 0 0 18px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+	blockquote cite { display: block; font-size: 12px; color: #555; }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+	
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 12px 0 18px; height: 0; }
+
+
+/* Links
+================================================== */
+	a, a:visited { color: #d00b47; text-decoration: none; outline: 0; line-height: inherit; }
+	a:hover, a:focus { color: #9d0a37; }
+	p a, p a:visited { line-height: inherit; }
+	
+
+/* List
+================================================== */
+	ul, ol { margin-bottom: 20px; }
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol
+	ol ol, ol ul { margin: 4px 0 5px 30px; }
+	li { line-height: 18px; margin-bottom: 12px; }
+	ul.large li { line-height: 21px; }
+	
+	
+/* Grid
+================================================== */
+
+	.container { position: relative; width: 320px; margin: 0 auto; padding: 0; }
+	.columns, .columns { float: left; display: inline; background: #f79421;  margin-left: 10px; margin-right: 10px; }
+	
+	.column.alpha, 
+	.columns.alpha {
+		margin: 0; }
+	.column.omega, 
+	.columns.omega {
+		margin: 0; }
+	  
+	.container:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } 
+	
+
+	/* Mobile portrait and smaller */
+	.container .one.column,
+	.container .two.columns,
+	.container .three.columns,
+	.container .four.columns,
+	.container .five.columns,
+	.container .six.columns,
+	.container .seven.columns,
+	.container .eight.columns,
+	.container .nine.columns,
+	.container .ten.columns,
+	.container .eleven.columns,
+	.container .twelve.columns,
+	.container .thirteen.columns,
+	.container .fourteen.columns,
+	.container .fifteen.columns,
+	.container .sixteen.columns { width: 300px; }
+	
+
+/* All non-Mobile Portrait */
+@media screen and (min-width: 480px) {
+	.column.alpha, 
+	.columns.alpha {
+		margin-left: 0; }
+	.column.omega, 
+	.columns.omega {
+		margin-right: 0; }
+}
+	  
+	  
+/* Mobile Landscape  */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	body { background: #333; }
+	.container { width: 480px; }
+	.columns, .columns { margin-left: 8px; margin-right: 8px; }
+
+	.container .one.column 							{ width: 14px;  }
+	.container .two.columns 						{ width: 44px;  }
+	.container .three.columns 					{ width: 74px;  }
+	.container .four.columns 						{ width: 104px; }
+	.container .five.columns 						{ width: 134px; }
+	.container .six.columns 						{ width: 164px; }
+	.container .seven.columns 					{ width: 194px; }	
+	.container .eight.columns 					{ width: 224px; }
+	.container .nine.columns 						{ width: 254px; }
+	.container .ten.columns 						{ width: 284px; }	
+	.container .eleven.columns 					{ width: 314px; }	
+	.container .twelve.columns 					{ width: 344px; }
+	.container .thirteen.columns 				{ width: 374px; }	
+	.container .fourteen.columns 				{ width: 404px; }	
+	.container .fifteen.columns 				{ width: 434px; }
+	.container .sixteen.columns 				{ width: 464px; }
+}
+
+
+/* Tablet Landscape  */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	.container { width: 768px; }
+	.columns, .columns { margin-left: 10px; margin-right: 10px;  }
+
+	.container .one.column 							{ width: 28px;  }
+	.container .two.columns 						{ width: 76px; }
+	.container .three.columns 					{ width: 124px; }
+	.container .four.columns 						{ width: 172px; }
+	.container .five.columns 						{ width: 220px; }
+	.container .six.columns 						{ width: 268px; }
+	.container .seven.columns 					{ width: 316px; }	
+	.container .eight.columns 					{ width: 364px; }
+	.container .nine.columns 						{ width: 412px; }
+	.container .ten.columns 						{ width: 460px; }	
+	.container .eleven.columns 					{ width: 508px; }	
+	.container .twelve.columns 					{ width: 556px; }
+	.container .thirteen.columns 				{ width: 604px; }	
+	.container .fourteen.columns 				{ width: 652px; }	
+	.container .fifteen.columns 				{ width: 700px; }
+	.container .sixteen.columns 				{ width: 748px; }
+}
+
+/* Standard 960 size */
+@media screen and (min-width: 960px) {	
+	body { background: #333; }
+	.container { width: 960px;  }
+	.columns, .columns { margin-left: 10px; margin-right: 10px; }
+	
+	.container .one.column 							{ width: 40px;  }
+	.container .two.columns 						{ width: 100px; }
+	.container .three.columns 					{ width: 160px; }
+	.container .four.columns 						{ width: 220px; }
+	.container .five.columns 						{ width: 280px; }
+	.container .six.columns 						{ width: 340px; }
+	.container .seven.columns 					{ width: 400px; }	
+	.container .eight.columns 					{ width: 460px; }
+	.container .nine.columns 						{ width: 520px; }
+	.container .ten.columns 						{ width: 580px; }	
+	.container .eleven.columns 					{ width: 640px; }	
+	.container .twelve.columns 					{ width: 700px; }
+	.container .thirteen.columns 				{ width: 760px; }	
+	.container .fourteen.columns 				{ width: 820px; }	
+	.container .fifteen.columns 				{ width: 880px; }
+	.container .sixteen.columns 				{ width: 940px; }
+}
+
+
+	
+	/*
+	
+	.clear {
+	 	clear: both;
+	  display: block;
+	  overflow: hidden;
+	  visibility: hidden;
+	  width: 0;
+	  height: 0; }
+	.clearfix:before,
+	.clearfix:after {
+	  content: '\0020';
+	  display: block;
+	  overflow: hidden;
+	  visibility: hidden;
+	  width: 0;
+	  height: 0; }
+	.clearfix:after {
+	  clear: both; }
+	.clearfix {
+	  zoom: 1; }
+	  
+*/
+
+/* TEST STYLES */
+.sixteen.columns { height: auto; }
+nav ul { float: right; }
+nav ul li { float: left; margin-left: 20px;  }
+.slider { width: 100%; height: auto; background: #000;  }
