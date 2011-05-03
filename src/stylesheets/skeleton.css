@@ -8,20 +8,20 @@
 
 /* Table of Content
 ==================================================
-	@Reset & Basics
-	@Basic Styles
-	@Typography
-	@Links
-	@Lists
-	@Tabs
-	@Grid
-	@Media Queries */
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Tabs
+	#Grid
+	#Media Queries */
 
 
-/* @Reset & Basics (Inspired by E. Meyers)
+/* #Reset & Basics (Inspired by E. Meyers)
 ================================================== */
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
-	del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -45,25 +45,29 @@
 		border-spacing: 0; }
 		
 		
-/* @Basic Styles
+/* #Basic Styles
 ================================================== */
 	body { 
 		background: #fff;
-		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;; ; 
+		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #444; 
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */ }
 	
 
-/* @Typography
+/* #Typography
 ================================================== */
-	h1, h2, h3, h4, h5, h6 { color: #181818; font-weight: bold; line-height: 1 }
+	h1, h2, h3, h4, h5, h6 { 
+		color: #181818; 
+		font-weight: normal; 
+		line-height: 40px;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-	h1 { font-size: 46px; margin-bottom: 4px;}
-	h2 { font-size: 35px; margin-bottom: 2px; }
-	h3 { font-size: 28px; }
+	h1 { font-size: 46px; margin-bottom: 14px;}
+	h2 { font-size: 35px; margin-bottom: 8px; }
+	h3 { font-size: 28px; margin-bottom: 4px; }
 	h4 { font-size: 21px; }
-	h5 { font-size: 18px; }
-	h6 { font-size: 15px; }
+	h5 { font-size: 17px; font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+	h6 { font-size: 14px; font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: bold; }
 	.subheader { color: #777; }
 
 	p { margin: 0 0 20px; }
@@ -81,17 +85,17 @@
 	blockquote cite:before { content: "\2014 \0020"; }
 	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
 	
-	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 12px 0 18px; height: 0; }
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
 
 
-/* @Links
+/* #Links
 ================================================== */
 	a, a:visited { color: #333; font-weight: bold; text-decoration: underline; outline: 0; line-height: inherit; }
 	a:hover, a:focus { color: #000; }
 	p a, p a:visited { line-height: inherit; }
 	
 
-/* @List
+/* #List
 ================================================== */
 	ul, ol { margin-bottom: 20px; }
 	ul { list-style: none outside; }
@@ -107,11 +111,11 @@
 	li p { line-height: 21px; }
 
 	
-/* @Grid
+/* #Grid
 ================================================== */
 
 	.container { position: relative; width: 960px; margin: 0 auto; padding: 0; }
-	.columns, .columns { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+	.column, .columns { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
 	
 	/* Actual Grid */
 	.container .one.column 							{ width: 40px;  }
@@ -154,9 +158,45 @@
 		
 	/* Self Clearing Goodness */
 	.container:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } 
+	
+	/* Use clearfix class on parent to clear nested columns*/
+	.clearfix:before,
+	.clearfix:after {
+	  content: '\0020';
+	  display: block;
+	  overflow: hidden;
+	  visibility: hidden;
+	  width: 0;
+	  height: 0; }
+	.clearfix:after {
+	  clear: both; }
+	.clearfix {
+	  zoom: 1; }
+	  
+	/* Scaling with a Fluid Grid */
+	@media screen and (max-width: 959px) {	
+		.container.fluid { max-width: 100%; }
+		.fluid .column, .fluid .columns { margin-left: 1%; margin-right: 1%; }
+	
+		.fluid.container .one.column 							{ width: 4.25%;  }
+		.fluid.container .two.columns 						{ width: 10.5%; }
+		.fluid.container .three.columns 					{ width: 16.75%; }
+		.fluid.container .four.columns 						{ width: 23%; }
+		.fluid.container .five.columns 						{ width: 29.25%; }
+		.fluid.container .six.columns 						{ width: 35.5%; }
+		.fluid.container .seven.columns 					{ width: 41.75%; }	
+		.fluid.container .eight.columns 					{ width: 48%; }
+		.fluid.container .nine.columns 						{ width: 54.25%; }
+		.fluid.container .ten.columns 						{ width: 60.5%; }	
+		.fluid.container .eleven.columns 					{ width: 66.75%; }	
+		.fluid.container .twelve.columns 					{ width: 73%; }
+		.fluid.container .thirteen.columns 				{ width: 79.25%; }	
+		.fluid.container .fourteen.columns 				{ width: 85.5%; }	
+		.fluid.container .fifteen.columns 				{ width: 91.75%; }
+		.fluid.container .sixteen.columns 				{ width: 98%; }	
+	}
 
-
-/* @Media Queries
+/* #Media Queries
 ================================================== */
 
 	/* Mobile portrait and smaller (code for 320px wide)*/

@@ -1,13 +1,14 @@
-window.scrollTo(0, 1);
+/* 
+* Skeleton V0.1
+* Created by Dave Gamache
+* www.skeleton.gs
+* 4/30/2011
+*/	
 
 $(document).ready(function() {
 
-
-	/* Use this js doc for all application specific JS */
-
-	/* TABS --------------------------------- */
-	/* Remove if you don't need :) */
-	
+	/* Tabs Activiation
+	================================================== */
 	var tabs = $('ul.tabs');
 		tabsContent = $('ul.tabs-content')
 	
@@ -35,11 +36,11 @@ $(document).ready(function() {
 				
 			} 
 		});
-	});
+	}); 
 	
-	/* PLACEHOLDER FOR FORMS ------------- */
-	/* Remove if you don't need :) */
 	
+	/* Placeholder
+	================================================== 
 	$('[placeholder]').focus(function() {
 		var input = $(this);
 		if (input.val() == input.attr('placeholder')) {
@@ -60,6 +61,6 @@ $(document).ready(function() {
 				input.val('');
 			}
 		});
-	});
+	}); */
 
 });

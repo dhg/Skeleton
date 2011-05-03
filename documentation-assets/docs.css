@@ -1,0 +1,64 @@
+/* 
+* Skeleton V0.1
+* Created by Dave Gamache
+* www.skeleton.gs
+* 4/30/2011
+*/
+
+
+/* Documentation Styles
+================================================== */
+	div.container {
+		padding-top: 40px; }
+		
+	/* Doc nav */
+	nav { 
+		position: fixed;
+		margin-left: 10px; }
+	h1#logo {
+		background: url(images/logo.png); 
+		width: 199px; 
+		height: 198px;
+		text-indent: -9999px;
+		margin-bottom: 30px; }
+	nav ul { 
+		margin-left: 40px;
+		overflow: hidden; }
+	nav ul li {
+		margin-bottom: 10px; }
+	nav ul li a {
+		font-size: 15px;
+		color:#5f5f5f;
+		text-decoration: none;
+		font-weight: normal; }
+	nav ul li a.active {
+		font-weight: bold; 
+		color: #000; }
+	header p {
+		font-size: 40px;
+		line-height: 45px;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #8d8d8d; }
+	hr.large { 
+		border: none;
+		height: 8px; 
+		background: #ebebeb; 
+		margin: 50px 0; }
+	div.doc-section {
+		margin: 30px 0; }
+
+	/* Grid */
+	#grid .column,
+	#grid .columns { 
+		background: #111; 
+		height: 25px;
+		line-height: 25px;
+		margin-bottom: 10px;
+		text-align: center;
+		text-transform: uppercase; 
+		color: #fff; 
+		font-size: 12px; 
+		font-weight: bold;
+		-moz-border-radius: 2px;
+		 -webkit-border-radius: 2px;
+		 border-radius: 2px; }

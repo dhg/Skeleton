@@ -8,12 +8,12 @@
 
 /* Table of Content
 ==================================================
-	@Tabs
-	@Buttons */
+	#Tabs
+	#Buttons */
 
 
 
-/* @Tabs (activate in app.js)
+/* #Tabs (activate in app.js)
 ================================================== */
 	ul.tabs { 
 		display: block;
@@ -63,14 +63,14 @@
 				<li id="info2"></li>
 			</ul> */
 
-/* @Buttons
+/* #Buttons
 ================================================== */
 
 	a.button {
 		background: #00a6fc;
 		display: inline-block;
 		padding: 9px 34px 11px;
-		color: #fff;
+		color: #fff !important;
 		text-decoration: none;
 		font-weight: bold;
 		line-height: 1;
