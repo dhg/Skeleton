@@ -15,8 +15,8 @@
 	
 	<!-- Mobile Specific Metas
   ================================================== -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />  
-	<meta name="viewport" content="width=960" /> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> 
+ 	<meta name="viewport" content="width=960" /> 
 	
 	<!-- CSS
   ================================================== -->

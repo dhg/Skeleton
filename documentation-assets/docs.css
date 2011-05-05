@@ -13,13 +13,9 @@
 		
 	/* Doc nav */
 	nav { 
-		position: fixed;
-		margin-left: 10px; }
-	h1#logo {
-		background: url(images/logo.png); 
-		width: 199px; 
-		height: 198px;
-		text-indent: -9999px;
+		margin-left: 10px;
+		position: fixed; }
+	#logo {
 		margin-bottom: 30px; }
 	nav ul { 
 		margin-left: 40px;
@@ -62,3 +58,62 @@
 		-moz-border-radius: 2px;
 		 -webkit-border-radius: 2px;
 		 border-radius: 2px; }
+		 
+		 
+	/* Mobile */
+	@media only screen and (max-width: 767px) {
+		header p { font-size: 25px; line-height: 30px;}
+		nav { position: relative; }
+		nav ul { display: none; }
+		#logo { 
+			width: 100px;
+			display: block;
+			margin: 0 auto;  }
+	}
+	
+	/* Mobile Landscape */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+/* 		.container .four.columns.sidebar { width: 464px; } */
+		nav ul { display: none; }
+/* 		.container .twelve.columns.content { width: 464px; } */
+/* 		#grid .example-grid { width: 344px; } */
+	}
+	
+	/* Non 960 */
+	@media only screen and (max-width: 969px) {
+		#logo { 
+			max-width: 130px; }
+		nav ul { margin-left: 10px; }
+	}
+	
+	
+	/* iPad Portrait/Browser */
+	@media only screen and (min-width: 768px) and (max-width: 991px) {}
+	
+	/* Mobile/Browser */
+	@media only screen and (max-width: 767px) {}
+	
+	/* Mobile Landscape/Browser */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	
+	/* Anything smaller than standard 960 */
+	@media only screen and (max-width: 959px) {}
+	
+	/* iPad Portrait Only */
+	@media only screen and (min-width: 768px) and (max-width: 991px) and (max-device-width: 1000px) {}
+	
+	/* Mobile Only */
+	@media only screen and (max-width: 767px) and (max-device-width: 1000px) {}
+	
+	/* Mobile Landscape Only */
+	@media only screen and (min-width: 480px) and (max-width: 767px) and (max-device-width: 1000px) {
+		body {
+			font-size: 50%;
+			line-height: 1.5em; }
+		header p { 
+			font-size: 25px;
+			line-height: 30px; }
+	}
+	
+	
+	

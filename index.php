@@ -16,10 +16,11 @@
 	<!-- Mobile Specific Metas
   ================================================== -->
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />  
-	<meta name="viewport" content="width=960" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
 	
 	<!-- CSS
   ================================================== -->
+	<link rel="stylesheet" href="src/stylesheets/base.css">
 	<link rel="stylesheet" href="src/stylesheets/skeleton.css">
 	<link rel="stylesheet" href="src/stylesheets/ui.css">
 	<link rel="stylesheet" href="src/stylesheets/layout.css">
@@ -42,9 +43,9 @@
 
 			
 			<div class="container fluid">	
-				<div class="four columns">
+				<div class="four columns sidebar">
 					<nav>
-						<h1 id="logo">Skeleton</h1>
+						<img src="documentation-assets/images/logo.png" id="logo"></img>
 						<ul>
 							<li><a class="active" href="#whatAndWhy">What & Why</a></li>
 							<li><a href="#basics">Basics</a></li>
@@ -59,7 +60,7 @@
 					</nav>
 					&nbsp;
 				</div>
-				<div class="twelve columns">
+				<div class="twelve columns content">
 					<header>
 						<p>Skeleton is a lightweight framework for HTML, CSS & jQuery that makes building websites easier.</p>
 					</header>
@@ -88,33 +89,45 @@
 					<div class="doc-section clearfix" id="grid">
 						<h3>Grid</h3>
 						<p>Skeleton's base grid is a simpler variation of the 960 grid system. The syntax is simpler and is just as effective cross browser and across devices, but the awesome part is that it also has the flexibility to go mobile like a champ. The option is yours to have the site scale fluidly or to have a scaled fixed grid.</p>
-						<div class="one column alpha">One</div>
-						<div class="eleven columns omega">Eleven</div>
-						<div class="two columns alpha">Two</div>
-						<div class="ten columns omega">Ten</div>
-						<div class="three columns alpha">Three</div>
-						<div class="nine columns omega">Nine</div>
-						<div class="four columns alpha">Four</div>
-						<div class="eight columns omega">Eight</div>
-						<div class="five columns alpha">Five</div>
-						<div class="seven columns omega">Seven</div>
-						<div class="six columns alpha">Six</div>
-						<div class="six columns omega">Six</div>
-						<div class="seven columns alpha">Seven</div>
-						<div class="five columns omega">Five</div>
-						<div class="eight columns alpha">Eight</div>
-						<div class="four columns omega">Four</div>
-						<div class="nine columns alpha">Nine</div>
-						<div class="three columns omega">Three</div>
-						<div class="ten columns alpha">Ten</div>
-						<div class="two columns omega">Two</div>
-						<div class="eleven columns alpha">Eleven</div>
-						<div class="one column omega">One</div>
+						<div class="example-grid">
+							<div class="one column alpha">One</div>
+							<div class="eleven columns omega">Eleven</div>
+							<div class="two columns alpha">Two</div>
+							<div class="ten columns omega">Ten</div>
+							<div class="three columns alpha">Three</div>
+							<div class="nine columns omega">Nine</div>
+							<div class="four columns alpha">Four</div>
+							<div class="eight columns omega">Eight</div>
+							<div class="five columns alpha">Five</div>
+							<div class="seven columns omega">Seven</div>
+							<div class="six columns alpha">Six</div>
+							<div class="six columns omega">Six</div>
+							<div class="seven columns alpha">Seven</div>
+							<div class="five columns omega">Five</div>
+							<div class="eight columns alpha">Eight</div>
+							<div class="four columns omega">Four</div>
+							<div class="nine columns alpha">Nine</div>
+							<div class="three columns omega">Three</div>
+							<div class="ten columns alpha">Ten</div>
+							<div class="two columns omega">Two</div>
+							<div class="eleven columns alpha">Eleven</div>
+							<div class="one column omega">One</div>
+						</div>
 					</div>
 					<hr />
 					<div class="doc-section" id="tabs">
 						<h3>Tabs</h3>
 						<p>Here is where I need to chat about what Skeleton is, why it's awesome and how what the file structure is. Focus on: 1) Speed, 2) Best Practices , 3) Across devices</p>
+						<ul class="tabs">
+							<li><a class="active" href="#simple">Simple</a></li>
+							<li><a href="#lightweight">Lightweight</a></li>
+							<li><a href="#mobileFriendly">Mobile</a></li>
+						</ul>
+						<ul class="tabs-content">
+							<li class="active" id="simpleTab">This is content about how these tabs are simple</li>
+							<li id="lightweightTab">This is content about how these tabs are lightweight</li>
+							<li id="mobileFriendlyTab">This is content about how these tabs are mobile friendly</li>
+						</ul>
 					</div>
 					<hr />
 					<div class="doc-section" id="forms">

@@ -8,116 +8,32 @@
 
 /* Table of Content
 ==================================================
-	#Reset & Basics
-	#Basic Styles
-	#Site Styles
-	#Typography
-	#Links
-	#Lists
-	#Tabs
-	#Grid
-	#Media Queries */
-
-
-/* #Reset & Basics (Inspired by E. Meyers)
-================================================== */
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-		margin: 0;
-		padding: 0;
-		border: 0;
-		font-size: 100%;
-		font: inherit;
-		vertical-align: baseline; }
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-		display: block; }
-	body {
-		line-height: 1; }
-	ol, ul {
-		list-style: none; }
-	blockquote, q {
-		quotes: none; }
-	blockquote:before, blockquote:after,
-	q:before, q:after {
-		content: '';
-		content: none; }
-	table {
-		border-collapse: collapse;
-		border-spacing: 0; }
-		
-		
-/* #Basic Styles
-================================================== */
-	body { 
-		background: #fff;
-		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		color: #444; 
-		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */ }
+	#Base 960 Grid 
+	#Responsive: Fluid Grid for Downscaling 
+	#Responsive: Full Fluid Grid    
+	#Mobile: iPad Portrait 
+	#Mobile: iPhone Portrait 
+	#Mobile: iPhone Landscape 
+	#Clearing
+	
+	
+/* Quick Note: The way the grid system works is that the default is a 960 grid that 
+scales identical to it's mobile styles. There is also an option to make browser version
+fluid rather than mirror mobile on downscale (.fluid960). There is also a fully fluid grid (.fluid), 
+which applies to mobile as well.*/
 	
 
-/* #Typography
-================================================== */
-	h1, h2, h3, h4, h5, h6 { 
-		color: #181818; 
-		font-weight: normal; 
-		line-height: 40px;
-		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-	h1 { font-size: 46px; margin-bottom: 14px;}
-	h2 { font-size: 35px; margin-bottom: 8px; }
-	h3 { font-size: 28px; margin-bottom: 4px; }
-	h4 { font-size: 21px; }
-	h5 { font-size: 17px; font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-	h6 { font-size: 14px; font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: bold; }
-	.subheader { color: #777; }
-
-	p { margin: 0 0 20px; }
-	p img { margin: 0; }
-	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
-	
-	em { font-style: italic; line-height: inherit; }
-	strong { font-weight: bold; line-height: inherit; }
-	small { font-size: 80%; line-height: inherit; }
-	
-/*	Blockquotes  */
-	blockquote, blockquote p { line-height: 20px; color: #777; }
-	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
-	blockquote cite { display: block; font-size: 12px; color: #555; }
-	blockquote cite:before { content: "\2014 \0020"; }
-	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
-	
-	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
-
-
-/* #Links
-================================================== */
-	a, a:visited { color: #333; font-weight: bold; text-decoration: underline; outline: 0; line-height: inherit; }
-	a:hover, a:focus { color: #000; }
-	p a, p a:visited { line-height: inherit; }
-	
-
-/* #List
-================================================== */
-	ul, ol { margin-bottom: 20px; }
-	ul { list-style: none outside; }
-	ol { list-style: decimal; }
-	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
-	ul.square { list-style: square outside; }
-	ul.circle { list-style: circle outside; }
-	ul.disc { list-style: disc outside; }
-	ul ul, ul ol
-	ol ol, ol ul { margin: 4px 0 5px 30px; }
-	li { line-height: 18px; margin-bottom: 12px; }
-	ul.large li { line-height: 21px; }
-	li p { line-height: 21px; }
-
-	
-/* #Grid
+/* #Base 960 Grid 
 ================================================== */
 
 	.container { position: relative; width: 960px; margin: 0 auto; padding: 0; }
 	.column, .columns { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
 	
-	/* Actual Grid */
+	/* Nested Column Classes */
+	.column.alpha, .columns.alpha 				{ margin-left: 0; }
+	.column.omega, .columns.omega 				{ margin-right: 0; }
+	
+	/* Base Grid */
 	.container .one.column 							{ width: 40px;  }
 	.container .two.columns 						{ width: 100px; }
 	.container .three.columns 					{ width: 160px; }
@@ -151,32 +67,57 @@
 	.container .offset-by-thirteen 			{ padding-left: 780px; }
 	.container .offset-by-fourteen 			{ padding-left: 840px; }
 	.container .offset-by-fifteen 			{ padding-left: 900px; }
-
-	/* Nested Column Classes */
-	.column.alpha, .columns.alpha 				{ margin-left: 0; }
-	.column.omega, .columns.omega 			{ margin-right: 0; }
-		
-	/* Self Clearing Goodness */
-	.container:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } 
 	
-	/* Use clearfix class on parent to clear nested columns*/
-	.clearfix:before,
-	.clearfix:after {
-	  content: '\0020';
-	  display: block;
-	  overflow: hidden;
-	  visibility: hidden;
-	  width: 0;
-	  height: 0; }
-	.clearfix:after {
-	  clear: both; }
-	.clearfix {
-	  zoom: 1; }
+	
+	
+	
+	
+/* #Responsive: Fluid Grid for Downscaling 
+================================================== */
 	  
-	/* Scaling with a Fluid Grid */
-	@media screen and (max-width: 959px) {	
-		.container.fluid { max-width: 100%; }
-		.fluid .column, .fluid .columns { margin-left: 1%; margin-right: 1%; }
+	/* NOTE: Cannot be used with nested columns. */
+		
+/*
+	@media screen and (min-device-width: 789px) and (max-width: 959px) {	
+		.fluid960.container { 
+			width: 100%;
+			min-width: 320px;  }
+		.fluid960.container .column,
+		.fluid960.container .columns { margin-left: 1%; margin-right: 1%; }
+	
+		.fluid960.container .one.column 						{ width: 4.25%;  }
+		.fluid960.container .two.columns 						{ width: 10.5%; }
+		.fluid960.container .three.columns 					{ width: 16.75%; }
+		.fluid960.container .four.columns 					{ width: 23%; }
+		.fluid960.container .five.columns 					{ width: 29.25%; }
+		.fluid960.container .six.columns 						{ width: 35.5%; }
+		.fluid960.container .seven.columns 					{ width: 41.75%; }	
+		.fluid960.container .eight.columns 					{ width: 48%; }
+		.fluid960.container .nine.columns 					{ width: 54.25%; }
+		.fluid960.container .ten.columns 						{ width: 60.5%; }	
+		.fluid960.container .eleven.columns 				{ width: 66.75%; }	
+		.fluid960.container .twelve.columns 				{ width: 73%; }
+		.fluid960.container .thirteen.columns 			{ width: 79.25%; }	
+		.fluid960.container .fourteen.columns 			{ width: 85.5%; }	
+		.fluid960.container .fifteen.columns 				{ width: 91.75%; }
+		.fluid960.container .sixteen.columns 				{ width: 98%; }	
+	}
+*/
+	
+	
+	
+	
+/* #Responsive: Fully Fluid Grid  
+================================================== */
+	  
+	/* NOTE: Cannot be used with nested columns. */
+		
+/*
+		.fluid.container { 
+			width: 100%;
+			min-width: 320px; }
+		.fluid.container .column,
+		.fluid.container .columns { margin-left: 1%; margin-right: 1%; }
 	
 		.fluid.container .one.column 							{ width: 4.25%;  }
 		.fluid.container .two.columns 						{ width: 10.5%; }
@@ -194,17 +135,130 @@
 		.fluid.container .fourteen.columns 				{ width: 85.5%; }	
 		.fluid.container .fifteen.columns 				{ width: 91.75%; }
 		.fluid.container .sixteen.columns 				{ width: 98%; }	
-	}
+*/
+	
+	
+/* #Responsive: Go Mobile
+================================================== */	
 
-/* #Media Queries
+	/* NOTE: These styles mimic mobile styles in browser */
+	
+	
+/* #Responsive: iPad Portrait
+================================================== */	
+
+	/* Note: Design for a width of 768px */
+
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.container { width: 768px; }
+		.container .column, 
+		.container .columns { margin-left: 10px; margin-right: 10px;  }
+		.column.alpha, .columns.alpha 				{ margin-left: 0; margin-right: 10px; }
+		.column.omega, .columns.omega 				{ margin-right: 0; margin-left: 10px; }
+	
+		.container .one.column 							{ width: 28px;  }
+		.container .two.columns 						{ width: 76px; }
+		.container .three.columns 					{ width: 124px; }
+		.container .four.columns 						{ width: 172px; }
+		.container .five.columns 						{ width: 220px; }
+		.container .six.columns 						{ width: 268px; }
+		.container .seven.columns 					{ width: 316px; }	
+		.container .eight.columns 					{ width: 364px; }
+		.container .nine.columns 						{ width: 412px; }
+		.container .ten.columns 						{ width: 460px; }	
+		.container .eleven.columns 					{ width: 508px; }	
+		.container .twelve.columns 					{ width: 556px; }
+		.container .thirteen.columns 				{ width: 604px; }	
+		.container .fourteen.columns 				{ width: 652px; }	
+		.container .fifteen.columns 				{ width: 700px; }
+		.container .sixteen.columns 				{ width: 748px; }
+	}
+	
+	
+/* Mobile
+================================================== */
+	
+	/* Note: Design for a width of 320px */
+	
+	@media only screen and (max-width: 767px) {
+		.container { width: 320px; }
+		.columns, .column { margin: 0; }
+		
+		.container .one.column,
+		.container .two.columns,
+		.container .three.columns,
+		.container .four.columns,
+		.container .five.columns,
+		.container .six.columns,
+		.container .seven.columns,
+		.container .eight.columns,
+		.container .nine.columns,
+		.container .ten.columns,
+		.container .eleven.columns,
+		.container .twelve.columns,
+		.container .thirteen.columns,
+		.container .fourteen.columns,
+		.container .fifteen.columns,
+		.container .sixteen.columns { width: 300px; }
+	}	 
+	
+	
+/* Mobile Landscape
 ================================================== */
 
-	/* Mobile portrait and smaller (code for 320px wide)*/
-	@media screen and (max-width: 479px) {}
+	/* Note: Design for a width of 480px */
+	
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.container { width: 440px; }
+		.columns, .column { margin: 0; }
+		
+		.container .one.column,
+		.container .two.columns,
+		.container .three.columns,
+		.container .four.columns,
+		.container .five.columns,
+		.container .six.columns,
+		.container .seven.columns,
+		.container .eight.columns,
+		.container .nine.columns,
+		.container .ten.columns,
+		.container .eleven.columns,
+		.container .twelve.columns,
+		.container .thirteen.columns,
+		.container .fourteen.columns,
+		.container .fifteen.columns,
+		.container .sixteen.columns { width: 420px; }
+	}
 	 
-	/* Mobile Landscape (code for 480px) */
-	@media screen and (min-width: 480px) and (max-width: 767px) {}
+	
+/* Clearing
+================================================== */
 
-
-	/* Tablet Portrait (Code for 768px) */
-	@media screen and (max-width: 959px) {}
+	/* Self Clearing Goodness */
+	.container:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } 
+	
+	/* Use clearfix class on parent to clear nested columns*/
+	.clearfix:before,
+	.clearfix:after {
+	  content: '\0020';
+	  display: block;
+	  overflow: hidden;
+	  visibility: hidden;
+	  width: 0;
+	  height: 0; }
+	.clearfix:after {
+	  clear: both; }
+	.clearfix {
+	  zoom: 1; }
+	  
+	.clear {
+	  clear: both;
+	  display: block;
+	  overflow: hidden;
+	  visibility: hidden;
+	  width: 0;
+	  height: 0;
+	}
+	
+	
+	

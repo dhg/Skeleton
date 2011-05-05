@@ -4,8 +4,12 @@
 * www.skeleton.gs
 * 4/30/2011
 */	
+	
 
 $(document).ready(function() {
+
+	/* iPhone fix to scroll away iPhone browser chrome */
+	setTimeout(function(){window.scrollTo(0, 1);}, 100);
 
 	/* Tabs Activiation
 	================================================== */
@@ -18,7 +22,7 @@ $(document).ready(function() {
 		tab.click(function(e) {
 			
 			//Get Location of tab's content
-			var contentLocation = $(this).attr("href")
+			var contentLocation = $(this).attr("href")+"Tab"
 			contentLocation = contentLocation;
 			
 			//Let go if not a hashed one

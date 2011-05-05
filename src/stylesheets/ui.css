@@ -34,20 +34,19 @@
 		height: 29px; 
 		padding: 0px 16px; 
 		line-height: 30px; 
-		border: solid 1px #ddd; 
+		border: solid 1px #ddd;
+		border-width: 1px 0 0 1px; 
+		font-weight: normal;
 		margin: 0;  
 		background: #eee;
 		font-size: 13px; }
 	ul.tabs li a.active { 
 		background: #fff; 
-		border-width: 1px 0 0px 0; 
 		height: 30px; 
 		margin: 0 -1px 0 0;
 		color: #111; }
-	ul.tabs li:first-child a.active {
-		border-width: 1px 0 0 1px; }
-	ul.tabs li:last-child a.active {
-		border-width: 1px 1px 0 0; }
+	ul.tabs li:last-child a {
+		border-width: 1px 1px 0 1px; }
 	
 	ul.tabs-content { margin: 0; display: block; }
 	ul.tabs-content > li { display:none; }

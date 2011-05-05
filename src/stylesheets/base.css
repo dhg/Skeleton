@@ -1,0 +1,113 @@
+/* 
+* Skeleton V0.1
+* Created by Dave Gamache
+* www.skeleton.gs
+* 4/30/2011
+*/
+
+
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists */
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+		
+		
+/* #Basic Styles
+================================================== */
+	body { 
+		background: #fff;
+		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #444; 
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+ }
+	
+
+/* #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 { 
+		color: #181818; 
+		font-weight: normal; 
+		line-height: 40px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: 300; }
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1 { font-size: 46px; margin-bottom: 14px;}
+	h2 { font-size: 35px; margin-bottom: 8px; }
+	h3 { font-size: 28px; margin-bottom: 4px; }
+	h4 { font-size: 21px; }
+	h5 { font-size: 17px; font-weight: normal; }
+	h6 { font-size: 14px; font-weight: bold; }
+	.subheader { color: #777; }
+
+	p { margin: 0 0 20px; }
+	p img { margin: 0; }
+	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+	
+	em { font-style: italic; line-height: inherit; }
+	strong { font-weight: bold; line-height: inherit; }
+	small { font-size: 80%; line-height: inherit; }
+	
+/*	Blockquotes  */
+	blockquote, blockquote p { line-height: 20px; color: #777; }
+	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+	blockquote cite { display: block; font-size: 12px; color: #555; }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+	
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+
+/* #Links
+================================================== */
+	a, a:visited { color: #333; font-weight: bold; text-decoration: underline; outline: 0; line-height: inherit; }
+	a:hover, a:focus { color: #000; }
+	p a, p a:visited { line-height: inherit; }
+	
+
+/* #List
+================================================== */
+	ul, ol { margin-bottom: 20px; }
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol
+	ol ol, ol ul { margin: 4px 0 5px 30px; }
+	li { line-height: 18px; margin-bottom: 12px; }
+	ul.large li { line-height: 21px; }
+	li p { line-height: 21px; }
+
+		
+	
