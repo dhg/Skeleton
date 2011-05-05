@@ -13,7 +13,10 @@
 	#Site Styles
 	#Typography
 	#Links
-	#Lists */
+	#Lists
+	#Buttons
+	#Tabs
+	#Forms */
 
 
 /* #Reset & Basics (Inspired by E. Meyers)
@@ -49,6 +52,7 @@
 		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #444; 
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: none;
  }
 	
 
@@ -56,17 +60,16 @@
 ================================================== */
 	h1, h2, h3, h4, h5, h6 { 
 		color: #181818; 
-		font-weight: normal; 
-		line-height: 40px;
+		font-weight: normal;
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-weight: 300; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-	h1 { font-size: 46px; margin-bottom: 14px;}
-	h2 { font-size: 35px; margin-bottom: 8px; }
-	h3 { font-size: 28px; margin-bottom: 4px; }
-	h4 { font-size: 21px; }
-	h5 { font-size: 17px; font-weight: normal; }
-	h6 { font-size: 14px; font-weight: bold; }
+	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
+	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
+	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
+	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
+	h5 { font-size: 17px; line-height: 30px; font-weight: normal; }
+	h6 { font-size: 14px; line-height: 30px; font-weight: bold; }
 	.subheader { color: #777; }
 
 	p { margin: 0 0 20px; }
@@ -74,11 +77,11 @@
 	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
 	
 	em { font-style: italic; line-height: inherit; }
-	strong { font-weight: bold; line-height: inherit; }
+	strong { font-weight: bold; line-height: inherit; color: #333; }
 	small { font-size: 80%; line-height: inherit; }
 	
 /*	Blockquotes  */
-	blockquote, blockquote p { line-height: 20px; color: #777; }
+	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; }
 	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
 	blockquote cite { display: block; font-size: 12px; color: #555; }
 	blockquote cite:before { content: "\2014 \0020"; }
@@ -89,7 +92,7 @@
 
 /* #Links
 ================================================== */
-	a, a:visited { color: #333; font-weight: bold; text-decoration: underline; outline: 0; line-height: inherit; }
+	a, a:visited { color: #333; text-decoration: underline; outline: 0; line-height: inherit; }
 	a:hover, a:focus { color: #000; }
 	p a, p a:visited { line-height: inherit; }
 	
@@ -108,6 +111,148 @@
 	li { line-height: 18px; margin-bottom: 12px; }
 	ul.large li { line-height: 21px; }
 	li p { line-height: 21px; }
+
+
+/* #Buttons
+================================================== */
+
+	.button {
+		background: #222;
+		display: inline-block;
+		padding: 9px 34px 11px;
+		color: #fff !important;
+		text-decoration: none;
+		font-weight: bold;
+		line-height: 1;
+		position: relative;
+		cursor: pointer;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		font-size: 12px;
+		line-height: 12px;
+		font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		border: none;
+		margin-bottom: 20px;
+	}
+	
+	.button.square { 
+		-moz-border-radius: none;
+		-webkit-border-radius: none;
+		border-radius: none; }
+	
+	.button.full-width { 
+		width: 100%;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		text-align: center; }
+	
+	/* Sizes ---------- */
+	.small.button 					{ font-size: 11px; padding: 8px 20px 10px; }
+	.medium.button 					{ font-size: 12px; }
+	.large.button 					{ font-size: 18px; padding: 11px 48px 13px; }
+	 
+	/* Types ---------- */
+	.secondary.button				{ background-color: #666; font-size: 11px; }
+	
+	/* Hovers ---------- */
+	.button:hover 										{ background-color: #000; }
+	.secondary.button:hover 					{ background-color: #555; }
+
+	
+	
+/* #Tabs (activate in app.js)
+================================================== */
+	ul.tabs { 
+		display: block;
+		margin: 0 0 20px 0;
+		padding: 0;
+		height: 30px;
+		border-bottom: solid 1px #ddd; }
+	ul.tabs li { 
+		display: block;
+		width: auto;
+		height: 30px;
+		padding: 0;
+		float: left; }
+	ul.tabs li a { 
+		display: block; 
+		text-decoration: none;
+		width: auto; 
+		height: 29px; 
+		padding: 0px 16px; 
+		line-height: 30px; 
+		border: solid 1px #ddd;
+		border-width: 1px 0 0 1px; 
+		font-weight: normal;
+		margin: 0;  
+		background: #eee;
+		font-size: 13px; }
+	ul.tabs li a.active { 
+		background: #fff; 
+		height: 30px; 
+		margin: 0 -1px 0 0;
+		color: #111; }
+	ul.tabs li:last-child a {
+		border-width: 1px 1px 0 1px; }
+	
+	ul.tabs-content { margin: 0; display: block; }
+	ul.tabs-content > li { display:none; }
+	ul.tabs-content > li.active { display: block; }
+	
+	/* Sample Markup
+			<ul class="tabs">
+				<li><a class="active" href="#info1"></a></li>
+				<li><a href="#info2"></a></li>
+			</ul>
+			<ul class="tabs-content">
+				<li class="active" id="info1"></li>
+				<li id="info2"></li>
+			</ul> */
+			
+			
+/* #Forms
+================================================== */
+
+	form { 
+		margin-bottom: 20px; }
+	fieldset { 
+		margin-bottom: 20px; }
+	input[type="text"], input[type="password"],
+	textarea, select {
+		border: 1px solid #ccc;
+		padding: 6px 4px;
+		outline: none;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #777;
+		margin: 0;
+		width: 210px;
+		display: block;
+		margin-bottom: 20px;
+		background: #fff; }
+	input:focus {
+		border: 1px solid #aaa;
+ 		color: #444;
+ 		-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		box-shadow:  0 0 3px rgba(0,0,0,.2); }
+	textarea {
+		height: 60px; }
+	label { 
+		display: block;
+		font-weight: bold;
+		font-size: 13px;  }
+	select { 
+		width: 220px; }
+	input[type="checkbox"] {
+		display: inline; }
+	label span {
+		font-weight: normal;
+		font-size: 13px;
+		color: #444; }
 
 		
 	

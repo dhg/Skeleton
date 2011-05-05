@@ -181,7 +181,7 @@ which applies to mobile as well.*/
 	/* Note: Design for a width of 320px */
 	
 	@media only screen and (max-width: 767px) {
-		.container { width: 320px; }
+		.container { width: 300px; }
 		.columns, .column { margin: 0; }
 		
 		.container .one.column,
@@ -209,7 +209,7 @@ which applies to mobile as well.*/
 	/* Note: Design for a width of 480px */
 	
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
-		.container { width: 440px; }
+		.container { width: 420px; }
 		.columns, .column { margin: 0; }
 		
 		.container .one.column,

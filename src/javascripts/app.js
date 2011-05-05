@@ -9,7 +9,9 @@
 $(document).ready(function() {
 
 	/* iPhone fix to scroll away iPhone browser chrome */
-	setTimeout(function(){window.scrollTo(0, 1);}, 100);
+	if(window.width < '800px') {
+		setTimeout(function(){window.scrollTo(0, 1);}, 100);
+	}
 
 	/* Tabs Activiation
 	================================================== */
