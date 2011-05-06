@@ -1,5 +1,5 @@
 /* 
-* Skeleton V0.1
+* Skeleton V1.0
 * Created by Dave Gamache
 * www.skeleton.gs
 * 4/30/2011
@@ -9,9 +9,11 @@
 $(document).ready(function() {
 
 	/* iPhone fix to scroll away iPhone browser chrome */
-	if(window.width < '800px') {
+/*
+	if(window.width < '500px') {
 		setTimeout(function(){window.scrollTo(0, 1);}, 100);
 	}
+*/
 
 	/* Tabs Activiation
 	================================================== */

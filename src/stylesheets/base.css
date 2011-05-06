@@ -1,5 +1,5 @@
 /* 
-* Skeleton V0.1
+* Skeleton V1.0
 * Created by Dave Gamache
 * www.skeleton.gs
 * 4/30/2011
@@ -14,6 +14,7 @@
 	#Typography
 	#Links
 	#Lists
+	#Images
 	#Buttons
 	#Tabs
 	#Forms */
@@ -61,15 +62,15 @@
 	h1, h2, h3, h4, h5, h6 { 
 		color: #181818; 
 		font-weight: normal;
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-weight: 300; }
+		font-family: "Georgia", "Times New Roman", Helvetica, Arial, sans-serif;
+		font-weight: normal; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
 	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
 	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
 	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
 	h5 { font-size: 17px; line-height: 30px; font-weight: normal; }
-	h6 { font-size: 14px; line-height: 30px; font-weight: bold; }
+	h6 { font-size: 14px; line-height: 30px; }
 	.subheader { color: #777; }
 
 	p { margin: 0 0 20px; }
@@ -81,7 +82,7 @@
 	small { font-size: 80%; line-height: inherit; }
 	
 /*	Blockquotes  */
-	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; }
+	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
 	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
 	blockquote cite { display: block; font-size: 12px; color: #555; }
 	blockquote cite:before { content: "\2014 \0020"; }
@@ -107,10 +108,18 @@
 	ul.circle { list-style: circle outside; }
 	ul.disc { list-style: disc outside; }
 	ul ul, ul ol
-	ol ol, ol ul { margin: 4px 0 5px 30px; }
+	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+	ul ul li, ul ol li
+	ol ol li, ol ul li { margin-bottom: 6px; }
 	li { line-height: 18px; margin-bottom: 12px; }
 	ul.large li { line-height: 21px; }
 	li p { line-height: 21px; }
+	
+/* #Images
+================================================== */
+	img { 
+		max-width: 100%;
+		height: auto; }
 
 
 /* #Buttons
@@ -153,7 +162,7 @@
 	.large.button 					{ font-size: 18px; padding: 11px 48px 13px; }
 	 
 	/* Types ---------- */
-	.secondary.button				{ background-color: #666; font-size: 11px; }
+	.secondary.button				{ background-color: #aaa; font-size: 11px; }
 	
 	/* Hovers ---------- */
 	.button:hover 										{ background-color: #000; }
@@ -184,7 +193,6 @@
 		line-height: 30px; 
 		border: solid 1px #ddd;
 		border-width: 1px 0 0 1px; 
-		font-weight: normal;
 		margin: 0;  
 		background: #eee;
 		font-size: 13px; }
@@ -230,6 +238,7 @@
 		color: #777;
 		margin: 0;
 		width: 210px;
+		max-width: 100%;
 		display: block;
 		margin-bottom: 20px;
 		background: #fff; }
