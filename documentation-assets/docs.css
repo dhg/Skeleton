@@ -114,6 +114,12 @@
 		color: #333; }
 	#grid .example-grid { overflow: hidden; }
 	
+	#viewOnGithub { 
+		margin-bottom: 20px; 
+		font-size: 12px; 
+		color: #999;
+		display: block; }
+	
 	
 	.resize { 
 		position: fixed; 

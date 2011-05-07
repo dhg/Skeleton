@@ -1,11 +1,1 @@
-<h3>Purpose</h3>
-<p>The purpose of this skeleton is to be a framework to jump off from any personal project, site or web app. It's starting very light and will continue to be so, but soon with extensible plugins and an easy to use architecture.</p>
-
-<h3>To Do List<h3>
-<ul>
-	<li>Forms</li>
-	<li>Refine Buttons</li>
-	<li>Browser Testing</li>
-	<li>Mobile Grid and Styles</li>
-	<li>Documentation</li>
-</ul>
+Skeleton is a small collection of CSS & JS files that can help you rapidly develop sites that look beautiful at any size, be it a 17" laptop screen or an iPhone.
