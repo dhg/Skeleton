@@ -32,15 +32,17 @@
 		color: #555;
 		text-decoration: none;
 		font-weight: bold;
-		padding: 3px 8px;
+		padding: 3px 8px 4px;
 		position: relative;
 		right: -8px;
 		-moz-border-radius: 2px;
-		 -webkit-border-radius: 2px;
-		 border-radius: 2px; }
+		-webkit-border-radius: 2px;
+		border-radius: 2px; }
+/*
 	nav ul li a:hover {
 		color: #fff;
-		background: #222; }
+		background: #333; }
+*/
 	nav .button { 
 		float: right; }
 	header h1 {
@@ -116,7 +118,7 @@
 	
 	#viewOnGithub { 
 		margin-bottom: 20px; 
-		font-size: 12px; 
+		font-size: 11px; 
 		color: #999;
 		display: block; }
 	

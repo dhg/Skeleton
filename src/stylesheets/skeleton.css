@@ -52,6 +52,9 @@ which applies to mobile as well.*/
 	.container .fifteen.columns 				{ width: 880px; }
 	.container .sixteen.columns 				{ width: 940px; }
 	
+	.container .one-third.column				{ width: 300px; }
+	.container .two-thirds.column				{ width: 620px; }
+	
 	/* Offsets */	
 	.container .offset-by-one 					{ padding-left: 60px;  }
 	.container .offset-by-two 					{ padding-left: 120px; }
@@ -69,80 +72,6 @@ which applies to mobile as well.*/
 	.container .offset-by-fourteen 			{ padding-left: 840px; }
 	.container .offset-by-fifteen 			{ padding-left: 900px; }
 	
-	
-	
-	
-	
-/* #Responsive: Fluid Grid for Downscaling 
-================================================== */
-	  
-	/* NOTE: Cannot be used with nested columns. */
-		
-/*
-	@media screen and (min-device-width: 789px) and (max-width: 959px) {	
-		.fluid960.container { 
-			width: 100%;
-			min-width: 320px;  }
-		.fluid960.container .column,
-		.fluid960.container .columns { margin-left: 1%; margin-right: 1%; }
-	
-		.fluid960.container .one.column 						{ width: 4.25%;  }
-		.fluid960.container .two.columns 						{ width: 10.5%; }
-		.fluid960.container .three.columns 					{ width: 16.75%; }
-		.fluid960.container .four.columns 					{ width: 23%; }
-		.fluid960.container .five.columns 					{ width: 29.25%; }
-		.fluid960.container .six.columns 						{ width: 35.5%; }
-		.fluid960.container .seven.columns 					{ width: 41.75%; }	
-		.fluid960.container .eight.columns 					{ width: 48%; }
-		.fluid960.container .nine.columns 					{ width: 54.25%; }
-		.fluid960.container .ten.columns 						{ width: 60.5%; }	
-		.fluid960.container .eleven.columns 				{ width: 66.75%; }	
-		.fluid960.container .twelve.columns 				{ width: 73%; }
-		.fluid960.container .thirteen.columns 			{ width: 79.25%; }	
-		.fluid960.container .fourteen.columns 			{ width: 85.5%; }	
-		.fluid960.container .fifteen.columns 				{ width: 91.75%; }
-		.fluid960.container .sixteen.columns 				{ width: 98%; }	
-	}
-*/
-	
-	
-	
-	
-/* #Responsive: Fully Fluid Grid  
-================================================== */
-	  
-	/* NOTE: Cannot be used with nested columns. */
-		
-/*
-		.fluid.container { 
-			width: 100%;
-			min-width: 320px; }
-		.fluid.container .column,
-		.fluid.container .columns { margin-left: 1%; margin-right: 1%; }
-	
-		.fluid.container .one.column 							{ width: 4.25%;  }
-		.fluid.container .two.columns 						{ width: 10.5%; }
-		.fluid.container .three.columns 					{ width: 16.75%; }
-		.fluid.container .four.columns 						{ width: 23%; }
-		.fluid.container .five.columns 						{ width: 29.25%; }
-		.fluid.container .six.columns 						{ width: 35.5%; }
-		.fluid.container .seven.columns 					{ width: 41.75%; }	
-		.fluid.container .eight.columns 					{ width: 48%; }
-		.fluid.container .nine.columns 						{ width: 54.25%; }
-		.fluid.container .ten.columns 						{ width: 60.5%; }	
-		.fluid.container .eleven.columns 					{ width: 66.75%; }	
-		.fluid.container .twelve.columns 					{ width: 73%; }
-		.fluid.container .thirteen.columns 				{ width: 79.25%; }	
-		.fluid.container .fourteen.columns 				{ width: 85.5%; }	
-		.fluid.container .fifteen.columns 				{ width: 91.75%; }
-		.fluid.container .sixteen.columns 				{ width: 98%; }	
-*/
-	
-	
-/* #Responsive: Go Mobile
-================================================== */	
-
-	/* NOTE: These styles mimic mobile styles in browser */
 	
 	
 /* #Responsive: iPad Portrait
@@ -173,6 +102,9 @@ which applies to mobile as well.*/
 		.container .fourteen.columns 				{ width: 652px; }	
 		.container .fifteen.columns 				{ width: 700px; }
 		.container .sixteen.columns 				{ width: 748px; }
+		
+		.container .one-third.column				{ width: 236px; }
+		.container .two-thirds.column				{ width: 492px; }		
 		
 		/* Offsets */	
 		.container .offset-by-one 					{ padding-left: 48px;  }
@@ -217,7 +149,9 @@ which applies to mobile as well.*/
 		.container .thirteen.columns,
 		.container .fourteen.columns,
 		.container .fifteen.columns,
-		.container .sixteen.columns { width: 300px; }
+		.container .sixteen.columns, 
+		.container .one-third.column, 
+		.container .two-thirds.column  { width: 300px; }
 		
 		/* Offsets */	
 		.container .offset-by-one,				
@@ -263,7 +197,9 @@ which applies to mobile as well.*/
 		.container .thirteen.columns,
 		.container .fourteen.columns,
 		.container .fifteen.columns,
-		.container .sixteen.columns { width: 420px; }
+		.container .sixteen.columns,
+		.container .one-third.column, 
+		.container .two-thirds.column { width: 420px; }
 	}
 	 
 	

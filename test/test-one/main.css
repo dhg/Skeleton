@@ -1,0 +1,66 @@
+/* 
+* Skeleton V1.0
+* Created by Dave Gamache
+* www.skeleton.gs
+* 4/30/2011
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries */
+	
+/* Site Styles
+================================================== */
+	nav { 
+		margin-top: 20px;
+		overflow: hidden;  }
+	logo h4 { 
+		float: left;
+		margin-bottom: 10px; }
+	nav ul { 
+		margin-top: 8px;
+		float: right;
+		margin-bottom: 10px; }
+	nav ul li { 
+		float: left;
+		margin-left: 10px; }
+	nav ul li a {
+		text-decoration: none; }
+	.nivo-directionNav {
+		display: block !important;}
+	#slider { 
+		max-width: 100% !important;
+		height: auto; }
+		
+
+/* Page Styles
+================================================== */
+
+/* Media Queries
+================================================== */
+	
+	/* iPad Portrait/Browser */
+	@media only screen and (min-width: 768px) and (max-width: 991px) {}
+	
+	/* Mobile/Browser */
+	@media only screen and (max-width: 767px) {
+		nav ul { float: left; }
+		nav ul li:first-child{ margin-left: 0; }
+	}
+	
+	/* Mobile Landscape/Browser */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	
+	/* Anything smaller than standard 960 */
+	@media only screen and (max-width: 959px) {}
+	
+	/* iPad Portrait Only */
+	@media only screen and (min-width: 768px) and (max-width: 991px) and (max-device-width: 1000px) {}
+	
+	/* Mobile Only */
+	@media only screen and (max-width: 767px) and (max-device-width: 1000px) {}
+	
+	/* Mobile Landscape Only */
+	@media only screen and (min-width: 480px) and (max-width: 767px) and (max-device-width: 1000px) {}
