@@ -178,14 +178,14 @@
 		display: block;
 		margin: 0 0 20px 0;
 		padding: 0;
-		height: 30px;
 		border-bottom: solid 1px #ddd; }
 	ul.tabs li { 
 		display: block;
 		width: auto;
 		height: 30px;
 		padding: 0;
-		float: left; }
+		float: left;
+		margin-bottom: 0; }
 	ul.tabs li a { 
 		display: block; 
 		text-decoration: none;
@@ -226,6 +226,20 @@
 	ul.tabs-content { margin: 0; display: block; }
 	ul.tabs-content > li { display:none; }
 	ul.tabs-content > li.active { display: block; }
+		
+	/* Clearfixing tabs for beautiful stacking */
+	ul.tabs:before,
+	ul.tabs:after {
+	  content: '\0020';
+	  display: block;
+	  overflow: hidden;
+	  visibility: hidden;
+	  width: 0;
+	  height: 0; }
+	ul.tabs:after {
+	  clear: both; }
+	ul.tabs {
+	  zoom: 1; }
 	
 	/* Sample Markup
 			<ul class="tabs">
@@ -245,8 +259,11 @@
 		margin-bottom: 20px; }
 	fieldset { 
 		margin-bottom: 20px; }
-	input[type="text"], input[type="password"],
-	textarea, select {
+	input[type="text"], 
+	input[type="password"],
+	input[type="email"],
+	textarea, 
+	select {
 		border: 1px solid #ccc;
 		padding: 6px 4px;
 		outline: none;
@@ -261,7 +278,11 @@
 		display: block;
 		margin-bottom: 20px;
 		background: #fff; }
-	input:focus, 
+	select { 
+		padding: 0; }
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus, 
 	textarea:focus {
 		border: 1px solid #aaa;
  		color: #444;
@@ -269,7 +290,7 @@
 		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
 		box-shadow:  0 0 3px rgba(0,0,0,.2); }
 	textarea {
-		height: 60px; }
+		min-height: 60px; }
 	label { 
 		display: block;
 		font-weight: bold;

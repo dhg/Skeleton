@@ -8,19 +8,12 @@
 
 /* Table of Content
 ==================================================
-	#Base 960 Grid 
-	#Responsive: Fluid Grid for Downscaling 
-	#Responsive: Full Fluid Grid    
+	#Base 960 Grid    
 	#Mobile: iPad Portrait 
 	#Mobile: iPhone Portrait 
 	#Mobile: iPhone Landscape 
 	#Clearing
 	
-	
-/* Quick Note: The way the grid system works is that the default is a 960 grid that 
-scales identical to it's mobile styles. There is also an option to make browser version
-fluid rather than mirror mobile on downscale (.fluid960). There is also a fully fluid grid (.fluid), 
-which applies to mobile as well.*/
 	
 
 /* #Base 960 Grid 
