@@ -11,4 +11,4 @@
 	<li><strong>Style Agnostic</strong>: Skeleton is not a UI framework. It's a development kit that provides the most basic styles as a foundation, but is ready to adopt whatever your design or style is.</li>
 </ul>
 
-<h5>The ultimate goal is to build the best starting point for front-end development with an emphasis on simple, responsive design. Help me get there by submitting bugs, feature suggestions or anything you think is missing here on Github or email me at hi@getskeleton.com.</h5>
+<p><strong>The ultimate goal</strong> is to build the best starting point for front-end development with an emphasis on simple, responsive design. Help me get there by submitting bugs, feature suggestions or anything you think is missing here on Github or email me at hi@getskeleton.com. <strong>I'm committed to making this awesome, so please use this in your next project and let me know what rocked and what sucked!</strong></p>
