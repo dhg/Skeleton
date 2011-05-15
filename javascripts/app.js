@@ -2,18 +2,11 @@
 * Skeleton V1.0
 * Created by Dave Gamache
 * www.skeleton.gs
-* 4/30/2011
+* 5/15/2011
 */	
 	
 
 $(document).ready(function() {
-
-	/* iPhone fix to scroll away iPhone browser chrome */
-/*
-	if(window.width < '500px') {
-		setTimeout(function(){window.scrollTo(0, 1);}, 100);
-	}
-*/
 
 	/* Tabs Activiation
 	================================================== */
@@ -46,29 +39,4 @@ $(document).ready(function() {
 		});
 	}); 
 	
-	
-	/* Placeholder
-	================================================== 
-	$('[placeholder]').focus(function() {
-		var input = $(this);
-		if (input.val() == input.attr('placeholder')) {
-			input.val('');
-			input.removeClass('placeholder');
-		}
-		}).blur(function() {
-			var input = $(this);
-			if (input.val() == '' || input.val() == input.attr('placeholder')) {
-				input.addClass('placeholder');
-				input.val(input.attr('placeholder'));
-		}
-	}).blur();
-	$('[placeholder]').parents('form').submit(function() {
-		$(this).find('[placeholder]').each(function() {
-			var input = $(this);
-			if (input.val() == input.attr('placeholder')) {
-				input.val('');
-			}
-		});
-	}); */
-
 });

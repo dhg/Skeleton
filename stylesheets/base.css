@@ -2,7 +2,7 @@
 * Skeleton V1.0
 * Created by Dave Gamache
 * www.skeleton.gs
-* 4/30/2011
+* 5/15/2011
 */
 
 
@@ -17,7 +17,8 @@
 	#Images
 	#Buttons
 	#Tabs
-	#Forms */
+	#Forms
+	#Misc */
 
 
 /* #Reset & Basics (Inspired by E. Meyers)
@@ -240,16 +241,6 @@
 	  clear: both; }
 	ul.tabs {
 	  zoom: 1; }
-	
-	/* Sample Markup
-			<ul class="tabs">
-				<li><a class="active" href="#info1"></a></li>
-				<li><a href="#info2"></a></li>
-			</ul>
-			<ul class="tabs-content">
-				<li class="active" id="info1"></li>
-				<li id="info2"></li>
-			</ul> */
 			
 			
 /* #Forms

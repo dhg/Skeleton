@@ -2,17 +2,17 @@
 * Skeleton V1.0
 * Created by Dave Gamache
 * www.skeleton.gs
-* 4/30/2011
+* 5/15/2011
 */
 
 
-/* Table of Content
+/* Table of Contents
 ==================================================
 	#Base 960 Grid    
-	#Mobile: iPad Portrait 
-	#Mobile: iPhone Portrait 
-	#Mobile: iPhone Landscape 
-	#Clearing
+	#Tablet (Portrait)
+	#Mobile (Portrait) 
+	#Mobile (Landscape)
+	#Clearing */
 	
 	
 
@@ -67,7 +67,7 @@
 	
 	
 	
-/* #Responsive: iPad Portrait
+/* #Tablet (Portrait)
 ================================================== */	
 
 	/* Note: Design for a width of 768px */
@@ -118,7 +118,7 @@
 	}
 	
 	
-/* Mobile
+/*	#Mobile (Portrait) 
 ================================================== */
 	
 	/* Note: Design for a width of 320px */
@@ -166,7 +166,7 @@
 	}	 
 	
 	
-/* Mobile Landscape
+/* #Mobile (Landscape)
 ================================================== */
 
 	/* Note: Design for a width of 480px */
@@ -196,13 +196,14 @@
 	}
 	 
 	
-/* Clearing
+/* #Clearing
 ================================================== */
 
 	/* Self Clearing Goodness */
 	.container:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } 
 	
-	/* Use clearfix class on parent to clear nested columns*/
+	/* Use clearfix class on parent to clear nested columns, 
+	or wrap each row of columns in a <div class="row"> */
 	.clearfix:before,
 	.clearfix:after,
 	.row:before,
@@ -220,6 +221,7 @@
 	.clearfix {
 	  zoom: 1; }
 	  
+	/* You can also use a <br class="clear" /> to clear columns */
 	.clear {
 	  clear: both;
 	  display: block;
