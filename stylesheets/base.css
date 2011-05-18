@@ -165,7 +165,6 @@
 	  border: 1px solid #888;
 	  border-top: 1px solid #aaa;
 	  border-left: 1px solid #aaa; }
-<<<<<<< HEAD
 	  
   a.button:active, 
   button:active {
@@ -179,21 +178,6 @@
     border: 1px solid #888;
     border-bottom: 1px solid #aaa;
     border-right: 1px solid #aaa; }
-=======
-
-	a.button:active, 
-	button:active {
-		background: #eee; /* Old browsers */
-		background: -moz-linear-gradient(top, rgba(0,0,0,.3) 0%, rgba(255,255,255,.3) 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,.3)), color-stop(100%,rgba(255,255,255,.3))); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top, rgba(0,0,0,.3) 0%,rgba(255,255,255,.3) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top, rgba(0,0,0,.3) 0%,rgba(255,255,255,.3) 100%); /* Opera11.10+ */
-		background: -ms-linear-gradient(top, rgba(0,0,0,.3) 0%,rgba(255,255,255,.3) 100%); /* IE10+ */
-		background: linear-gradient(top, rgba(0,0,0,.3) 0%,rgba(255,255,255,.3) 100%); /* W3C */
-		border: 1px solid #888;
-		border-bottom: 1px solid #aaa;
-		border-right: 1px solid #aaa; }
->>>>>>> c22b8053d58cc403055cc18807f9e685ab0f4e33
 	
 	.button.full-width { 
 		width: 100%;
