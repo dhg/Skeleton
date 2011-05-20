@@ -119,9 +119,17 @@
 	
 /* #Images
 ================================================== */
+/*
+
+	This declaration breaks certain lightbox, slider or other plugins. The purpose is to make sure
+	images don't exceed the width of columns they are put into. Best solution is to individually 
+	call these properties on images that you want to resize with the grid  
+
 	img { 
 		max-width: 100%;
 		height: auto; }
+		
+*/
 
 
 /* #Buttons
