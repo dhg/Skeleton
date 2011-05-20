@@ -1,10 +1,10 @@
 /* 
-* Skeleton V1.0.1
+* Skeleton V1.0.2
 * Copyright 2011, Dave Gamache
 * www.getskeleton.com
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
-* 5/19/2011
+* 5/20/2011
 */	
 	
 
