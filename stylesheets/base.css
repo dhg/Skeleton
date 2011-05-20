@@ -128,7 +128,10 @@
 ================================================== */
 	
 	a.button, 
-	button {
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {
 		background: #eee; /* Old browsers */
 		background: -moz-linear-gradient(top, rgba(255,255,255,.2) 0%, rgba(0,0,0,.2) 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.2)), color-stop(100%,rgba(0,0,0,.2))); /* Chrome,Safari4+ */
@@ -155,7 +158,10 @@
 	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 	  
 	a.button:hover, 
-	button:hover {
+	button:hover,
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover {
 		color: #222;
 		background: #eee; /* Old browsers */
 		background: -moz-linear-gradient(top, rgba(255,255,255,.3) 0%, rgba(0,0,0,.3) 100%); /* FF3.6+ */
@@ -169,7 +175,10 @@
 	  border-left: 1px solid #aaa; }
 	  
   a.button:active, 
-  button:active {
+  button:active,
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active {
     background: #eee; /* Old browsers */
     background: -moz-linear-gradient(top, rgba(0,0,0,.3) 0%, rgba(255,255,255,.3) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,.3)), color-stop(100%,rgba(255,255,255,.3))); /* Chrome,Safari4+ */
@@ -181,7 +190,11 @@
     border-bottom: 1px solid #aaa;
     border-right: 1px solid #aaa; }
 	
-	.button.full-width { 
+	.button.full-width, 
+	button.full-width,
+	input[type="submit"].full-width,
+	input[type="reset"].full-width,
+	input[type="button"].full-width { 
 		width: 100%;
 		padding-left: 0 !important;
 		padding-right: 0 !important;
@@ -297,7 +310,8 @@
 		box-shadow:  0 0 3px rgba(0,0,0,.2); }
 	textarea {
 		min-height: 60px; }
-	label { 
+	label,
+	legend { 
 		display: block;
 		font-weight: bold;
 		font-size: 13px;  }
@@ -305,7 +319,8 @@
 		width: 220px; }
 	input[type="checkbox"] {
 		display: inline; }
-	label span {
+	label span,
+	legend span {
 		font-weight: normal;
 		font-size: 13px;
 		color: #444; }
