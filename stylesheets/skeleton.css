@@ -28,6 +28,7 @@
 	/* Nested Column Classes */
 	.column.alpha, .columns.alpha 				{ margin-left: 0; }
 	.column.omega, .columns.omega 				{ margin-right: 0; }
+	.column.alpha.omega, .columns.alpha.omega	{ margin-left: 0; margin-right: 0;}
 	
 	/* Base Grid */
 	.container .one.column 							{ width: 40px;  }
