@@ -109,9 +109,9 @@
 	ul.square { list-style: square outside; }
 	ul.circle { list-style: circle outside; }
 	ul.disc { list-style: disc outside; }
-	ul ul, ul ol
+	ul ul, ul ol,
 	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
-	ul ul li, ul ol li
+	ul ul li, ul ol li,
 	ol ol li, ol ul li { margin-bottom: 6px; }
 	li { line-height: 18px; margin-bottom: 12px; }
 	ul.large li { line-height: 21px; }
