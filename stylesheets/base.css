@@ -55,7 +55,7 @@
 		background: #fff;
 		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #444; 
-		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-font-smoothing: subpixel-antialiased; /* Force webkit to use sub-pixel antialiasing */
 		-webkit-text-size-adjust: none;
  }
 	
