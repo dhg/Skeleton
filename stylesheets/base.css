@@ -119,18 +119,10 @@
 	
 /* #Images
 ================================================== */
-/*
-	The purpose of the below declaration is to make sure images don't 
-	exceed the width of columns they are put into when resizing window. 
-	Unfortunately, this declaration breaks certain lightbox, slider or other plugins,
-	so the best solution is to individually call these properties on images that 
-	are children of the grid that you want to resize with grid. 
 
-	img { 
+	img.scale-with-grid { 
 		max-width: 100%;
 		height: auto; }
-		
-*/
 
 
 /* #Buttons
