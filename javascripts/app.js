@@ -12,8 +12,7 @@ $(document).ready(function() {
 
 	/* Tabs Activiation
 	================================================== */
-	var tabs = $('ul.tabs'),
-	    tabsContent = $('ul.tabs-content');
+	var tabs = $('ul.tabs');
 	
 	tabs.each(function(i) {
 		//Get all tabs
@@ -32,8 +31,8 @@ $(document).ready(function() {
 				tab.removeClass('active');
 				$(this).addClass('active');
 				
-				//Show Tab Content
-				$(contentLocation).show().siblings().hide();
+				//Show Tab Content & add active class
+				$(contentLocation).show().addClass('active').siblings().hide().removeClass('active');
 				
 			} 
 		});
