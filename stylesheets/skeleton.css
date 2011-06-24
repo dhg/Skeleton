@@ -26,11 +26,11 @@
 	.row { margin-bottom: 20px; }
 	
 	/* Nested Column Classes */
-	.column.alpha, .columns.alpha 				{ margin-left: 0; }
-	.column.omega, .columns.omega 				{ margin-right: 0; }
+	.column.alpha, .columns.alpha 						{ margin-left: 0; }
+	.column.omega, .columns.omega 						{ margin-right: 0; }
 	
-	.container-twelve .one-third.column			{ width: 300px; }
-	.container-twelve .two-thirds.column		{ width: 620px; }
+	.container .one-third.column						{ width: 300px; }
+	.container .two-thirds.column						{ width: 620px; }
 	
 	/*****************************
 		12 Column
