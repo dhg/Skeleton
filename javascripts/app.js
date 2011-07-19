@@ -69,7 +69,7 @@ function removeClass(element, name){
 }
 
 function doFancyExpensiveTabThings(){
-    var tabs = getElementsByClassName(document, "ul", "tabs");
+    var tabs = (document.getElementsByClassName ? document.getElementsByClassName("tabs") : getElementsByClassName(document, "ul", "tabs"));
     
     for(var i = 0, j = tabs.length; i < j; i++){
         var tabList = tabs[i].getElementsByTagName('li');
