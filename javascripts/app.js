@@ -107,11 +107,11 @@ function doFancyExpensiveTabThings(){
                         }
                     }
                     return false;
-                });
+                }, false);
             })();
         }
     }
 }
 
-window[BIND_HANDLER](BIND_HANDLER_PREFIX + "load", doFancyExpensiveTabThings);
+window[BIND_HANDLER](BIND_HANDLER_PREFIX + "load", doFancyExpensiveTabThings, false);
 doFancyExpensiveTabThings();
