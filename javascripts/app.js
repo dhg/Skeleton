@@ -114,4 +114,3 @@ function doFancyExpensiveTabThings(){
 }
 
 window[BIND_HANDLER](BIND_HANDLER_PREFIX + "load", doFancyExpensiveTabThings, false);
-doFancyExpensiveTabThings();
