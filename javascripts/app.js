@@ -20,7 +20,8 @@ if(window.addEventListener){
 function getElementsByClassName(context, tag, cls){
     var ele = context.getElementsByTagName(tag),
         ret = [],
-        current;
+        current,
+		classes;
     
     for(var i = 0, j = ele.length; i < j; i++){
         current = ele[i];
