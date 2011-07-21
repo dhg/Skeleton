@@ -70,17 +70,15 @@ function removeClass(element, name){
 }
 
 function doFancyExpensiveTabThings(){
-    var tabs = (document.getElementsByClassName ? document.getElementsByClassName("tabs") : getElementsByClassName(document, "ul", "tabs"));
+    var tabs = getElementsByClassName(document, "ul", "tabs");
     
     for(var i = 0, j = tabs.length; i < j; i++){
         var tabList = tabs[i].getElementsByTagName('li');
         for(var k = 0, l = tabList.length; k < l; k++){
-            (function(){  //Need this because the click handler isn't called with the proper context in IE7/8.
-                var tab = tabList[k].getElementsByTagName('a')[0];
-                
-                tab[BIND_HANDLER](BIND_HANDLER_PREFIX + "click", function(e){
-                    var contentLocation = tab.href.substr(tab.href.indexOf("#")) + "Tab",
-                        event = e || window.event,
+            tabList[k].getElementsByTagName('a')[0][BIND_HANDLER](BIND_HANDLER_PREFIX + "click", function(e){
+                var event = e || window.event;
+                return (function(e){
+                    var contentLocation = this.href.substr(this.href.indexOf("#")) + "Tab",
                         contentElement,
                         siblings;
                     
@@ -95,7 +93,7 @@ function doFancyExpensiveTabThings(){
                         for(var m = 0; m < k; m++){
                             removeClass(tabList[m].getElementsByTagName('a')[0], "active");
                         }
-                        addClass(tab, "active");
+                        addClass(this, "active");
                         
                         contentElement = document.getElementById(contentLocation.substr(1));
                         addClass(contentElement, "active");
@@ -108,8 +106,8 @@ function doFancyExpensiveTabThings(){
                         }
                     }
                     return false;
-                }, false);
-            })();
+                }).call(event.target || event.srcElement, event);
+            }, false);
         }
     }
 }
