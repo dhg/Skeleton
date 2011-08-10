@@ -99,51 +99,56 @@
 				var event = e || window.event;
 				return fn.call(element, event);  //Force it to call the handler in the proper context (IE 7 & 8 do not)
 			}, last);
+		},
+		
+		doFancyExpensiveTabThings : function(){
+			var tabs = Skeleton.filterTags(Skeleton.getElementsByClassName(document, "tabs"), ["ul"]);
+			
+			for(var i = 0, j = tabs.length; i < j; i++){
+				(function(){
+					var tabNum = i,
+						tabList = tabs[tabNum].getElementsByTagName("li");
+					
+					for(var k = 0, l = tabList.length; k < l; k++){
+						Skeleton.addListener(tabList[k].getElementsByTagName('a')[0], "click", function(e){
+							var contentLocation = this.href.substr(this.href.indexOf("#")) + "Tab",
+								contentElement,
+								siblings;
+							
+							if(contentLocation.charAt(0) === "#"){
+								if(e.preventDefault){
+									e.preventDefault();
+								}else{
+									e.returnValue = false;
+									e.cancelBubble = true;
+								}
+								
+								for(var m = 0; m < k; m++){
+									Skeleton.removeClass(tabList[m].getElementsByTagName('a')[0], "active");
+								}
+								
+								Skeleton.addClass(this, "active");
+								
+								//contentElement = document.getElementById(contentLocation.substr(1));
+								contentElement = Skeleton.getElementsByClassName(Skeleton.getElementsByClassName(tabs[tabNum].parentNode, "tabs-content")[0], contentLocation.substr(1))[0];
+								Skeleton.addClass(contentElement, "active");
+								
+								siblings = contentElement.parentNode.getElementsByTagName('li');
+								for(m = 0, n = siblings.length; m < n; m++){
+									if(siblings[m] !== contentElement){
+										Skeleton.removeClass(siblings[m], "active");
+									}
+								}
+							}
+							return false;
+						});
+					}
+				})();
+			}
 		}
 	};
 	
 	window.Skeleton = Skeleton;
 })();
 
-function doFancyExpensiveTabThings(){
-	var tabs = Skeleton.filterTags(Skeleton.getElementsByClassName(document, "tabs"), ["ul"]);
-	
-	for(var i = 0, j = tabs.length; i < j; i++){
-		var tabList = tabs[i].getElementsByTagName("li");
-		for(var k = 0, l = tabList.length; k < l; k++){
-			Skeleton.addListener(tabList[k].getElementsByTagName('a')[0], "click", function(e){
-				var contentLocation = this.href.substr(this.href.indexOf("#")) + "Tab",
-					contentElement,
-					siblings;
-				
-				if(contentLocation.charAt(0) === "#"){
-					if(e.preventDefault){
-						e.preventDefault();
-					}else{
-						e.returnValue = false;
-						e.cancelBubble = true;
-					}
-					
-					for(var m = 0; m < k; m++){
-						Skeleton.removeClass(tabList[m].getElementsByTagName('a')[0], "active");
-					}
-					
-					Skeleton.addClass(this, "active");
-					
-					contentElement = document.getElementById(contentLocation.substr(1));
-					Skeleton.addClass(contentElement, "active");
-					
-					siblings = contentElement.parentNode.getElementsByTagName('li');
-					for(m = 0, n = siblings.length; m < n; m++){
-						if(siblings[m] !== contentElement){
-							Skeleton.removeClass(siblings[m], "active");
-						}
-					}
-				}
-				return false;
-			});
-		}
-	}
-}
-
-Skeleton.addListener(window, "load", doFancyExpensiveTabThings);
+Skeleton.addListener(window, "load", Skeleton.doFancyExpensiveTabThings);
