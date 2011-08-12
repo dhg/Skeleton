@@ -145,31 +145,6 @@
 					}
 				})();
 			}
-		},
-		
-		
-		
-		html5 : {
-			managedElements : [],
-			inputElements : [],
-			
-			create : {
-				element : function(element, type){
-					
-				},
-				
-				color : function(){
-					
-				}
-			},
-			
-			loader : function(){
-				Skeleton.html5.inputElements = document.getElementsByTagName("input");
-				
-				for(var i = 0, j = Skeleton.html5.inputElements.length; i < j; i++){
-					
-				}
-			}
 		}
 	};
 	
