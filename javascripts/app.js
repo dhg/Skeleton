@@ -110,7 +110,7 @@
 						tabList = tabs[tabNum].getElementsByTagName("li");
 					
 					for(var k = 0, l = tabList.length; k < l; k++){
-						Skeleton.addListener(tabList[k].getElementsByTagName('a')[0], "click", function(e){
+						Skeleton.addListener(tabList[k].getElementsByTagName("a")[0], "click", function(e){
 							var contentLocation = this.href.substr(this.href.indexOf("#")) + "Tab",
 								contentElement,
 								siblings;
@@ -124,7 +124,7 @@
 								}
 								
 								for(var m = 0; m < k; m++){
-									Skeleton.removeClass(tabList[m].getElementsByTagName('a')[0], "active");
+									Skeleton.removeClass(tabList[m].getElementsByTagName("a")[0], "active");
 								}
 								
 								Skeleton.addClass(this, "active");
@@ -133,8 +133,8 @@
 								contentElement = Skeleton.getElementsByClassName(Skeleton.getElementsByClassName(tabs[tabNum].parentNode, "tabs-content")[0], contentLocation.substr(1))[0];
 								Skeleton.addClass(contentElement, "active");
 								
-								siblings = contentElement.parentNode.getElementsByTagName('li');
-								for(m = 0, n = siblings.length; m < n; m++){
+								siblings = contentElement.parentNode.getElementsByTagName("li");
+								for(var m = 0, n = siblings.length; m < n; m++){
 									if(siblings[m] !== contentElement){
 										Skeleton.removeClass(siblings[m], "active");
 									}
@@ -144,6 +144,31 @@
 						});
 					}
 				})();
+			}
+		},
+		
+		
+		
+		html5 : {
+			managedElements : [],
+			inputElements : [],
+			
+			create : {
+				element : function(element, type){
+					
+				},
+				
+				color : function(){
+					
+				}
+			},
+			
+			loader : function(){
+				Skeleton.html5.inputElements = document.getElementsByTagName("input");
+				
+				for(var i = 0, j = Skeleton.html5.inputElements.length; i < j; i++){
+					
+				}
 			}
 		}
 	};
