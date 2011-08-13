@@ -105,7 +105,7 @@
 			var tabs = Skeleton.filterTags(Skeleton.getElementsByClassName(document, "tabs"), ["ul"]);
 			
 			for(var i = 0, j = tabs.length; i < j; i++){
-				(function(){
+				(function(){  //This is necessary to isolate each individual tab set in its own scope
 					var tabNum = i,
 						tabList = tabs[tabNum].getElementsByTagName("li");
 					
@@ -129,8 +129,7 @@
 								
 								Skeleton.addClass(this, "active");
 								
-								//contentElement = document.getElementById(contentLocation.substr(1));
-								contentElement = Skeleton.getElementsByClassName(Skeleton.getElementsByClassName(tabs[tabNum].parentNode, "tabs-content")[0], contentLocation.substr(1))[0];
+								contentElement = document.getElementById(contentLocation.substr(1));
 								Skeleton.addClass(contentElement, "active");
 								
 								siblings = contentElement.parentNode.getElementsByTagName("li");
