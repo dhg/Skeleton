@@ -84,6 +84,11 @@
 			}
 		},
 		
+		swapClass : function(element, from, to){
+			Skeleton.removeClass(element, from);
+			Skeleton.addClass(element, to);
+		},
+		
 		addListener : function(element, on, fn, last){
 			last = (last || false);
 			var BH;
@@ -110,8 +115,10 @@
 						tabList = tabs[tabNum].getElementsByTagName("li");
 					
 					for(var k = 0, l = tabList.length; k < l; k++){
+						Skeleton.addClass(document.getElementById(tabList[k].getElementsByTagName("a")[0].href.substr(tabList[k].getElementsByTagName("a")[0].href.indexOf("#") + 1)), "hidden");
+						
 						Skeleton.addListener(tabList[k].getElementsByTagName("a")[0], "click", function(e){
-							var contentLocation = this.href.substr(this.href.indexOf("#")) + "Tab",
+							var contentLocation = this.href.substr(this.href.indexOf("#")),
 								contentElement,
 								siblings;
 							
@@ -130,12 +137,12 @@
 								Skeleton.addClass(this, "active");
 								
 								contentElement = document.getElementById(contentLocation.substr(1));
-								Skeleton.addClass(contentElement, "active");
+								Skeleton.swapClass(contentElement, "hidden", "active");
 								
 								siblings = contentElement.parentNode.getElementsByTagName("li");
 								for(var m = 0, n = siblings.length; m < n; m++){
 									if(siblings[m] !== contentElement){
-										Skeleton.removeClass(siblings[m], "active");
+										Skeleton.swapClass(siblings[m], "active", "hidden");
 									}
 								}
 							}
