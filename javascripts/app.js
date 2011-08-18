@@ -15,13 +15,24 @@ $(document).ready(function() {
 	================================================== */
 	var tabs = $('ul.tabs');
 	
+	/* hide tab content. Doing this with JS
+     makes the tabs work when JS is enabled but
+     CSS is not, an interesting accessibility
+     edge case. Ensures that "active" is respected.
+  */
+  $("ul.tabs-content > li").each(function(t){
+    if(!$(this).hasClass("active")){
+       $(this).hide();
+    };
+  });
+	
 	tabs.each(function(i) {
 		//Get all tabs
 		var tab = $(this).find('> li > a');
 		tab.click(function(e) {
 			
 			//Get Location of tab's content
-			var contentLocation = $(this).attr('href') + "Tab";
+			var contentLocation = $(this).attr('href');
 			
 			//Let go if not a hashed one
 			if(contentLocation.charAt(0)=="#") {

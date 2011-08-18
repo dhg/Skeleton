@@ -254,7 +254,6 @@
 		border-top-right-radius: 2px; }
 	
 	ul.tabs-content { margin: 0; display: block; }
-	ul.tabs-content > li { display:none; }
 	ul.tabs-content > li.active { display: block; }
 		
 	/* Clearfixing tabs for beautiful stacking */
