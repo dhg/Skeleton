@@ -7,34 +7,36 @@
 * 8/17/2011
 */
 
+
 $(document).ready(function() {
 
 	/* Tabs Activiation
-	================================================= */
-	$('ul.tabs > li').live('click', function(e) {
-	    var $tab = $(this);
-	    var $href = $tab.find('a:first');
-	    var $otherHrefs = $tab.siblings().find('a');
-	    var contentLocation = $href.attr('href');
+	================================================== */
 
-	    //Let go if not a hashed one
-	    if(contentLocation[0]=="#") {
-	        e.preventDefault();
+	var tabs = $('ul.tabs');
 
-	        $otherHrefs.removeClass('active');
+	tabs.each(function(i) {
 
-	        //Make Tab Active
-	        if (!$href.hasClass('active')){
-	            $href.addClass('active');
-	        }
+		//Get all tabs
+		var tab = $(this).find('> li > a');
+		tab.click(function(e) {
 
-	        //Show Tab Content & add active class
-	        $(contentLocation)
-	        	.show()
-	        	.addClass('active')
-	        	.siblings()
-	        	.hide()
-	        	.removeClass('active');
-	    }
+			//Get Location of tab's content
+			var contentLocation = $(this).attr('href');
+
+			//Let go if not a hashed one
+			if(contentLocation.charAt(0)=="#") {
+
+				e.preventDefault();
+
+				//Make Tab Active
+				tab.removeClass('active');
+				$(this).addClass('active');
+
+				//Show Tab Content & add active class
+				$(contentLocation).show().addClass('active').siblings().hide().removeClass('active');
+
+			}
+		});
 	});
 });
