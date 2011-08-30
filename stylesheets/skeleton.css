@@ -150,20 +150,20 @@
         .g-2-3rds           { width: 300px; }
 
         /* Offsets */
-        .indent-1
-        .indent-2
-        .indent-3
-        .indent-4
-        .indent-5
-        .indent-6
-        .indent-7
-        .indent-8
-        .indent-9
-        .indent-10
-        .indent-11
-        .indent-12
-        .indent-13
-        .indent-14
+        .indent-1,
+        .indent-2,
+        .indent-3,
+        .indent-4,
+        .indent-5,
+        .indent-6,
+        .indent-7,
+        .indent-8,
+        .indent-9,
+        .indent-10,
+        .indent-11,
+        .indent-12,
+        .indent-13,
+        .indent-14,
         .indent-15          { padding-left: 0; }
 
     }
