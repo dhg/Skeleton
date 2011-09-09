@@ -9,10 +9,10 @@
 
 /* Table of Contents
 ==================================================
-	#Site Styles
-	#Page Styles
-	#Media Queries
-	#Font-Face */
+#Site Styles
+#Page Styles
+#Media Queries
+#Font-Face */
 
 /* #Site Styles
 ================================================== */
@@ -23,22 +23,22 @@
 /* #Media Queries
 ================================================== */
 
-	/* Note: All the sizes are increased by 16px to account for browser scrollbar width */
+/* Note: All the sizes are increased by 16px to account for browser scrollbar width */
 
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 976px) {}
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 976px) {}
 
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 976px) {}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 976px) {}
 
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
 
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (min-width: 480px) {}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (min-width: 480px) {}
 
 
 /* #Font-Face

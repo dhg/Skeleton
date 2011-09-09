@@ -7,7 +7,6 @@
 * 8/17/2011
 */
 
-
 $(document).ready(function() {
 
 	/* Tabs Activiation
