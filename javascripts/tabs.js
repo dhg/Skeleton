@@ -13,30 +13,24 @@ $(document).ready(function() {
 	/* Tabs Activiation
 	================================================== */
 
-	var tabs = $('ul.tabs');
+	$('body').delegate('ul.tabs > li > a', 'click', function(e) {
 
-	tabs.each(function(i) {
+		//Get Location of tab's content
+		var contentLocation = $(this).attr('href');
 
-		//Get all tabs
-		var tab = $(this).find('> li > a');
-		tab.click(function(e) {
+		//Let go if not a hashed one
+		if(contentLocation.charAt(0)=="#") {
 
-			//Get Location of tab's content
-			var contentLocation = $(this).attr('href');
+			e.preventDefault();
 
-			//Let go if not a hashed one
-			if(contentLocation.charAt(0)=="#") {
+			//Make Tab Active
+			$(this).parent().siblings().children('a').removeClass('active');
+			$(this).addClass('active');
 
-				e.preventDefault();
+			//Show Tab Content & add active class
+			$(contentLocation).show().addClass('active')
+			    .siblings().hide().removeClass('active');
 
-				//Make Tab Active
-				tab.removeClass('active');
-				$(this).addClass('active');
-
-				//Show Tab Content & add active class
-				$(contentLocation).show().addClass('active').siblings().hide().removeClass('active');
-
-			}
-		});
+	    }
 	});
 });
