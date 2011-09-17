@@ -1,0 +1,249 @@
+/*
+* Skeleton V2.0
+* Copyright 2011, Dave Gamache (@dhg)
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 8/17/2011
+*/
+
+
+/* Table of Contents
+==================================================
+#Base 960 Grid
+#Tablet (Portrait)
+#Mobile (Portrait)
+#Mobile (Landscape)
+#Clearing */
+
+
+
+/* #Base 960 Grid
+================================================== */
+
+.container {
+  position: relative;
+  width: 960px;
+  padding: 0;
+  margin: 0 auto; }
+[class*="g-"] {
+  position: relative;
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px; }
+.row {
+  margin-bottom: 20px; }
+
+/* Nested Column Classes */
+.alpha                  { margin-left: 0; }
+.omega                  { margin-right: 0; }
+
+/* Base Grid */
+.g-1                    { width: 40px;  }
+.g-2                    { width: 100px; }
+.g-3                    { width: 160px; }
+.g-4                    { width: 220px; }
+.g-5                    { width: 280px; }
+.g-6                    { width: 340px; }
+.g-7                    { width: 400px; }
+.g-8                    { width: 460px; }
+.g-9                    { width: 520px; }
+.g-10                   { width: 580px; }
+.g-11                   { width: 640px; }
+.g-12                   { width: 700px; }
+.g-13                   { width: 760px; }
+.g-14                   { width: 820px; }
+.g-15                   { width: 880px; }
+.g-16                   { width: 940px; }
+
+.g-1-3rd                { width: 300px; }
+.g-2-3rds               { width: 620px; }
+
+/* Offsets */
+.indent-1               { left: 60px;  }
+.indent-2               { left: 120px; }
+.indent-3               { left: 180px; }
+.indent-4               { left: 240px; }
+.indent-5               { left: 300px; }
+.indent-6               { left: 360px; }
+.indent-7               { left: 420px; }
+.indent-8               { left: 480px; }
+.indent-9               { left: 540px; }
+.indent-10              { left: 600px; }
+.indent-11              { left: 660px; }
+.indent-12              { left: 720px; }
+.indent-13              { left: 780px; }
+.indent-14              { left: 840px; }
+.indent-15              { left: 900px; }
+
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+/* Note: Design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 976px) {
+
+  .container          { width: 752px; }
+  [class*="g-"]       { margin-left: 10px; margin-right: 10px;  }
+  .alpha              { margin-left: 0; margin-right: 10px; }
+  .omega              { margin-left: 10px; margin-right: 0; }
+
+  .g-1                { width: 27px; }
+  .g-2                { width: 74px; }
+  .g-3                { width: 121px; }
+  .g-4                { width: 168px; }
+  .g-5                { width: 215px; }
+  .g-6                { width: 262px; }
+  .g-7                { width: 309px; }
+  .g-8                { width: 356px; }
+  .g-9                { width: 403px; }
+  .g-10               { width: 450px; }
+  .g-11               { width: 497px; }
+  .g-12               { width: 544px; }
+  .g-13               { width: 591px; }
+  .g-14               { width: 638px; }
+  .g-15               { width: 685px; }
+  .g-16               { width: 732px; }
+
+  .g-1-3rd            { width: 237px; }
+  .g-2-3rds           { width: 475px; }
+
+  /* Offsets */
+  .indent-1           { left: 47px; }
+  .indent-2           { left: 94px; }
+  .indent-3           { left: 141px; }
+  .indent-4           { left: 188px; }
+  .indent-5           { left: 235px; }
+  .indent-6           { left: 282px; }
+  .indent-7           { left: 329px; }
+  .indent-8           { left: 376px; }
+  .indent-9           { left: 423px; }
+  .indent-10          { left: 470px; }
+  .indent-11          { left: 517px; }
+  .indent-12          { left: 564px; }
+  .indent-13          { left: 611px; }
+  .indent-14          { left: 658px; }
+  .indent-15          { left: 705px; }
+}
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+/* Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+
+  .container          { width: 300px; }
+  [class*="g-"]       { margin: 0; }
+
+  .g-1,
+  .g-2,
+  .g-3,
+  .g-4,
+  .g-5,
+  .g-6,
+  .g-7,
+  .g-8,
+  .g-9,
+  .g-10,
+  .g-11,
+  .g-12,
+  .g-13,
+  .g-14,
+  .g-15,
+  .g-16,
+  .g-1-3rd,
+  .g-2-3rds           { width: 300px; }
+
+  /* Offsets */
+  .indent-1,
+  .indent-2,
+  .indent-3,
+  .indent-4,
+  .indent-5,
+  .indent-6,
+  .indent-7,
+  .indent-8,
+  .indent-9,
+  .indent-10,
+  .indent-11,
+  .indent-12,
+  .indent-13,
+  .indent-14,
+  .indent-15          { left: 0; }
+
+}
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+/* Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  .container          { width: 420px; }
+  [class*="g-"]       { margin: 0; }
+
+  .g-1,
+  .g-2,
+  .g-3,
+  .g-4,
+  .g-5,
+  .g-6,
+  .g-7,
+  .g-8,
+  .g-9,
+  .g-10,
+  .g-11,
+  .g-12,
+  .g-13,
+  .g-14,
+  .g-15,
+  .g-16,
+  .g-1-3rd,
+  .g-2-3rds           { width: 420px; }
+
+}
+
+
+/* #Clearing
+================================================== */
+
+/* Self Clearing Goodness */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; }
+
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
