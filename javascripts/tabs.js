@@ -12,9 +12,12 @@ $(document).ready(function() {
 
 	/* Tabs Activiation
 	================================================== */
+  // Use CSS to hide the tabs
+  $("ul.tabs-content > li").css("display", "none");
+  $("ul.tabs-content > li.active").css("display", "block");
 
 	var tabs = $('ul.tabs');
-
+  
 	tabs.each(function(i) {
 
 		//Get all tabs
