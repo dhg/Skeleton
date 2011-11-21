@@ -11,9 +11,6 @@
 	<title>Your Page Title Here :)</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 
 	<!-- Mobile Specific Metas
   ================================================== -->
@@ -24,6 +21,16 @@
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!-- this is a nitpick but moving *after* css due to comment here:
+	http://code.google.com/p/html5shim/
+	To use this script, it must be included before the <body> element (i.e. in the <head>) but doesn't matter 
+	if it appears before or after the CSS - but for the sake of performance, it would make better sense to include 
+	the CSS first then this script.
+	-->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
 	<!-- Favicons
 	================================================== -->
