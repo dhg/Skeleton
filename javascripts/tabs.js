@@ -8,35 +8,33 @@
 */
 
 
-$(document).ready(function() {
+;(function ( $, window, document, undefined ) {
+    
+    var pluginName = 'skeletonTabs',
+        defaults = {
+            propertyName: "value"
+        };
 
-	/* Tabs Activiation
-	================================================== */
+    function Plugin( element, options ) {
+        this.element = element;
+        this.options = $.extend( {}, defaults, options) ;
+ 
+        this._defaults = defaults;
+        this._name = pluginName;
+        
+        this.init();
+    }
 
-	var tabs = $('ul.tabs');
+    Plugin.prototype.init = function () {
 
-	tabs.each(function(i) {
+    };
 
-		//Get all tabs
-		var tab = $(this).find('> li > a');
-		tab.click(function(e) {
+    $.fn[pluginName] = function ( options ) {
+        return this.each(function () {
+            if (!$.data(this, 'plugin_' + pluginName)) {
+                $.data(this, 'plugin_' + pluginName, new Plugin( this, options ));
+            }
+        });
+    }
 
-			//Get Location of tab's content
-			var contentLocation = $(this).attr('href');
-
-			//Let go if not a hashed one
-			if(contentLocation.charAt(0)=="#") {
-
-				e.preventDefault();
-
-				//Make Tab Active
-				tab.removeClass('active');
-				$(this).addClass('active');
-
-				//Show Tab Content & add active class
-				$(contentLocation).show().addClass('active').siblings().hide().removeClass('active');
-
-			}
-		});
-	});
-});
+})(jQuery, window, document);
