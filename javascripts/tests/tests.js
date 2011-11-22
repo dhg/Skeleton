@@ -1,41 +1,81 @@
 $(document).ready(function () {
 
-            module("Table markup creation");
+    test("Tab list attribute generation", function () {
 
-            var data = {
-                "table": {
-                    "columns": [
-                            {
-                                "name": "firstName",
-                                "displayName": "First Name"
-                            },
-                            {
-                                "name": "lastName",
-                                "displayName": "Last Name"
-                            }
-                        ]
-                }
-            }
+        var tabContainer = $('#qunit-fixture #tab-container');
+        var tabList = $(tabContainer).find('> ul');
+        var tabs = tabList.find('li');
+        tabContainer.skeletonTabs();        
 
-            test("Generate table headers", function () {
+        equal($(tabList).attr('role'),
+            'tablist',
+            'Expect first unordered list to have tabList role');
 
-                $('#qunit-fixture').tablePlugin(data);
+    });  
 
-                var table = $('#qunit-fixture');
-                var thead = table.find("thead tr");
+    test("Tab attribute generation with nothing set", function () {
 
-                equal(thead.find('th').size(),
-                    data.table.columns.length,
-                    "Expect number of generated table headers to match number in model");
+        var tabContainer = $('#qunit-fixture #tab-container');
+        var tabList = $(tabContainer).find('> ul');
+        var tabs = tabList.find('li');
+        tabContainer.skeletonTabs();        
 
-                equal(thead.find('th').first().html(),
-                    data.table.columns[0].displayName,
-                    "Expect inner HTML to be display name");
+        equal($(tabs).first().attr('aria-selected'),
+            'true',
+            'Expect first tab to have aria-selected set to true');
 
-                equal(thead.find('th').first().attr('data-name'),
-                    data.table.columns[0].name,
-                    "Expect data-name attribute to be set to name");
-
-            });
-
+        $(tabs).each(function(index) {
+            if(index != 0){
+                equal($(this).attr('aria-selected'),
+                'false',
+                'Expect subsequent tabs to have aria-selected set to false')    
+            }            
         });
+
+    });
+
+    test("Tab attribute generation with aria selected set by user", function () {
+
+        var tabContainer = $('#qunit-fixture #tab-container');
+        $(tabContainer).find("ul li:nth-child(2)").attr('aria-selected', 'true'); 
+        var tabList = $(tabContainer).find('> ul');
+        var tabs = tabList.find('li');
+        tabContainer.skeletonTabs();
+
+        equal($(tabList).find(':nth-child(2)').attr('aria-selected'),
+            'true',
+            'Expect 2nd tab aria-selected role to be true');
+
+        equal($(tabList).find('[aria-selected="true"]').length,
+            1,
+            'Expect one aria-selected role to be true');
+
+        $(tabs).each(function(index) {
+                notEqual($(this).attr('aria-selected'),
+                null,
+                'Expect tab at position ' + index + ' to have an aria-selected attribute that is not null')             
+        });
+
+    });
+
+    test("Tabs and tabpanel ID generation", function () {
+
+        var tabContainer = $('#qunit-fixture #tab-container');
+        var tabList = $(tabContainer).find('> ul');
+        var tabs = tabList.find('li');
+        var tabPanels = $(tabContainer).children().not('ul');
+        tabContainer.skeletonTabs();
+
+        $(tabs).each(function(index) {
+                var tabID = $(this).attr('id');
+                ok(tabID, 'Expect tab at position ' + index + ' to have an id');           
+        });
+
+        $(tabPanels).each(function(index) {
+                var tabPanelID = $(this).attr('id');
+                ok(tabPanelID, 'Expect tab panel at position ' + index + ' to have an id');            
+        });
+
+    });
+
+});
