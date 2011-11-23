@@ -179,6 +179,42 @@ $(document).ready(function () {
             }         
         });
 
-    });  
+    });
+
+    test("Clicking tab changes panel", function () {
+
+        var tabContainer = $('#qunit-fixture #tab-container');
+        var tabList = $(tabContainer).find('> ul');
+        var tabPanels = $(tabContainer).children().not('ul');
+        tabContainer.skeletonTabs();
+        var clickMe = $(tabContainer).find("ul li:nth-child(2)");
+
+        $(clickMe).click();
+
+        $(tabs).each(function(index) {
+            if(index != 1){
+                equals($(this).attr('aria-selected'),
+                'false',
+                'Expect tab at position ' + index + ' to have aria-selected set to false after clicking tab at position 1');   
+            }else{
+                equals($(this).attr('aria-selected'),
+                'true',
+                'Expect tab at position ' + index + ' to have aria-selected set to true since we clicked it');   
+            }         
+        });
+
+        $(tabpanels).each(function(index) {
+            if(index != 1){
+                equals($(this).attr('aria-hidden'),
+                'true',
+                'Expect tabpanel at position ' + index + ' to have aria-hidden set to true after clicking tab at position 1');   
+            }else{
+                equals($(this).attr('aria-hidden'),
+                'false',
+                'Expect tabpanel at position ' + index + ' to have aria-hidden set to true since we clicked its tab');   
+            }         
+        });
+
+    });
 
 });
