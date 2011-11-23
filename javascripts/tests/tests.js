@@ -78,4 +78,54 @@ $(document).ready(function () {
 
     });
 
+    test("Tabs and tabpanel ID generation with IDs set by user", function () {
+
+        var tabContainer = $('#qunit-fixture #tab-container');
+        $(tabContainer).find("ul li:nth-child(2)").attr('id', 'something');
+        $(tabContainer).children().not('ul').first().attr('id', 'else'); 
+        var tabList = $(tabContainer).find('> ul');
+        var tabs = tabList.find('li');
+        var tabPanels = $(tabContainer).children().not('ul');
+        tabContainer.skeletonTabs();
+
+        equal($(tabList).find(':nth-child(2)').attr('id'),
+            'something',
+            'Expect 2nd tab id role to be "something"');
+
+        equal($(tabPanels).first().attr('id'),
+            'else',
+            'Expect 2nd tab id role to be "else"');
+
+    });
+
+    test("Tab role generation", function () {
+
+        var tabContainer = $('#qunit-fixture #tab-container');
+        var tabList = $(tabContainer).find('> ul');
+        var tabs = tabList.find('li');
+        tabContainer.skeletonTabs();
+
+        $(tabs).each(function(index) {
+            equals($(this).attr('role'),
+                'tab',
+                'Expect tab at position ' + index + ' to have an id');             
+        });
+
+    });
+
+    test("Tabpanel role generation", function () {
+
+        var tabContainer = $('#qunit-fixture #tab-container');
+        var tabList = $(tabContainer).find('> ul');
+        var tabPanels = $(tabContainer).children().not('ul');
+        tabContainer.skeletonTabs();
+
+        $(tabPanels).each(function(index) {
+            equals($(this).attr('role'),
+                'tabpanel',
+                'Expect tab panel at position ' + index + ' to have an id');             
+        });
+
+    });
+
 });

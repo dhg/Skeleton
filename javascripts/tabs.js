@@ -34,17 +34,18 @@
 
     	$(tabs).each(function(index) {
 
-    		// if there is no aria selected role present, set it to false
+    		var ariaSelected = $(this).attr('aria-selected');
+    		var id = $(this).attr('id');
 
-    		var selectedVar = $(this).attr('aria-selected');
-
-    		if(!selectedVar){
+    		if(!ariaSelected){
     			$(this).attr('aria-selected', 'false');	
     		}
 
     		// add IDs to tabs
 
-    		$(this).attr('id', 'tab' + index + 1);
+    		if(!id){
+    			$(this).attr('id', 'tab' + parseInt(index + 1));	
+    		}
 
         });
 
@@ -58,7 +59,13 @@
         // add IDs to tab panels
 
         $(tabPanels).each(function(index) {
-        	$(this).attr('id', 'tabpanel' + index + 1);
+
+        	var id = $(this).attr('id');
+
+        	if(!id){
+    			$(this).attr('id', 'tabpanel' + parseInt(index + 1));	
+    		}
+    		
         });
         
     };
