@@ -12,7 +12,7 @@
     
     var pluginName = 'skeletonTabs',
         defaults = {
-            propertyName: "value"
+            activeClass: "active"
         };
 
     function Plugin( element, options ) {
@@ -77,10 +77,10 @@
         
         $(tabs).click(function() {
         	var controls = $(this).attr('aria-controls');
-			$(this).siblings().attr('aria-selected', 'false');
-			$(this).attr('aria-selected', 'true');
-			$(tabPanels).attr('aria-hidden', 'true');
-			$(tabPanels).filter('#' + controls).attr('aria-hidden', 'false');
+			$(this).siblings().attr('aria-selected', 'false').removeClass(this.options.activeClass);
+			$(this).attr('aria-selected', 'true').addClass(this.options.activeClass);
+			$(tabPanels).attr('aria-hidden', 'true').css('display', 'none').removeClass(this.options.activeClass);
+			$(tabPanels).filter('#' + controls).attr('aria-hidden', 'false').css('display', 'block').addClass(this.options.activeClass);
 		});        
         
     };
