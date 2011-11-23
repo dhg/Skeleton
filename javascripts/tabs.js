@@ -48,6 +48,13 @@
     		$(this).attr('role', 'tab');
         });
 
+        // if there isn't already a selected tab, make the first one selected
+
+        if($(tabList).find('[aria-selected="true"]').length == 0)
+        {
+        	$(tabs).first().attr('aria-selected', 'true'); 	
+        }
+
         $(tabPanels).each(function(index) {
 
         	var id = $(this).attr('id');
@@ -60,14 +67,13 @@
     		$(this).attr('aria-labeledby', $(tabs[index]).attr('id'));
     		$(tabs[index]).attr('aria-controls', $(this).attr('id'));
 
-        });
+			if($(tabs[index]).attr('aria-selected') == 'true'){
+				$(this).attr('aria-hidden', 'false');	
+			}else{
+				$(this).attr('aria-hidden', 'true');
+			}    		
 
-        // if there isn't already a selected tab, make the first one selected
-
-        if($(tabList).find('[aria-selected="true"]').length == 0)
-        {
-        	$(tabs).first().attr('aria-selected', 'true'); 	
-        }
+        });        
         
     };
 

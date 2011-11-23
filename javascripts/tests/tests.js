@@ -158,6 +158,27 @@ $(document).ready(function () {
                 'Expect tab at position ' + index + ' to match panel id at position ' + index);             
         });
 
-    });    
+    });
+    
+    test("Aria-hidden attribute generation on tabpanels", function () {
+
+        var tabContainer = $('#qunit-fixture #tab-container');
+        var tabList = $(tabContainer).find('> ul');
+        var tabPanels = $(tabContainer).children().not('ul');
+        tabContainer.skeletonTabs();
+
+        $(tabPanels).each(function(index) {
+            if(index != 0){
+                equals($(this).attr('aria-hidden'),
+                'true',
+                'Expect tabpanel at position ' + index + ' to have aria-hidden set to true');   
+            }else{
+                equals($(this).attr('aria-hidden'),
+                'false',
+                'Expect tabpanel at position ' + index + ' to have aria-hidden set to false');   
+            }         
+        });
+
+    });  
 
 });
