@@ -41,11 +41,23 @@
     			$(this).attr('aria-selected', 'false');	
     		}
 
-    		// add IDs to tabs
-
     		if(!id){
     			$(this).attr('id', 'tab' + parseInt(index + 1));	
     		}
+
+    		$(this).attr('role', 'tab');
+
+        });
+
+        $(tabPanels).each(function(index) {
+
+        	var id = $(this).attr('id');
+
+        	if(!id){
+    			$(this).attr('id', 'tabpanel' + parseInt(index + 1));	
+    		}
+
+    		$(this).attr('role', 'tabpanel');
 
         });
 
@@ -55,18 +67,6 @@
         {
         	$(tabs).first().attr('aria-selected', 'true'); 	
         }
-
-        // add IDs to tab panels
-
-        $(tabPanels).each(function(index) {
-
-        	var id = $(this).attr('id');
-
-        	if(!id){
-    			$(this).attr('id', 'tabpanel' + parseInt(index + 1));	
-    		}
-    		
-        });
         
     };
 

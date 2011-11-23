@@ -128,4 +128,36 @@ $(document).ready(function () {
 
     });
 
+    test("Aria-controls attribute generation", function () {
+
+        var tabContainer = $('#qunit-fixture #tab-container');
+        var tabList = $(tabContainer).find('> ul');
+        var tabPanels = $(tabContainer).children().not('ul');
+        var tabs = tabList.find('li');
+        tabContainer.skeletonTabs();
+
+        $(tabs).each(function(index) {
+            equals($(this).attr('aria-controls'),
+                $(tabPanels[index]).attr('id'),
+                'Expect tab at position ' + index + ' to match panel id at position ' + index);             
+        });
+
+    });
+
+    test("Aria-labeledby attribute generation", function () {
+
+        var tabContainer = $('#qunit-fixture #tab-container');
+        var tabList = $(tabContainer).find('> ul');
+        var tabPanels = $(tabContainer).children().not('ul');
+        var tabs = tabList.find('li');
+        tabContainer.skeletonTabs();
+
+        $(tabPanels).each(function(index) {
+            equals($(this).attr('aria-labeledby'),
+                $(tabs[index]).attr('id'),
+                'Expect tab at position ' + index + ' to match panel id at position ' + index);             
+        });
+
+    });    
+
 });
