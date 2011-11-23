@@ -186,6 +186,7 @@ $(document).ready(function () {
         var tabContainer = $('#qunit-fixture #tab-container');
         var tabList = $(tabContainer).find('> ul');
         var tabPanels = $(tabContainer).children().not('ul');
+        var tabs = tabList.find('li');
         tabContainer.skeletonTabs();
         var clickMe = $(tabContainer).find("ul li:nth-child(2)");
 
@@ -203,7 +204,7 @@ $(document).ready(function () {
             }         
         });
 
-        $(tabpanels).each(function(index) {
+        $(tabPanels).each(function(index) {
             if(index != 1){
                 equals($(this).attr('aria-hidden'),
                 'true',

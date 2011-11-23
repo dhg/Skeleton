@@ -73,7 +73,15 @@
 				$(this).attr('aria-hidden', 'true');
 			}    		
 
-        });        
+        });
+        
+        $(tabs).click(function() {
+        	var controls = $(this).attr('aria-controls');
+			$(this).siblings().attr('aria-selected', 'false');
+			$(this).attr('aria-selected', 'true');
+			$(tabPanels).attr('aria-hidden', 'true');
+			$(tabPanels).filter('#' + controls).attr('aria-hidden', 'false');
+		});        
         
     };
 
