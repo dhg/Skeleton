@@ -196,7 +196,7 @@ $(document).ready(function () {
             if(index != 1){
                 equals($(this).attr('aria-selected'),
                 'false',
-                'Expect tab at position ' + index + ' to have aria-selected set to false after clicking tab at position 1');   
+                'Expect tab at position ' + index + ' to have aria-selected set to false after clicking tab at position 1');                 
             }else{
                 equals($(this).attr('aria-selected'),
                 'true',
@@ -208,11 +208,18 @@ $(document).ready(function () {
             if(index != 1){
                 equals($(this).attr('aria-hidden'),
                 'true',
-                'Expect tabpanel at position ' + index + ' to have aria-hidden set to true after clicking tab at position 1');   
+                'Expect tabpanel at position ' + index + ' to have aria-hidden set to true after clicking tab at position 1');
+                
+                ok($(this).is(':hidden'),
+                'Expect tabpanel at position ' + index + ' to be hidden');
+                   
             }else{
                 equals($(this).attr('aria-hidden'),
                 'false',
-                'Expect tabpanel at position ' + index + ' to have aria-hidden set to true since we clicked its tab');   
+                'Expect tabpanel at position ' + index + ' to have aria-hidden set to true since we clicked its tab');
+                
+                ok($(this).not(':hidden'),
+                'Expect tabpanel at position ' + index + ' to not be hidden'); 
             }         
         });
 
