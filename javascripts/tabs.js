@@ -46,7 +46,6 @@
     		}
 
     		$(this).attr('role', 'tab');
-
         });
 
         $(tabPanels).each(function(index) {
@@ -58,6 +57,8 @@
     		}
 
     		$(this).attr('role', 'tabpanel');
+    		$(this).attr('aria-labeledby', $(tabs[index]).attr('id'));
+    		$(tabs[index]).attr('aria-controls', $(this).attr('id'));
 
         });
 
