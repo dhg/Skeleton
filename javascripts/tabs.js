@@ -55,6 +55,8 @@
         	$(tabs).first().attr('aria-selected', 'true'); 	
         }
 
+        var activeClass = this.options.activeClass;
+
         $(tabPanels).each(function(index) {
 
         	var id = $(this).attr('id');
@@ -68,14 +70,12 @@
     		$(tabs[index]).attr('aria-controls', $(this).attr('id'));
 
 			if($(tabs[index]).attr('aria-selected') == 'true'){
-				$(this).attr('aria-hidden', 'false');	
+				$(this).attr('aria-hidden', 'false').css('display', 'block').addClass(activeClass);	
 			}else{
-				$(this).attr('aria-hidden', 'true');
+				$(this).attr('aria-hidden', 'true').css('display', 'none');
 			}    		
 
-        });
-
-        var activeClass = this.options.activeClass;
+        });        
         
         $(tabs).click(function() {
         	var controls = $(this).attr('aria-controls');
