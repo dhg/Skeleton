@@ -74,13 +74,15 @@
 			}    		
 
         });
+
+        var activeClass = this.options.activeClass;
         
         $(tabs).click(function() {
         	var controls = $(this).attr('aria-controls');
-			$(this).siblings().attr('aria-selected', 'false').removeClass(this.options.activeClass);
-			$(this).attr('aria-selected', 'true').addClass(this.options.activeClass);
-			$(tabPanels).attr('aria-hidden', 'true').css('display', 'none').removeClass(this.options.activeClass);
-			$(tabPanels).filter('#' + controls).attr('aria-hidden', 'false').css('display', 'block').addClass(this.options.activeClass);
+			$(this).siblings().attr('aria-selected', 'false').removeClass(activeClass);
+			$(this).attr('aria-selected', 'true').addClass(activeClass);
+			$(tabPanels).attr('aria-hidden', 'true').css('display', 'none').removeClass(activeClass);
+			$(tabPanels).filter('#' + controls).attr('aria-hidden', 'false').css('display', 'block').addClass(activeClass);
 		});        
         
     };

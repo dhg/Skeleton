@@ -225,4 +225,27 @@ $(document).ready(function () {
 
     });
 
+    test("Initialization should set display correctly", function () {
+
+        var tabContainer = $('#qunit-fixture #tab-container');
+        var tabList = $(tabContainer).find('> ul');
+        var tabPanels = $(tabContainer).children().not('ul');
+        var tabs = tabList.find('li');
+        tabContainer.skeletonTabs();
+
+        $(tabPanels).each(function(index) {
+            if(index != 0){
+                
+                ok($(this).is(':hidden'),
+                'Expect tabpanel at position ' + index + ' to be hidden');
+                   
+            }else{
+                
+                ok($(this).not(':hidden'),
+                'Expect tabpanel at position ' + index + ' to not be hidden'); 
+            }         
+        });
+
+    });
+
 });
