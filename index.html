@@ -11,9 +11,9 @@
 	<title>Your Page Title Here :)</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+
+    <script src="javascripts/modernizr.custom.23785.js"></script>
+
 
 	<!-- Mobile Specific Metas
   ================================================== -->
@@ -72,8 +72,19 @@
 
 	<!-- JS
 	================================================== -->
-	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-	<script src="javascripts/tabs.js"></script>
+	<script>Modernizr.load([{
+    	    load: 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',
+    	    callback: function(url, result, key) {
+    	        if (!window.jQuery) {
+    	            Modernizr.load('javascripts/jquery-1.7.1.min.js')
+    	        }
+    	    }
+	    },
+	    {
+	        load: ['javascripts/tabs.js' /* add scripts that rely on jQuery here */ ]
+	    }
+    ]);</script>
+
 
 <!-- End Document
 ================================================== -->
