@@ -8,35 +8,91 @@
 */
 
 
-$(document).ready(function() {
+;(function ( $, window, document, undefined ) {
+    
+    var pluginName = 'skeletonTabs',
+        defaults = {
+            activeClass: "active"
+        };
 
-	/* Tabs Activiation
-	================================================== */
+    function Plugin( element, options ) {
+        this.element = element;
+        this.options = $.extend( {}, defaults, options) ;
+ 
+        this._defaults = defaults;
+        this._name = pluginName;
+        
+        this.init();
+    }
 
-	var tabs = $('ul.tabs');
+    Plugin.prototype.init = function () {
+    	var tabList = $(this.element).find('> ul');
+    	var tabs = $(tabList).find('li');
+    	var tabPanels = $(this.element).children().not('ul');
 
-	tabs.each(function(i) {
+    	tabList.attr('role', 'tablist');
 
-		//Get all tabs
-		var tab = $(this).find('> li > a');
-		tab.click(function(e) {
+    	$(tabs).each(function(index) {
 
-			//Get Location of tab's content
-			var contentLocation = $(this).attr('href');
+    		var ariaSelected = $(this).attr('aria-selected');
+    		var id = $(this).attr('id');
 
-			//Let go if not a hashed one
-			if(contentLocation.charAt(0)=="#") {
+    		if(!ariaSelected){
+    			$(this).attr('aria-selected', 'false');	
+    		}
 
-				e.preventDefault();
+    		if(!id){
+    			$(this).attr('id', 'tab' + parseInt(index + 1));	
+    		}
 
-				//Make Tab Active
-				tab.removeClass('active');
-				$(this).addClass('active');
+    		$(this).attr('role', 'tab');
+        });
 
-				//Show Tab Content & add active class
-				$(contentLocation).show().addClass('active').siblings().hide().removeClass('active');
+        // if there isn't already a selected tab, make the first one selected
 
-			}
-		});
-	});
-});
+        if($(tabList).find('[aria-selected="true"]').length == 0)
+        {
+        	$(tabs).first().attr('aria-selected', 'true'); 	
+        }
+
+        var activeClass = this.options.activeClass;
+
+        $(tabPanels).each(function(index) {
+
+        	var id = $(this).attr('id');
+
+        	if(!id){
+    			$(this).attr('id', 'tabpanel' + parseInt(index + 1));	
+    		}
+
+    		$(this).attr('role', 'tabpanel');
+    		$(this).attr('aria-labeledby', $(tabs[index]).attr('id'));
+    		$(tabs[index]).attr('aria-controls', $(this).attr('id'));
+
+			if($(tabs[index]).attr('aria-selected') == 'true'){
+				$(this).attr('aria-hidden', 'false').css('display', 'block').addClass(activeClass);	
+			}else{
+				$(this).attr('aria-hidden', 'true').css('display', 'none');
+			}    		
+
+        });        
+        
+        $(tabs).click(function() {
+        	var controls = $(this).attr('aria-controls');
+			$(this).siblings().attr('aria-selected', 'false').removeClass(activeClass);
+			$(this).attr('aria-selected', 'true').addClass(activeClass);
+			$(tabPanels).attr('aria-hidden', 'true').css('display', 'none').removeClass(activeClass);
+			$(tabPanels).filter('#' + controls).attr('aria-hidden', 'false').css('display', 'block').addClass(activeClass);
+		});        
+        
+    };
+
+    $.fn[pluginName] = function ( options ) {
+        return this.each(function () {
+            if (!$.data(this, 'plugin_' + pluginName)) {
+                $.data(this, 'plugin_' + pluginName, new Plugin( this, options ));
+            }
+        });
+    }
+
+})(jQuery, window, document);
