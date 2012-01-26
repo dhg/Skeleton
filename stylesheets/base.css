@@ -200,6 +200,39 @@
 		padding-right: 0 !important;
 		text-align: center; }
 
+	/* disabled buttons */
+	button[disabled],
+	input[type="submit"][disabled],
+	input[type="reset"][disabled],
+	input[type="button"][disabled] {
+		color: #adadad;
+	}
+	button[disabled]:hover,
+	input[type="submit"][disabled]:hover,
+	input[type="reset"][disabled]:hover,
+	input[type="button"][disabled]:hover {
+		background: #eee; /* Old browsers */
+		background: #eee -moz-linear-gradient(top, rgba(255,255,255,.2) 0%, rgba(0,0,0,.2) 100%); /* FF3.6+ */
+		background: #eee -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.2)), color-stop(100%,rgba(0,0,0,.2))); /* Chrome,Safari4+ */
+		background: #eee -webkit-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Chrome10+,Safari5.1+ */
+		background: #eee -o-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Opera11.10+ */
+		background: #eee -ms-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* IE10+ */
+		background: #eee linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* W3C */
+		color: #adadad;
+		cursor: default;
+		border: 1px solid #aaa;
+		border-top: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+	}
+	button[disabled]:active,
+	input[type="submit"][disabled]:active,
+	input[type="reset"][disabled]:active,
+	input[type="button"][disabled]:active {
+		border: 1px solid #aaa;
+		border-top: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+	}
+
 
 /* #Tabs (activate in tabs.js)
 ================================================== */
