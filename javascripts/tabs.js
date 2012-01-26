@@ -1,5 +1,5 @@
 /*
-* Skeleton V1.1
+* Skeleton V1.2
 * Copyright 2011, Dave Gamache
 * www.getskeleton.com
 * Free to use under the MIT license.
@@ -8,35 +8,22 @@
 */
 
 
-$(document).ready(function() {
+$('body').delegate('ul.tabs > li > a', 'click', function(e) {
 
-	/* Tabs Activiation
-	================================================== */
+    //Get Location of tab's content
+    var contentLocation = $(this).attr('href');
 
-	var tabs = $('ul.tabs');
+    //Let go if not a hashed one
+    if(contentLocation.charAt(0)=="#") {
 
-	tabs.each(function(i) {
+        e.preventDefault();
 
-		//Get all tabs
-		var tab = $(this).find('> li > a');
-		tab.click(function(e) {
+        //Make Tab Active
+        $(this).parent().siblings().children('a').removeClass('active');
+        $(this).addClass('active');
 
-			//Get Location of tab's content
-			var contentLocation = $(this).attr('href');
+        //Show Tab Content & add active class
+        $(contentLocation).show().addClass('active').siblings().hide().removeClass('active');
 
-			//Let go if not a hashed one
-			if(contentLocation.charAt(0)=="#") {
-
-				e.preventDefault();
-
-				//Make Tab Active
-				tab.removeClass('active');
-				$(this).addClass('active');
-
-				//Show Tab Content & add active class
-				$(contentLocation).show().addClass('active').siblings().hide().removeClass('active');
-
-			}
-		});
-	});
+    }
 });
