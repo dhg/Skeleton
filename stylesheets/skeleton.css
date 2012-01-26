@@ -22,7 +22,7 @@
 ================================================== */
 
     .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
-    .container .column, 
+    .container .column,
     .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
     .row                                        { margin-bottom: 20px; }
 
@@ -82,6 +82,7 @@
         .container .columns                         { margin-left: 10px; margin-right: 10px;  }
         .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
         .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
+        .alpha.omega                                { margin-left: 0; margin-right: 0; }
 
         .container .one.column,
         .container .one.columns                     { width: 28px; }
@@ -130,7 +131,7 @@
 
     @media only screen and (max-width: 767px) {
         .container { width: 300px; }
-        .container .columns, 
+        .container .columns,
         .container .column { margin: 0; }
 
         .container .one.column,
@@ -180,7 +181,7 @@
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
         .container { width: 420px; }
-        .container .columns, 
+        .container .columns,
         .container .column { margin: 0; }
 
         .container .one.column,

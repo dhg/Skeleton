@@ -1,5 +1,5 @@
 /*
-* Skeleton V1.2
+* Skeleton V1.1
 * Copyright 2011, Dave Gamache
 * www.getskeleton.com
 * Free to use under the MIT license.
