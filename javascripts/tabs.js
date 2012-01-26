@@ -8,7 +8,7 @@
 */
 
 
-$('body').delegate('ul.tabs > li > a', 'click', function(e) {
+$('body').on('click', 'ul.tabs > li > a', function(e) {
 
     //Get Location of tab's content
     var contentLocation = $(this).attr('href');
