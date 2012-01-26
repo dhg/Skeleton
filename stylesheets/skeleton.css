@@ -30,7 +30,8 @@
     .column.omega, .columns.omega               { margin-right: 0; }
 
     /* Base Grid */
-    .container .one.column                      { width: 40px;  }
+    .container .one.column,
+    .container .one.columns                     { width: 40px;  }
     .container .two.columns                     { width: 100px; }
     .container .three.columns                   { width: 160px; }
     .container .four.columns                    { width: 220px; }
@@ -81,7 +82,8 @@
         .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
         .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
 
-        .container .one.column                      { width: 28px; }
+        .container .one.column,
+        .container .one.columns                     { width: 28px; }
         .container .two.columns                     { width: 76px; }
         .container .three.columns                   { width: 124px; }
         .container .four.columns                    { width: 172px; }
@@ -130,6 +132,7 @@
         .columns, .column { margin: 0; }
 
         .container .one.column,
+        .container .one.columns,
         .container .two.columns,
         .container .three.columns,
         .container .four.columns,
@@ -178,6 +181,7 @@
         .columns, .column { margin: 0; }
 
         .container .one.column,
+        .container .one.columns,
         .container .two.columns,
         .container .three.columns,
         .container .four.columns,

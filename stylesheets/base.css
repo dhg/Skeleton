@@ -128,7 +128,7 @@
 /* #Buttons
 ================================================== */
 
-	a.button,
+	.button,
 	button,
 	input[type="submit"],
 	input[type="reset"],
@@ -155,10 +155,11 @@
 	  text-shadow: 0 1px rgba(255, 255, 255, .75);
 	  cursor: pointer;
 	  margin-bottom: 20px;
-	  line-height: 21px;
+	  line-height: 14px;
+	  padding: 10px;
 	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-	a.button:hover,
+	.button:hover,
 	button:hover,
 	input[type="submit"]:hover,
 	input[type="reset"]:hover,
@@ -175,7 +176,7 @@
 	  border-top: 1px solid #aaa;
 	  border-left: 1px solid #aaa; }
 
-	a.button:active,
+	.button:active,
 	button:active,
 	input[type="submit"]:active,
 	input[type="reset"]:active,
