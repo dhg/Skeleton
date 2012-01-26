@@ -22,7 +22,8 @@
 ================================================== */
 
     .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
-    .column, .columns                           { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+    .container .column, 
+    .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
     .row                                        { margin-bottom: 20px; }
 
     /* Nested Column Classes */
@@ -129,7 +130,8 @@
 
     @media only screen and (max-width: 767px) {
         .container { width: 300px; }
-        .columns, .column { margin: 0; }
+        .container .columns, 
+        .container .column { margin: 0; }
 
         .container .one.column,
         .container .one.columns,
@@ -178,7 +180,8 @@
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
         .container { width: 420px; }
-        .columns, .column { margin: 0; }
+        .container .columns, 
+        .container .column { margin: 0; }
 
         .container .one.column,
         .container .one.columns,
