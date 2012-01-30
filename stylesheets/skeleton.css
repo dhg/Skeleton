@@ -25,6 +25,8 @@
     .container .column,
     .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
     .row                                        { margin-bottom: 20px; }
+    .hide-mobile                                { display: block; visibility: visible; }
+
 
     /* Nested Column Classes */
     .column.alpha, .columns.alpha               { margin-left: 0; }
@@ -68,8 +70,6 @@
     .container .offset-by-thirteen              { padding-left: 780px; }
     .container .offset-by-fourteen              { padding-left: 840px; }
     .container .offset-by-fifteen               { padding-left: 900px; }
-
-
 
 /* #Tablet (Portrait)
 ================================================== */
@@ -133,6 +133,8 @@
         .container { width: 300px; }
         .container .columns,
         .container .column { margin: 0; }
+        .hide-mobile { display: none; visibility: hidden; }
+
 
         .container .one.column,
         .container .one.columns,
