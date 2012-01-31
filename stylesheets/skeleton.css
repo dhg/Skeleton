@@ -7,20 +7,16 @@
 * 8/17/2011
 */
 
-
 /* Table of Contents
 ==================================================
-    #Base 960 Grid
-    #Tablet (Portrait)
-    #Mobile (Portrait)
-    #Mobile (Landscape)
-    #Clearing */
-
-
+	#Base 960 Grid
+	#Tablet (Portrait)
+	#Mobile (Portrait)
+	#Mobile (Landscape)
+	#Clearing */
 
 /* #Base 960 Grid
 ================================================== */
-
     .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
     .container .column,
     .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
@@ -29,7 +25,7 @@
     /* Nested Column Classes */
     .column.alpha, .columns.alpha               { margin-left: 0; }
     .column.omega, .columns.omega               { margin-right: 0; }
-
+    
     /* Base Grid */
     .container .one.column,
     .container .one.columns                     { width: 40px;  }
@@ -68,8 +64,6 @@
     .container .offset-by-thirteen              { padding-left: 780px; }
     .container .offset-by-fourteen              { padding-left: 840px; }
     .container .offset-by-fifteen               { padding-left: 900px; }
-
-
 
 /* #Tablet (Portrait)
 ================================================== */
@@ -123,7 +117,6 @@
         .container .offset-by-fifteen               { padding-left: 720px; }
     }
 
-
 /*  #Mobile (Portrait)
 ================================================== */
 
@@ -170,9 +163,7 @@
         .container .offset-by-thirteen,
         .container .offset-by-fourteen,
         .container .offset-by-fifteen { padding-left: 0; }
-
     }
-
 
 /* #Mobile (Landscape)
 ================================================== */
@@ -204,7 +195,6 @@
         .container .one-third.column,
         .container .two-thirds.column { width: 420px; }
     }
-
 
 /* #Clearing
 ================================================== */

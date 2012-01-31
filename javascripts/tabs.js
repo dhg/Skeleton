@@ -7,15 +7,12 @@
 * 8/17/2011
 */
 
-
 $('body').on('click', 'ul.tabs > li > a', function(e) {
-
     //Get Location of tab's content
     var contentLocation = $(this).attr('href');
 
     //Let go if not a hashed one
     if(contentLocation.charAt(0)=="#") {
-
         e.preventDefault();
 
         //Make Tab Active
@@ -24,6 +21,5 @@ $('body').on('click', 'ul.tabs > li > a', function(e) {
 
         //Show Tab Content & add active class
         $(contentLocation).show().addClass('active').siblings().hide().removeClass('active');
-
     }
 });
