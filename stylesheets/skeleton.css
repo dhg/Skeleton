@@ -25,7 +25,6 @@
     .container .column,
     .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
     .row                                        { margin-bottom: 20px; }
-    .hide-mobile                                { display: block; visibility: visible; }
 
 
     /* Nested Column Classes */
@@ -133,7 +132,7 @@
         .container { width: 300px; }
         .container .columns,
         .container .column { margin: 0; }
-        .hide-mobile { display: none; visibility: hidden; }
+        .hide-mobile { display: none !important; visibility: hidden; }
 
 
         .container .one.column,
