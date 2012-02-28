@@ -7,7 +7,6 @@
 * 8/17/2011
 */
 
-
 /* Table of Content
 ==================================================
 	#Reset & Basics
@@ -21,7 +20,6 @@
 	#Tabs
 	#Forms
 	#Misc */
-
 
 /* #Reset & Basics (Inspired by E. Meyers)
 ================================================== */
@@ -48,7 +46,6 @@
 		border-collapse: collapse;
 		border-spacing: 0; }
 
-
 /* #Basic Styles
 ================================================== */
 	body {
@@ -56,9 +53,7 @@
 		font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #444;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-		-webkit-text-size-adjust: 100%;
- }
-
+		-webkit-text-size-adjust: 100%; }
 
 /* #Typography
 ================================================== */
@@ -77,13 +72,13 @@
 
 	p { margin: 0 0 20px 0; }
 	p img { margin: 0; }
-	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+	p.lead { font-size: 21px; line-height: 27px; color: #777; }
 
 	em { font-style: italic; }
 	strong { font-weight: bold; color: #333; }
 	small { font-size: 80%; }
 
-/*	Blockquotes  */
+	/* Blockquotes */
 	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
 	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
 	blockquote cite { display: block; font-size: 12px; color: #555; }
@@ -92,13 +87,11 @@
 
 	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
 
-
 /* #Links
 ================================================== */
 	a, a:visited { color: #333; text-decoration: underline; outline: 0; }
 	a:hover, a:focus { color: #000; }
 	p a, p a:visited { line-height: inherit; }
-
 
 /* #Lists
 ================================================== */
@@ -110,7 +103,7 @@
 	ul.circle { list-style: circle outside; }
 	ul.disc { list-style: disc outside; }
 	ul ul, ul ol,
-	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+	ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%; }
 	ul ul li, ul ol li,
 	ol ol li, ol ul li { margin-bottom: 6px; }
 	li { line-height: 18px; margin-bottom: 12px; }
@@ -119,15 +112,12 @@
 
 /* #Images
 ================================================== */
-
 	img.scale-with-grid {
 		max-width: 100%;
 		height: auto; }
 
-
 /* #Buttons
 ================================================== */
-
 	.button,
 	button,
 	input[type="submit"],
@@ -140,24 +130,24 @@
 		background: #eee -o-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* Opera11.10+ */
 		background: #eee -ms-linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* IE10+ */
 		background: #eee linear-gradient(top, rgba(255,255,255,.2) 0%,rgba(0,0,0,.2) 100%); /* W3C */
-	  border: 1px solid #aaa;
-	  border-top: 1px solid #ccc;
-	  border-left: 1px solid #ccc;
-	  padding: 4px 12px;
-	  -moz-border-radius: 3px;
-	  -webkit-border-radius: 3px;
-	  border-radius: 3px;
-	  color: #444;
-	  display: inline-block;
-	  font-size: 11px;
-	  font-weight: bold;
-	  text-decoration: none;
-	  text-shadow: 0 1px rgba(255, 255, 255, .75);
-	  cursor: pointer;
-	  margin-bottom: 20px;
-	  line-height: normal;
-	  padding: 8px 10px;
-	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+		border: 1px solid #aaa;
+		border-top: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+		padding: 4px 12px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		color: #444;
+		display: inline-block;
+		font-size: 11px;
+		font-weight: bold;
+		text-decoration: none;
+		text-shadow: 0 1px rgba(255, 255, 255, .75);
+		cursor: pointer;
+		margin-bottom: 20px;
+		line-height: normal;
+		padding: 8px 10px;
+		font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 	.button:hover,
 	button:hover,
@@ -172,9 +162,9 @@
 		background: #ddd -o-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* Opera11.10+ */
 		background: #ddd -ms-linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* IE10+ */
 		background: #ddd linear-gradient(top, rgba(255,255,255,.3) 0%,rgba(0,0,0,.3) 100%); /* W3C */
-	  border: 1px solid #888;
-	  border-top: 1px solid #aaa;
-	  border-left: 1px solid #aaa; }
+		border: 1px solid #888;
+		border-top: 1px solid #aaa;
+		border-left: 1px solid #aaa; }
 
 	.button:active,
 	button:active,
@@ -203,10 +193,8 @@
 	/* Fix for odd Mozilla border & padding issues */
 	button::-moz-focus-inner,
 	input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-	}
-
+		border: 0;
+		padding: 0; }
 
 /* #Tabs (activate in tabs.js)
 ================================================== */
@@ -268,21 +256,19 @@
 	/* Clearfixing tabs for beautiful stacking */
 	ul.tabs:before,
 	ul.tabs:after {
-	  content: '\0020';
-	  display: block;
-	  overflow: hidden;
-	  visibility: hidden;
-	  width: 0;
-	  height: 0; }
+		content: '\0020';
+		display: block;
+		overflow: hidden;
+		visibility: hidden;
+		width: 0;
+		height: 0; }
 	ul.tabs:after {
-	  clear: both; }
+		clear: both; }
 	ul.tabs {
-	  zoom: 1; }
-
+		zoom: 1; }
 
 /* #Forms
 ================================================== */
-
 	form {
 		margin-bottom: 20px; }
 	fieldset {
@@ -316,14 +302,14 @@
  		color: #444;
  		-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
 		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
-		box-shadow:  0 0 3px rgba(0,0,0,.2); }
+		box-shadow: 0 0 3px rgba(0,0,0,.2); }
 	textarea {
 		min-height: 60px; }
 	label,
 	legend {
 		display: block;
 		font-weight: bold;
-		font-size: 13px;  }
+		font-size: 13px; }
 	select {
 		width: 220px; }
 	input[type="checkbox"] {
@@ -339,5 +325,3 @@
 	.remove-bottom { margin-bottom: 0 !important; }
 	.half-bottom { margin-bottom: 10px !important; }
 	.add-bottom { margin-bottom: 20px !important; }
-
-
