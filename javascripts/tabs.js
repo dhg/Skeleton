@@ -9,20 +9,20 @@
  */
 
 jQuery(function ($) {
-  $('body').on('click', 'ul.tabs > li > a', function(e) {
-    //Get Location of tab's content
-    var contentLocation = $(this).attr('href');
+  // hash change handler
+  function hashchange () {
+    var hash = window.location.hash
+      , el = $('ul.tabs [href*="' + hash + '"]')
 
-    //Let go if not a hashed one
-    if(contentLocation.charAt(0)=="#") {
-      e.preventDefault();
+    if (el.length) {
+      $(el).closest('.tabs').find('.active').removeClass('active');
+      $(el).addClass('active');
 
-      //Make Tab Active
-      $(this).parent().siblings().children('a').removeClass('active');
-      $(this).addClass('active');
-
-      //Show Tab Content & add active class
-      $(contentLocation).show().addClass('active').siblings().hide().removeClass('active');
+      $(hash).show().addClass('active').siblings().hide().removeClass('active');
     }
-  });
+  }
+
+  // listen on event and fire right away
+  $(window).on('hashchange.skeleton', hashchange);
+  hashchange();
 });
