@@ -7,7 +7,6 @@
 * 8/17/2011
 */
 
-
 $('body').on('click', 'ul.tabs > li > a', function(e) {
 
     //Get Location of tab's content
