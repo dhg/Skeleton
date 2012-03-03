@@ -1,29 +1,29 @@
-/*
-* Skeleton V1.1
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 8/17/2011
-*/
 
+/**
+ * Skeleton V1.1
+ * Copyright 2011, Dave Gamache
+ * www.getskeleton.com
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 8/17/2011
+ */
 
-$('body').on('click', 'ul.tabs > li > a', function(e) {
+(function ($) {
+  // hash change handler
+  function hashchange () {
+    var hash = window.location.hash
+      , el = $('ul.tabs [href*="' + hash + '"]')
+      , content = $(hash)
 
-    //Get Location of tab's content
-    var contentLocation = $(this).attr('href');
-
-    //Let go if not a hashed one
-    if(contentLocation.charAt(0)=="#") {
-
-        e.preventDefault();
-
-        //Make Tab Active
-        $(this).parent().siblings().children('a').removeClass('active');
-        $(this).addClass('active');
-
-        //Show Tab Content & add active class
-        $(contentLocation).show().addClass('active').siblings().hide().removeClass('active');
-
+    if (el.length && !el.hasClass('active') && content.length) {
+      el.closest('.tabs').find('.active').removeClass('active');
+      el.addClass('active');
+      content.show().addClass('active').siblings().hide().removeClass('active');
     }
-});
+  }
+
+  // listen on event and fire right away
+  $(window).on('hashchange.skeleton', hashchange);
+  hashchange();
+  $(hashchange);
+})(jQuery);
