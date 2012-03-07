@@ -291,6 +291,9 @@
 	input[type="password"],
 	input[type="email"],
 	input[type="tel"],
+	input[type="url"],
+	input[type="number"],
+	input[type="search"],
 	textarea,
 	select {
 		border: 1px solid #ccc;
@@ -313,6 +316,9 @@
 	input[type="password"]:focus,
 	input[type="email"]:focus,
 	input[type="tel"]:focus,
+	input[type="url"]:focus,
+	input[type="number"]:focus,
+	input[type="search"]:focus,
 	textarea:focus {
 		border: 1px solid #aaa;
  		color: #444;
