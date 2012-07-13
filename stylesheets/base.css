@@ -47,6 +47,11 @@
 		border-collapse: collapse;
 		border-spacing: 0; }
 
+/*	Clearfix  */
+	.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+	html.ie6 .clearfix {height: 1%;}
+	html.ie7 .clearfix {min-height: 1px;}
+	
 
 /* #Basic Styles
 ================================================== */
