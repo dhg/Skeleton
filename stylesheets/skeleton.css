@@ -240,3 +240,15 @@
       width: 0;
       height: 0;
     }
+
+
+/* #Debug
+================================================== */
+    #debug{
+    	background: rgba(0, 0, 0, 0.5);
+    	bottom: 0;
+    	color: rgba(255, 255, 255, 1);
+    	height: 20px;
+    	position: fixed !important;
+    	width: 100%;
+  	}
