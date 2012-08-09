@@ -210,7 +210,7 @@
 ================================================== */
 
     /* Self Clearing Goodness */
-    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+    .container:after { content: " "; display: table; clear: both; }
 
     /* Use clearfix class on parent to clear nested columns,
     or wrap each row of columns in a <div class="row"> */
@@ -218,12 +218,8 @@
     .clearfix:after,
     .row:before,
     .row:after {
-      content: '\0020';
-      display: block;
-      overflow: hidden;
-      visibility: hidden;
-      width: 0;
-      height: 0; }
+      content: " ";
+      display: table; }
     .row:after,
     .clearfix:after {
       clear: both; }
@@ -234,9 +230,4 @@
     /* You can also use a <br class="clear" /> to clear columns */
     .clear {
       clear: both;
-      display: block;
-      overflow: hidden;
-      visibility: hidden;
-      width: 0;
-      height: 0;
-    }
+      display: table; }
