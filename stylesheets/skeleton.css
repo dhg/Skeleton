@@ -69,6 +69,57 @@
     .container .offset-by-fourteen              { padding-left: 840px; }
     .container .offset-by-fifteen               { padding-left: 900px; }
 
+	/* #Full screen width (100%) - add .fullwidth to your container's parent for support
+	================================================== */
+	@media only screen and (min-width:767px){
+		.fullwidth .container                                  { position: relative; width: 100%; margin: 0 auto; padding: 0; }
+		.fullwidth .container .column,
+		.fullwidth .container .columns                         { float: left; display: inline; margin-left: 1%; margin-right: 1%; }
+		.fullwidth .row                                        { margin-bottom: 20px; }
+
+		/* Nested Column Classes */
+		.column.alpha, .columns.alpha               { margin-left: 0; }
+		.column.omega, .columns.omega               { margin-right: 0; }
+
+		/* Base Grid */
+		.fullwidth .container .one.column,
+		.fullwidth .container .one.columns                     { width: 4.25%;  }
+		.fullwidth .container .two.columns                     { width: 10.5%; }
+		.fullwidth .container .three.columns                   { width: 16.75%; }
+		.fullwidth .container .four.columns                    { width: 23%; }
+		.fullwidth .container .five.columns                    { width: 29.25%; }
+		.fullwidth .container .six.columns                     { width: 35.5%; }
+		.fullwidth .container .seven.columns                   { width: 41.75%; }
+		.fullwidth .container .eight.columns                   { width: 48%; }
+		.fullwidth .container .nine.columns                    { width: 54.25%; }
+		.fullwidth .container .ten.columns                     { width: 60.5%; }
+		.fullwidth .container .eleven.columns                  { width: 66.75%; }
+		.fullwidth .container .twelve.columns                  { width: 73%; }
+		.fullwidth .container .thirteen.columns                { width: 79.25%; }
+		.fullwidth .container .fourteen.columns                { width: 85.5%; }
+		.fullwidth .container .fifteen.columns                 { width: 91.75%; }
+		.fullwidth .container .sixteen.columns                 { width: 98%; }
+
+		.fullwidth .container .one-third.column                { width: 31%; }
+		.fullwidth .container .two-thirds.column               { width: 64%; }
+
+		/* Offsets */
+		.fullwidth .container .offset-by-one                   { padding-left: 6.25%;  }
+		.fullwidth .container .offset-by-two                   { padding-left: 12.5%; }
+		.fullwidth .container .offset-by-three                 { padding-left: 18.75%; }
+		.fullwidth .container .offset-by-four                  { padding-left: 25%; }
+		.fullwidth .container .offset-by-five                  { padding-left: 31.25%; }
+		.fullwidth .container .offset-by-six                   { padding-left: 37.5%; }
+		.fullwidth .container .offset-by-seven                 { padding-left: 43.75%; }
+		.fullwidth .container .offset-by-eight                 { padding-left: 50%; }
+		.fullwidth .container .offset-by-nine                  { padding-left: 56.25%; }
+		.fullwidth .container .offset-by-ten                   { padding-left: 62.5%; }
+		.fullwidth .container .offset-by-eleven                { padding-left: 68.75%; }
+		.fullwidth .container .offset-by-twelve                { padding-left: 75%; }
+		.fullwidth .container .offset-by-thirteen              { padding-left: 81.25%; }
+		.fullwidth .container .offset-by-fourteen              { padding-left: 87.5%; }
+		.fullwidth .container .offset-by-fifteen               { padding-left: 93.75%; }
+	}
 
 
 /* #Tablet (Portrait)
