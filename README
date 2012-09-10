@@ -1,0 +1,6 @@
+Skeleton > SCSS
+======================
+I'll expand this and finish what I started when I have more time to spend on it.
+
+Compile with:
+sass scss/style.scss:stylesheets/style.css
