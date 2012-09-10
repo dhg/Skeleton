@@ -53,6 +53,12 @@ $form_element_font: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-se
   background: #ccc linear-gradient(top, rgba(255, 255, 255, .35) 0%, rgba(10, 10, 10, .4) 100%); /* W3C */
 }
 
+@import "grid.scss";
+@import "typography.scss";
+@import "links.scss";
+@import "lists.scss";
+@import "forms.scss";
+@import "images.scss";
 
 /* #Media Queries
 ================================================== */
@@ -71,9 +77,3 @@ $form_element_font: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-se
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {}
-
-@import "typography.scss";
-@import "links.scss";
-@import "lists.scss";
-@import "forms.scss";
-@import "images.scss";
