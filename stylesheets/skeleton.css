@@ -113,6 +113,10 @@
 	.container-fluid .offset-by-fourteen              { padding-left: 87.5%; }
 	.container-fluid .offset-by-fifteen               { padding-left: 93.75%; }
 
+	.visible-phone{display:none !important;}
+	.visible-tablet{display:none !important;}
+	.visible-desktop{display:inherit !important;}
+	.hidden-desktop{display:none !important;}
 
 /* #Tablet (Portrait)
 ================================================== */
@@ -164,6 +168,12 @@
         .container .offset-by-thirteen              { padding-left: 624px; }
         .container .offset-by-fourteen              { padding-left: 672px; }
         .container .offset-by-fifteen               { padding-left: 720px; }
+		
+		.visible-phone{display:none !important;}
+		.visible-tablet{display:inherit !important;}
+		.visible-desktop{display:none !important;}
+		.hidden-tablet{display:none !important;}
+		.hidden-desktop{display:inherit !important;}
     }
 
 
@@ -256,7 +266,11 @@
         .container-fluid .offset-by-fifteen { padding-left: 0; }
 
 		
-		
+		.visible-phone{display:inherit !important;}
+		.visible-tablet{display:none !important;}
+		.visible-desktop{display:none !important;}
+		.hidden-phone{display:none !important;}
+		.hidden-desktop{display:inherit !important;}
     }
 
 
@@ -331,6 +345,11 @@
         .container-fluid .offset-by-fourteen,
         .container-fluid .offset-by-fifteen { padding-left: 0; }
 		
+		.visible-phone{display:inherit !important;}
+		.visible-tablet{display:none !important;}
+		.visible-desktop{display:none !important;}
+		.hidden-phone{display:none !important;}
+		.hidden-desktop{display:inherit !important;}
     }
 
 
