@@ -116,9 +116,9 @@
 	ul.large li { line-height: 21px; }
 	li p { line-height: 21px; }
 
+
 /* #Images
 ================================================== */
-
 	img.scale-with-grid {
 		max-width: 100%;
 		height: auto; }
@@ -126,7 +126,6 @@
 
 /* #Buttons
 ================================================== */
-
 	.button,
 	button,
 	input[type="submit"],
@@ -208,7 +207,6 @@
 
 /* #Forms
 ================================================== */
-
 	form {
 		margin-bottom: 20px; }
 	fieldset {
@@ -260,10 +258,9 @@
 		font-size: 13px;
 		color: #444; }
 
+
 /* #Misc
 ================================================== */
 	.remove-bottom { margin-bottom: 0 !important; }
 	.half-bottom { margin-bottom: 10px !important; }
 	.add-bottom { margin-bottom: 20px !important; }
-
-
