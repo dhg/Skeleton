@@ -114,7 +114,7 @@
     /* Note: Design for a width of 320px */
 
     @media only screen and (max-width: 767px) {
-        .container { width: 39.11342894393742%; }
+        .container { width: 92%; }
         .container .columns,
         .container .column { margin: 0; }
 
@@ -164,7 +164,7 @@
     /* Note: Design for a width of 480px */
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
-        .container { width: 54.6875%; }
+        .container { width: 92%; }
         .container .columns,
         .container .column { margin: 0; }
 
