@@ -31,6 +31,12 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline; }
+	sup {
+		font-size: smaller;
+		vertical-align: +0.4em;	}
+	sub {
+		font-size: smaller;
+		vertical-align: -0.25em; }
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block; }
 	body {
