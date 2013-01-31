@@ -1,6 +1,5 @@
-Skeleton > SCSS
-======================
-I'll expand this and finish what I started when I have more time to spend on it.
+Skeleton SCSS Conversion
+============================
 
 Compile with:
 sass scss/style.scss:stylesheets/style.css

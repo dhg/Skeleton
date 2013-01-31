@@ -1,12 +1,3 @@
-/*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-*/
-
 /* #Typography
 ================================================== */
 /*	@font-face {
@@ -21,8 +12,8 @@
 */
 
 h1, h2, h3, h4, h5, h6 {
-  color: #181818;
-  font-family: "Georgia", "Times New Roman", serif;
+  color: $heading_colour;
+  font-family: $heading_font;
   font-weight: normal;
 }
 
@@ -99,20 +90,20 @@ small {
 blockquote, blockquote p {
   font-size: 17px;
   line-height: 24px;
-  color: #777;
+  color: $blockquote_colour;
   font-style: italic;
 }
 
 blockquote {
   margin: 0 0 20px;
   padding: 9px 20px 0 19px;
-  border-left: 1px solid #ddd;
+  border-left: $blockquote_border_left;
 }
 
 blockquote cite {
   display: block;
   font-size: 12px;
-  color: #555;
+  color: $blockquote_cite_colour;
 }
 
 blockquote cite:before {
@@ -120,11 +111,12 @@ blockquote cite:before {
 }
 
 blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
-  color: #555;
+  color: $blockquote_cite_link_colour;
 }
 
+/* not really typographical, but I couldnt find anywhere else to put it */
 hr {
-  border: solid #ddd;
+  border: $hr_border;
   border-width: 1px 0 0;
   clear: both;
   margin: 10px 0 30px;

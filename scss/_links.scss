@@ -1,0 +1,15 @@
+/* #Links
+================================================== */
+a, a:visited {
+  color: $link_colour;
+  text-decoration: underline;
+  outline: 0;
+}
+
+a:hover, a:focus {
+  color: $link_hover_colour;
+}
+
+p a, p a:visited {
+  line-height: inherit;
+}

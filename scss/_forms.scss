@@ -1,33 +1,19 @@
-/*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-*/
-
 /* #Buttons
 ================================================== */
-
 .button,
 button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  @include button_bg;
-  border: 1px solid #aaa;
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  color: #444;
+  @include vertical-gradient($form_button_gradient_start, $form_button_gradient_end);
+  @include button_border($form_button_border_rightbottom, $form_button_border_topleft);
+  @include border-radius($form_button_border_radius);
+  color: $form_button_text_colour;
   display: inline-block;
   font-size: 11px;
   font-weight: bold;
   text-decoration: none;
-  text-shadow: 0 1px rgba(255, 255, 255, .75);
+  text-shadow: $form_button_text_shadow;
   cursor: pointer;
   margin-bottom: 20px;
   line-height: normal;
@@ -40,11 +26,9 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-  @include button_hover_bg;
-  color: #222;
-  border: 1px solid #888;
-  border-top: 1px solid #aaa;
-  border-left: 1px solid #aaa;
+  @include vertical-gradient($form_button_hover_gradient_start, $form_button_hover_gradient_end);
+  color: $form_button_hover_text_colour;
+  @include button_border($form_button_hover_border_rightbottom, $form_button_hover_border_topleft);
 }
 
 .button:active,
@@ -52,8 +36,8 @@ button:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active {
-  @include button_active_bg;
-  border: 1px solid #666;
+  @include vertical-gradient($form_button_active_gradient_start, $form_button_active_gradient_end);
+  border: $form_button_active_border;
 }
 
 .button.full-width,
@@ -90,20 +74,18 @@ input[type="password"],
 input[type="email"],
 textarea,
 select {
-  border: 1px solid #ccc;
+  border: $form_input_border;
   padding: 6px 4px;
   outline: none;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #777;
+  @include border-radius(2px);
+  font: 13px $form_element_font;
+  color: $form_input_text_colour;
   margin: 0;
   width: 210px;
   max-width: 100%;
   display: block;
   margin-bottom: 20px;
-  background: #fff;
+  background: $form_input_background;
 }
 
 select {
@@ -114,11 +96,9 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-  border: 1px solid #aaa;
-  color: #444;
-  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .2);
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .2);
-  box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+  border: $form_input_focus_border;
+  color: $form_input_focus_text_colour;
+  @include box-shadow(0, 0, 3px, rgba(0, 0, 0, .2))
 }
 
 textarea {
@@ -144,5 +124,5 @@ label span,
 legend span {
   font-weight: normal;
   font-size: 13px;
-  color: #444;
+  color: $form_label_legend_colour;
 }

@@ -1,0 +1,112 @@
+@mixin button_border($rightbottom, $topleft) {
+  border: $rightbottom;
+  border-top: $topleft;
+  border-left: $topleft;
+}
+
+@mixin col-count($colCount, $colSpacing) {
+  column-count: $colCount;
+  column-gap: $colSpacing;
+  -webkit-column-count: $colCount;
+  -webkit-column-gap: $colSpacing;
+  -moz-column-count: $colCount;
+  -moz-column-gap: $colSpacing;
+}
+
+@mixin size($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin square($size) {
+  @include size($size, $size);
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+
+@mixin border-top-left-radius($radius) {
+  border-top-left-radius: $radius;
+  -webkit-border-top-left-radius: $radius;
+  -moz-border-radius-topleft: $radius;
+}
+
+@mixin border-top-right-radius($radius) {
+  border-top-right-radius: $radius;
+  -webkit-border-top-right-radius: $radius;
+  -moz-border-radius-topright: $radius;
+}
+
+@mixin border-bottom-right-radius($radius) {
+  border-bottom-right-radius: $radius;
+  -webkit-border-bottom-right-radius: $radius;
+  -moz-border-radius-bottomright: $radius;
+}
+
+@mixin border-bottom-left-radius($radius) {
+  border-bottom-left-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+  -moz-border-radius-bottomleft: $radius;
+}
+
+@mixin border-top-radius($radius) {
+  @include border-top-right-radius($radius);
+  @include border-top-left-radius($radius);
+}
+
+@mixin border-right-radius($radius) {
+  @include border-top-right-radius($radius);
+  @include border-bottom-right-radius($radius);
+}
+
+@mixin border-bottom-radius($radius) {
+  @include border-bottom-right-radius($radius);
+  @include border-bottom-left-radius($radius);
+}
+
+@mixin border-left-radius($radius) {
+  @include border-top-left-radius($radius);
+  @include border-bottom-left-radius($radius);
+}
+
+@mixin background-size($size){
+  background-size: $size;
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+}
+
+@mixin box-sizing($boxsize) {
+  box-sizing: $boxsize;
+  -webkit-box-sizing: $boxsize;
+  -moz-box-sizing: $boxsize;
+}
+
+@mixin horizontal-gradient($startColour, $endColour) {
+  background-color: $endColour;
+  background-image: linear-gradient(to right, $startColour, $endColour);
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from($startColour), to($endColour));
+  background-image: -webkit-linear-gradient(left, $startColour, $endColour);
+  background-image: -moz-linear-gradient(left, $startColour, $endColour);
+  background-image: -o-linear-gradient(left, $startColour, $endColour);
+  background-repeat: repeat-x;
+}
+
+@mixin vertical-gradient($startColour, $endColour) {
+  background-color: mix($startColour, $endColour, 60%);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startColour), to($endColour));
+  background-image: -webkit-linear-gradient(top, $startColour, $endColour);
+  background-image: -moz-linear-gradient(top, $startColour, $endColour);
+  background-image: -o-linear-gradient(top, $startColour, $endColour);
+  background-image: linear-gradient(to bottom, $startColour, $endColour);
+  background-repeat: repeat-x;
+}
+
+@mixin box-shadow($a, $b, $c, $colour) {
+  -moz-box-shadow: $a $b $c $colour;
+  -webkit-box-shadow: $a $b $c $colour;
+  box-shadow:  $a $b $c $colour;
+}

@@ -1,0 +1,43 @@
+$form_element_font: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$form_button_border_radius: 3px;
+$form_button_border_topleft: 1px solid #ccc;
+$form_button_border_rightbottom: 1px solid #aaa;
+$form_button_text_colour: #444;
+$form_button_text_shadow: 0 1px rgba(255, 255, 255, .75);
+$form_button_gradient_start: rgba(255, 255, 255, .2);
+$form_button_gradient_end: rgba(0, 0, 0, .2);
+
+$form_button_hover_border_topleft: 1px solid #aaa;
+$form_button_hover_border_rightbottom: 1px solid #888;
+$form_button_hover_gradient_start: rgba(255, 255, 255, .3);
+$form_button_hover_gradient_end: rgba(0, 0, 0, .3);
+$form_button_hover_text_colour: #222;
+
+$form_button_active_border: 1px solid #666;
+$form_button_active_gradient_start: rgba(255, 255, 255, .2);
+$form_button_active_gradient_end: rgba(0, 0, 0, .2);
+
+$form_input_border: 1px solid #ccc;
+$form_input_text_colour: #777;
+$form_input_background: #fff;
+
+$form_input_focus_border: 1px solid #aaa;
+$form_input_focus_text_colour: #444;
+
+$form_label_legend_colour: #444;
+
+$link_colour: #333;
+$link_hover_colour: #000;
+
+$heading_font: "Georgia", "Times New Roman", serif;
+$heading_colour: #181818;
+
+$blockquote_colour: #777;
+$blockquote_border_left: 1px solid #ddd;
+$blockquote_cite_colour: #555;
+$blockquote_cite_link_colour: #555;
+
+$hr_border: solid #ddd;
+
+$body_font_family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
