@@ -1,0 +1,14 @@
+{
+  "name": "Skeleton-SCSS",
+  "version": "1.0.0",
+  "main": "css/skeleton.css",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nickpack/Skeleton-SCSS.git"
+  }
+}
