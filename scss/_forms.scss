@@ -80,6 +80,7 @@ input[type="password"],
 input[type="email"],
 input[type="search"],
 input[type="url"],
+input[type="number"],
 textarea,
 select {
   border: $form_input_border;
@@ -104,6 +105,7 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 input[type="search"]:focus,
 input[type="url"]:focus,
+input[type="number"]:focus,
 textarea:focus {
   border: $form_input_focus_border;
   color: $form_input_focus_text_colour;
