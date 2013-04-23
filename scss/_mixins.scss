@@ -83,6 +83,9 @@
   box-sizing: $boxsize;
   -webkit-box-sizing: $boxsize;
   -moz-box-sizing: $boxsize;
+  -ms-box-sizing: $boxsize; 
+  -o-box-sizing: $boxsize; 
+  -khtml-box-sizing: $boxsize;
 }
 
 @mixin horizontal-gradient($startColour, $endColour) {
