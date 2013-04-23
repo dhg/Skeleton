@@ -113,3 +113,57 @@
   -webkit-box-shadow: $a $b $c $colour;
   box-shadow:  $a $b $c $colour;
 }
+
+@mixin grid($grid-container-width, $grid-column-count:$column-count, $grid-gutter:$gutter) {
+
+  $grid-column-width: $grid-container-width/$grid-column-count;
+
+  .container {
+    width: $grid-container-width;
+    .columns, .column {
+      &.one         { width: (1*$grid-column-width - $grid-gutter); }
+      &.two         { width: (2*$grid-column-width - $grid-gutter); }
+      &.three       { width: (3*$grid-column-width - $grid-gutter); }
+      &.four        { width: (4*$grid-column-width - $grid-gutter); }
+      &.five        { width: (5*$grid-column-width - $grid-gutter); }
+      &.six         { width: (6*$grid-column-width - $grid-gutter); }
+      &.seven       { width: (7*$grid-column-width - $grid-gutter); }
+      &.eight       { width: (8*$grid-column-width - $grid-gutter); }
+      &.nine        { width: (9*$grid-column-width - $grid-gutter); }
+      &.ten         { width: (10*$grid-column-width - $grid-gutter); }
+      &.eleven      { width: (11*$grid-column-width - $grid-gutter); }
+      &.twelve      { width: (12*$grid-column-width - $grid-gutter); }
+      &.thirteen    { width: (13*$grid-column-width - $grid-gutter); }
+      &.fourteen    { width: (14*$grid-column-width - $grid-gutter); }
+      &.fifteen     { width: (15*$grid-column-width - $grid-gutter); }
+      &.sixteen     { width: (16*$grid-column-width - $grid-gutter); }
+      &.one-third    { width: ($grid-container-width/3) - $grid-gutter; }
+      &.two-thirds   { width: (($grid-container-width/3)*2) - $grid-gutter; }
+    }
+
+    .offset-by-one      { padding-left: $grid-column-width;  }
+    .offset-by-two      { padding-left: $grid-column-width*2; }
+    .offset-by-three    { padding-left: $grid-column-width*3; }
+    .offset-by-four     { padding-left: $grid-column-width*4; }
+    .offset-by-five     { padding-left: $grid-column-width*5; }
+    .offset-by-six      { padding-left: $grid-column-width*6; }
+    .offset-by-seven    { padding-left: $grid-column-width*7; }
+    .offset-by-eight    { padding-left: $grid-column-width*8; }
+    .offset-by-nine     { padding-left: $grid-column-width*9; }
+    .offset-by-ten      { padding-left: $grid-column-width*10; }
+    .offset-by-eleven   { padding-left: $grid-column-width*11; }
+    .offset-by-twelve   { padding-left: $grid-column-width*12; }
+    .offset-by-thirteen { padding-left: $grid-column-width*13; }
+    .offset-by-fourteen { padding-left: $grid-column-width*14; }
+    .offset-by-fifteen  { padding-left: $grid-column-width*15; }
+  }
+}
+
+@mixin clearfix {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
