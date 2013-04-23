@@ -7,6 +7,8 @@ $form_button_text_colour: #444;
 $form_button_text_shadow: 0 1px rgba(255, 255, 255, .75);
 $form_button_gradient_start: rgba(255, 255, 255, .2);
 $form_button_gradient_end: rgba(0, 0, 0, .2);
+$form_button_font_size: 11px;
+$form_button_padding: 8px 10px;
 
 $form_button_hover_border_topleft: 1px solid #aaa;
 $form_button_hover_border_rightbottom: 1px solid #888;
@@ -21,23 +23,90 @@ $form_button_active_gradient_end: rgba(0, 0, 0, .2);
 $form_input_border: 1px solid #ccc;
 $form_input_text_colour: #777;
 $form_input_background: #fff;
+$form_input_padding: 6px 4px;
+$form_input_width: 210px;
+$form_input_select_width: 220px;
+$form_input_margin: 0 0 20px 0;
+$form_input_font_size: 13px;
 
 $form_input_focus_border: 1px solid #aaa;
 $form_input_focus_text_colour: #444;
 
 $form_label_legend_colour: #444;
+$form_fieldset_margin: 0 0 20px 0;
+
+$legend_font_weight: bold;
+$legend_font_size: $form_input_font_size;
 
 $link_colour: #333;
+$link_decoration: underline;
+$link_outline: 0;
 $link_hover_colour: #000;
+$link_hover_decoration: none;
 
 $heading_font: "Georgia", "Times New Roman", serif;
+$heading_font_weight: normal;
 $heading_colour: #181818;
+
+$heading1_font_size: 46px;
+$heading1_line_height: 50px;
+$heading1_margin: 0 0 14px 0;
+
+$heading2_font_size: 35px;
+$heading2_line_height: 40px;
+$heading2_margin: 0 0 10px 0;
+
+$heading3_font_size: 28px;
+$heading3_line_height: 34px;
+$heading3_margin: 0 0 8px 0;
+
+$heading4_font_size: 21px;
+$heading4_line_height: 30px;
+$heading4_margin: 0 0 4px 0;
+
+$heading5_font_size: 17px;
+$heading5_line_height: 24px;
+
+$heading6_font_size: 14px;
+$heading6_line_height: 21px;
+
+$subheader_colour: #777;
+
+$paragraph_margin: 0 0 20px 0;
+$paragraph_image_margin: 0;
+
+$paragraph_lead_font_size: 21px;
+$paragraph_lead_line_height: 27px;
+$paragraph_lead_colour: #777;
+
+$strong_colour: #333;
 
 $blockquote_colour: #777;
 $blockquote_border_left: 1px solid #ddd;
 $blockquote_cite_colour: #555;
 $blockquote_cite_link_colour: #555;
+$blockquote_cite_font_size: 12px;
+$blockquote_margin: 0 0 20px;
+$blockquote_padding: 9px 20px 0 19px;
 
 $hr_border: solid #ddd;
+$hr_border_width: 1px 0 0;
+$hr_margin: 10px 0 30px;
 
 $body_font_family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$list_margin: 0 0 20px 0;
+$list_large_line_height: 21px;
+
+$ul_list_style: none outside;
+$ol_list_style: decimal;
+
+$list_styled_margin: 0 0 0 30px; /* ul, ol with disc, square etc. */
+
+$nested_list_margin: 4px 0 5px 30px;
+$nested_list_font_size: 90%;
+
+$list_item_line_height: 18px;
+$list_item_margin: 0 0 12px 0;
+$list_item_paragraph_line_height: 21px;
+

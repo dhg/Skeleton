@@ -1,19 +1,19 @@
 /* #Lists
 ================================================== */
 ul, ol {
-  margin-bottom: 20px;
+  margin: $list_margin;
 }
 
 ul {
-  list-style: none outside;
+  list-style: $ul_list_style;
 }
 
 ol {
-  list-style: decimal;
+  list-style: $ol_list_style;
 }
 
 ol, ul.square, ul.circle, ul.disc {
-  margin-left: 30px;
+  margin: $list_styled_margin;
 }
 
 ul.square {
@@ -30,24 +30,19 @@ ul.disc {
 
 ul ul, ul ol,
 ol ol, ol ul {
-  margin: 4px 0 5px 30px;
-  font-size: 90%;
-}
-
-ul ul li, ul ol li,
-ol ol li, ol ul li {
-  margin-bottom: 6px;
+  margin: $nested_list_margin;
+  font-size: $nested_list_font_size;
 }
 
 li {
-  line-height: 18px;
-  margin-bottom: 12px;
+  line-height: $list_item_line_height;
+  margin: $list_item_margin;
 }
 
 ul.large li {
-  line-height: 21px;
+  line-height: $list_large_line_height;
 }
 
 li p {
-  line-height: 21px;
+  line-height: $list_item_paragraph_line_height;
 }

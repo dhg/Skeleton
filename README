@@ -1,5 +1,0 @@
-Skeleton SCSS Conversion
-============================
-
-Compile with:
-sass scss/style.scss:stylesheets/style.css

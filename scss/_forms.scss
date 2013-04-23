@@ -10,14 +10,14 @@ input[type="button"] {
   @include border-radius($form_button_border_radius);
   color: $form_button_text_colour;
   display: inline-block;
-  font-size: 11px;
+  font-size: $form_button_font_size;
   font-weight: bold;
   text-decoration: none;
   text-shadow: $form_button_text_shadow;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin: $form_input_margin;
   line-height: normal;
-  padding: 8px 10px;
+  padding: $form_button_padding;
   font-family: $form_element_font;
 }
 
@@ -62,11 +62,11 @@ input::-moz-focus-inner {
 ================================================== */
 
 form {
-  margin-bottom: 20px;
+  margin: $form_fieldset_margin;
 }
 
 fieldset {
-  margin-bottom: 20px;
+  margin: $form_fieldset_margin;
 }
 
 input[type="text"],
@@ -75,16 +75,15 @@ input[type="email"],
 textarea,
 select {
   border: $form_input_border;
-  padding: 6px 4px;
+  padding: $form_input_padding;
   outline: none;
   @include border-radius(2px);
-  font: 13px $form_element_font;
+  font: $form_input_font_size $form_element_font;
   color: $form_input_text_colour;
-  margin: 0;
-  width: 210px;
+  width: $form_input_width;
   max-width: 100%;
   display: block;
-  margin-bottom: 20px;
+  margin: $form_input_margin;
   background: $form_input_background;
 }
 
@@ -108,12 +107,12 @@ textarea {
 label,
 legend {
   display: block;
-  font-weight: bold;
-  font-size: 13px;
+  font-weight: $legend_font_weight;
+  font-size: $legend_font_size;
 }
 
 select {
-  width: 220px;
+  width: $form_input_select_width;
 }
 
 input[type="checkbox"] {
@@ -123,6 +122,6 @@ input[type="checkbox"] {
 label span,
 legend span {
   font-weight: normal;
-  font-size: 13px;
+  font-size: $form_input_font_size;
   color: $form_label_legend_colour;
 }

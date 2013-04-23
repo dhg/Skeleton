@@ -14,7 +14,7 @@
 h1, h2, h3, h4, h5, h6 {
   color: $heading_colour;
   font-family: $heading_font;
-  font-weight: normal;
+  font-weight: $heading_font_weight;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -22,55 +22,55 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 {
-  font-size: 46px;
-  line-height: 50px;
-  margin-bottom: 14px;
+  font-size: $heading1_font_size;
+  line-height: $heading1_line_height;
+  margin: $heading1_margin;
 }
 
 h2 {
-  font-size: 35px;
-  line-height: 40px;
-  margin-bottom: 10px;
+  font-size: $heading2_font_size;
+  line-height: $heading2_line_height;
+  margin: $heading2_margin;
 }
 
 h3 {
-  font-size: 28px;
-  line-height: 34px;
-  margin-bottom: 8px;
+  font-size: $heading3_font_size;
+  line-height: $heading3_line_height;
+  margin: $heading3_margin;
 }
 
 h4 {
-  font-size: 21px;
-  line-height: 30px;
-  margin-bottom: 4px;
+  font-size: $heading4_font_size;
+  line-height: $heading4_line_height;
+  margin: $heading4_margin;
 }
 
 h5 {
-  font-size: 17px;
-  line-height: 24px;
+  font-size: $heading5_font_size;
+  line-height: $heading5_line_height;
 }
 
 h6 {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: $heading6_font_size;
+  line-height: $heading6_line_height;
 }
 
 .subheader {
-  color: #777;
+  color: $subheader_colour;
 }
 
 p {
-  margin: 0 0 20px 0;
+  margin: $paragraph_margin;
 }
 
 p img {
-  margin: 0;
+  margin: $paragraph_image_margin;
 }
 
 p.lead {
-  font-size: 21px;
-  line-height: 27px;
-  color: #777;
+  font-size: $paragraph_lead_font_size;
+  line-height: $paragraph_lead_line_height;
+  color: $paragraph_lead_colour;
 }
 
 em {
@@ -79,7 +79,7 @@ em {
 
 strong {
   font-weight: bold;
-  color: #333;
+  color: $strong_colour;
 }
 
 small {
@@ -95,14 +95,14 @@ blockquote, blockquote p {
 }
 
 blockquote {
-  margin: 0 0 20px;
-  padding: 9px 20px 0 19px;
+  margin: $blockquote_margin;
+  padding: $blockquote_padding;
   border-left: $blockquote_border_left;
 }
 
 blockquote cite {
   display: block;
-  font-size: 12px;
+  font-size: $blockquote_cite_font_size;
   color: $blockquote_cite_colour;
 }
 
@@ -117,8 +117,8 @@ blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
 /* not really typographical, but I couldnt find anywhere else to put it */
 hr {
   border: $hr_border;
-  border-width: 1px 0 0;
+  border-width: $hr_border_width;
   clear: both;
-  margin: 10px 0 30px;
+  margin: $hr_margin;
   height: 0;
 }
