@@ -69,9 +69,17 @@ fieldset {
   margin: $form_fieldset_margin;
 }
 
+input[type="search"],
+input[type="url"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield; 
+}
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
+input[type="search"],
+input[type="url"],
 textarea,
 select {
   border: $form_input_border;
@@ -94,6 +102,8 @@ select {
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
 textarea:focus {
   border: $form_input_focus_border;
   color: $form_input_focus_text_colour;
