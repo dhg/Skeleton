@@ -56,7 +56,7 @@
 		color: #444;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
- }
+	}
 
 
 /* #Typography
@@ -201,8 +201,8 @@
 	/* Fix for odd Mozilla border & padding issues */
 	button::-moz-focus-inner,
 	input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+	border: 0;
+	padding: 0;
 	}
 
 
@@ -239,8 +239,8 @@
 	input[type="email"]:focus,
 	textarea:focus {
 		border: 1px solid #aaa;
- 		color: #444;
- 		-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		color: #444;
+		-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
 		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
 		box-shadow:  0 0 3px rgba(0,0,0,.2); }
 	textarea {
@@ -265,5 +265,3 @@
 	.remove-bottom { margin-bottom: 0 !important; }
 	.half-bottom { margin-bottom: 10px !important; }
 	.add-bottom { margin-bottom: 20px !important; }
-
-
