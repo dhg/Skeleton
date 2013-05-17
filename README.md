@@ -14,8 +14,24 @@ Either clone this repository and drop in manually, or install from bower:
 bower install --save Skeleton-SCSS
 ```
 
+## Building
+I've added grunt configuration to the repository for those of you that use it.
+
+There are 4 main tasks added:
+* build - Runs Sass to create the stylesheet from the source files, places the output in ./css then creates a minified version of the file and places it into the same directory
+* lint - This runs CSSLint over the output CSS file (Note that there are a few bits in skeleton that I need to fix!)
+* minify - This literally just runs cssmin, useful if you've edited skeleton.css directly
+* watch - This will monitor the scss directory for changes and automatically rebuild the css and minified css (Effectively the same as sass --watch but with added minification)
+
+### To get started with the grunt tools
+You need to npm install grunt-cli to start with, otherwise you wont have a runner!
+Then following that, from the root dir of this project, run `npm install` which will set up all of the required dependencies.
+
+You should be good to go.
+
 ## Changelog
-* Apr 23, 2013 - Skeleton SCSS v1.0 - Additional variable conversions and bower submission.
+* May 17, 2013 - (v1.0.1) Added grunt build tools
+* Apr 23, 2013 - (v1.0.0) Skeleton SCSS v1.0 - Additional variable conversions, changes based on feedback to the original project and bower submission.
 * Jan 31, 2013 - Completed SCSS conversion of Skeleton 1.2.
 
 ## Contributers

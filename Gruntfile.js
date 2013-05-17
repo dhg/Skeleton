@@ -40,7 +40,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   
   grunt.registerTask('lint', ['sass', 'csslint']);
-  grunt.registerTask('minify', ['sass', 'cssmin']);
+  grunt.registerTask('minify', ['cssmin']);
   grunt.registerTask('build', ['sass', 'cssmin']);
 
 };
