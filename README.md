@@ -46,3 +46,6 @@ You should be good to go.
 Copyright (c) 2013 Nick Pack
 Based on the original skeleton project which is Copyright 2011 Dave Gamache
 Licensed under the MIT license.	
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/nickpack/Skeleton-SCSS/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
