@@ -1,0 +1,36 @@
+{
+  "name": "Skeleton-SCSS",
+  "title": "Skeleton SCSS",
+  "description": "Skeleton: A Beautiful Boilerplate for Responsive, Mobile-Friendly Development.",
+  "version": "1.0.1",
+  "homepage": "https://github.com/nickpack/Skeleton-SCSS",
+  "author": {
+    "name": "Nick Pack",
+    "email": "nick@nickpack.com",
+    "url": "http://0xdeadfa11.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nickpack/Skeleton-SCSS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nickpack/Skeleton-SCSS/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/nickpack/Skeleton-SCSS/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "./index",
+  "keywords": [
+    "static"
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-sass": "~0.3.0",
+    "grunt-contrib-csslint": "~0.1.1",
+    "grunt-contrib-cssmin": "~0.5.0"
+  }
+}
