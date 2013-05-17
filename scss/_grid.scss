@@ -53,8 +53,19 @@
     & .fifteen,
     & .sixteen,
     & .one-third,
-    & .two-thirds { width: $mobile-column-width; }
+    & .two-thirds,
+    & .one-half,
+    & .one-quarter,
+    & .three-quarters 
+    { width: $mobile-column-width; }
 
+
+/*
+.two-thirds  { width: (($grid-container-width/3)*2) - $grid-gutter; }
+    .one-half    { width: ($grid-container-width/2) - $grid-gutter; }
+    .one-quarter { width: ($grid-container-width/4) - $grid-gutter; }
+    .three-quarters {width: (($grid-container-width/4)*3) - $grid-gutter;}
+  */
     .column, .columns {
       margin: 0;
     }
