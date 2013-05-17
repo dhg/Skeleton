@@ -3,12 +3,12 @@
 a, a:visited {
   color: $link_colour;
   text-decoration: $link_decoration;
-  outline: $link_outline;
 }
 
 a:hover, a:focus {
   color: $link_hover_colour;
   text-decoration: $link_hover_decoration;
+  outline: $link_outline;
 }
 
 p a, p a:visited {

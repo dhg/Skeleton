@@ -40,14 +40,14 @@ input[type="button"]:active {
   border: $form_button_active_border;
 }
 
-.button.full-width,
+.button .full-width,
 button.full-width,
 input[type="submit"].full-width,
 input[type="reset"].full-width,
 input[type="button"].full-width {
   width: 100%;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding-left: 0;
+  padding-right: 0;
   text-align: center;
 }
 
@@ -86,7 +86,6 @@ textarea,
 select {
   border: $form_input_border;
   padding: $form_input_padding;
-  outline: none;
   @include border-radius(2px);
   font: $form_input_font_size $form_element_font;
   color: $form_input_text_colour;
@@ -111,6 +110,7 @@ input[type="tel"]:focus,
 textarea:focus {
   border: $form_input_focus_border;
   color: $form_input_focus_text_colour;
+  outline: none;
   @include box-shadow(0, 0, 3px, rgba(0, 0, 0, .2))
 }
 
