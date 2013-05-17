@@ -14,6 +14,11 @@ Either clone this repository and drop in manually, or install from bower:
 bower install --save Skeleton-SCSS
 ```
 
+## Build status
+The project is set up to build and run csslint on Travis:
+Master: [![Build Status](https://travis-ci.org/nickpack/Skeleton-SCSS.png)](https://travis-ci.org/nickpack/Skeleton-SCSS)
+Development: [![Build Status](https://travis-ci.org/nickpack/Skeleton-SCSS.png?branch=develop)](https://travis-ci.org/nickpack/Skeleton-SCSS)
+
 ## Building
 I've added grunt configuration to the repository for those of you that use it.
 
@@ -30,6 +35,7 @@ Then following that, from the root dir of this project, run `npm install` which 
 You should be good to go.
 
 ## Changelog
+* May 17, 2013 - (v1.0.2) Travis CI build configuration, and minor refactor to remove as many of the warnings from CSSLint as was feasible to do - MAY CAUSE REGRESSIONS.
 * May 17, 2013 - (v1.0.1) Added grunt build tools
 * Apr 23, 2013 - (v1.0.0) Skeleton SCSS v1.0 - Additional variable conversions, changes based on feedback to the original project and bower submission.
 * Jan 31, 2013 - Completed SCSS conversion of Skeleton 1.2.
