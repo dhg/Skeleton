@@ -5,12 +5,12 @@
 }
 
 @mixin col-count($colCount, $colSpacing) {
-  column-count: $colCount;
-  column-gap: $colSpacing;
   -webkit-column-count: $colCount;
   -webkit-column-gap: $colSpacing;
   -moz-column-count: $colCount;
   -moz-column-gap: $colSpacing;
+  column-count: $colCount;
+  column-gap: $colSpacing;
 }
 
 @mixin size($height, $width) {
@@ -23,33 +23,33 @@
 }
 
 @mixin border-radius($radius) {
-  border-radius: $radius;
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
+  border-radius: $radius;
 }
 
 @mixin border-top-left-radius($radius) {
-  border-top-left-radius: $radius;
   -webkit-border-top-left-radius: $radius;
   -moz-border-radius-topleft: $radius;
+  border-top-left-radius: $radius;
 }
 
 @mixin border-top-right-radius($radius) {
-  border-top-right-radius: $radius;
   -webkit-border-top-right-radius: $radius;
   -moz-border-radius-topright: $radius;
+  border-top-right-radius: $radius;
 }
 
 @mixin border-bottom-right-radius($radius) {
-  border-bottom-right-radius: $radius;
   -webkit-border-bottom-right-radius: $radius;
   -moz-border-radius-bottomright: $radius;
+  border-bottom-right-radius: $radius;
 }
 
 @mixin border-bottom-left-radius($radius) {
-  border-bottom-left-radius: $radius;
   -webkit-border-bottom-left-radius: $radius;
   -moz-border-radius-bottomleft: $radius;
+  border-bottom-left-radius: $radius;
 }
 
 @mixin border-top-radius($radius) {
@@ -73,23 +73,23 @@
 }
 
 @mixin background-size($size){
-  background-size: $size;
   -webkit-background-size: $size;
   -moz-background-size: $size;
   -o-background-size: $size;
+  background-size: $size;
 }
 
 @mixin box-sizing($boxsize) {
-  box-sizing: $boxsize;
   -webkit-box-sizing: $boxsize;
   -moz-box-sizing: $boxsize;
   -ms-box-sizing: $boxsize; 
   -o-box-sizing: $boxsize; 
   -khtml-box-sizing: $boxsize;
+  box-sizing: $boxsize;
 }
 
 @mixin horizontal-gradient($startColour, $endColour) {
-  background-color: $endColour;
+  background-color: $fallback_hex_gradient_bg;
   background-image: linear-gradient(to right, $startColour, $endColour);
   background-image: -webkit-gradient(linear, 0 0, 100% 0, from($startColour), to($endColour));
   background-image: -webkit-linear-gradient(left, $startColour, $endColour);
@@ -99,6 +99,7 @@
 }
 
 @mixin vertical-gradient($startColour, $endColour) {
+  background-color: $fallback_hex_gradient_bg;
   background-color: mix($startColour, $endColour, 60%);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startColour), to($endColour));
   background-image: -webkit-linear-gradient(top, $startColour, $endColour);
@@ -120,26 +121,26 @@
 
   .container {
     width: $grid-container-width;
-    .columns, .column {
-      &.one         { width: (1*$grid-column-width - $grid-gutter); }
-      &.two         { width: (2*$grid-column-width - $grid-gutter); }
-      &.three       { width: (3*$grid-column-width - $grid-gutter); }
-      &.four        { width: (4*$grid-column-width - $grid-gutter); }
-      &.five        { width: (5*$grid-column-width - $grid-gutter); }
-      &.six         { width: (6*$grid-column-width - $grid-gutter); }
-      &.seven       { width: (7*$grid-column-width - $grid-gutter); }
-      &.eight       { width: (8*$grid-column-width - $grid-gutter); }
-      &.nine        { width: (9*$grid-column-width - $grid-gutter); }
-      &.ten         { width: (10*$grid-column-width - $grid-gutter); }
-      &.eleven      { width: (11*$grid-column-width - $grid-gutter); }
-      &.twelve      { width: (12*$grid-column-width - $grid-gutter); }
-      &.thirteen    { width: (13*$grid-column-width - $grid-gutter); }
-      &.fourteen    { width: (14*$grid-column-width - $grid-gutter); }
-      &.fifteen     { width: (15*$grid-column-width - $grid-gutter); }
-      &.sixteen     { width: (16*$grid-column-width - $grid-gutter); }
-      &.one-third    { width: ($grid-container-width/3) - $grid-gutter; }
-      &.two-thirds   { width: (($grid-container-width/3)*2) - $grid-gutter; }
-    }
+
+    .one         { width: (1*$grid-column-width - $grid-gutter); }
+    .two         { width: (2*$grid-column-width - $grid-gutter); }
+    .three       { width: (3*$grid-column-width - $grid-gutter); }
+    .four        { width: (4*$grid-column-width - $grid-gutter); }
+    .five        { width: (5*$grid-column-width - $grid-gutter); }
+    .six         { width: (6*$grid-column-width - $grid-gutter); }
+    .seven       { width: (7*$grid-column-width - $grid-gutter); }
+    .eight       { width: (8*$grid-column-width - $grid-gutter); }
+    .nine        { width: (9*$grid-column-width - $grid-gutter); }
+    .ten         { width: (10*$grid-column-width - $grid-gutter); }
+    .eleven      { width: (11*$grid-column-width - $grid-gutter); }
+    .twelve      { width: (12*$grid-column-width - $grid-gutter); }
+    .thirteen    { width: (13*$grid-column-width - $grid-gutter); }
+    .fourteen    { width: (14*$grid-column-width - $grid-gutter); }
+    .fifteen     { width: (15*$grid-column-width - $grid-gutter); }
+    .sixteen     { width: (16*$grid-column-width - $grid-gutter); }
+    .one-third    { width: ($grid-container-width/3) - $grid-gutter; }
+    .two-thirds   { width: (($grid-container-width/3)*2) - $grid-gutter; }
+
 
     .offset-by-one      { padding-left: $grid-column-width;  }
     .offset-by-two      { padding-left: $grid-column-width*2; }

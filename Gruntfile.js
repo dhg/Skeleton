@@ -13,7 +13,8 @@ module.exports = function(grunt) {
     csslint: {
       scssoutput: {
         options: {
-          import: false
+          import: false,
+          csslintrc: '.csslintrc'
         },
         src: ['css/skeleton.css']
       }

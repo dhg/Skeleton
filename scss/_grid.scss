@@ -2,15 +2,14 @@
   position: relative;
   margin: 0 auto;
   padding: 0;
+  & .alpha { margin-left: 0; }
+  & .omega { margin-right: 0; }
 }
 
 .column, .columns {
   float: left;
-  display: inline;
   margin-left: $gutter/2;
   margin-right: $gutter/2;
-  &.alpha { margin-left: 0; }
-  &.omega { margin-right: 0; }
 }
 
 .row { margin-bottom: $gutter; }
@@ -22,13 +21,13 @@
 @media only screen and (max-width: 959px) {
   @include grid($tablet-container-width, $column-count, $gutter);
 
-  .container { width: $tablet-container-width; }
+  .container { 
+    width: $tablet-container-width; 
+    & .alpha { margin-right: 10px; }
+    & .omega { margin-left: 10px; }
+  }
 
-  .column, .columns {
-    &.alpha { margin-right: 10px; }
-    &.omega { margin-left: 10px; } }
-
-  .alpha.omega {
+  .alpha, .omega {
     margin-right: 0;
     margin-left: 0; }
 }
@@ -37,27 +36,27 @@
 @media only screen and (max-width: 767px) {
   .container {
     width: $mobile-container-width;
+    & .one,
+    & .two,
+    & .three,
+    & .four,
+    & .five,
+    & .six,
+    & .seven,
+    & .eight,
+    & .nine,
+    & .ten,
+    & .eleven,
+    & .twelve,
+    & .thirteen,
+    & .fourteen,
+    & .fifteen,
+    & .sixteen,
+    & .one-third,
+    & .two-thirds { width: $mobile-column-width; }
 
     .column, .columns {
       margin: 0;
-      &.one,
-      &.two,
-      &.three,
-      &.four,
-      &.five,
-      &.six,
-      &.seven,
-      &.eight,
-      &.nine,
-      &.ten,
-      &.eleven,
-      &.twelve,
-      &.thirteen,
-      &.fourteen,
-      &.fifteen,
-      &.sixteen,
-      &.one-third,
-      &.two-thirds { width: $mobile-column-width; }
     }
 
     .offset-by-one,
