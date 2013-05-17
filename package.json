@@ -22,6 +22,9 @@
       "url": "https://github.com/nickpack/Skeleton-SCSS/blob/master/LICENSE-MIT"
     }
   ],
+  "scripts": {
+    "test": "grunt lint"
+  },
   "main": "./index",
   "keywords": [
     "static"
