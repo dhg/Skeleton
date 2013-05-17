@@ -138,8 +138,11 @@
     .fourteen    { width: (14*$grid-column-width - $grid-gutter); }
     .fifteen     { width: (15*$grid-column-width - $grid-gutter); }
     .sixteen     { width: (16*$grid-column-width - $grid-gutter); }
-    .one-third    { width: ($grid-container-width/3) - $grid-gutter; }
-    .two-thirds   { width: (($grid-container-width/3)*2) - $grid-gutter; }
+    .one-third   { width: ($grid-container-width/3) - $grid-gutter; }
+    .two-thirds  { width: (($grid-container-width/3)*2) - $grid-gutter; }
+    .one-half    { width: ($grid-container-width/2) - $grid-gutter; }
+    .one-quarter { width: ($grid-container-width/4) - $grid-gutter; }
+    .three-quarters {width: (($grid-container-width/4)*3) - $grid-gutter;}
 
 
     .offset-by-one      { padding-left: $grid-column-width;  }
