@@ -1,6 +1,6 @@
 /*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
+* Skeleton SCSS V1.0
+* Skeleton is Copyright 2011, Dave Gamache
 *
 * SCSS Conversion and Mixins by Nick Pack
 *
@@ -74,7 +74,7 @@ body {
   margin-right: 10px; }
   .column.alpha, .columns.alpha {
     margin-left: 0; }
-  .column.omerga, .columns.omerga {
+  .column.omega, .columns.omega {
     margin-right: 0; }
 
 .row {
