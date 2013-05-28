@@ -1,13 +1,11 @@
 /*
-* Skeleton SCSS V1.0.2
+* Ribs V1.0.2
 * Skeleton is Copyright 2011, Dave Gamache
 *
-* SCSS Conversion and Mixins by Nick Pack
-*
-* www.getskeleton.com
+* Ribs is the evolution of Skeleton by Nick Pack
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
+* 28/05/2013
 */
 
 @import "_variables";
@@ -24,10 +22,6 @@ body {
   -ms-text-size-adjust: 100%;
 }
 
-/* #Forms
-================================================== */
-
-
 @import "_grid";
 @import "_typography";
 @import "_links";
@@ -35,7 +29,7 @@ body {
 @import "_forms";
 @import "_images";
 
-/* #Media Queries
+/* #Example Media Queries
 ================================================== */
 
 /* Smaller than standard 960 (devices and browsers) */

@@ -1,13 +1,11 @@
 /*
-* Skeleton SCSS V1.0.2
+* Ribs V1.0.2
 * Skeleton is Copyright 2011, Dave Gamache
 *
-* SCSS Conversion and Mixins by Nick Pack
-*
-* www.getskeleton.com
+* Ribs is the evolution of Skeleton by Nick Pack
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
+* 28/05/2013
 */
 /* ul, ol with disc, square etc. */
 /* #Reset & Basics (Inspired by E. Meyers)
@@ -61,8 +59,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-/* #Forms
-================================================== */
 .container {
   position: relative;
   margin: 0 auto;
@@ -238,18 +234,12 @@ body {
     .container .omega {
       margin-left: 10px; }
 
-  .alpha, .omega {
+  .alpha-omega {
     margin-right: 0;
     margin-left: 0; } }
 @media only screen and (max-width: 767px) {
   .container {
-    width: 90%;
-    /*
-    .two-thirds  { width: (($grid-container-width/3)*2) - $grid-gutter; }
-        .one-half    { width: ($grid-container-width/2) - $grid-gutter; }
-        .one-quarter { width: ($grid-container-width/4) - $grid-gutter; }
-        .three-quarters {width: (($grid-container-width/4)*3) - $grid-gutter;}
-      */ }
+    width: 90%; }
     .container .one, .container .two, .container .three, .container .four, .container .five, .container .six, .container .seven, .container .eight, .container .nine, .container .ten, .container .eleven, .container .twelve, .container .thirteen, .container .fourteen, .container .fifteen, .container .sixteen, .container .one-third, .container .two-thirds, .container .one-half, .container .one-quarter, .container .three-quarters {
       width: 100%; }
     .container .column, .container .columns {
@@ -640,7 +630,7 @@ legend span {
   max-width: 100%;
   height: auto; }
 
-/* #Media Queries
+/* #Example Media Queries
 ================================================== */
 /* Smaller than standard 960 (devices and browsers) */
 /* Tablet Portrait size to standard 960 (devices and browsers) */

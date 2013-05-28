@@ -1,9 +1,9 @@
 {
-  "name": "Skeleton-SCSS",
-  "title": "Skeleton SCSS",
-  "description": "Skeleton: A Beautiful Boilerplate for Responsive, Mobile-Friendly Development.",
+  "name": "Ribs",
+  "title": "Ribs",
+  "description": "The evolution of Skeleton: A Beautiful Boilerplate for Responsive, Mobile-Friendly Development.",
   "version": "1.0.2",
-  "homepage": "https://github.com/nickpack/Skeleton-SCSS",
+  "homepage": "https://github.com/nickpack/Ribs",
   "author": {
     "name": "Nick Pack",
     "email": "nick@nickpack.com",
@@ -11,23 +11,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:nickpack/Skeleton-SCSS.git"
+    "url": "git@github.com:nickpack/Ribs.git"
   },
   "bugs": {
-    "url": "https://github.com/nickpack/Skeleton-SCSS/issues"
+    "url": "https://github.com/nickpack/Ribs/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/nickpack/Skeleton-SCSS/blob/master/LICENSE-MIT"
+      "url": "https://github.com/nickpack/Ribs/blob/master/LICENSE-MIT"
     }
   ],
   "scripts": {
-    "test": "grunt lint"
+    "test": "grunt test"
   },
   "main": "./index",
   "keywords": [
-    "static"
+    "static", "skeleton", "ribs"
   ],
   "devDependencies": {
     "grunt": "~0.4.1",
