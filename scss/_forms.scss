@@ -16,7 +16,7 @@ input[type="button"] {
   text-shadow: $form_button_text_shadow;
   cursor: pointer;
   margin: $form_input_margin;
-  line-height: normal;
+  line-height: $form_button_line_height;
   padding: $form_button_padding;
   font-family: $form_element_font;
 }
