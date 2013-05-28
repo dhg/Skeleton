@@ -1,7 +1,7 @@
 {
-  "name": "Skeleton-SCSS",
+  "name": "Ribs",
   "version": "1.0.2",
-  "main": "css/skeleton.css",
+  "main": "css/Ribs.css",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -9,6 +9,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nickpack/Skeleton-SCSS.git"
+    "url": "https://github.com/nickpack/Ribs.git"
   }
 }
