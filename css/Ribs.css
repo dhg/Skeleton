@@ -320,7 +320,7 @@ h1 {
   font-family: "Georgia", "Times New Roman", serif;
   font-weight: normal;
   font-size: 46px;
-  line-height: 50px;
+  line-height: 69px;
   margin: 0 0 14px 0; }
 
 h2 {
@@ -328,7 +328,7 @@ h2 {
   font-family: "Georgia", "Times New Roman", serif;
   font-weight: normal;
   font-size: 35px;
-  line-height: 40px;
+  line-height: 52.5px;
   margin: 0 0 10px 0; }
 
 h3 {
@@ -336,7 +336,7 @@ h3 {
   font-family: "Georgia", "Times New Roman", serif;
   font-weight: normal;
   font-size: 28px;
-  line-height: 34px;
+  line-height: 42px;
   margin: 0 0 8px 0; }
 
 h4 {
@@ -344,7 +344,7 @@ h4 {
   font-family: "Georgia", "Times New Roman", serif;
   font-weight: normal;
   font-size: 21px;
-  line-height: 30px;
+  line-height: 31.5px;
   margin: 0 0 4px 0; }
 
 h5 {
@@ -352,7 +352,7 @@ h5 {
   font-family: "Georgia", "Times New Roman", serif;
   font-weight: normal;
   font-size: 17px;
-  line-height: 24px; }
+  line-height: 25.5px; }
 
 h6 {
   color: #181818;
@@ -365,14 +365,15 @@ h6 {
   color: #777777; }
 
 p {
-  margin: 0 0 20px 0; }
+  margin: 0 0 20px 0;
+  line-height: 21px; }
 
 p img {
   margin: 0; }
 
 .lead {
   font-size: 21px;
-  line-height: 27px;
+  line-height: 31.5px;
   color: #777777; }
 
 em {
