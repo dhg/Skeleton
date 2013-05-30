@@ -35,6 +35,7 @@ Then following that, from the root dir of this project, run `npm install` which 
 You should be good to go.
 
 ## Changelog
+* May 30, 2013 - (v1.0.3) Added 1.5 * font size line heights to headings and paragraphs
 * May 28, 2013 - Rename project to Ribs
 * May 17, 2013 - (v1.0.2) Travis CI build configuration, and minor refactor to remove as many of the warnings from CSSLint as was feasible to do - MAY CAUSE REGRESSIONS.
 * May 17, 2013 - (v1.0.1) Added grunt build tools
