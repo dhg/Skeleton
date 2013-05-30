@@ -4,6 +4,7 @@ $desktop-container-width: 960px;
 $tablet-container-width: 768px;
 $mobile-container-width: 90%;
 $mobile-column-width: 100%;
+$base_font_size: 14px;
 
 $form_element_font: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -57,34 +58,35 @@ $heading_font_weight: normal;
 $heading_colour: #181818;
 
 $heading1_font_size: 46px;
-$heading1_line_height: 50px;
+$heading1_line_height: $heading1_font_size * 1.5;
 $heading1_margin: 0 0 14px 0;
 
 $heading2_font_size: 35px;
-$heading2_line_height: 40px;
+$heading2_line_height: $heading2_font_size * 1.5;
 $heading2_margin: 0 0 10px 0;
 
 $heading3_font_size: 28px;
-$heading3_line_height: 34px;
+$heading3_line_height: $heading3_font_size * 1.5;
 $heading3_margin: 0 0 8px 0;
 
 $heading4_font_size: 21px;
-$heading4_line_height: 30px;
+$heading4_line_height: $heading4_font_size * 1.5;
 $heading4_margin: 0 0 4px 0;
 
 $heading5_font_size: 17px;
-$heading5_line_height: 24px;
+$heading5_line_height: $heading5_font_size * 1.5;
 
 $heading6_font_size: 14px;
-$heading6_line_height: 21px;
+$heading6_line_height: $heading6_font_size * 1.5;
 
 $subheader_colour: #777;
 
 $paragraph_margin: 0 0 20px 0;
 $paragraph_image_margin: 0;
+$paragraph_line_height: $base_font_size * 1.5;
 
 $paragraph_lead_font_size: 21px;
-$paragraph_lead_line_height: 27px;
+$paragraph_lead_line_height: $paragraph_lead_font_size * 1.5;
 $paragraph_lead_colour: #777;
 
 $strong_colour: #333;
