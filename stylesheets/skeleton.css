@@ -69,7 +69,24 @@
     .container .offset-by-fourteen              { padding-left: 840px; }
     .container .offset-by-fifteen               { padding-left: 900px; }
 
+    /* Visibility */
+    .container .display-only-desktop            { display: block !important; visibility: visible;}
+    .container .display-only-tablet             { display: none !important; visibility: hidden; }
+    .container .display-only-mobile             { display: none !important; visibility: hidden; }
+    .container .display-only-mobile-portrait    { display: none !important; visibility: hidden; }
+    .container .display-only-mobile-landscape   { display: none !important; visibility: hidden; }
 
+    .container .display-tablet-up               { display: block !important; visibility: visible; }
+    .container .display-tablet-down             { display: none !important; visibility: hidden; }
+
+    .container .hide-only-desktop               { display: none !important; visibility: hidden;}
+    .container .hide-only-tablet                { display: block !important; visibility: visible; }
+    .container .hide-only-mobile                { display: block !important; visibility: visible; }
+    .container .hide-only-mobile-portrait       { display: block !important; visibility: visible; }
+    .container .hide-only-mobile-landscape      { display: block !important; visibility: visible; }
+
+    .container .hide-tablet-up                  { display: none !important; visibility: hidden; }
+    .container .hide-tablet-down                { display: block !important; visibility: visible; }
 
 /* #Tablet (Portrait)
 ================================================== */
@@ -121,6 +138,25 @@
         .container .offset-by-thirteen              { padding-left: 624px; }
         .container .offset-by-fourteen              { padding-left: 672px; }
         .container .offset-by-fifteen               { padding-left: 720px; }
+    
+        /* Visibility */
+        .container .display-only-desktop            { display: none !important; visibility: hidden;}
+        .container .display-only-tablet             { display: block !important; visibility: visible; }
+        .container .display-only-mobile             { display: none !important; visibility: hidden; }
+        .container .display-only-mobile-portrait    { display: none !important; visibility: hidden; }
+        .container .display-only-mobile-landscape   { display: none !important; visibility: hidden; }
+
+        .container .display-tablet-up               { display: block !important; visibility: visible; }
+        .container .display-tablet-down             { display: block !important; visibility: visible; }
+
+        .container .hide-only-desktop               { display: block !important; visibility: visible;}
+        .container .hide-only-tablet                { display: none !important; visibility: hidden; }
+        .container .hide-only-mobile                { display: block !important; visibility: visible; }
+        .container .hide-only-mobile-portrait       { display: block !important; visibility: visible; }
+        .container .hide-only-mobile-landscape      { display: block !important; visibility: visible; }
+
+        .container .hide-tablet-up                  { display: none !important; visibility: hidden; }
+        .container .hide-tablet-down                { display: none !important; visibility: hidden; }
     }
 
 
@@ -171,6 +207,24 @@
         .container .offset-by-fourteen,
         .container .offset-by-fifteen { padding-left: 0; }
 
+        /* Visibility */
+        .container .display-only-desktop            { display: none !important; visibility: hidden;}
+        .container .display-only-tablet             { display: none !important; visibility: hidden; }
+        .container .display-only-mobile             { display: block !important; visibility: visible; }
+        .container .display-only-mobile-portrait    { display: block !important; visibility: visible; }
+        .container .display-only-mobile-landscape   { display: none !important; visibility: hidden; }
+
+        .container .display-tablet-up               { display: none !important; visibility: hidden; }
+        .container .display-tablet-down             { display: block !important; visibility: visible; }
+
+        .container .hide-only-desktop               { display: block !important; visibility: visible;}
+        .container .hide-only-tablet                { display: block !important; visibility: visible; }
+        .container .hide-only-mobile                { display: none !important; visibility: hidden; }
+        .container .hide-only-mobile-portrait       { display: none !important; visibility: hidden; }
+        .container .hide-only-mobile-landscape      { display: block !important; visibility: visible; }
+
+        .container .hide-tablet-up                  { display: block !important; visibility: visible; }
+        .container .hide-tablet-down                { display: none !important; visibility: hidden; }
     }
 
 
@@ -203,6 +257,25 @@
         .container .sixteen.columns,
         .container .one-third.column,
         .container .two-thirds.column { width: 420px; }
+
+        /* Visibility */
+        .container .display-only-desktop            { display: none !important; visibility: hidden;}
+        .container .display-only-tablet             { display: none !important; visibility: hidden; }
+        .container .display-only-mobile             { display: block !important; visibility: visible; }
+        .container .display-only-mobile-portrait    { display: none !important; visibility: hidden; }
+        .container .display-only-mobile-landscape   { display: block !important; visibility: visible; }
+
+        .container .display-tablet-up               { display: none !important; visibility: hidden; }
+        .container .display-tablet-down             { display: block !important; visibility: visible; }
+
+        .container .hide-only-desktop               { display: block !important; visibility: visible;}
+        .container .hide-only-tablet                { display: block !important; visibility: visible; }
+        .container .hide-only-mobile                { display: none !important; visibility: hidden; }
+        .container .hide-only-mobile-portrait       { display: block !important; visibility: visible; }
+        .container .hide-only-mobile-landscape      { display: none !important; visibility: hidden; }
+
+        .container .hide-tablet-up                  { display: block !important; visibility: visible; }
+        .container .hide-tablet-down                { display: none !important; visibility: hidden; }
     }
 
 
