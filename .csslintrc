@@ -1,5 +1,9 @@
 {
   "unique-headings": false,
   "box-model": false,
-  "font-sizes": false
+  "font-sizes": false,
+  "compatible-vendor-prefixes": false,
+  "unqualified-attributes": false,
+  "outline-none": false,
+  "box-sizing": false
 }
