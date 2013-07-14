@@ -4,5 +4,6 @@
   "font-sizes": false,
   "compatible-vendor-prefixes": false,
   "unqualified-attributes": false,
-  "outline-none": false
+  "outline-none": false,
+  "box-sizing": false
 }
