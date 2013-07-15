@@ -1,13 +1,11 @@
 /*
-* Ribs V1.0.2
+* Ribs
 * Skeleton is Copyright 2011, Dave Gamache
 *
 * Ribs is the evolution of Skeleton by Nick Pack
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
-* 28/05/2013
 */
-/* ul, ol with disc, square etc. */
 /* normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -348,14 +346,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* #Basic Styles
-================================================== */
 body {
   background: #fff;
   font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #444;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
+
+hr {
+  border: solid #dddddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0; }
 
 .container {
   position: relative;
@@ -370,6 +373,10 @@ body {
   float: left;
   margin-left: 10px;
   margin-right: 10px; }
+
+.alpha-omega {
+  margin-right: 0;
+  margin-left: 0; }
 
 .row {
   margin-bottom: 20px; }
@@ -530,11 +537,7 @@ body {
     .container .alpha {
       margin-right: 10px; }
     .container .omega {
-      margin-left: 10px; }
-
-  .alpha-omega {
-    margin-right: 0;
-    margin-left: 0; } }
+      margin-left: 10px; } }
 @media only screen and (max-width: 767px) {
   .container {
     width: 90%; }
@@ -558,9 +561,6 @@ body {
     .container .offset-by-fourteen,
     .container .offset-by-fifteen {
       padding-left: 0; } }
-/* #Clearing
-================================================== */
-/* Self Clearing Goodness */
 .container:after {
   content: "\0020";
   display: block;
@@ -568,8 +568,6 @@ body {
   clear: both;
   visibility: hidden; }
 
-/* Use clearfix class on parent to clear nested columns,
-or wrap each row of columns in a <div class="row"> */
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -589,7 +587,6 @@ or wrap each row of columns in a <div class="row"> */
 .clearfix {
   zoom: 1; }
 
-/* You can also use a <br class="clear" /> to clear columns */
 .clear {
   clear: both;
   display: block;
@@ -598,18 +595,6 @@ or wrap each row of columns in a <div class="row"> */
   width: 0;
   height: 0; }
 
-/* #Typography
-================================================== */
-/*	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal; }
-*/
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit; }
 
@@ -684,7 +669,6 @@ strong {
 small {
   font-size: 80%; }
 
-/*	Blockquotes  */
 blockquote, blockquote p {
   font-size: 17px;
   line-height: 24px;
@@ -707,16 +691,6 @@ blockquote cite:before {
 blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
   color: #555555; }
 
-/* not really typographical, but I couldnt find anywhere else to put it */
-hr {
-  border: solid #dddddd;
-  border-width: 1px 0 0;
-  clear: both;
-  margin: 10px 0 30px;
-  height: 0; }
-
-/* #Links
-================================================== */
 a, a:visited {
   color: #333333;
   text-decoration: underline; }
@@ -729,8 +703,6 @@ a:hover, a:focus {
 p a, p a:visited {
   line-height: inherit; }
 
-/* #Lists
-================================================== */
 ul, ol {
   margin: 0 0 20px 0; }
 
@@ -767,8 +739,6 @@ li {
 li p {
   line-height: 21px; }
 
-/* #Buttons
-================================================== */
 .button,
 button,
 input[type="submit"],
@@ -843,14 +813,11 @@ input[type="button"].full-width {
   padding-right: 0;
   text-align: center; }
 
-/* Fix for odd Mozilla border & padding issues */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-/* #Forms
-================================================== */
 form {
   margin: 0 0 20px 0; }
 
@@ -885,7 +852,7 @@ select {
   background: white; }
 
 select {
-  padding: 0; }
+  padding: 10px; }
 
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -923,16 +890,6 @@ legend span {
   font-size: 13px;
   color: #444444; }
 
-/* #Images
-================================================== */
 .scale-with-grid {
   max-width: 100%;
   height: auto; }
-
-/* #Example Media Queries
-================================================== */
-/* Smaller than standard 960 (devices and browsers) */
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-/* All Mobile Sizes (devices and browser) */
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */

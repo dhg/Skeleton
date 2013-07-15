@@ -22,7 +22,7 @@ module.exports = function(grunt) {
     cssmin: {
       compress: {
         options: {
-          banner: '/* <%= pkg.name %> <%= pkg.version %>  <%= grunt.template.today("dd-mm-yyyy") %> */'
+          banner: '/* <%= pkg.name %> <%= pkg.version %> - https://github.com/nickpack/Ribs - <%= grunt.template.today("dd-mm-yyyy") %> */'
         },
         files: {
           'css/Ribs.min.css': 'css/Ribs.css'

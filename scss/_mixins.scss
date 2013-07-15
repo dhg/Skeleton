@@ -112,7 +112,7 @@
 @mixin box-shadow($a, $b, $c, $colour) {
   -moz-box-shadow: $a $b $c $colour;
   -webkit-box-shadow: $a $b $c $colour;
-  box-shadow:  $a $b $c $colour;
+  box-shadow: $a $b $c $colour;
 }
 
 @mixin grid($grid-container-width, $grid-column-count:$column-count, $grid-gutter:$gutter) {
@@ -142,10 +142,9 @@
     .two-thirds  { width: (($grid-container-width/3)*2) - $grid-gutter; }
     .one-half    { width: ($grid-container-width/2) - $grid-gutter; }
     .one-quarter { width: ($grid-container-width/4) - $grid-gutter; }
-    .three-quarters {width: (($grid-container-width/4)*3) - $grid-gutter;}
+    .three-quarters { width: (($grid-container-width/4)*3) - $grid-gutter; }
 
-
-    .offset-by-one      { padding-left: $grid-column-width;  }
+    .offset-by-one      { padding-left: $grid-column-width; }
     .offset-by-two      { padding-left: $grid-column-width*2; }
     .offset-by-three    { padding-left: $grid-column-width*3; }
     .offset-by-four     { padding-left: $grid-column-width*4; }
