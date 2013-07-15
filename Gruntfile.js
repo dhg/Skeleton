@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     sass: {
         dist: {
             files: {
-                'css/Ribs.css': 'scss/Ribs.scss',
+                'build/css/Ribs.css': 'src/scss/Ribs.scss',
             }
         }
     },
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
           import: false,
           csslintrc: '.csslintrc'
         },
-        src: ['css/Ribs.css']
+        src: ['build/css/Ribs.css']
       }
     },
     cssmin: {
@@ -25,12 +25,12 @@ module.exports = function(grunt) {
           banner: '/* <%= pkg.name %> <%= pkg.version %> - https://github.com/nickpack/Ribs - <%= grunt.template.today("dd-mm-yyyy") %> */'
         },
         files: {
-          'css/Ribs.min.css': 'css/Ribs.css'
+          'build/css/Ribs.min.css': 'build/css/Ribs.css'
         }
       },
     },
     watch: {
-      files: 'scss/**/*',
+      files: 'src/scss/**/*',
       tasks: ['sass', 'csslint', 'cssmin']
     }
   });

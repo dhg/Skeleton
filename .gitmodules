@@ -1,3 +1,3 @@
 [submodule "scss/normalize"]
-	path = scss/normalize
+	path = src/scss/normalize
 	url = https://github.com/nickpack/normalize.scss.git
