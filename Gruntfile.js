@@ -17,6 +17,9 @@ module.exports = function(grunt) {
           csslintrc: '.csslintrc'
         },
         src: ['build/css/Ribs.css']
+      },
+      brutal: {
+        src: ['build/css/Ribs.css']
       }
     },
     cssmin: {
@@ -40,7 +43,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   
-  grunt.registerTask('test', ['sass', 'csslint']);
+  grunt.registerTask('test', ['sass', 'csslint:scssoutput']);
   grunt.registerTask('minify', ['cssmin']);
   grunt.registerTask('default', ['sass', 'cssmin']);
 
