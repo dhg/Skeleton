@@ -898,7 +898,7 @@ table {
   max-width: 100%;
   background: white;
   border-collapse: collapse;
-  border-spacing: 0;
+  border-spacing: none;
   width: 100%;
   margin: 10px 0px; }
   table th,
@@ -931,8 +931,7 @@ table {
 .table-bordered {
   border: 1px solid #cccccc;
   border-collapse: separate;
-  *border-collapse: collapse;
-  border-left: 0;
+  border-left: none;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
@@ -948,7 +947,7 @@ table {
   .table-bordered thead:first-child tr:first-child th,
   .table-bordered tbody:first-child tr:first-child th,
   .table-bordered tbody:first-child tr:first-child td {
-    border-top: 0; }
+    border-top: none; }
   .table-bordered thead:first-child tr:first-child > th:first-child,
   .table-bordered tbody:first-child tr:first-child > td:first-child,
   .table-bordered tbody:first-child tr:first-child > th:first-child {
