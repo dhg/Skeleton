@@ -898,9 +898,9 @@ table {
   max-width: 100%;
   background: white;
   border-collapse: collapse;
-  border-spacing: none;
+  border-spacing: 0;
   width: 100%;
-  margin: 10px 0px; }
+  margin: 10px 0; }
   table th,
   table td {
     padding: 8px;
@@ -931,7 +931,7 @@ table {
 .table-bordered {
   border: 1px solid #cccccc;
   border-collapse: separate;
-  border-left: none;
+  border-left: 0;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
@@ -947,7 +947,7 @@ table {
   .table-bordered thead:first-child tr:first-child th,
   .table-bordered tbody:first-child tr:first-child th,
   .table-bordered tbody:first-child tr:first-child td {
-    border-top: none; }
+    border-top: 0; }
   .table-bordered thead:first-child tr:first-child > th:first-child,
   .table-bordered tbody:first-child tr:first-child > td:first-child,
   .table-bordered tbody:first-child tr:first-child > th:first-child {
@@ -977,13 +977,13 @@ table {
     -moz-border-radius-bottomright: 3px;
     border-bottom-right-radius: 3px; }
   .table-bordered tfoot tbody:last-child tr:last-child td:first-child {
-    -webkit-border-bottom-left-radius: 0px;
-    -moz-border-radius-bottomleft: 0px;
-    border-bottom-left-radius: 0px; }
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-bottom-left-radius: 0; }
   .table-bordered tfoot tbody:last-child tr:last-child td:last-child {
-    -webkit-border-bottom-right-radius: 0px;
-    -moz-border-radius-bottomright: 0px;
-    border-bottom-right-radius: 0px; }
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    border-bottom-right-radius: 0; }
   .table-bordered caption thead tr:first-child th:first-child,
   .table-bordered caption tbody tr:first-child td:first-child,
   .table-bordered colgroup thead tr:first-child th:first-child,
