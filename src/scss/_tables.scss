@@ -8,7 +8,7 @@ table {
   max-width: 100%;
   background: $table_background;
   border-collapse: collapse;
-  border-spacing: 0;
+  border-spacing: none;
   width: 100%;
   margin: $table_margin;
   th,
@@ -55,8 +55,7 @@ table {
 .table-bordered {
   border: 1px solid $table_border_colour;
   border-collapse: separate;
-  *border-collapse: collapse;
-  border-left: 0;
+  border-left: none;
   @include border-radius($table_border_radius);
   th,
   td {
@@ -72,7 +71,7 @@ table {
   thead:first-child tr:first-child th,
   tbody:first-child tr:first-child th,
   tbody:first-child tr:first-child td {
-    border-top: 0;
+    border-top: none;
   }
   
   thead:first-child tr:first-child > th:first-child,
