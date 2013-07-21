@@ -90,7 +90,7 @@ select {
   font: $form_input_font_size $form_element_font;
   color: $form_input_text_colour;
   width: $form_input_width;
-  max-width: 100%;
+  max-width: $form_input_max_width;
   display: block;
   margin: $form_input_margin;
   background: $form_input_background;
@@ -98,6 +98,7 @@ select {
 
 select {
   padding: $form_input_select_padding;
+  width: $form_input_select_width;
 }
 
 input[type="text"]:focus,
@@ -125,17 +126,13 @@ legend {
   font-size: $legend_font_size;
 }
 
-select {
-  width: $form_input_select_width;
-}
-
 input[type="checkbox"] {
   display: $form_input_checkbox_display;
 }
 
 label span,
 legend span {
-  font-weight: normal;
+  font-weight: $form_label_legend_font_weight;
   font-size: $form_input_font_size;
   color: $form_label_legend_colour;
 }

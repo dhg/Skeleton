@@ -77,7 +77,7 @@ p img {
 }
 
 em {
-  font-style: italic;
+  font-style: $em_font_style;
 }
 
 strong {
@@ -86,7 +86,7 @@ strong {
 }
 
 small {
-  font-size: 80%;
+  font-size: $small_font_size;
 }
 
 blockquote, blockquote p {

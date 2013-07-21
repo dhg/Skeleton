@@ -115,10 +115,10 @@ table {
   colgroup tbody tr:first-child td:first-child {
     @include border-top-left-radius($table_border_radius);
   }
-  caption + thead tr:first-child th:last-child,
-  caption + tbody tr:first-child td:last-child,
-  colgroup + thead tr:first-child th:last-child,
-  colgroup + tbody tr:first-child td:last-child {
+  caption thead tr:first-child th:last-child,
+  caption tbody tr:first-child td:last-child,
+  colgroup thead tr:first-child th:last-child,
+  colgroup tbody tr:first-child td:last-child {
     @include border-top-right-radius($table_border_radius);
   }
 

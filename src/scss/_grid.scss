@@ -2,8 +2,12 @@
   position: relative;
   margin: 0 auto;
   padding: 0;
-  & .alpha { margin-left: 0; }
-  & .omega { margin-right: 0; }
+  & .alpha { 
+    margin-left: 0; 
+  }
+  & .omega { 
+    margin-right: 0; 
+  }
 }
 
 .column, .columns {
@@ -17,7 +21,9 @@
   margin-left: 0;
 }
 
-.row { margin-bottom: $gutter; }
+.row { 
+  margin-bottom: $gutter; 
+}
 
 @include grid($desktop-container-width, $column-count, $gutter);
 
@@ -28,8 +34,12 @@
 
   .container { 
     width: $tablet-container-width; 
-    & .alpha { margin-right: 10px; }
-    & .omega { margin-left: 10px; }
+    & .alpha { 
+      margin-right: 10px; 
+    }
+    & .omega { 
+      margin-left: 10px; 
+    }
   }
 }
 //--------------------------------------------------------------------
@@ -85,7 +95,13 @@
 // #Clearing
 // ==================================================
 
-.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+.container:after { 
+  content: "\0020"; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden; 
+}
 
 // Use clearfix class on parent to clear nested columns,
 // or wrap each row of columns in a <div class="row">
@@ -98,13 +114,17 @@
   overflow: hidden;
   visibility: hidden;
   width: 0;
-  height: 0; }
-  .row:after,
-  .clearfix:after {
-    clear: both; }
-    .row,
-    .clearfix {
-      zoom: 1; }
+  height: 0; 
+}
+
+.row:after,
+.clearfix:after {
+  clear: both; 
+}
+
+.row, .clearfix {
+  zoom: 1; 
+}
 
 // You can also use a <br class="clear" /> to clear columns
 .clear {

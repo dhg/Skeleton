@@ -34,6 +34,7 @@ $form_input_text_colour: #777;
 $form_input_background: #fff;
 $form_input_padding: 6px 4px;
 $form_input_width: 210px;
+$form_input_max_width: 100%;
 $form_input_select_width: 220px;
 $form_input_margin: 0 0 20px 0;
 $form_input_font_size: 13px;
@@ -52,6 +53,7 @@ $form_input_focus_box_shadow_colour: rgba(0, 0, 0, .2);
 $form_input_select_padding: 10px;
 
 $form_label_legend_colour: #444;
+$form_label_legend_font_weight: normal;
 $form_fieldset_margin: 0 0 20px 0;
 
 $legend_font_weight: bold;
@@ -101,6 +103,10 @@ $paragraph_lead_font_size: 21px;
 $paragraph_lead_line_height: $paragraph_lead_font_size * 1.5;
 $paragraph_lead_colour: #777;
 
+$em_font_style: italic;
+
+$small_font_size: 80%;
+
 $strong_colour: #333;
 
 $blockquote_colour: #777;
@@ -126,7 +132,7 @@ $list_large_line_height: 21px;
 $ul_list_style: none outside;
 $ol_list_style: decimal;
 
-$list_styled_margin: 0 0 0 30px; // ul, ol with disc, square etc.
+$list_styled_margin: 0 0 0 10px; // ul, ol with disc, square etc.
 $list_styled_position: outside;  // List item bullet position 
 
 $nested_list_margin: 4px 0 5px 30px;
