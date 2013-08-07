@@ -17,6 +17,7 @@ bower install --save ribs
 ## Build status
 The project is set up to build and run csslint on Travis:
 Master: [![Build Status](https://travis-ci.org/nickpack/Ribs.png)](https://travis-ci.org/nickpack/Ribs)
+
 Development: [![Build Status](https://travis-ci.org/nickpack/Ribs.png?branch=develop)](https://travis-ci.org/nickpack/Ribs)
 
 ## Building
@@ -35,6 +36,7 @@ Then following that, from the root dir of this project, run `npm install` which 
 You should be good to go.
 
 ## Changelog
+* August 7, 2013 - (v1.0.6) Some additional variables, grid push and pull
 * July 17, 2013 - (v1.0.5) Some additional variables, some base table styling
 * July 14, 2013 - (v1.0.4) Removed reset and replaced it with normalize
 * May 30, 2013 - (v1.0.3) Added 1.5 * font size line heights to headings and paragraphs
