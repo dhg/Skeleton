@@ -1,3 +1,4 @@
+// #Grid System Variables
 $gutter: 20px;
 $column-count: 16;
 $desktop-container-width: 960px;
@@ -6,8 +7,14 @@ $mobile-container-width: 90%;
 $mobile-column-width: 100%;
 $base_font_size: 14px;
 
+// #Breakpoint max widths - you probably dont need to change these
+$tablet-max-breakpoint: $desktop-container-width - 1;
+$mobile-max-breakpoint: $tablet-container-width - 1;
+
+// #Form Variables
 $form_element_font: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+// ##button
 $form_button_border_radius: 3px;
 $form_button_border_topleft: 1px solid #ccc;
 $form_button_border_rightbottom: 1px solid #aaa;
@@ -19,16 +26,19 @@ $form_button_font_size: 11px;
 $form_button_padding: 8px 10px;
 $form_button_line_height: normal;
 
+// ##button hover
 $form_button_hover_border_topleft: 1px solid #aaa;
 $form_button_hover_border_rightbottom: 1px solid #888;
 $form_button_hover_gradient_start: rgba(255, 255, 255, .3);
 $form_button_hover_gradient_end: rgba(0, 0, 0, .3);
 $form_button_hover_text_colour: #222;
 
+// ##Button active
 $form_button_active_border: 1px solid #666;
 $form_button_active_gradient_start: rgba(255, 255, 255, .2);
 $form_button_active_gradient_end: rgba(0, 0, 0, .2);
 
+// ##Form input
 $form_input_border: 1px solid #ccc;
 $form_input_text_colour: #777;
 $form_input_background: #fff;
@@ -40,8 +50,10 @@ $form_input_margin: 0 0 20px 0;
 $form_input_font_size: 13px;
 $form_input_border_radius: 2px;
 
+// ##Form checkbox
 $form_input_checkbox_display: inline;
 
+// ##Form input focus
 $form_input_focus_border: 1px solid #aaa;
 $form_input_focus_text_colour: #444;
 $form_input_focus_outline: none;
@@ -50,8 +62,10 @@ $form_input_focus_box_shadow_y: 0;
 $form_input_focus_box_shadow_blur: 3px;
 $form_input_focus_box_shadow_colour: rgba(0, 0, 0, .2);
 
+// ##select
 $form_input_select_padding: 10px;
 
+// ##fieldset/label/legend
 $form_label_legend_colour: #444;
 $form_label_legend_font_weight: normal;
 $form_fieldset_margin: 0 0 20px 0;
@@ -59,14 +73,17 @@ $form_fieldset_margin: 0 0 20px 0;
 $legend_font_weight: bold;
 $legend_font_size: $form_input_font_size;
 
+// ##Textarea
 $form_textarea_min_height: 60px;
 
+// #Links
 $link_colour: #333;
 $link_decoration: underline;
 $link_outline: 0;
 $link_hover_colour: #000;
 $link_hover_decoration: none;
 
+// #Headings
 $heading_font: "Georgia", "Times New Roman", serif;
 $heading_font_weight: normal;
 $heading_colour: #181818;
@@ -93,8 +110,10 @@ $heading5_line_height: $heading5_font_size * 1.5;
 $heading6_font_size: 14px;
 $heading6_line_height: $heading6_font_size * 1.5;
 
+// #Subheading
 $subheader_colour: #777;
 
+// #Paragraphs
 $paragraph_margin: 0 0 20px 0;
 $paragraph_image_margin: 0;
 $paragraph_line_height: $base_font_size * 1.5;
@@ -103,12 +122,14 @@ $paragraph_lead_font_size: 21px;
 $paragraph_lead_line_height: $paragraph_lead_font_size * 1.5;
 $paragraph_lead_colour: #777;
 
+// #General Text
 $em_font_style: italic;
 
 $small_font_size: 80%;
 
 $strong_colour: #333;
 
+// #Blockquotes
 $blockquote_colour: #777;
 $blockquote_border_left: 1px solid #ddd;
 $blockquote_cite_colour: #555;
@@ -120,12 +141,15 @@ $blockquote_font_size: 17px;
 $blockquote_line_height: 24px;
 $blockquote_font_style: italic;
 
+// #Horizontal rules
 $hr_border: solid #ddd;
 $hr_border_width: 1px 0 0;
 $hr_margin: 10px 0 30px;
 
+// #Main font
 $body_font_family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+// #Lists
 $list_margin: 0 0 20px 0;
 $list_large_line_height: 21px;
 
@@ -133,7 +157,7 @@ $ul_list_style: none outside;
 $ol_list_style: decimal;
 
 $list_styled_margin: 0 0 0 10px; // ul, ol with disc, square etc.
-$list_styled_position: outside;  // List item bullet position 
+$list_styled_position: outside;  // List item bullet position
 
 $nested_list_margin: 4px 0 5px 30px;
 $nested_list_font_size: 90%;
@@ -144,6 +168,7 @@ $list_item_paragraph_line_height: 21px;
 
 $fallback_hex_gradient_bg: #CCC;
 
+// #Tables
 $table_background: #FFF;
 $table_margin: 10px 0;
 $table_td_th_padding: 8px;

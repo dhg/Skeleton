@@ -4,6 +4,28 @@
 // The majority of concepts here are shamelessly borrowed from Bootstrap and amended to fit
 // https://raw.github.com/twitter/bootstrap/master/less/tables.less
 
+/*
+##Basic table style
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nick</td>
+      <td>Pack</td>
+      <td>@nickpack</td>
+    </tr>
+  </tbody>
+</table>
+*/
 table {
   max-width: 100%;
   background: $table_background;
@@ -45,6 +67,28 @@ table {
   }
 }
 
+/*
+##Condensed table style
+
+<table class="table-condensed">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nick</td>
+      <td>Pack</td>
+      <td>@nickpack</td>
+    </tr>
+  </tbody>
+</table>
+*/
 .table-condensed {
   th,
   td {
@@ -52,6 +96,28 @@ table {
   }
 }
 
+/*
+##Bordered table style
+
+<table class="table-bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nick</td>
+      <td>Pack</td>
+      <td>@nickpack</td>
+    </tr>
+  </tbody>
+</table>
+*/
 .table-bordered {
   border: 1px solid $table_border_colour;
   border-collapse: separate;
@@ -61,7 +127,7 @@ table {
   td {
     border-left: 1px solid $table_border_colour;
   }
-  
+
   caption thead tr:first-child th,
   caption tbody tr:first-child th,
   caption tbody tr:first-child td,
@@ -73,7 +139,7 @@ table {
   tbody:first-child tr:first-child td {
     border-top: 0;
   }
-  
+
   thead:first-child tr:first-child > th:first-child,
   tbody:first-child tr:first-child > td:first-child,
   tbody:first-child tr:first-child > th:first-child {
@@ -85,7 +151,7 @@ table {
   tbody:first-child tr:first-child > th:last-child {
     @include border-top-right-radius($table_border_radius);
   }
-  
+
   thead:last-child tr:last-child > th:first-child,
   tbody:last-child tr:last-child > td:first-child,
   tbody:last-child tr:last-child > th:first-child,
@@ -93,7 +159,7 @@ table {
   tfoot:last-child tr:last-child > th:first-child {
     @include border-bottom-left-radius($table_border_radius);
   }
-  
+
   thead:last-child tr:last-child > th:last-child,
   tbody:last-child tr:last-child > td:last-child,
   tbody:last-child tr:last-child > th:last-child,
@@ -124,6 +190,28 @@ table {
 
 }
 
+/*
+##Striped table style
+
+<table class="table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nick</td>
+      <td>Pack</td>
+      <td>@nickpack</td>
+    </tr>
+  </tbody>
+</table>
+*/
 .table-striped {
   tbody {
     > tr:nth-child(odd) > td,
@@ -133,6 +221,28 @@ table {
   }
 }
 
+/*
+##Hover table style
+
+<table class="table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nick</td>
+      <td>Pack</td>
+      <td>@nickpack</td>
+    </tr>
+  </tbody>
+</table>
+*/
 .table-hover {
   tbody {
     tr:hover > td,
