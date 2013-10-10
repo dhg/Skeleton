@@ -1,6 +1,6 @@
 {
   "name": "Ribs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "css/Ribs.css",
   "ignore": [
     "**/.*",
