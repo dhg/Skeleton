@@ -1,4 +1,4 @@
-Ribs v1.0.7
+Ribs v1.0.8
 =============
 > Ribs is the evolution of Skeleton, the original author seems to have disappeared and/or lost interest in the project, and my colleagues and I use this an awful lot.
 
@@ -50,6 +50,7 @@ Then following that, from the root dir of this project, run `npm install` which 
 You should be good to go.
 
 ## Changelog
+* Oct 10, 2013 - (v1.0.8) Initial inline documentation, styledocco based docs generation, fixed breakpoint oversight on media queries for tablet and mobile
 * Oct 10, 2013 - (v1.0.7) Documented the differences between the original skeleton project and Ribs, Updated normalize to 2.1.3
 * Aug 7,  2013 - (v1.0.6) Some additional variables, grid push and pull
 * Jul 17, 2013 - (v1.0.5) Some additional variables, some base table styling
