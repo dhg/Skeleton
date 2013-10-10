@@ -1,5 +1,5 @@
-/* #Lists
-================================================== */
+// #Lists
+// ==================================================
 ul, ol {
   margin: $list_margin;
 }
@@ -17,15 +17,15 @@ ol, ul.square, ul.circle, ul.disc {
 }
 
 ul.square {
-  list-style: square outside;
+  list-style: square $list_styled_position;
 }
 
 ul.circle {
-  list-style: circle outside;
+  list-style: circle $list_styled_position;
 }
 
 ul.disc {
-  list-style: disc outside;
+  list-style: disc $list_styled_position;
 }
 
 ul ul, ul ol,

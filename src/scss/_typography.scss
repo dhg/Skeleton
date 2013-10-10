@@ -1,15 +1,5 @@
-/* #Typography
-================================================== */
-/*	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal; }
-*/
+// #Typography
+// ==================================================
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit;
@@ -87,7 +77,7 @@ p img {
 }
 
 em {
-  font-style: italic;
+  font-style: $em_font_style;
 }
 
 strong {
@@ -96,15 +86,14 @@ strong {
 }
 
 small {
-  font-size: 80%;
+  font-size: $small_font_size;
 }
 
-/*	Blockquotes  */
 blockquote, blockquote p {
-  font-size: 17px;
-  line-height: 24px;
+  font-size: $blockquote_font_size;
+  line-height: $blockquote_line_height;
   color: $blockquote_colour;
-  font-style: italic;
+  font-style: $blockquote_font_style;
 }
 
 blockquote {
@@ -125,13 +114,4 @@ blockquote cite:before {
 
 blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
   color: $blockquote_cite_link_colour;
-}
-
-/* not really typographical, but I couldnt find anywhere else to put it */
-hr {
-  border: $hr_border;
-  border-width: $hr_border_width;
-  clear: both;
-  margin: $hr_margin;
-  height: 0;
 }

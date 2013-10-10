@@ -34,18 +34,32 @@ $form_input_text_colour: #777;
 $form_input_background: #fff;
 $form_input_padding: 6px 4px;
 $form_input_width: 210px;
+$form_input_max_width: 100%;
 $form_input_select_width: 220px;
 $form_input_margin: 0 0 20px 0;
 $form_input_font_size: 13px;
+$form_input_border_radius: 2px;
+
+$form_input_checkbox_display: inline;
 
 $form_input_focus_border: 1px solid #aaa;
 $form_input_focus_text_colour: #444;
+$form_input_focus_outline: none;
+$form_input_focus_box_shadow_x: 0;
+$form_input_focus_box_shadow_y: 0;
+$form_input_focus_box_shadow_blur: 3px;
+$form_input_focus_box_shadow_colour: rgba(0, 0, 0, .2);
+
+$form_input_select_padding: 10px;
 
 $form_label_legend_colour: #444;
+$form_label_legend_font_weight: normal;
 $form_fieldset_margin: 0 0 20px 0;
 
 $legend_font_weight: bold;
 $legend_font_size: $form_input_font_size;
+
+$form_textarea_min_height: 60px;
 
 $link_colour: #333;
 $link_decoration: underline;
@@ -89,6 +103,10 @@ $paragraph_lead_font_size: 21px;
 $paragraph_lead_line_height: $paragraph_lead_font_size * 1.5;
 $paragraph_lead_colour: #777;
 
+$em_font_style: italic;
+
+$small_font_size: 80%;
+
 $strong_colour: #333;
 
 $blockquote_colour: #777;
@@ -98,6 +116,9 @@ $blockquote_cite_link_colour: #555;
 $blockquote_cite_font_size: 12px;
 $blockquote_margin: 0 0 20px;
 $blockquote_padding: 9px 20px 0 19px;
+$blockquote_font_size: 17px;
+$blockquote_line_height: 24px;
+$blockquote_font_style: italic;
 
 $hr_border: solid #ddd;
 $hr_border_width: 1px 0 0;
@@ -111,7 +132,8 @@ $list_large_line_height: 21px;
 $ul_list_style: none outside;
 $ol_list_style: decimal;
 
-$list_styled_margin: 0 0 0 30px; /* ul, ol with disc, square etc. */
+$list_styled_margin: 0 0 0 10px; // ul, ol with disc, square etc.
+$list_styled_position: outside;  // List item bullet position 
 
 $nested_list_margin: 4px 0 5px 30px;
 $nested_list_font_size: 90%;
@@ -121,4 +143,15 @@ $list_item_margin: 0 0 12px 0;
 $list_item_paragraph_line_height: 21px;
 
 $fallback_hex_gradient_bg: #CCC;
+
+$table_background: #FFF;
+$table_margin: 10px 0;
+$table_td_th_padding: 8px;
+$table_td_th_line_height: 21px;
+$table_border_colour: #CCC;
+$table_border_radius: 3px;
+$table_alt_colour: #EFEFEF;
+$table_hover_colour: #999;
+$table_condensed_padding: 4px 5px;
+
 

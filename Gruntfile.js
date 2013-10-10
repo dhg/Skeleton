@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     sass: {
         dist: {
             files: {
-                'css/Ribs.css': 'scss/Ribs.scss',
+                'build/css/Ribs.css': 'src/scss/Ribs.scss',
             }
         }
     },
@@ -16,22 +16,25 @@ module.exports = function(grunt) {
           import: false,
           csslintrc: '.csslintrc'
         },
-        src: ['css/Ribs.css']
+        src: ['build/css/Ribs.css']
+      },
+      brutal: {
+        src: ['build/css/Ribs.css']
       }
     },
     cssmin: {
       compress: {
         options: {
-          banner: '/* <%= pkg.name %> <%= pkg.version %>  <%= grunt.template.today("dd-mm-yyyy") %> */'
+          banner: '/* <%= pkg.name %> <%= pkg.version %> - https://github.com/nickpack/Ribs - <%= grunt.template.today("dd-mm-yyyy") %> */'
         },
         files: {
-          'css/Ribs.min.css': 'css/Ribs.css'
+          'build/css/Ribs.min.css': 'build/css/Ribs.css'
         }
       },
     },
     watch: {
-      files: 'scss/**/*',
-      tasks: ['sass', 'csslint', 'cssmin']
+      files: 'src/scss/**/*',
+      tasks: ['sass', 'csslint:scssoutput', 'cssmin']
     }
   });
 
@@ -40,7 +43,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   
-  grunt.registerTask('test', ['sass', 'csslint']);
+  grunt.registerTask('test', ['sass', 'csslint:scssoutput']);
   grunt.registerTask('minify', ['cssmin']);
   grunt.registerTask('default', ['sass', 'cssmin']);
 

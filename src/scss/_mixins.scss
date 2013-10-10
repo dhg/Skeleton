@@ -112,7 +112,7 @@
 @mixin box-shadow($a, $b, $c, $colour) {
   -moz-box-shadow: $a $b $c $colour;
   -webkit-box-shadow: $a $b $c $colour;
-  box-shadow:  $a $b $c $colour;
+  box-shadow: $a $b $c $colour;
 }
 
 @mixin grid($grid-container-width, $grid-column-count:$column-count, $grid-gutter:$gutter) {
@@ -142,10 +142,9 @@
     .two-thirds  { width: (($grid-container-width/3)*2) - $grid-gutter; }
     .one-half    { width: ($grid-container-width/2) - $grid-gutter; }
     .one-quarter { width: ($grid-container-width/4) - $grid-gutter; }
-    .three-quarters {width: (($grid-container-width/4)*3) - $grid-gutter;}
+    .three-quarters { width: (($grid-container-width/4)*3) - $grid-gutter; }
 
-
-    .offset-by-one      { padding-left: $grid-column-width;  }
+    .offset-by-one      { padding-left: $grid-column-width; }
     .offset-by-two      { padding-left: $grid-column-width*2; }
     .offset-by-three    { padding-left: $grid-column-width*3; }
     .offset-by-four     { padding-left: $grid-column-width*4; }
@@ -160,6 +159,38 @@
     .offset-by-thirteen { padding-left: $grid-column-width*13; }
     .offset-by-fourteen { padding-left: $grid-column-width*14; }
     .offset-by-fifteen  { padding-left: $grid-column-width*15; }
+
+    .pull-by-one      { left: -$grid-column-width; }
+    .pull-by-two      { left: -$grid-column-width*2; }
+    .pull-by-three    { left: -$grid-column-width*3; }
+    .pull-by-four     { left: -$grid-column-width*4; }
+    .pull-by-five     { left: -$grid-column-width*5; }
+    .pull-by-six      { left: -$grid-column-width*6; }
+    .pull-by-seven    { left: -$grid-column-width*7; }
+    .pull-by-eight    { left: -$grid-column-width*8; }
+    .pull-by-nine     { left: -$grid-column-width*9; }
+    .pull-by-ten      { left: -$grid-column-width*10; }
+    .pull-by-eleven   { left: -$grid-column-width*11; }
+    .pull-by-twelve   { left: -$grid-column-width*12; }
+    .pull-by-thirteen { left: -$grid-column-width*13; }
+    .pull-by-fourteen { left: -$grid-column-width*14; }
+    .pull-by-fifteen  { left: -$grid-column-width*15; }
+
+    .push-by-one      { left: $grid-column-width; }
+    .push-by-two      { left: $grid-column-width*2; }
+    .push-by-three    { left: $grid-column-width*3; }
+    .push-by-four     { left: $grid-column-width*4; }
+    .push-by-five     { left: $grid-column-width*5; }
+    .push-by-six      { left: $grid-column-width*6; }
+    .push-by-seven    { left: $grid-column-width*7; }
+    .push-by-eight    { left: $grid-column-width*8; }
+    .push-by-nine     { left: $grid-column-width*9; }
+    .push-by-ten      { left: $grid-column-width*10; }
+    .push-by-eleven   { left: $grid-column-width*11; }
+    .push-by-twelve   { left: $grid-column-width*12; }
+    .push-by-thirteen { left: $grid-column-width*13; }
+    .push-by-fourteen { left: $grid-column-width*14; }
+    .push-by-fifteen  { left: $grid-column-width*15; }
   }
 }
 
@@ -170,4 +201,14 @@
   visibility: hidden;
   width: 0;
   height: 0;
+}
+
+@mixin visible {
+  display: block !important; 
+  visibility: visible;
+}
+
+@mixin hidden {
+  display: none !important; 
+  visibility: hidden;
 }
