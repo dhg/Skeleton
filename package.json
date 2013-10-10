@@ -34,6 +34,7 @@
     "grunt-contrib-watch": "~0.3.1",
     "grunt-contrib-sass": "~0.3.0",
     "grunt-contrib-csslint": "~0.1.1",
+    "grunt-styleguide": "~0.2.6",
     "grunt-contrib-cssmin": "~0.5.0"
   }
 }

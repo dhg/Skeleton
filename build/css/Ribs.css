@@ -1,10 +1,11 @@
 /*
-* Ribs
-* Skeleton is Copyright 2011, Dave Gamache
-*
-* Ribs is the evolution of Skeleton by Nick Pack
-* Free to use under the MIT license.
-* http://github.com/nickpack/Ribs
+  #Ribs
+  ## Copyright Information
+  Skeleton is Copyright 2011, Dave Gamache
+
+  Ribs is the evolution of Skeleton by Nick Pack
+  Free to use under the MIT license.
+  http://github.com/nickpack/Ribs
 */
 /* normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -360,6 +361,32 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
+/*
+#Grid System
+
+<div class="one column alpha">One</div>
+<div class="eleven columns omega">Eleven</div>
+<div class="two columns alpha">Two</div>
+<div class="ten columns omega">Ten</div>
+<div class="three columns alpha">Three</div>
+<div class="nine columns omega">Nine</div>
+<div class="four columns alpha">Four</div>
+<div class="eight columns omega">Eight</div>
+<div class="five columns alpha">Five</div>
+<div class="seven columns omega">Seven</div>
+<div class="six columns alpha">Six</div>
+<div class="six columns omega">Six</div>
+<div class="seven columns alpha">Seven</div>
+<div class="five columns omega">Five</div>
+<div class="eight columns alpha">Eight</div>
+<div class="four  columns omega">Four</div>
+<div class="nine columns alpha">Nine</div>
+<div class="three columns omega">Three</div>
+<div class="ten columns alpha">Ten</div>
+<div class="two columns omega">Two</div>
+<div class="eleven columns alpha">Eleven</div>
+<div class="one column omega">One</div>
+*/
 .container {
   position: relative;
   margin: 0 auto;
@@ -658,6 +685,10 @@ hr {
       margin-right: 10px; }
     .container .omega {
       margin-left: 10px; } }
+/*
+  #Mobile Grid
+  Every column element in this grid is the total grid width
+*/
 @media only screen and (max-width: 767px) {
   .container {
     width: 90%; }
@@ -681,6 +712,13 @@ hr {
     .container .offset-by-fourteen,
     .container .offset-by-fifteen {
       padding-left: 0; } }
+/*
+  ##Auto-applied clearfix for .container elements
+
+  ```<div class="container">
+    This element has clearfix applied in browsers that support the :after css selector
+  </div>```
+*/
 .container:after {
   content: "\0020";
   display: block;
@@ -688,6 +726,12 @@ hr {
   clear: both;
   visibility: hidden; }
 
+/*
+ ##General use clearfix class
+ ```<div class="clearfix">This haz clearfix</div>```
+ Use this clearfix class on parent to clear nested columns, or:
+ wrap each row of columns in a ```<div class="row">...</div>```
+*/
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -699,6 +743,13 @@ hr {
   width: 0;
   height: 0; }
 
+/*
+  ##Auto-applied clearfix for .row elements
+
+  ```<div class="row">
+    This element has clearfix applied in browsers that support the :after css selector
+  </div>```
+*/
 .row:after,
 .clearfix:after {
   clear: both; }
@@ -706,6 +757,10 @@ hr {
 .row, .clearfix {
   zoom: 1; }
 
+/*
+  ##Block level clear
+  You can also use a ```<br class="clear">``` to clear columns
+*/
 .clear {
   clear: both;
   display: block;
@@ -937,17 +992,29 @@ input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
+/*
+  ##General margins (all sides)
+  Applied to both form, and fieldset
+*/
 form {
   margin: 0 0 20px 0; }
 
 fieldset {
   margin: 0 0 20px 0; }
 
+/*
+  ##Search/URL fields
+  Make these behave as text fields
+*/
 input[type="search"],
 input[type="url"] {
   -webkit-appearance: textfield;
   -moz-appearance: textfield; }
 
+/*
+  ##General form element styles, border etc.
+  Applied to all except checkboxes
+*/
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -970,10 +1037,18 @@ select {
   margin: 0 0 20px 0;
   background: white; }
 
+/*
+  ##Select boxes
+  Padding and width applied from settings
+*/
 select {
   padding: 10px;
   width: 220px; }
 
+/*
+  ##Form element focus styles
+  Applied to all except checkboxes and selects
+*/
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -1001,16 +1076,48 @@ legend {
 input[type="checkbox"] {
   display: inline; }
 
+/*
+  ##Spans inside legends, or labels
+  Alters font size, weight and colour based on variables
+*/
 label span,
 legend span {
   font-weight: normal;
   font-size: 13px;
   color: #444444; }
 
+/*
+ ## Scale an image in line with the responsive grid
+ ```
+ <img src="foo.jpg" title="Scaling image of Foo" class="scale-with-grid">
+ ```
+*/
 .scale-with-grid {
   max-width: 100%;
   height: auto; }
 
+/*
+##Basic table style
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nick</td>
+      <td>Pack</td>
+      <td>@nickpack</td>
+    </tr>
+  </tbody>
+</table>
+*/
 table {
   max-width: 100%;
   background: white;
@@ -1041,10 +1148,54 @@ table {
   table table {
     background: white; }
 
+/*
+##Condensed table style
+
+<table class="table-condensed">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nick</td>
+      <td>Pack</td>
+      <td>@nickpack</td>
+    </tr>
+  </tbody>
+</table>
+*/
 .table-condensed th,
 .table-condensed td {
   padding: 4px 5px; }
 
+/*
+##Bordered table style
+
+<table class="table-bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nick</td>
+      <td>Pack</td>
+      <td>@nickpack</td>
+    </tr>
+  </tbody>
+</table>
+*/
 .table-bordered {
   border: 1px solid #cccccc;
   border-collapse: separate;
@@ -1116,10 +1267,54 @@ table {
     -moz-border-radius-topright: 3px;
     border-top-right-radius: 3px; }
 
+/*
+##Striped table style
+
+<table class="table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nick</td>
+      <td>Pack</td>
+      <td>@nickpack</td>
+    </tr>
+  </tbody>
+</table>
+*/
 .table-striped tbody > tr:nth-child(odd) > td,
 .table-striped tbody > tr:nth-child(odd) > th {
   background-color: #efefef; }
 
+/*
+##Hover table style
+
+<table class="table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nick</td>
+      <td>Pack</td>
+      <td>@nickpack</td>
+    </tr>
+  </tbody>
+</table>
+*/
 .table-hover tbody tr:hover > td,
 .table-hover tbody tr:hover > th {
   background-color: #999999; }

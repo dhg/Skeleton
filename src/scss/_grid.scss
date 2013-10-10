@@ -1,12 +1,39 @@
+/*
+#Grid System
+
+<div class="one column alpha">One</div>
+<div class="eleven columns omega">Eleven</div>
+<div class="two columns alpha">Two</div>
+<div class="ten columns omega">Ten</div>
+<div class="three columns alpha">Three</div>
+<div class="nine columns omega">Nine</div>
+<div class="four columns alpha">Four</div>
+<div class="eight columns omega">Eight</div>
+<div class="five columns alpha">Five</div>
+<div class="seven columns omega">Seven</div>
+<div class="six columns alpha">Six</div>
+<div class="six columns omega">Six</div>
+<div class="seven columns alpha">Seven</div>
+<div class="five columns omega">Five</div>
+<div class="eight columns alpha">Eight</div>
+<div class="four  columns omega">Four</div>
+<div class="nine columns alpha">Nine</div>
+<div class="three columns omega">Three</div>
+<div class="ten columns alpha">Ten</div>
+<div class="two columns omega">Two</div>
+<div class="eleven columns alpha">Eleven</div>
+<div class="one column omega">One</div>
+*/
+
 .container {
   position: relative;
   margin: 0 auto;
   padding: 0;
-  & .alpha { 
-    margin-left: 0; 
+  & .alpha {
+    margin-left: 0;
   }
-  & .omega { 
-    margin-right: 0; 
+  & .omega {
+    margin-right: 0;
   }
 }
 
@@ -21,30 +48,36 @@
   margin-left: 0;
 }
 
-.row { 
-  margin-bottom: $gutter; 
+.row {
+  margin-bottom: $gutter;
 }
 
+
+// #Desktop Grid
 @include grid($desktop-container-width, $column-count, $gutter);
 
 //-----------------------------------------------------------------------
-// #Tablet
-@media only screen and (max-width: 959px) {
+// #Tablet Grid
+@media only screen and (max-width: $tablet-max-breakpoint) {
   @include grid($tablet-container-width, $column-count, $gutter);
 
-  .container { 
-    width: $tablet-container-width; 
-    & .alpha { 
-      margin-right: 10px; 
+  .container {
+    width: $tablet-container-width;
+    & .alpha {
+      margin-right: 10px;
     }
-    & .omega { 
-      margin-left: 10px; 
+    & .omega {
+      margin-left: 10px;
     }
   }
 }
 //--------------------------------------------------------------------
-// #Mobile
-@media only screen and (max-width: 767px) {
+/*
+  #Mobile Grid
+  Every column element in this grid is the total grid width
+*/
+
+@media only screen and (max-width: $mobile-max-breakpoint) {
   .container {
     width: $mobile-container-width;
     & .one,
@@ -67,7 +100,7 @@
     & .two-thirds,
     & .one-half,
     & .one-quarter,
-    & .three-quarters 
+    & .three-quarters
     { width: $mobile-column-width; }
 
     .column, .columns {
@@ -93,18 +126,28 @@
 }
 
 // #Clearing
-// ==================================================
 
-.container:after { 
-  content: "\0020"; 
-  display: block; 
-  height: 0; 
-  clear: both; 
-  visibility: hidden; 
+/*
+  ##Auto-applied clearfix for .container elements
+
+  ```<div class="container">
+    This element has clearfix applied in browsers that support the :after css selector
+  </div>```
+*/
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 
-// Use clearfix class on parent to clear nested columns,
-// or wrap each row of columns in a <div class="row">
+/*
+ ##General use clearfix class
+ ```<div class="clearfix">This haz clearfix</div>```
+ Use this clearfix class on parent to clear nested columns, or:
+ wrap each row of columns in a ```<div class="row">...</div>```
+*/
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -114,19 +157,28 @@
   overflow: hidden;
   visibility: hidden;
   width: 0;
-  height: 0; 
+  height: 0;
 }
+/*
+  ##Auto-applied clearfix for .row elements
 
+  ```<div class="row">
+    This element has clearfix applied in browsers that support the :after css selector
+  </div>```
+*/
 .row:after,
 .clearfix:after {
-  clear: both; 
+  clear: both;
 }
 
 .row, .clearfix {
-  zoom: 1; 
+  zoom: 1;
 }
 
-// You can also use a <br class="clear" /> to clear columns
+/*
+  ##Block level clear
+  You can also use a ```<br class="clear">``` to clear columns
+*/
 .clear {
   clear: both;
   display: block;

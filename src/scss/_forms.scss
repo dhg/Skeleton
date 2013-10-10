@@ -1,5 +1,5 @@
 // #Buttons
-// ==================================================
+// ##Normal
 .button,
 button,
 input[type="submit"],
@@ -21,6 +21,7 @@ input[type="button"] {
   font-family: $form_element_font;
 }
 
+// ##Hover
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -31,6 +32,7 @@ input[type="button"]:hover {
   @include button_border($form_button_hover_border_rightbottom, $form_button_hover_border_topleft);
 }
 
+// ##Active
 .button:active,
 button:active,
 input[type="submit"]:active,
@@ -40,6 +42,7 @@ input[type="button"]:active {
   border: $form_button_active_border;
 }
 
+// ##Full width
 .button .full-width,
 button.full-width,
 input[type="submit"].full-width,
@@ -51,7 +54,7 @@ input[type="button"].full-width {
   text-align: center;
 }
 
-// Fix for odd Mozilla border & padding issues
+// ##Fix for odd Mozilla border & padding issues
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -59,8 +62,11 @@ input::-moz-focus-inner {
 }
 
 // #Forms
-// ==================================================
 
+/*
+  ##General margins (all sides)
+  Applied to both form, and fieldset
+*/
 form {
   margin: $form_fieldset_margin;
 }
@@ -69,12 +75,20 @@ fieldset {
   margin: $form_fieldset_margin;
 }
 
+/*
+  ##Search/URL fields
+  Make these behave as text fields
+*/
 input[type="search"],
 input[type="url"] {
   -webkit-appearance: textfield;
-  -moz-appearance: textfield; 
+  -moz-appearance: textfield;
 }
 
+/*
+  ##General form element styles, border etc.
+  Applied to all except checkboxes
+*/
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -96,11 +110,19 @@ select {
   background: $form_input_background;
 }
 
+/*
+  ##Select boxes
+  Padding and width applied from settings
+*/
 select {
   padding: $form_input_select_padding;
   width: $form_input_select_width;
 }
 
+/*
+  ##Form element focus styles
+  Applied to all except checkboxes and selects
+*/
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -115,10 +137,12 @@ textarea:focus {
   @include box-shadow($form_input_focus_box_shadow_x, $form_input_focus_box_shadow_y, $form_input_focus_box_shadow_blur, $form_input_focus_box_shadow_colour)
 }
 
+// ##Textarea min height
 textarea {
   min-height: $form_textarea_min_height;
 }
 
+// ##Label/legend font settings
 label,
 legend {
   display: block;
@@ -126,10 +150,15 @@ legend {
   font-size: $legend_font_size;
 }
 
+// ##Checkbox display
 input[type="checkbox"] {
   display: $form_input_checkbox_display;
 }
 
+/*
+  ##Spans inside legends, or labels
+  Alters font size, weight and colour based on variables
+*/
 label span,
 legend span {
   font-weight: $form_label_legend_font_weight;

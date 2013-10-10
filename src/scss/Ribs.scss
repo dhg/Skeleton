@@ -1,16 +1,19 @@
 /*
-* Ribs
-* Skeleton is Copyright 2011, Dave Gamache
-*
-* Ribs is the evolution of Skeleton by Nick Pack
-* Free to use under the MIT license.
-* http://github.com/nickpack/Ribs
+  #Ribs
+  ## Copyright Information
+  Skeleton is Copyright 2011, Dave Gamache
+
+  Ribs is the evolution of Skeleton by Nick Pack
+  Free to use under the MIT license.
+  http://github.com/nickpack/Ribs
 */
 
+// #Import of normalize, variables and mixins
 @import "_variables";
 @import "normalize/_normalize";
 @import "_mixins";
 
+// #General body style
 body {
   background: #fff;
   font: 14px/21px $body_font_family;
@@ -19,6 +22,7 @@ body {
   -ms-text-size-adjust: 100%;
 }
 
+// #General horizontal rule style
 hr {
   border: $hr_border;
   border-width: $hr_border_width;
@@ -27,6 +31,7 @@ hr {
   height: 0;
 }
 
+// #Import of ribs functionality
 @import "_grid";
 @import "_typography";
 @import "_links";
@@ -35,17 +40,18 @@ hr {
 @import "_images";
 @import "_tables";
 
-// Smaller than standard 960 (devices and browsers)
+// #Example Media Queries
+// ##Media Query - Smaller than standard 960 (devices and browsers)
 @media only screen and (max-width: 959px) {}
 
-// Tablet Portrait size to standard 960 (devices and browsers)
+// ##Media Query - Tablet Portrait size to standard 960 (devices and browsers)
 @media only screen and (min-width: 768px) and (max-width: 959px) {}
 
-// All Mobile Sizes (devices and browser)
+// ##Media Query - All Mobile Sizes (devices and browser)
 @media only screen and (max-width: 767px) {}
 
-// Mobile Landscape Size to Tablet Portrait (devices and browsers)
+// ##Media Query - Mobile Landscape Size to Tablet Portrait (devices and browsers)
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
-// Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
+// ##Media Query - Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
 @media only screen and (max-width: 479px) {}
