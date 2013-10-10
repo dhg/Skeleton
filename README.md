@@ -1,11 +1,11 @@
-Ribs
+Ribs v1.0.7
 =============
 > Ribs is the evolution of Skeleton, the original author seems to have disappeared and/or lost interest in the project, and my colleagues and I use this an awful lot.
 
 ## What's different here?
 My fork has one significant difference over the original project, that is a full SCSS conversion to make use of more modern technologies and to expose a lot more customisation options quickly and easily.
 
-As time goes by I will gradually extend the available options and build a packaging tool that allows you to select all of your customisations in a graphical way, thinking something along the lines of jQuery themeroller, just a bit more lightweight.
+As time goes by, and with enough interest I will gradually extend the available options and build a packaging tool that allows you to select all of your customisations in a graphical way - thinking something along the lines of jQuery themeroller, just a bit more lightweight.
 
 ### Some Key Differences
 * Maintained!
