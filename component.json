@@ -1,7 +1,7 @@
 {
   "name": "Ribs",
-  "version": "1.0.7",
-  "main": "css/Ribs.css",
+  "version": "1.0.8",
+  "main": "build/css/Ribs.css",
   "ignore": [
     "**/.*",
     "node_modules",
