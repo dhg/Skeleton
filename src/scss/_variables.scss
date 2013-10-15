@@ -1,182 +1,182 @@
 // #Grid System Variables
-$gutter: 20px;
-$column-count: 16;
-$desktop-container-width: 960px;
-$tablet-container-width: 768px;
-$mobile-container-width: 90%;
-$mobile-column-width: 100%;
-$base_font_size: 14px;
+$gutter: 20px !default;
+$column-count: 16 !default;
+$desktop-container-width: 960px !default;
+$tablet-container-width: 768px !default;
+$mobile-container-width: 90% !default;
+$mobile-column-width: 100% !default;
+$base_font_size: 14px !default;
 
 // #Breakpoint max widths - you probably dont need to change these
-$tablet-max-breakpoint: $desktop-container-width - 1;
-$mobile-max-breakpoint: $tablet-container-width - 1;
+$tablet-max-breakpoint: $desktop-container-width - 1 !default;
+$mobile-max-breakpoint: $tablet-container-width - 1 !default;
 
 // #Form Variables
-$form_element_font: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$form_element_font: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 // ##button
-$form_button_border_radius: 3px;
-$form_button_border_topleft: 1px solid #ccc;
-$form_button_border_rightbottom: 1px solid #aaa;
-$form_button_text_colour: #444;
-$form_button_text_shadow: 0 1px rgba(255, 255, 255, .75);
-$form_button_gradient_start: rgba(255, 255, 255, .2);
-$form_button_gradient_end: rgba(0, 0, 0, .2);
-$form_button_font_size: 11px;
-$form_button_padding: 8px 10px;
-$form_button_line_height: normal;
+$form_button_border_radius: 3px !default;
+$form_button_border_topleft: 1px solid #ccc !default;
+$form_button_border_rightbottom: 1px solid #aaa !default;
+$form_button_text_colour: #444 !default;
+$form_button_text_shadow: 0 1px rgba(255, 255, 255, .75) !default;
+$form_button_gradient_start: rgba(255, 255, 255, .2) !default;
+$form_button_gradient_end: rgba(0, 0, 0, .2) !default;
+$form_button_font_size: 11px !default;
+$form_button_padding: 8px 10px !default;
+$form_button_line_height: normal !default;
 
 // ##button hover
-$form_button_hover_border_topleft: 1px solid #aaa;
-$form_button_hover_border_rightbottom: 1px solid #888;
-$form_button_hover_gradient_start: rgba(255, 255, 255, .3);
-$form_button_hover_gradient_end: rgba(0, 0, 0, .3);
-$form_button_hover_text_colour: #222;
+$form_button_hover_border_topleft: 1px solid #aaa !default;
+$form_button_hover_border_rightbottom: 1px solid #888 !default;
+$form_button_hover_gradient_start: rgba(255, 255, 255, .3) !default;
+$form_button_hover_gradient_end: rgba(0, 0, 0, .3) !default;
+$form_button_hover_text_colour: #222 !default;
 
 // ##Button active
-$form_button_active_border: 1px solid #666;
-$form_button_active_gradient_start: rgba(255, 255, 255, .2);
-$form_button_active_gradient_end: rgba(0, 0, 0, .2);
+$form_button_active_border: 1px solid #666 !default;
+$form_button_active_gradient_start: rgba(255, 255, 255, .2) !default;
+$form_button_active_gradient_end: rgba(0, 0, 0, .2) !default;
 
 // ##Form input
-$form_input_border: 1px solid #ccc;
-$form_input_text_colour: #777;
-$form_input_background: #fff;
-$form_input_padding: 6px 4px;
-$form_input_width: 210px;
-$form_input_max_width: 100%;
-$form_input_select_width: 220px;
-$form_input_margin: 0 0 20px 0;
-$form_input_font_size: 13px;
-$form_input_border_radius: 2px;
+$form_input_border: 1px solid #ccc !default;
+$form_input_text_colour: #777 !default;
+$form_input_background: #fff !default;
+$form_input_padding: 6px 4px !default;
+$form_input_width: 210px !default;
+$form_input_max_width: 100% !default;
+$form_input_select_width: 220px !default;
+$form_input_margin: 0 0 20px 0 !default;
+$form_input_font_size: 13px !default;
+$form_input_border_radius: 2px !default;
 
 // ##Form checkbox
-$form_input_checkbox_display: inline;
+$form_input_checkbox_display: inline !default;
 
 // ##Form input focus
-$form_input_focus_border: 1px solid #aaa;
-$form_input_focus_text_colour: #444;
-$form_input_focus_outline: none;
-$form_input_focus_box_shadow_x: 0;
-$form_input_focus_box_shadow_y: 0;
-$form_input_focus_box_shadow_blur: 3px;
-$form_input_focus_box_shadow_colour: rgba(0, 0, 0, .2);
+$form_input_focus_border: 1px solid #aaa !default;
+$form_input_focus_text_colour: #444 !default;
+$form_input_focus_outline: none !default;
+$form_input_focus_box_shadow_x: 0 !default;
+$form_input_focus_box_shadow_y: 0 !default;
+$form_input_focus_box_shadow_blur: 3px !default;
+$form_input_focus_box_shadow_colour: rgba(0, 0, 0, .2) !default;
 
 // ##select
-$form_input_select_padding: 10px;
+$form_input_select_padding: 10px !default;
 
 // ##fieldset/label/legend
-$form_label_legend_colour: #444;
-$form_label_legend_font_weight: normal;
-$form_fieldset_margin: 0 0 20px 0;
+$form_label_legend_colour: #444 !default;
+$form_label_legend_font_weight: normal !default;
+$form_fieldset_margin: 0 0 20px 0 !default;
 
-$legend_font_weight: bold;
-$legend_font_size: $form_input_font_size;
+$legend_font_weight: bold !default;
+$legend_font_size: $form_input_font_size !default;
 
 // ##Textarea
-$form_textarea_min_height: 60px;
+$form_textarea_min_height: 60px !default;
 
 // #Links
-$link_colour: #333;
-$link_decoration: underline;
-$link_outline: 0;
-$link_hover_colour: #000;
-$link_hover_decoration: none;
+$link_colour: #333 !default;
+$link_decoration: underline !default;
+$link_outline: 0 !default;
+$link_hover_colour: #000 !default;
+$link_hover_decoration: none !default;
 
 // #Headings
-$heading_font: "Georgia", "Times New Roman", serif;
-$heading_font_weight: normal;
-$heading_colour: #181818;
+$heading_font: "Georgia", "Times New Roman", serif !default;
+$heading_font_weight: normal !default;
+$heading_colour: #181818 !default;
 
-$heading1_font_size: 46px;
-$heading1_line_height: $heading1_font_size * 1.5;
-$heading1_margin: 0 0 14px 0;
+$heading1_font_size: 46px !default;
+$heading1_line_height: $heading1_font_size * 1.5 !default;
+$heading1_margin: 0 0 14px 0 !default;
 
-$heading2_font_size: 35px;
-$heading2_line_height: $heading2_font_size * 1.5;
-$heading2_margin: 0 0 10px 0;
+$heading2_font_size: 35px !default;
+$heading2_line_height: $heading2_font_size * 1.5 !default;
+$heading2_margin: 0 0 10px 0 !default;
 
-$heading3_font_size: 28px;
-$heading3_line_height: $heading3_font_size * 1.5;
-$heading3_margin: 0 0 8px 0;
+$heading3_font_size: 28px !default;
+$heading3_line_height: $heading3_font_size * 1.5 !default;
+$heading3_margin: 0 0 8px 0 !default;
 
-$heading4_font_size: 21px;
-$heading4_line_height: $heading4_font_size * 1.5;
-$heading4_margin: 0 0 4px 0;
+$heading4_font_size: 21px !default;
+$heading4_line_height: $heading4_font_size * 1.5 !default;
+$heading4_margin: 0 0 4px 0 !default;
 
-$heading5_font_size: 17px;
-$heading5_line_height: $heading5_font_size * 1.5;
+$heading5_font_size: 17px !default;
+$heading5_line_height: $heading5_font_size * 1.5 !default;
 
-$heading6_font_size: 14px;
-$heading6_line_height: $heading6_font_size * 1.5;
+$heading6_font_size: 14px !default;
+$heading6_line_height: $heading6_font_size * 1.5 !default;
 
 // #Subheading
-$subheader_colour: #777;
+$subheader_colour: #777 !default;
 
 // #Paragraphs
-$paragraph_margin: 0 0 20px 0;
-$paragraph_image_margin: 0;
-$paragraph_line_height: $base_font_size * 1.5;
+$paragraph_margin: 0 0 20px 0 !default;
+$paragraph_image_margin: 0 !default;
+$paragraph_line_height: $base_font_size * 1.5 !default;
 
-$paragraph_lead_font_size: 21px;
-$paragraph_lead_line_height: $paragraph_lead_font_size * 1.5;
-$paragraph_lead_colour: #777;
+$paragraph_lead_font_size: 21px !default;
+$paragraph_lead_line_height: $paragraph_lead_font_size * 1.5 !default;
+$paragraph_lead_colour: #777 !default;
 
 // #General Text
-$em_font_style: italic;
+$em_font_style: italic !default;
 
-$small_font_size: 80%;
+$small_font_size: 80% !default;
 
-$strong_colour: #333;
+$strong_colour: #333 !default;
 
 // #Blockquotes
-$blockquote_colour: #777;
-$blockquote_border_left: 1px solid #ddd;
-$blockquote_cite_colour: #555;
-$blockquote_cite_link_colour: #555;
-$blockquote_cite_font_size: 12px;
-$blockquote_margin: 0 0 20px;
-$blockquote_padding: 9px 20px 0 19px;
-$blockquote_font_size: 17px;
-$blockquote_line_height: 24px;
-$blockquote_font_style: italic;
+$blockquote_colour: #777 !default;
+$blockquote_border_left: 1px solid #ddd !default;
+$blockquote_cite_colour: #555 !default;
+$blockquote_cite_link_colour: #555 !default;
+$blockquote_cite_font_size: 12px !default;
+$blockquote_margin: 0 0 20px !default;
+$blockquote_padding: 9px 20px 0 19px !default;
+$blockquote_font_size: 17px !default;
+$blockquote_line_height: 24px !default;
+$blockquote_font_style: italic !default;
 
 // #Horizontal rules
-$hr_border: solid #ddd;
-$hr_border_width: 1px 0 0;
-$hr_margin: 10px 0 30px;
+$hr_border: solid #ddd !default;
+$hr_border_width: 1px 0 0 !default;
+$hr_margin: 10px 0 30px !default;
 
 // #Main font
-$body_font_family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body_font_family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 // #Lists
-$list_margin: 0 0 20px 0;
-$list_large_line_height: 21px;
+$list_margin: 0 0 20px 0 !default;
+$list_large_line_height: 21px !default;
 
-$ul_list_style: none outside;
-$ol_list_style: decimal;
+$ul_list_style: none outside !default;
+$ol_list_style: decimal !default;
 
-$list_styled_margin: 0 0 0 10px; // ul, ol with disc, square etc.
-$list_styled_position: outside;  // List item bullet position
+$list_styled_margin: 0 0 0 10px !default; // ul, ol with disc, square etc.
+$list_styled_position: outside !default;  // List item bullet position
 
-$nested_list_margin: 4px 0 5px 30px;
-$nested_list_font_size: 90%;
+$nested_list_margin: 4px 0 5px 30px !default;
+$nested_list_font_size: 90% !default;
 
-$list_item_line_height: 18px;
-$list_item_margin: 0 0 12px 0;
-$list_item_paragraph_line_height: 21px;
+$list_item_line_height: 18px !default;
+$list_item_margin: 0 0 12px 0 !default;
+$list_item_paragraph_line_height: 21px !default;
 
-$fallback_hex_gradient_bg: #CCC;
+$fallback_hex_gradient_bg: #CCC !default;
 
 // #Tables
-$table_background: #FFF;
-$table_margin: 10px 0;
-$table_td_th_padding: 8px;
-$table_td_th_line_height: 21px;
-$table_border_colour: #CCC;
-$table_border_radius: 3px;
-$table_alt_colour: #EFEFEF;
-$table_hover_colour: #999;
-$table_condensed_padding: 4px 5px;
+$table_background: #FFF !default;
+$table_margin: 10px 0 !default;
+$table_td_th_padding: 8px !default;
+$table_td_th_line_height: 21px !default;
+$table_border_colour: #CCC !default;
+$table_border_radius: 3px !default;
+$table_alt_colour: #EFEFEF !default;
+$table_hover_colour: #999 !default;
+$table_condensed_padding: 4px 5px !default;
 
 
