@@ -82,8 +82,8 @@
 @mixin box-sizing($boxsize) {
   -webkit-box-sizing: $boxsize;
   -moz-box-sizing: $boxsize;
-  -ms-box-sizing: $boxsize; 
-  -o-box-sizing: $boxsize; 
+  -ms-box-sizing: $boxsize;
+  -o-box-sizing: $boxsize;
   -khtml-box-sizing: $boxsize;
   box-sizing: $boxsize;
 }
@@ -160,37 +160,37 @@
     .offset-by-fourteen { padding-left: $grid-column-width*14; }
     .offset-by-fifteen  { padding-left: $grid-column-width*15; }
 
-    .pull-by-one      { left: -$grid-column-width; }
-    .pull-by-two      { left: -$grid-column-width*2; }
-    .pull-by-three    { left: -$grid-column-width*3; }
-    .pull-by-four     { left: -$grid-column-width*4; }
-    .pull-by-five     { left: -$grid-column-width*5; }
-    .pull-by-six      { left: -$grid-column-width*6; }
-    .pull-by-seven    { left: -$grid-column-width*7; }
-    .pull-by-eight    { left: -$grid-column-width*8; }
-    .pull-by-nine     { left: -$grid-column-width*9; }
-    .pull-by-ten      { left: -$grid-column-width*10; }
-    .pull-by-eleven   { left: -$grid-column-width*11; }
-    .pull-by-twelve   { left: -$grid-column-width*12; }
-    .pull-by-thirteen { left: -$grid-column-width*13; }
-    .pull-by-fourteen { left: -$grid-column-width*14; }
-    .pull-by-fifteen  { left: -$grid-column-width*15; }
+    .pull-by-one      { margin-left: -$grid-column-width; }
+    .pull-by-two      { margin-left: -$grid-column-width*2; }
+    .pull-by-three    { margin-left: -$grid-column-width*3; }
+    .pull-by-four     { margin-left: -$grid-column-width*4; }
+    .pull-by-five     { margin-left: -$grid-column-width*5; }
+    .pull-by-six      { margin-left: -$grid-column-width*6; }
+    .pull-by-seven    { margin-left: -$grid-column-width*7; }
+    .pull-by-eight    { margin-left: -$grid-column-width*8; }
+    .pull-by-nine     { margin-left: -$grid-column-width*9; }
+    .pull-by-ten      { margin-left: -$grid-column-width*10; }
+    .pull-by-eleven   { margin-left: -$grid-column-width*11; }
+    .pull-by-twelve   { margin-left: -$grid-column-width*12; }
+    .pull-by-thirteen { margin-left: -$grid-column-width*13; }
+    .pull-by-fourteen { margin-left: -$grid-column-width*14; }
+    .pull-by-fifteen  { margin-left: -$grid-column-width*15; }
 
-    .push-by-one      { left: $grid-column-width; }
-    .push-by-two      { left: $grid-column-width*2; }
-    .push-by-three    { left: $grid-column-width*3; }
-    .push-by-four     { left: $grid-column-width*4; }
-    .push-by-five     { left: $grid-column-width*5; }
-    .push-by-six      { left: $grid-column-width*6; }
-    .push-by-seven    { left: $grid-column-width*7; }
-    .push-by-eight    { left: $grid-column-width*8; }
-    .push-by-nine     { left: $grid-column-width*9; }
-    .push-by-ten      { left: $grid-column-width*10; }
-    .push-by-eleven   { left: $grid-column-width*11; }
-    .push-by-twelve   { left: $grid-column-width*12; }
-    .push-by-thirteen { left: $grid-column-width*13; }
-    .push-by-fourteen { left: $grid-column-width*14; }
-    .push-by-fifteen  { left: $grid-column-width*15; }
+    .push-by-one      { margin-left: $grid-column-width; }
+    .push-by-two      { margin-left: $grid-column-width*2; }
+    .push-by-three    { margin-left: $grid-column-width*3; }
+    .push-by-four     { margin-left: $grid-column-width*4; }
+    .push-by-five     { margin-left: $grid-column-width*5; }
+    .push-by-six      { margin-left: $grid-column-width*6; }
+    .push-by-seven    { margin-left: $grid-column-width*7; }
+    .push-by-eight    { margin-left: $grid-column-width*8; }
+    .push-by-nine     { margin-left: $grid-column-width*9; }
+    .push-by-ten      { margin-left: $grid-column-width*10; }
+    .push-by-eleven   { margin-left: $grid-column-width*11; }
+    .push-by-twelve   { margin-left: $grid-column-width*12; }
+    .push-by-thirteen { margin-left: $grid-column-width*13; }
+    .push-by-fourteen { margin-left: $grid-column-width*14; }
+    .push-by-fifteen  { margin-left: $grid-column-width*15; }
   }
 }
 
@@ -204,11 +204,11 @@
 }
 
 @mixin visible {
-  display: block !important; 
+  display: block !important;
   visibility: visible;
 }
 
 @mixin hidden {
-  display: none !important; 
+  display: none !important;
   visibility: hidden;
 }
