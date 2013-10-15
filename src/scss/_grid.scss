@@ -2,27 +2,26 @@
 #Grid System
 
 <div class="one column alpha">One</div>
-<div class="eleven columns omega">Eleven</div>
-<div class="two columns alpha">Two</div>
-<div class="ten columns omega">Ten</div>
+<div class="fifteen columns omega">Fifteen</div>
 <div class="three columns alpha">Three</div>
+<div class="thirteen columns omega">Thirteen</div>
+<div class="push-by-twelve four columns alpha omega">Four Pushed by Twelve</div>
+<div class="seven columns alpha">Seven</div>
 <div class="nine columns omega">Nine</div>
 <div class="four columns alpha">Four</div>
-<div class="eight columns omega">Eight</div>
+<div class="twelve columns omega">Twelve</div>
 <div class="five columns alpha">Five</div>
-<div class="seven columns omega">Seven</div>
-<div class="six columns alpha">Six</div>
-<div class="six columns omega">Six</div>
-<div class="seven columns alpha">Seven</div>
-<div class="five columns omega">Five</div>
+<div class="eleven columns omega">Eleven</div>
 <div class="eight columns alpha">Eight</div>
-<div class="four  columns omega">Four</div>
-<div class="nine columns alpha">Nine</div>
+<div class="eight columns omega">Eight</div>
+<div class="six columns alpha">Six</div>
+<div class="ten columns omega">Ten</div>
+<div class="push-by-eight eight columns alpha omega">Eight Pushed by Eight</div>
+<div class="three columns alpha">Three</div>
+<div class="ten columns">Ten</div>
 <div class="three columns omega">Three</div>
-<div class="ten columns alpha">Ten</div>
-<div class="two columns omega">Two</div>
 <div class="eleven columns alpha">Eleven</div>
-<div class="one column omega">One</div>
+<div class="five columns omega">Five</div>
 */
 
 .container {
@@ -63,12 +62,6 @@
 
   .container {
     width: $tablet-container-width;
-    & .alpha {
-      margin-right: 10px;
-    }
-    & .omega {
-      margin-left: 10px;
-    }
   }
 }
 //--------------------------------------------------------------------
