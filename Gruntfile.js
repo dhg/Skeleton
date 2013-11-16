@@ -25,7 +25,7 @@ module.exports = function(grunt) {
         options: {
           absoluteFilePathsForFormatters: true,
           formatters: [
-              { id: 'csslint-xml', dest: 'build/csslint.xml' }
+              { id: 'lint-xml', dest: 'build/csslint.xml' }
           ]
         },
         src: ['build/css/Ribs.css']
