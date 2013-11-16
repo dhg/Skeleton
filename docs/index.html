@@ -31,11 +31,13 @@
 </ul>
 <h2 id="building">Building</h2>
 <p>I&#39;ve added grunt configuration to the repository for those of you that use it.</p>
-<p>There are 4 main tasks added:
-<em> default - Runs Sass to create the stylesheet from the source files, places the output in ./css then creates a minified version of the file and places it into the same directory
-</em> test - This runs CSSLint over the output CSS file (Note that there are a few bits in the original skeleton css that I still need to fix!)
-<em> minify - This literally just runs cssmin, useful if you&#39;ve edited Ribs.css directly
-</em> watch - This will monitor the scss directory for changes and automatically rebuild the css and minified css (Effectively the same as sass --watch but with added minification)</p>
+<p>There are 4 main tasks added:</p>
+<ul>
+<li>default - Runs Sass to create the stylesheet from the source files, places the output in ./css then creates a minified version of the file and places it into the same directory</li>
+<li>test - This runs CSSLint over the output CSS file (Note that there are a few bits in the original skeleton css that I still need to fix!)</li>
+<li>minify - This literally just runs cssmin, useful if you&#39;ve edited Ribs.css directly</li>
+<li>watch - This will monitor the scss directory for changes and automatically rebuild the css and minified css (Effectively the same as sass --watch but with added minification)</li>
+</ul>
 <h3 id="to-get-started-with-the-grunt-tools">To get started with the grunt tools</h3>
 <p>You need to install grunt-cli globally (<code>npm install -g grunt-cli</code>) to start with, otherwise you wont have a runner!
 Then following that, from the root dir of this project, run <code>npm install</code> which will set up all of the required dependencies.</p>

@@ -20,6 +20,15 @@ module.exports = function(grunt) {
       },
       brutal: {
         src: ['build/css/Ribs.css']
+      },
+      npci: {
+        options: {
+          absoluteFilePathsForFormatters: true,
+          formatters: [
+              { id: 'csslint-xml', dest: 'build/csslint.xml' }
+          ]
+        },
+        src: ['build/css/Ribs.css']
       }
     },
     cssmin: {
@@ -63,6 +72,7 @@ module.exports = function(grunt) {
   grunt.registerTask('docs', ['sass', 'styleguide']);
   grunt.registerTask('test', ['sass', 'csslint:scssoutput']);
   grunt.registerTask('minify', ['cssmin']);
+  grunt.registerTask('npci', ['sass', 'csslint:npci']);
   grunt.registerTask('default', ['sass', 'cssmin']);
 
 };
