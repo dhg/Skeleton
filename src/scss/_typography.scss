@@ -1,0 +1,116 @@
+// #Typography
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+h1 {
+  color: $heading_colour;
+  font-family: $heading_font;
+  font-weight: $heading_font_weight;
+  font-size: $heading1_font_size;
+  line-height: $heading1_line_height;
+  margin: $heading1_margin;
+}
+
+h2 {
+  color: $heading_colour;
+  font-family: $heading_font;
+  font-weight: $heading_font_weight;
+  font-size: $heading2_font_size;
+  line-height: $heading2_line_height;
+  margin: $heading2_margin;
+}
+
+h3 {
+  color: $heading_colour;
+  font-family: $heading_font;
+  font-weight: $heading_font_weight;
+  font-size: $heading3_font_size;
+  line-height: $heading3_line_height;
+  margin: $heading3_margin;
+}
+
+h4 {
+  color: $heading_colour;
+  font-family: $heading_font;
+  font-weight: $heading_font_weight;
+  font-size: $heading4_font_size;
+  line-height: $heading4_line_height;
+  margin: $heading4_margin;
+}
+
+h5 {
+  color: $heading_colour;
+  font-family: $heading_font;
+  font-weight: $heading_font_weight;
+  font-size: $heading5_font_size;
+  line-height: $heading5_line_height;
+}
+
+h6 {
+  color: $heading_colour;
+  font-family: $heading_font;
+  font-weight: $heading_font_weight;
+  font-size: $heading6_font_size;
+  line-height: $heading6_line_height;
+}
+
+.subheader {
+  color: $subheader_colour;
+}
+
+p {
+  margin: $paragraph_margin;
+  line-height: $paragraph_line_height;
+}
+
+p img {
+  margin: $paragraph_image_margin;
+}
+
+.lead {
+  font-size: $paragraph_lead_font_size;
+  line-height: $paragraph_lead_line_height;
+  color: $paragraph_lead_colour;
+}
+
+em {
+  font-style: $em_font_style;
+}
+
+strong {
+  font-weight: bold;
+  color: $strong_colour;
+}
+
+small {
+  font-size: $small_font_size;
+}
+
+blockquote, blockquote p {
+  font-size: $blockquote_font_size;
+  line-height: $blockquote_line_height;
+  color: $blockquote_colour;
+  font-style: $blockquote_font_style;
+}
+
+blockquote {
+  margin: $blockquote_margin;
+  padding: $blockquote_padding;
+  border-left: $blockquote_border_left;
+}
+
+blockquote cite {
+  display: block;
+  font-size: $blockquote_cite_font_size;
+  color: $blockquote_cite_colour;
+}
+
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
+  color: $blockquote_cite_link_colour;
+}

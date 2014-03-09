@@ -1,0 +1,182 @@
+/*
+#Grid System
+
+<div class="one column alpha">One</div>
+<div class="fifteen columns omega">Fifteen</div>
+<div class="three columns alpha">Three</div>
+<div class="thirteen columns omega">Thirteen</div>
+<div class="push-by-twelve four columns alpha omega">Four Pushed by Twelve</div>
+<div class="seven columns alpha">Seven</div>
+<div class="nine columns omega">Nine</div>
+<div class="four columns alpha">Four</div>
+<div class="twelve columns omega">Twelve</div>
+<div class="five columns alpha">Five</div>
+<div class="eleven columns omega">Eleven</div>
+<div class="eight columns alpha">Eight</div>
+<div class="eight columns omega">Eight</div>
+<div class="six columns alpha">Six</div>
+<div class="ten columns omega">Ten</div>
+<div class="push-by-eight eight columns alpha omega">Eight Pushed by Eight</div>
+<div class="three columns alpha">Three</div>
+<div class="ten columns">Ten</div>
+<div class="three columns omega">Three</div>
+<div class="eleven columns alpha">Eleven</div>
+<div class="five columns omega">Five</div>
+*/
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  & .alpha {
+    margin-left: 0;
+  }
+  & .omega {
+    margin-right: 0;
+  }
+}
+
+.column, .columns {
+  float: left;
+  margin-left: $gutter/2;
+  margin-right: $gutter/2;
+}
+
+.alpha-omega {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row {
+  margin-bottom: $gutter;
+}
+
+
+// #Desktop Grid
+@include grid($desktop-container-width, $column-count, $gutter);
+
+//-----------------------------------------------------------------------
+// #Tablet Grid
+@media only screen and (max-width: $tablet-max-breakpoint) {
+  @include grid($tablet-container-width, $column-count, $gutter);
+
+  .container {
+    width: $tablet-container-width;
+  }
+}
+//--------------------------------------------------------------------
+/*
+  #Mobile Grid
+  Every column element in this grid is the total grid width
+*/
+
+@media only screen and (max-width: $mobile-max-breakpoint) {
+  .container {
+    width: $mobile-container-width;
+    & .one,
+    & .two,
+    & .three,
+    & .four,
+    & .five,
+    & .six,
+    & .seven,
+    & .eight,
+    & .nine,
+    & .ten,
+    & .eleven,
+    & .twelve,
+    & .thirteen,
+    & .fourteen,
+    & .fifteen,
+    & .sixteen,
+    & .one-third,
+    & .two-thirds,
+    & .one-half,
+    & .one-quarter,
+    & .three-quarters
+    { width: $mobile-column-width; }
+
+    .column, .columns {
+      margin: 0;
+    }
+
+    .offset-by-one,
+    .offset-by-two,
+    .offset-by-three,
+    .offset-by-four,
+    .offset-by-five,
+    .offset-by-six,
+    .offset-by-seven,
+    .offset-by-eight,
+    .offset-by-nine,
+    .offset-by-ten,
+    .offset-by-eleven,
+    .offset-by-twelve,
+    .offset-by-thirteen,
+    .offset-by-fourteen,
+    .offset-by-fifteen { padding-left: 0; }
+  }
+}
+
+// #Clearing
+
+/*
+  ##Auto-applied clearfix for .container elements
+
+  ```<div class="container">
+    This element has clearfix applied in browsers that support the :after css selector
+  </div>```
+*/
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/*
+ ##General use clearfix class
+ ```<div class="clearfix">This haz clearfix</div>```
+ Use this clearfix class on parent to clear nested columns, or:
+ wrap each row of columns in a ```<div class="row">...</div>```
+*/
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+/*
+  ##Auto-applied clearfix for .row elements
+
+  ```<div class="row">
+    This element has clearfix applied in browsers that support the :after css selector
+  </div>```
+*/
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+
+.row, .clearfix {
+  zoom: 1;
+}
+
+/*
+  ##Block level clear
+  You can also use a ```<br class="clear">``` to clear columns
+*/
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}

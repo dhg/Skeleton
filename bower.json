@@ -1,0 +1,14 @@
+{
+  "name": "Ribs",
+  "version": "1.0.12",
+  "main": "build/css/Ribs.css",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nickpack/Ribs.git"
+  }
+}
