@@ -212,3 +212,19 @@
   display: none !important;
   visibility: hidden;
 }
+
+// @see http://pivotallabs.com/bulletproof-font-face-syntax-with-sass/
+// @see http://www.fontspring.com/blog/the-new-bulletproof-font-face-syntax
+@mixin declare-font-face($font_family, $font_filename, $font_weight : normal, $font_style :normal, $font_stretch : normal, $font_path: $font_path) {
+   @font-face {
+      font-family: '#{$font_family}';
+      src: url('#{$font_path}#{$font_filename}.eot?#iefix') format('embedded-opentype'),
+           url('#{$font_path}#{$font_filename}.woff') format('woff'),
+           url('#{$font_path}#{$font_filename}.ttf') format('truetype'),
+           url('#{$font_path}#{$font_filename}.svg##{$font_family}') format('svg');
+
+      font-weight: $font-weight;
+      font-style: $font-style;
+      font-stretch: $font-stretch;
+   }
+}

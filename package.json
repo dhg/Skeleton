@@ -2,7 +2,7 @@
   "name": "Ribs",
   "title": "Ribs",
   "description": "The evolution of Skeleton: A Beautiful Boilerplate for Responsive, Mobile-Friendly Development.",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "homepage": "https://github.com/nickpack/Ribs",
   "author": {
     "name": "Nick Pack",
@@ -33,7 +33,7 @@
     "grunt": "~0.4.1",
     "grunt-contrib-watch": "~0.3.1",
     "grunt-contrib-sass": "~0.3.0",
-    "grunt-contrib-csslint": "~0.1.1",
+    "grunt-contrib-csslint": "~0.1.2",
     "grunt-styleguide": "~0.2.6",
     "grunt-contrib-cssmin": "~0.5.0"
   }

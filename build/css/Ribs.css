@@ -347,6 +347,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*
+EXAMPLE - Declare Open Sans font-face (Remember to add the font files to $font_path)
+@include declare-font-face("Open Sans", "opensans-regular-webfont");
+*/
 body {
   background: #fff;
   font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;

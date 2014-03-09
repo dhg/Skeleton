@@ -13,6 +13,11 @@
 @import "normalize/_normalize";
 @import "_mixins";
 
+/*
+EXAMPLE - Declare Open Sans font-face (Remember to add the font files to $font_path)
+@include declare-font-face("Open Sans", "opensans-regular-webfont");
+*/
+
 // #General body style
 body {
   background: #fff;
