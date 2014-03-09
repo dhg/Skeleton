@@ -1,0 +1,47 @@
+// #Lists
+ul, ol {
+  margin: $list_margin;
+}
+
+ul {
+  list-style: $ul_list_style;
+}
+
+ol {
+  list-style: $ol_list_style;
+}
+
+ol, ul.square, ul.circle, ul.disc {
+  margin: $list_styled_margin;
+}
+
+ul.square {
+  list-style: square $list_styled_position;
+}
+
+ul.circle {
+  list-style: circle $list_styled_position;
+}
+
+ul.disc {
+  list-style: disc $list_styled_position;
+}
+
+ul ul, ul ol,
+ol ol, ol ul {
+  margin: $nested_list_margin;
+  font-size: $nested_list_font_size;
+}
+
+li {
+  line-height: $list_item_line_height;
+  margin: $list_item_margin;
+}
+
+.large li {
+  line-height: $list_large_line_height;
+}
+
+li p {
+  line-height: $list_item_paragraph_line_height;
+}

@@ -1,0 +1,230 @@
+@mixin button_border($rightbottom, $topleft) {
+  border: $rightbottom;
+  border-top: $topleft;
+  border-left: $topleft;
+}
+
+@mixin col-count($colCount, $colSpacing) {
+  -webkit-column-count: $colCount;
+  -webkit-column-gap: $colSpacing;
+  -moz-column-count: $colCount;
+  -moz-column-gap: $colSpacing;
+  column-count: $colCount;
+  column-gap: $colSpacing;
+}
+
+@mixin size($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin square($size) {
+  @include size($size, $size);
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin border-top-left-radius($radius) {
+  -webkit-border-top-left-radius: $radius;
+  -moz-border-radius-topleft: $radius;
+  border-top-left-radius: $radius;
+}
+
+@mixin border-top-right-radius($radius) {
+  -webkit-border-top-right-radius: $radius;
+  -moz-border-radius-topright: $radius;
+  border-top-right-radius: $radius;
+}
+
+@mixin border-bottom-right-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  -moz-border-radius-bottomright: $radius;
+  border-bottom-right-radius: $radius;
+}
+
+@mixin border-bottom-left-radius($radius) {
+  -webkit-border-bottom-left-radius: $radius;
+  -moz-border-radius-bottomleft: $radius;
+  border-bottom-left-radius: $radius;
+}
+
+@mixin border-top-radius($radius) {
+  @include border-top-right-radius($radius);
+  @include border-top-left-radius($radius);
+}
+
+@mixin border-right-radius($radius) {
+  @include border-top-right-radius($radius);
+  @include border-bottom-right-radius($radius);
+}
+
+@mixin border-bottom-radius($radius) {
+  @include border-bottom-right-radius($radius);
+  @include border-bottom-left-radius($radius);
+}
+
+@mixin border-left-radius($radius) {
+  @include border-top-left-radius($radius);
+  @include border-bottom-left-radius($radius);
+}
+
+@mixin background-size($size){
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  background-size: $size;
+}
+
+@mixin box-sizing($boxsize) {
+  -webkit-box-sizing: $boxsize;
+  -moz-box-sizing: $boxsize;
+  -ms-box-sizing: $boxsize;
+  -o-box-sizing: $boxsize;
+  -khtml-box-sizing: $boxsize;
+  box-sizing: $boxsize;
+}
+
+@mixin horizontal-gradient($startColour, $endColour) {
+  background-color: $fallback_hex_gradient_bg;
+  background-image: linear-gradient(to right, $startColour, $endColour);
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from($startColour), to($endColour));
+  background-image: -webkit-linear-gradient(left, $startColour, $endColour);
+  background-image: -moz-linear-gradient(left, $startColour, $endColour);
+  background-image: -o-linear-gradient(left, $startColour, $endColour);
+  background-repeat: repeat-x;
+}
+
+@mixin vertical-gradient($startColour, $endColour) {
+  background-color: $fallback_hex_gradient_bg;
+  background-color: mix($startColour, $endColour, 60%);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startColour), to($endColour));
+  background-image: -webkit-linear-gradient(top, $startColour, $endColour);
+  background-image: -moz-linear-gradient(top, $startColour, $endColour);
+  background-image: -o-linear-gradient(top, $startColour, $endColour);
+  background-image: linear-gradient(to bottom, $startColour, $endColour);
+  background-repeat: repeat-x;
+}
+
+@mixin box-shadow($a, $b, $c, $colour) {
+  -moz-box-shadow: $a $b $c $colour;
+  -webkit-box-shadow: $a $b $c $colour;
+  box-shadow: $a $b $c $colour;
+}
+
+@mixin grid($grid-container-width, $grid-column-count:$column-count, $grid-gutter:$gutter) {
+
+  $grid-column-width: $grid-container-width/$grid-column-count;
+
+  .container {
+    width: $grid-container-width;
+
+    .one         { width: (1*$grid-column-width - $grid-gutter); }
+    .two         { width: (2*$grid-column-width - $grid-gutter); }
+    .three       { width: (3*$grid-column-width - $grid-gutter); }
+    .four        { width: (4*$grid-column-width - $grid-gutter); }
+    .five        { width: (5*$grid-column-width - $grid-gutter); }
+    .six         { width: (6*$grid-column-width - $grid-gutter); }
+    .seven       { width: (7*$grid-column-width - $grid-gutter); }
+    .eight       { width: (8*$grid-column-width - $grid-gutter); }
+    .nine        { width: (9*$grid-column-width - $grid-gutter); }
+    .ten         { width: (10*$grid-column-width - $grid-gutter); }
+    .eleven      { width: (11*$grid-column-width - $grid-gutter); }
+    .twelve      { width: (12*$grid-column-width - $grid-gutter); }
+    .thirteen    { width: (13*$grid-column-width - $grid-gutter); }
+    .fourteen    { width: (14*$grid-column-width - $grid-gutter); }
+    .fifteen     { width: (15*$grid-column-width - $grid-gutter); }
+    .sixteen     { width: (16*$grid-column-width - $grid-gutter); }
+    .one-third   { width: ($grid-container-width/3) - $grid-gutter; }
+    .two-thirds  { width: (($grid-container-width/3)*2) - $grid-gutter; }
+    .one-half    { width: ($grid-container-width/2) - $grid-gutter; }
+    .one-quarter { width: ($grid-container-width/4) - $grid-gutter; }
+    .three-quarters { width: (($grid-container-width/4)*3) - $grid-gutter; }
+
+    .offset-by-one      { padding-left: $grid-column-width; }
+    .offset-by-two      { padding-left: $grid-column-width*2; }
+    .offset-by-three    { padding-left: $grid-column-width*3; }
+    .offset-by-four     { padding-left: $grid-column-width*4; }
+    .offset-by-five     { padding-left: $grid-column-width*5; }
+    .offset-by-six      { padding-left: $grid-column-width*6; }
+    .offset-by-seven    { padding-left: $grid-column-width*7; }
+    .offset-by-eight    { padding-left: $grid-column-width*8; }
+    .offset-by-nine     { padding-left: $grid-column-width*9; }
+    .offset-by-ten      { padding-left: $grid-column-width*10; }
+    .offset-by-eleven   { padding-left: $grid-column-width*11; }
+    .offset-by-twelve   { padding-left: $grid-column-width*12; }
+    .offset-by-thirteen { padding-left: $grid-column-width*13; }
+    .offset-by-fourteen { padding-left: $grid-column-width*14; }
+    .offset-by-fifteen  { padding-left: $grid-column-width*15; }
+
+    .pull-by-one      { margin-left: -$grid-column-width; }
+    .pull-by-two      { margin-left: -$grid-column-width*2; }
+    .pull-by-three    { margin-left: -$grid-column-width*3; }
+    .pull-by-four     { margin-left: -$grid-column-width*4; }
+    .pull-by-five     { margin-left: -$grid-column-width*5; }
+    .pull-by-six      { margin-left: -$grid-column-width*6; }
+    .pull-by-seven    { margin-left: -$grid-column-width*7; }
+    .pull-by-eight    { margin-left: -$grid-column-width*8; }
+    .pull-by-nine     { margin-left: -$grid-column-width*9; }
+    .pull-by-ten      { margin-left: -$grid-column-width*10; }
+    .pull-by-eleven   { margin-left: -$grid-column-width*11; }
+    .pull-by-twelve   { margin-left: -$grid-column-width*12; }
+    .pull-by-thirteen { margin-left: -$grid-column-width*13; }
+    .pull-by-fourteen { margin-left: -$grid-column-width*14; }
+    .pull-by-fifteen  { margin-left: -$grid-column-width*15; }
+
+    .push-by-one      { margin-left: $grid-column-width; }
+    .push-by-two      { margin-left: $grid-column-width*2; }
+    .push-by-three    { margin-left: $grid-column-width*3; }
+    .push-by-four     { margin-left: $grid-column-width*4; }
+    .push-by-five     { margin-left: $grid-column-width*5; }
+    .push-by-six      { margin-left: $grid-column-width*6; }
+    .push-by-seven    { margin-left: $grid-column-width*7; }
+    .push-by-eight    { margin-left: $grid-column-width*8; }
+    .push-by-nine     { margin-left: $grid-column-width*9; }
+    .push-by-ten      { margin-left: $grid-column-width*10; }
+    .push-by-eleven   { margin-left: $grid-column-width*11; }
+    .push-by-twelve   { margin-left: $grid-column-width*12; }
+    .push-by-thirteen { margin-left: $grid-column-width*13; }
+    .push-by-fourteen { margin-left: $grid-column-width*14; }
+    .push-by-fifteen  { margin-left: $grid-column-width*15; }
+  }
+}
+
+@mixin clearfix {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+@mixin visible {
+  display: block !important;
+  visibility: visible;
+}
+
+@mixin hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+// @see http://pivotallabs.com/bulletproof-font-face-syntax-with-sass/
+// @see http://www.fontspring.com/blog/the-new-bulletproof-font-face-syntax
+@mixin declare-font-face($font_family, $font_filename, $font_weight : normal, $font_style :normal, $font_stretch : normal, $font_path: $font_path) {
+   @font-face {
+      font-family: '#{$font_family}';
+      src: url('#{$font_path}#{$font_filename}.eot?#iefix') format('embedded-opentype'),
+           url('#{$font_path}#{$font_filename}.woff') format('woff'),
+           url('#{$font_path}#{$font_filename}.ttf') format('truetype'),
+           url('#{$font_path}#{$font_filename}.svg##{$font_family}') format('svg');
+
+      font-weight: $font-weight;
+      font-style: $font-style;
+      font-stretch: $font-stretch;
+   }
+}

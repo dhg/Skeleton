@@ -1,0 +1,167 @@
+// #Buttons
+// ##Normal
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  @include vertical-gradient($form_button_gradient_start, $form_button_gradient_end);
+  @include button_border($form_button_border_rightbottom, $form_button_border_topleft);
+  @include border-radius($form_button_border_radius);
+  color: $form_button_text_colour;
+  display: inline-block;
+  font-size: $form_button_font_size;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: $form_button_text_shadow;
+  cursor: pointer;
+  margin: $form_input_margin;
+  line-height: $form_button_line_height;
+  padding: $form_button_padding;
+  font-family: $form_element_font;
+}
+
+// ##Hover
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  @include vertical-gradient($form_button_hover_gradient_start, $form_button_hover_gradient_end);
+  color: $form_button_hover_text_colour;
+  @include button_border($form_button_hover_border_rightbottom, $form_button_hover_border_topleft);
+}
+
+// ##Active
+.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+  @include vertical-gradient($form_button_active_gradient_start, $form_button_active_gradient_end);
+  border: $form_button_active_border;
+}
+
+// ##Full width
+.button .full-width,
+button.full-width,
+input[type="submit"].full-width,
+input[type="reset"].full-width,
+input[type="button"].full-width {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+// ##Fix for odd Mozilla border & padding issues
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+// #Forms
+
+/*
+  ##General margins (all sides)
+  Applied to both form, and fieldset
+*/
+form {
+  margin: $form_fieldset_margin;
+}
+
+fieldset {
+  margin: $form_fieldset_margin;
+}
+
+/*
+  ##Search/URL fields
+  Make these behave as text fields
+*/
+input[type="search"],
+input[type="url"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+/*
+  ##General form element styles, border etc.
+  Applied to all except checkboxes
+*/
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+input[type="url"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  border: $form_input_border;
+  padding: $form_input_padding;
+  @include border-radius($form_input_border_radius);
+  font: $form_input_font_size $form_element_font;
+  color: $form_input_text_colour;
+  width: $form_input_width;
+  max-width: $form_input_max_width;
+  display: block;
+  margin: $form_input_margin;
+  background: $form_input_background;
+}
+
+/*
+  ##Select boxes
+  Padding and width applied from settings
+*/
+select {
+  padding: $form_input_select_padding;
+  width: $form_input_select_width;
+}
+
+/*
+  ##Form element focus styles
+  Applied to all except checkboxes and selects
+*/
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border: $form_input_focus_border;
+  color: $form_input_focus_text_colour;
+  outline: $form_input_focus_outline;
+  @include box-shadow($form_input_focus_box_shadow_x, $form_input_focus_box_shadow_y, $form_input_focus_box_shadow_blur, $form_input_focus_box_shadow_colour)
+}
+
+// ##Textarea min height
+textarea {
+  min-height: $form_textarea_min_height;
+}
+
+// ##Label/legend font settings
+label,
+legend {
+  display: block;
+  font-weight: $legend_font_weight;
+  font-size: $legend_font_size;
+}
+
+// ##Checkbox display
+input[type="checkbox"] {
+  display: $form_input_checkbox_display;
+}
+
+/*
+  ##Spans inside legends, or labels
+  Alters font size, weight and colour based on variables
+*/
+label span,
+legend span {
+  font-weight: $form_label_legend_font_weight;
+  font-size: $form_input_font_size;
+  color: $form_label_legend_colour;
+}

@@ -1,0 +1,11 @@
+// #Images
+/*
+ ## Scale an image in line with the responsive grid
+ ```
+ <img src="foo.jpg" title="Scaling image of Foo" class="scale-with-grid">
+ ```
+*/
+.scale-with-grid {
+  max-width: 100%;
+  height: auto;
+}

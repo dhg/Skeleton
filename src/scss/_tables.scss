@@ -1,0 +1,253 @@
+//
+// #Tables
+// --------------------------------------------------
+// The majority of concepts here are shamelessly borrowed from Bootstrap and amended to fit
+// https://raw.github.com/twitter/bootstrap/master/less/tables.less
+
+/*
+##Basic table style
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nick</td>
+      <td>Pack</td>
+      <td>@nickpack</td>
+    </tr>
+  </tbody>
+</table>
+*/
+table {
+  max-width: 100%;
+  background: $table_background;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin: $table_margin;
+  th,
+  td {
+    padding: $table_td_th_padding;
+    line-height: $table_td_th_line_height;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid $table_border_colour;
+  }
+  th {
+    font-weight: bold;
+  }
+
+  thead th {
+    vertical-align: bottom;
+  }
+
+  caption thead tr:first-child th,
+  caption thead tr:first-child td,
+  colgroup thead tr:first-child th,
+  colgroup thead tr:first-child td,
+  thead:first-child tr:first-child th,
+  thead:first-child tr:first-child td {
+    border-top: 0;
+  }
+
+  tbody tbody {
+    border-top: 2px solid $table_border_colour;
+  }
+
+  table {
+    background: $table_background;
+  }
+}
+
+/*
+##Condensed table style
+
+<table class="table-condensed">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nick</td>
+      <td>Pack</td>
+      <td>@nickpack</td>
+    </tr>
+  </tbody>
+</table>
+*/
+.table-condensed {
+  th,
+  td {
+    padding: $table_condensed_padding;
+  }
+}
+
+/*
+##Bordered table style
+
+<table class="table-bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nick</td>
+      <td>Pack</td>
+      <td>@nickpack</td>
+    </tr>
+  </tbody>
+</table>
+*/
+.table-bordered {
+  border: 1px solid $table_border_colour;
+  border-collapse: separate;
+  border-left: 0;
+  @include border-radius($table_border_radius);
+  th,
+  td {
+    border-left: 1px solid $table_border_colour;
+  }
+
+  caption thead tr:first-child th,
+  caption tbody tr:first-child th,
+  caption tbody tr:first-child td,
+  colgroup thead tr:first-child th,
+  colgroup tbody tr:first-child th,
+  colgroup tbody tr:first-child td,
+  thead:first-child tr:first-child th,
+  tbody:first-child tr:first-child th,
+  tbody:first-child tr:first-child td {
+    border-top: 0;
+  }
+
+  thead:first-child tr:first-child > th:first-child,
+  tbody:first-child tr:first-child > td:first-child,
+  tbody:first-child tr:first-child > th:first-child {
+    @include border-top-left-radius($table_border_radius);
+  }
+
+  thead:first-child tr:first-child > th:last-child,
+  tbody:first-child tr:first-child > td:last-child,
+  tbody:first-child tr:first-child > th:last-child {
+    @include border-top-right-radius($table_border_radius);
+  }
+
+  thead:last-child tr:last-child > th:first-child,
+  tbody:last-child tr:last-child > td:first-child,
+  tbody:last-child tr:last-child > th:first-child,
+  tfoot:last-child tr:last-child > td:first-child,
+  tfoot:last-child tr:last-child > th:first-child {
+    @include border-bottom-left-radius($table_border_radius);
+  }
+
+  thead:last-child tr:last-child > th:last-child,
+  tbody:last-child tr:last-child > td:last-child,
+  tbody:last-child tr:last-child > th:last-child,
+  tfoot:last-child tr:last-child > td:last-child,
+  tfoot:last-child tr:last-child > th:last-child {
+    @include border-bottom-right-radius($table_border_radius);
+  }
+
+  tfoot tbody:last-child tr:last-child td:first-child {
+    @include border-bottom-left-radius(0);
+  }
+  tfoot tbody:last-child tr:last-child td:last-child {
+    @include border-bottom-right-radius(0);
+  }
+
+  caption thead tr:first-child th:first-child,
+  caption tbody tr:first-child td:first-child,
+  colgroup thead tr:first-child th:first-child,
+  colgroup tbody tr:first-child td:first-child {
+    @include border-top-left-radius($table_border_radius);
+  }
+  caption thead tr:first-child th:last-child,
+  caption tbody tr:first-child td:last-child,
+  colgroup thead tr:first-child th:last-child,
+  colgroup tbody tr:first-child td:last-child {
+    @include border-top-right-radius($table_border_radius);
+  }
+
+}
+
+/*
+##Striped table style
+
+<table class="table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nick</td>
+      <td>Pack</td>
+      <td>@nickpack</td>
+    </tr>
+  </tbody>
+</table>
+*/
+.table-striped {
+  tbody {
+    > tr:nth-child(odd) > td,
+    > tr:nth-child(odd) > th {
+      background-color: $table_alt_colour;
+    }
+  }
+}
+
+/*
+##Hover table style
+
+<table class="table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Nick</td>
+      <td>Pack</td>
+      <td>@nickpack</td>
+    </tr>
+  </tbody>
+</table>
+*/
+.table-hover {
+  tbody {
+    tr:hover > td,
+    tr:hover > th {
+      background-color: $table_hover_colour;
+    }
+  }
+}
