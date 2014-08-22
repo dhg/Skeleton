@@ -79,7 +79,7 @@
 	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
 
 	em { font-style: italic; }
-	strong { font-weight: bold; color: #333; }
+	strong { font-weight: bold; }
 	small { font-size: 80%; }
 
 /*	Blockquotes  */
