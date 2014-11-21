@@ -1,0 +1,73 @@
+.container {
+  width: 760px;
+}
+.header {
+  margin-top: 17rem;
+  text-align: center;
+}
+.value-props {
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+}
+.docs-header {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: .2rem;
+  font-weight: 600;
+}
+.docs-section {
+  border-top: 1px solid #eee;
+  padding: 6rem 0;
+}
+.value-img {
+  display: block;
+  text-align: center;
+  margin: 0 auto 1rem;
+}
+.example-grid .column,
+.example-grid .columns {
+  background: #EEE;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+}
+.docs-example .row,
+.docs-example.row,
+.docs-example pre,
+.docs-example pre,
+.docs-example .eleven.columns.alpha,
+.docs-example .one.column.omega {
+  margin-bottom: 0;
+}
+.docs-example h1,
+.docs-example h2,
+.docs-example h3,
+.docs-example h4,
+.docs-example h5,
+.docs-example h6 {
+  margin-bottom: 1rem;
+}
+
+.heading-font-size {
+  font-size: 1.2rem;
+  color: #999;
+  letter-spacing: normal;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 85%;
+  }
+}

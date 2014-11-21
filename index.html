@@ -6,28 +6,34 @@
 <head>
 
 	<!-- Basic Page Needs
-  ================================================== -->
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta charset="utf-8">
 	<title>Your Page Title Here :)</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
 	<!-- Mobile Specific Metas
-  ================================================== -->
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
 	<!-- CSS
-  ================================================== -->
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="stylesheets/normalize.css">
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/custom.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
 	<!-- Favicons
-	================================================== -->
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
@@ -36,41 +42,195 @@
 </head>
 <body>
 
-
-
 	<!-- Primary Page Layout
-	================================================== -->
-
-	<!-- Delete everything in this .container and get started on your own site! -->
-
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<div class="container">
-		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">Skeleton</h1>
-			<h5>Version 1.2</h5>
-			<hr />
-		</div>
-		<div class="one-third column">
-			<h3>About Skeleton?</h3>
-			<p>Skeleton is a small collection of well-organized CSS files that can help you rapidly develop sites that look beautiful at any size, be it a 17" laptop screen or an iPhone. It's based on a responsive grid, but also provides very basic CSS for typography, buttons, forms and media queries. Go ahead, resize this super basic page to see the grid in action.</p>
-		</div>
-		<div class="one-third column">
-			<h3>Three Core Principles</h3>
-			<p>Skeleton is built on three core principles:</p>
-			<ul class="square">
-				<li><strong>A Responsive Grid Down To Mobile</strong>: Elegant scaling from a browser to tablets to mobile.</li>
-				<li><strong>Fast to Start</strong>: It's a tool for rapid development with best practices</li>
-				<li><strong>Style Agnostic</strong>: It provides the most basic, beautiful styles, but is meant to be overwritten.</li>
-			</ul>
-		</div>
-		<div class="one-third column">
-			<h3>Docs &amp; Support</h3>
-			<p>The easiest way to really get started with Skeleton is to check out the full docs and info at <a href="http://www.getskeleton.com">www.getskeleton.com.</a>. Skeleton is also open-source and has a <a href="https://github.com/dhgamache/skeleton">project on git</a>, so check that out if you want to report bugs or create a pull request. If you have any questions, thoughts, concerns or feedback, please don't hesitate to email me at <a href="mailto:hi@getskeleton.com">hi@getskeleton.com</a>.</p>
+		<section class="header">
+			<h3 class="title">A responsive boilerplate just for the basics.</h3>
+			<a class="button">Download</a>
+			<div class="value-props row">
+				<div class="four columns offset-by-two">
+					<img class="value-img" src="images/frame.svg">
+					Mobile first and weighing in at measly .5kb
+				</div>
+				<div class="four columns">
+					<img class="value-img" src="images/frame.svg">
+					Only styles basic HTML elements
+				</div>
+				<div class="four columns">
+					<img class="value-img" src="images/frame.svg">
+					Not a framework, but a jumping off point for devs
+				</div>
+			</div>
+		</section>
+
+		<!-- Why use Skeleton -->
+		<div class="row">
+			<div class="twelve columns offset-by-two docs-section">
+				<h6 class="docs-header">Why use Skeleton</h6>
+				<p>You should use Skeleton if you're feeling like whole UI frameworks like Bootstrap, Foundation, and Pure are overkill for your projects and you just want the basics. Just styling the 80+ standard HTML elements (&lt;button&gt;, &lt;p&gt;, &lt;nav&gt;, &hellip;) can get you really far. For what it's worth, <u>this site is built on Skeleton and only requires ~100 lines of additional CSS.</u></p>
+			</div>
 		</div>
 
-	</div><!-- container -->
+		<!-- Grid -->
+		<div class="row">
+			<div class="twelve columns offset-by-two docs-section">
+				<h6 class="docs-header">The grid</h6>
+				<p>The grid is just a <u>12-column fluid grid with a max width of 960px</u> (but this can be changed with one line of CSS). The syntax is simple and it makes responsive implementation much, much easier. Go ahead, resize the browser. </p>
+				<div class="example-grid docs-example">
+					<div class="one column alpha">One</div>
+					<div class="eleven columns omega">Eleven</div>
+					<div class="two columns alpha">Two</div>
+					<div class="ten columns omega">Ten</div>
+					<div class="three columns alpha">Three</div>
+					<div class="nine columns omega">Nine</div>
+					<div class="four columns alpha">Four</div>
+					<div class="eight columns omega">Eight</div>
+					<div class="five columns alpha">Five</div>
+					<div class="seven columns omega">Seven</div>
+					<div class="six columns alpha">Six</div>
+					<div class="six columns omega">Six</div>
+					<div class="seven columns alpha">Seven</div>
+					<div class="five columns omega">Five</div>
+					<div class="eight columns alpha">Eight</div>
+					<div class="four  columns omega">Four</div>
+					<div class="nine columns alpha">Nine</div>
+					<div class="three columns omega">Three</div>
+					<div class="ten columns alpha">Ten</div>
+					<div class="two columns omega">Two</div>
+					<div class="eleven columns alpha">Eleven</div>
+					<div class="one column omega">One</div>
+				</div>
+			</div>		
+		</div>
+
+		<!-- Typography -->
+		<div class="row">
+			<div class="twelve columns offset-by-two docs-section">
+				<h6 class="docs-header">Typography</h6>
+				<p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships are responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Everything is still base 10 though so, an <code>&lt;h1&gt;</code> is <code>5.0rem</code>, which just means <code>50px</code>.</p>
+				<div class="docs-example">
+					<div class="row">
+						<div class="six columns alpha">
+							<p><strong>The typography base</strong> is 15rem (15px) over a 1.6 line height (24px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
+							<p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>, <code>line-height</code>, and <code>margins</code>.</p>
+						</div>
+						<div class="six columns omega">
+							<h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 50rem</span></h1>
+							<h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 42rem</span></h2>
+							<h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 36rem</span></h3>
+							<h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 30rem</span></h4>
+							<h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 24rem</span></h5>
+							<h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> 15rem</span></h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Buttons -->
+		<div class="row">
+			<div class="twelve columns offset-by-two docs-section">
+				<h6 class="docs-header">Buttons</h6>
+				<p>Buttons come in two basic flavors in Skeleton. The standard <code>&lt;button&gt;</code> element is vibrant, whereas the <code>.secondary</code> button takes a monotone backseat.</p>
+				<div class="docs-example">
+					<a class="button">Anchor button</a>
+					<button>Button element</button>
+					<a class="button secondary">Anchor button</a>
+					<button class="secondary">Button element</button>
+				</div>
+			</div>
+		</div>	
+
+		<!-- Forms -->
+		<div class="row">
+			<div class="twelve columns offset-by-two docs-section">
+				<h6 class="docs-header">Forms</h6>
+			</div>
+		</div>
+
+		<!-- Lists -->
+		<div class="row">
+			<div class="twelve columns offset-by-two docs-section">
+				<h6 class="docs-header">Lists</h6>
+				<div class="row docs-example">
+					<div class="six columns alpha">
+						<ul>
+							<li>Unordered lists have basic styles</li>
+							<li>
+								They use the circle list style
+								<ul>
+									<li>Nested lists styled to feel right</li>
+									<li>Can nest either type of list into the other</li>
+								</ul>
+							</li>
+							<li>Just more list items mama san</li>
+						</ul>
+					</div>
+					<div class="six columns omega">
+						<ol>
+							<li>Ordered lists also have basic styles</li>
+							<li>
+								They use the decimal list style
+								<ul>
+									<li>Ordered and unordered can be nested</li>
+									<li>Can nest either type of list into the other</li>
+								</ul>
+							</li>
+							<li>Last list item just for the fun</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Code -->
+		<div class="row">
+			<div class="twelve columns offset-by-two docs-section">
+				<h6 class="docs-header">Code</h6>
+				<p>Code styling was kept super basic – basically just wrap something in a <code>&lt;code&gt;</code> tag and it will look just like that code tag just did. For blocks of code just use a <code>&lt;pre&gt;</code> tag.</p>
+				<div class="docs-example">
+					<pre>.some-class {<br>&nbsp;&nbsp;background-color: red<br>}</pre>
+				</div>
+			</div>
+		</div>
+
+		<!-- Tables -->
+		<div class="row">
+			<div class="twelve columns offset-by-two docs-section">
+				<h6 class="docs-header">Tables</h6>
+			</div>
+		</div>
+
+		<!-- Queries -->
+		<div class="row">
+			<div class="twelve columns offset-by-two docs-section">
+				<h6 class="docs-header">Media queries</h6>
+			</div>
+		</div>
+
+		<!-- Other -->
+		<div class="row">
+			<div class="twelve columns offset-by-two docs-section">
+				<h6 class="docs-header">Miscellaneous</h6>
+				<p>hrs, images</p>
+			</div>
+		</div>
+
+
+		<!-- ONES I SHOULD MAYBE DO? -->
+		<!-- nav -->
+		<!-- header -->
+		<!-- footer -->
+		<!-- iframe -->
+		<!-- video/object -->
+		<!-- audio? -->
+
+
+	</div>
 
 
 <!-- End Document
-================================================== -->
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
