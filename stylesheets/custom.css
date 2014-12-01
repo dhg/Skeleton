@@ -53,6 +53,8 @@
 }
 .code-example-body {
   white-space: pre;
+  /*overflow: auto;*/
+  word-wrap: break-word
 }
 .code-snippets-visible .code-example {
   display: block;

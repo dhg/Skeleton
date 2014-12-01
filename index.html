@@ -259,23 +259,64 @@
         <form>
           <div class="row">
             <div class="six columns">
-              <label for="exampleTextInput">Your email</label>
-              <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleTextInput">
+              <label for="exampleEmailInput">Your email</label>
+              <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
             </div>
             <div class="six columns">
-              <label for="exampleTextInput">Recipient's Email</label>
-              <input class="u-full-width" type="email" placeholder="secr3tPa55w0rd" id="exampleTextInput">
+              <label for="exampleRecipientInput">Reason for contacting</label>
+              <select class="u-full-width">
+                <option value="Option 1">Questions</option>
+                <option value="Option 2">Admiration</option>
+                <option value="Option 3">Can I get your number?</option>
+              </select>
             </div>
-            <label>Message</label>
-            <textarea class="u-full-width" placeholder="Hi Dave &hellip;"></textarea>
-            <label class="example-send-yourself-copy">
-              <input type="checkbox">
-              <span class="label-body">Send a copy to yourself</span>
-            </label>
-            <input type="submit" value="Submit">
           </div>
+          <label for="exampleMessage">Message</label>
+          <textarea class="u-full-width" placeholder="Hi Dave &hellip;" id="exampleMessage"></textarea>
+          <label class="example-send-yourself-copy">
+            <input type="checkbox">
+            <span class="label-body">Send a copy to yourself</span>
+          </label>
+          <input class="button-primary" type="submit" value="Submit">
         </form>
       </div>
+
+
+<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="code-example">
+<code class="code-example-body prettyprint"><!-- The above form looks like this -->
+<form>
+  <div class="row">
+    <div class="six columns">
+      <label for="exampleEmailInput">Your email</label>
+      <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+    </div>
+    <div class="six columns">
+      <label for="exampleRecipientInput">Reason for contacting</label>
+      <select class="u-full-width">
+        <option value="Option 1">Questions</option>
+        <option value="Option 2">Admiration</option>
+        <option value="Option 3">Can I get your number?</option>
+      </select>
+    </div>
+  </div>
+  <label for="exampleMessage">Message</label>
+  <textarea class="u-full-width" placeholder="Hi Dave &hellip;" id="exampleMessage"></textarea>
+  <label class="example-send-yourself-copy">
+    <input type="checkbox">
+    <span class="label-body">Send a copy to yourself</span>
+  </label>
+  <input class="button-primary" type="submit" value="Submit">
+</form>
+
+<!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
+
+<!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
+</code>
+</pre>
+<!-- ————————————————————————————————————————————————————— -->
+
+
     </div>
 
     <!-- Lists -->
@@ -309,6 +350,28 @@
           </ol>
         </div>
       </div>
+
+
+<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="code-example">
+<code class="code-example-body prettyprint"><ul>
+  <li>Item 1</li>
+  <li>
+    Item 2
+    <ul>
+      <li>Item 2.1</li>
+      <li>Item 2.2</li>
+    </ul>
+  </li>
+  <li>Item 3</li>
+</ul>
+
+<!-- Easily substitute any <ul> or an <ol> to get number lists or sublists. Skeleton doesn't support lists nested deeper than 2 levels -->
+</code>
+</pre>
+<!-- ————————————————————————————————————————————————————— -->
+
+
     </div>
 
     <!-- Code -->
@@ -316,14 +379,30 @@
       <h6 class="docs-header">Code</h6>
       <p>Code styling was kept super basic – basically just wrap something in a <code>&lt;code&gt;</code> tag and it will look just like that code tag just did. For blocks of code, wrap a <code>&lt;code&gt;</code> tag with a <code>&lt;pre&gt;</code> tag.</p>
       <div class="docs-example">
-        <pre><code>.some-class {<br>&nbsp;&nbsp;background-color: red<br>}</code></pre>
+<pre><code>.some-class {
+  background-color: red;
+}</code></pre>
       </div>
+
+
+<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="code-example">
+<code class="code-example-body prettyprint"><pre><code>.some-class {
+  background-color: red;
+}</code></pre>
+
+<!-- Remember every whitespace and break will be preserved in a <pre>, including indentation in your code -->
+</code>
+</pre>
+<!-- ————————————————————————————————————————————————————— -->
+
+
     </div>
 
     <!-- Tables -->
     <div class="row docs-section">
       <h6 class="docs-header">Tables</h6>
-      <p>Only most basic styling for tabular data. Remember to always use a proper table structure – check the code example if you're not sure about it.</p>
+      <p>Only super basic styling for tabular data. Using properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> is important here.</p>
       <div class="docs-example">
         <table class="u-full-width">
           <thead>
@@ -350,6 +429,39 @@
           </tbody>
         </table>
       </div>
+
+
+<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="code-example">
+<code class="code-example-body prettyprint"><table class="u-full-width">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Sex</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dave Gamache</td>
+      <td>26</td>
+      <td>Male</td>
+      <td>San Francisco</td>
+    </tr>
+    <tr>
+      <td>Dwayne Johnson</td>
+      <td>42</td>
+      <td>Male</td>
+      <td>Hayward</td>
+    </tr>
+  </tbody>
+</table>
+</code>
+</pre>
+<!-- ————————————————————————————————————————————————————— -->
+
+
     </div>
 
     <!-- Queries -->
@@ -371,6 +483,51 @@
           </ul>         
         </div>
       </div>
+
+
+<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="code-example">
+<code class="code-example-body prettyprint">/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+
+/* Desktop first queries */
+
+/* Smaller than Desktop HD */
+@media (max-width: 1199px) {}
+
+/* Smaller than desktop */
+@media (max-width: 999px) {}
+
+/* Smaller than tablet */
+@media (max-width: 749px) {}
+
+/* Smaller than phablet */
+@media (max-width: 549px) {}
+
+/* Smaller than mobile */
+@media (max-width: 399px) {}
+
+/* Note: Values are 1px less on desktop first queries so there's no overriding in case you use both types of queries  */
+</code>
+</pre>
+<!-- ————————————————————————————————————————————————————— -->
+
+
     </div>
 
     <!-- Examples -->
@@ -382,6 +539,7 @@
     <div class="row docs-section">
       <h6 class="docs-header">License &amp; Log</h6>
       <p>All parts of Skeleton are free to use and abuse under the <a href="http://opensource.org/licenses/mit-license.php">open-source MIT license</a>. More importantly, if you're into coding head over to the <a href="https://github.com/dhg/Skeleton">Github page</a> and contribute or fork this bad boy.</p>
+      <p>Skeleton's version history is available <a href="#">on Github</a>.</p>
     </div>
 
     <div class="code-toggler">

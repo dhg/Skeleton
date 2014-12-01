@@ -185,7 +185,8 @@ select {
 	height: 36px;
 	padding: 0 10px;
 	border-radius: 4px;
-	box-shadow: none; }
+	box-shadow: none;
+  background: #fff; }
 textarea {
 	min-height: 65px;
 	padding-top: 6px;
@@ -249,7 +250,7 @@ code {
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
-  white-space: normal; }
+  white-space: pre; }
 
 
 /* Tables
@@ -324,20 +325,21 @@ on small devices, paste the mobile query code up in the buttons secion and style
 there. 
 */
 
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
 
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {}
+/* Larger than mobile */
+@media (min-width: 400px) {}
 
 /* Larger than phablet */
 @media (min-width: 550px) {}
 
-/* Larger than mobile */
-@media (min-width: 400px) {}
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
 
 /* Smaller than Desktop HD */
 @media (max-width: 1199px) {}
