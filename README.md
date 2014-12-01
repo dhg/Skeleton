@@ -6,8 +6,8 @@ Check out <http://getskeleton.com> for documentation and details.
 ## Getting started
 
 There are a couple ways to download Skeleton:
-- [Download the tarball from Github]().
-- Clone the repo: `git clone https://github.com/twbs/bootstrap.git`.
+- [Download the tarball]().
+- Clone the repo: `git clone https://github.com/dhg/Skeleton.git`.
 
 
 ### What's in the download?
@@ -44,7 +44,7 @@ Skeleton is lightweight and simple. It styles only raw HTML elements (with a few
 
 ## Acknowledgement
 
-Skeleton was created by [Dave Gamache](https://twitter.com/dhg).
+Skeleton was created by [Dave Gamache](https://twitter.com/dhg) for a better web.
 
 
 ## License
