@@ -6,8 +6,8 @@ Check out <http://getskeleton.com> for documentation and details.
 ## Getting started
 
 There are a couple ways to download Skeleton:
-- [Download the tarball]().
-- Clone the repo: `git clone https://github.com/dhg/Skeleton.git`.
+- [Download the zip](https://github.com/dhg/Skeleton/archive/v-2.0.zip)
+- Clone the repo: `git clone https://github.com/dhg/Skeleton.git`
 
 
 ### What's in the download?
