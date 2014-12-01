@@ -32,7 +32,8 @@
   font-weight: 600;
   letter-spacing: .1rem; }
 .docs-example .row,
-.docs-example.row {
+.docs-example.row,
+.docs-example form {
   margin-bottom: 0; }
 .docs-example h1,
 .docs-example h2,
@@ -46,9 +47,12 @@
   color: #999;
   letter-spacing: normal; }
 .code-example {
-  margin-top: 0;
+  margin-top: 1.5rem;
   margin-bottom: 0;
   display: none;
+}
+.code-example-body {
+  white-space: pre;
 }
 .code-snippets-visible .code-example {
   display: block;
