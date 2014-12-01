@@ -1,105 +1,355 @@
 /*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
+* Skeleton V2.0
+* Copyright 2014, Dave Gamache
 * www.getskeleton.com
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
+* 11/25/2014
 */
 
 
-/* Table of Contents
-==================================================
-    #Base 960 Grid
-    #Tablet (Portrait)
-    #Mobile (Portrait)
-    #Mobile (Landscape)
-    #Clearing */
+/* Table of contents
+–––––––––––––––––––––––––––––––––––––––––––––––––– 
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
 
 
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* #Base 960 Grid
-================================================== */
+.container {
+	position: relative; 
+	width: 80%; 
+	max-width: 960px; 
+	margin: 0 auto; 
+	padding: 0; }
+.container .column,        
+.container .columns { 
+	float: left; 
+	width: 100%; 
+	box-sizing: border-box; }
+.row { 
+	margin-bottom: 20px; }
+.row .column:first-child,        
+.row .columns:first-child { 
+	margin-left: 0; }
 
-    .container                                  { position: relative; max-width: 960px; margin: 0 auto; padding: 0; }
-    .container .column,
-    .container .columns                         { float: left; margin-left: 4%; box-sizing: border-box;}
-    .row                                        { margin-bottom: 20px; }
-    .row .column:first-child,
-    .row .columns:first-child                   { margin-left: 0; }
+@media (min-width: 550px) {
+  
+  .container .column,
+  .container .columns {
+    margin-left: 4%; }
+  
+  .container .one.column,
+  .container .one.columns          { width: 4.66666666667%; }
+  .container .two.columns          { width: 13.3333333333%; }
+  .container .three.columns        { width: 22%;            }
+  .container .four.columns         { width: 30.6666666667%; }
+  .container .five.columns         { width: 39.3333333333%; }
+  .container .six.columns          { width: 48%;            }
+  .container .seven.columns        { width: 56.6666666667%; }
+  .container .eight.columns        { width: 65.3333333333%; }
+  .container .nine.columns         { width: 74.0%;          }
+  .container .ten.columns          { width: 82.6666666667%; }
+  .container .eleven.columns       { width: 91.3333333333%; }
+  .container .twelve.columns       { width: 100%; margin-left: 0; }
 
+  .container .one-third.column     { width: 30.6666666667%; }
+  .container .two-thirds.column    { width: 65.3333333333%; }
 
-    /* Nested Column Classes */
-    .column.alpha, .columns.alpha               { margin-left: 0; }
-    .column.omega, .columns.omega               { margin-right: 0; }
+  .container .one-half.column      { width: 48%; }
 
-    /* Base Grid */
-    .container .one.column,
-    .container .one.columns                     { width: 4.66666666667%; }
-    .container .two.columns                     { width: 13.3333333333%; }
-    .container .three.columns                   { width: 22%;            }
-    .container .four.columns                    { width: 30.6666666667%; }
-    .container .five.columns                    { width: 39.3333333333%; }
-    .container .six.columns                     { width: 48%;            }
-    .container .seven.columns                   { width: 56.6666666667%; }
-    .container .eight.columns                   { width: 65.3333333333%; }
-    .container .nine.columns                    { width: 74.0%;          }
-    .container .ten.columns                     { width: 82.6666666667%; }
-    .container .eleven.columns                  { width: 91.3333333333%; }
-    .container .twelve.columns                  { width: 100%;           }
-
-    .container .one-third.column                { width: 30.6666666667%; }
-    .container .two-thirds.column               { width: 48%;            }
-
-
-
-/* #Tablet (Portrait)
-================================================== */
-
-@media only screen and (max-width: 1200px) {
-  .container {
-    width: 85%;
-  }
 }
 
-@media only screen and (max-width: 800px) {
-  .container {
-    width: 80%;
-  }
-}
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton 
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html { 
+	font-size: 62.5%; } 
+body {
+	background: #fff;
+	font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+	line-height: 1.6;
+	font-weight: 400;
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #222; }
 
 
-/* #Clearing
-================================================== */
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 { 
+	font-weight: 300;
+	margin-top: 0;
+	margin-bottom: 2rem; }
+h1 { font-size: 5.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+h2 { font-size: 4.2rem; line-height: 1.25; letter-spacing: -.1rem; }
+h3 { font-size: 3.6rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-size: 3.0rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 2.4rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
-    /* Self Clearing Goodness */
-    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
 
-    /* Use clearfix class on parent to clear nested columns,
-    or wrap each row of columns in a <div class="row"> */
-    .clearfix:before,
-    .clearfix:after,
-    .row:before,
-    .row:after {
-      content: '\0020';
-      display: block;
-      overflow: hidden;
-      visibility: hidden;
-      width: 0;
-      height: 0; }
-    .row:after,
-    .clearfix:after {
-      clear: both; }
-    .row,
-    .clearfix {
-      zoom: 1; }
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a { 
+	color: #1EAEDB; }
+a:hover,
+a:focus { 
+	color: #0FA0CE; }
 
-    /* You can also use a <br class="clear" /> to clear columns */
-    .clear {
-      clear: both;
-      display: block;
-      overflow: hidden;
-      visibility: hidden;
-      width: 0;
-      height: 0;
-    }
+
+/* Buttons 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #bbb;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 30px;
+  letter-spacing: .1rem;
+  text-transform: uppercase; 
+  white-space: nowrap;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  border-color: #888;
+  color: #333;
+  outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  border-color: #33C3F0;
+  background-color: #33C3F0; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  background-color: #1EAEDB;
+  border-color: #1EAEDB;
+  color: #FFF; }
+
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="search"],
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+	border: 1px solid #D1D1D1;
+	height: 36px;
+	padding: 0 10px;
+	border-radius: 4px;
+	box-shadow: none; }
+textarea {
+	min-height: 65px;
+	padding-top: 6px;
+	padding-bottom: 6px; }
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+	border: 1px solid #33C3F0;
+	outline: 0; }
+label,
+legend {
+  display: block;
+  font-weight: 600;
+  margin-bottom: .5rem; }
+input[disabled] {
+	cursor: not-allowed;
+	background-color: #EFEFEF; }
+fieldset {
+	border-width: 0;
+	padding: 0; }
+input[type="checkbox"] {
+  display: inline; }
+label > .label-body {
+  font-weight: normal;
+  margin-left: .5rem;
+  display: inline-block; }
+
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul { 
+	list-style: circle inside; }
+ol { 
+	list-style: decimal inside; }
+ol, ul {
+  margin-top: 0;
+	padding-left: 0; }
+ul ul, 
+ul ol,
+ol ol, 
+ol ul { 
+	margin: 1.5rem 0 1.5rem 3rem; 
+	font-size: 90%; }
+li {
+	margin-bottom: 1rem; }
+
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+	padding: .2rem .5rem;
+	margin: 0 .2rem;
+	font-size: 90%;
+	background: #F1F1F1;
+	border: 1px solid #E1E1E1;
+	border-radius: 4px;
+	white-space: nowrap; }
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: normal; }
+
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+th,
+td {
+	padding: 12px 15px;
+	text-align: left;
+	border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+	padding-left: 0; }
+th:last-child,
+td:last-child {
+	padding-right: 0; }
+
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+button,
+.button {
+	margin-bottom: 1rem; }
+input,
+textarea,
+select,
+fieldset {
+	margin-bottom: 1.5rem; }
+p,
+hr,
+pre,
+blockquote,
+form,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+	margin-bottom: 2.5rem; }
+
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+.u-pull-right {
+	float: right; }
+.u-pull-left {
+	float: left; }
+
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf { 
+	content: "";
+  display: table;
+  clear: both; }
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries 
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons secion and style it 
+there. 
+*/
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Smaller than Desktop HD */
+@media (max-width: 1199px) {}
+
+/* Smaller than desktop */
+@media (max-width: 999px) {}
+
+/* Smaller than tablet */
+@media (max-width: 749px) {}
+
+/* Smaller than phablet */
+@media (max-width: 549px) {}
+
+/* Smaller than mobile */
+@media (max-width: 399px) {}

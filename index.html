@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
 
 	<!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta charset="utf-8">
-	<title>Your Page Title Here :)</title>
+	<title>Your Page Title Here</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -23,21 +20,12 @@
 	<!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="stylesheets/normalize.css">
-	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
 	<link rel="stylesheet" href="stylesheets/custom.css">
-
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 
 	<!-- Favicons
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
 </head>
 <body>
@@ -46,188 +34,346 @@
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<div class="container">
 		<section class="header">
-			<h3 class="title">A responsive boilerplate just for the basics.</h3>
-			<a class="button">Download</a>
+			<h3 class="title">A dead simple, responsive boilerplate.</h3>
+			<a class="button button-primary">Download</a>
 			<div class="value-props row">
 				<div class="four columns offset-by-two">
-					<img class="value-img" src="images/frame.svg">
-					Mobile first and weighing in at measly .5kb
+					<img class="value-img" src="images/feathers.svg">
+					Super light at less than a kb &amp; built with mobile in mind.
 				</div>
 				<div class="four columns">
 					<img class="value-img" src="images/frame.svg">
-					Only styles basic HTML elements
+					Styles designed to be a starting point, not a UI framework.
 				</div>
 				<div class="four columns">
 					<img class="value-img" src="images/frame.svg">
-					Not a framework, but a jumping off point for devs
+					No compiling or installing necessary. Just vanilla CSS.
 				</div>
 			</div>
 		</section>
 
+		<div class="social-bar">
+
+		</div>
+
 		<!-- Why use Skeleton -->
-		<div class="row">
-			<div class="twelve columns offset-by-two docs-section">
-				<h6 class="docs-header">Why use Skeleton</h6>
-				<p>You should use Skeleton if you're feeling like whole UI frameworks like Bootstrap, Foundation, and Pure are overkill for your projects and you just want the basics. Just styling the 80+ standard HTML elements (&lt;button&gt;, &lt;p&gt;, &lt;nav&gt;, &hellip;) can get you really far. For what it's worth, <u>this site is built on Skeleton and only requires ~100 lines of additional CSS.</u></p>
-			</div>
+		<div class="docs-section">
+			<h6 class="docs-header">Is Skeleton for you?</h6>
+			<p>You should use Skeleton if you're feeling like whole UI frameworks like Bootstrap and Foundation are overkill for your project and you just want the basics. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, <u>this site is built on Skeleton and has less than 100 lines of custom CSS.</u></p>
+			<p>Love Skeleton and want to share it, follow it, love it? Well, I appreciate that <3</p>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.getskeleton.com" data-text="Skeleton - A dead simple, responsive boilerplate." data-via="dhg" data-related="dhg">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.getskeleton.com&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=151131931646052" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px; width:140px" allowTransparency="true"></iframe>
+			<iframe src="http://ghbtns.com/github-btn.html?user=dhg&repo=Skeleton&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+  		<iframe src="http://ghbtns.com/github-btn.html?user=dhg&repo=Skeleton&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
 		</div>
 
 		<!-- Grid -->
-		<div class="row">
-			<div class="twelve columns offset-by-two docs-section">
-				<h6 class="docs-header">The grid</h6>
-				<p>The grid is just a <u>12-column fluid grid with a max width of 960px</u> (but this can be changed with one line of CSS). The syntax is simple and it makes responsive implementation much, much easier. Go ahead, resize the browser. </p>
-				<div class="example-grid docs-example">
-					<div class="one column alpha">One</div>
-					<div class="eleven columns omega">Eleven</div>
-					<div class="two columns alpha">Two</div>
-					<div class="ten columns omega">Ten</div>
-					<div class="three columns alpha">Three</div>
-					<div class="nine columns omega">Nine</div>
-					<div class="four columns alpha">Four</div>
-					<div class="eight columns omega">Eight</div>
-					<div class="five columns alpha">Five</div>
-					<div class="seven columns omega">Seven</div>
-					<div class="six columns alpha">Six</div>
-					<div class="six columns omega">Six</div>
-					<div class="seven columns alpha">Seven</div>
-					<div class="five columns omega">Five</div>
-					<div class="eight columns alpha">Eight</div>
-					<div class="four  columns omega">Four</div>
-					<div class="nine columns alpha">Nine</div>
-					<div class="three columns omega">Three</div>
-					<div class="ten columns alpha">Ten</div>
-					<div class="two columns omega">Two</div>
-					<div class="eleven columns alpha">Eleven</div>
-					<div class="one column omega">One</div>
+		<div class="docs-section">
+			<h6 class="docs-header">The grid</h6>
+			<p>The grid is just a <u>12-column fluid grid with a max width of 960px</u>, but the max can be changed with one line of CSS. The syntax is simple and it makes responsive implementation much, much easier. Go ahead, resize the browser. </p>
+			<div class="example-grid docs-example">
+				<div class="row">
+					<div class="one column">One</div>
+					<div class="eleven columns">Eleven</div>
 				</div>
-			</div>		
+				<div class="row">
+					<div class="two columns">Two</div>
+					<div class="ten columns">Ten</div>
+				</div>
+				<div class="row">
+					<div class="three columns">Three</div>
+					<div class="nine columns">Nine</div>
+				</div>
+				<div class="row">
+					<div class="four columns">Four</div>
+					<div class="eight columns">Eight</div>
+				</div>
+				<div class="row">
+					<div class="five columns">Five</div>
+					<div class="seven columns">Seven</div>
+				</div>
+				<div class="row">
+					<div class="six columns">Six</div>
+					<div class="six columns">Six</div>
+				</div>
+				<div class="row">
+					<div class="seven columns">Seven</div>
+					<div class="five columns">Five</div>
+				</div>
+				<div class="row">
+					<div class="eight columns">Eight</div>
+					<div class="four  columns">Four</div>
+				</div>
+				<div class="row">
+					<div class="nine columns">Nine</div>
+					<div class="three columns">Three</div>
+				</div>
+				<div class="row">
+					<div class="ten columns">Ten</div>
+					<div class="two columns">Two</div>
+				</div>
+				<div class="row">
+					<div class="eleven columns">Eleven</div>
+					<div class="one column">One</div>
+				</div>
+			</div>
+			
+
+<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="code-example">
+	<code class="code-example-body">
+		<div class="container">
+			<div class="row">
+				<div class="one column">One</div>
+				<div class="eleven columns">Eleven</div>
+			</div>
+			<div class="row">
+				<div class="two columns">Two</div>
+				<div class="ten columns">Ten</div>
+			</div>
+			<!-- ...few more in-between .rows -->
+			<div class="row">
+				<div class="ten columns">Ten</div>
+				<div class="two columns">Two</div>
+			</div>
+			<div class="row">
+				<div class="eleven columns">Eleven</div>
+				<div class="one column">One</div>
+			</div>
 		</div>
+	</code>
+</pre>
+<!-- ————————————————————————————————————————————————————— -->
+		
+
+		</div>		
 
 		<!-- Typography -->
-		<div class="row">
-			<div class="twelve columns offset-by-two docs-section">
-				<h6 class="docs-header">Typography</h6>
-				<p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships are responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Everything is still base 10 though so, an <code>&lt;h1&gt;</code> is <code>5.0rem</code>, which just means <code>50px</code>.</p>
-				<div class="docs-example">
-					<div class="row">
-						<div class="six columns alpha">
-							<p><strong>The typography base</strong> is 15rem (15px) over a 1.6 line height (24px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
-							<p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>, <code>line-height</code>, and <code>margins</code>.</p>
-						</div>
-						<div class="six columns omega">
-							<h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 50rem</span></h1>
-							<h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 42rem</span></h2>
-							<h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 36rem</span></h3>
-							<h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 30rem</span></h4>
-							<h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 24rem</span></h5>
-							<h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> 15rem</span></h6>
-						</div>
+		<div class="row docs-section">
+			<h6 class="docs-header">Typography</h6>
+			<p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships are responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Everything is still base 10 though so, an <code>&lt;h1&gt;</code> is <code>5.0rem</code>, which just means <code>50px</code>.</p>
+			<div class="docs-example">
+				<div class="row">
+					<div class="six columns">
+						<p><strong>The typography base</strong> is 15rem (15px) over a 1.6 line height (24px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
+						<p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>, <code>line-height</code>, and <code>margins</code>.</p>
+					</div>
+					<div class="six columns">
+						<h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 50rem</span></h1>
+						<h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 42rem</span></h2>
+						<h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 36rem</span></h3>
+						<h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 30rem</span></h4>
+						<h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 24rem</span></h5>
+						<h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> 15rem</span></h6>
 					</div>
 				</div>
 			</div>
+			<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="code-example">
+	<code class="code-example-body">
+		<div class="container">
+			<div class="row">
+				<div class="one column">One</div>
+				<div class="eleven columns">Eleven</div>
+			</div>
+		</div>
+	</code>
+</pre>
+<!-- ————————————————————————————————————————————————————— -->
 		</div>
 
 		<!-- Buttons -->
-		<div class="row">
-			<div class="twelve columns offset-by-two docs-section">
-				<h6 class="docs-header">Buttons</h6>
-				<p>Buttons come in two basic flavors in Skeleton. The standard <code>&lt;button&gt;</code> element is vibrant, whereas the <code>.secondary</code> button takes a monotone backseat.</p>
-				<div class="docs-example">
-					<a class="button">Anchor button</a>
-					<button>Button element</button>
-					<a class="button secondary">Anchor button</a>
-					<button class="secondary">Button element</button>
-				</div>
+		<div class="row docs-section">
+			<h6 class="docs-header">Buttons</h6>
+			<p>Buttons come in two basic flavors in Skeleton. The standard <code>&lt;button&gt;</code> element is vibrant, whereas the <code>.secondary</code> button takes a monotone backseat.</p>
+			<div class="docs-example">
+				<a class="button" href="#">Anchor button</a>
+				<button>Button element</button>
+				<a class="button button-primary" href="#">Anchor button</a>
+				<button class="button button-primary">Button element</button>
 			</div>
 		</div>	
 
 		<!-- Forms -->
-		<div class="row">
-			<div class="twelve columns offset-by-two docs-section">
-				<h6 class="docs-header">Forms</h6>
+		<div class="row docs-section">
+			<h6 class="docs-header">Forms</h6>
+			<p>Forms are a huge pain, but hopefully these styles make it a bit easier.</p>
+			<div class="docs-example docs-example-forms">
+				<form>
+					<div class="row">
+						<div class="six columns">
+							<label for="exampleTextInput">Your email</label>
+							<input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleTextInput">
+						</div>
+						<div class="six columns">
+							<label for="exampleTextInput">Recipient's Email</label>
+							<input class="u-full-width" type="email" placeholder="secr3tPa55w0rd" id="exampleTextInput">
+						</div>
+						<label>Message</label>
+						<textarea class="u-full-width" placeholder="Hi Dave &hellip;"></textarea>
+						<label class="example-send-yourself-copy">
+							<input type="checkbox">
+							<span class="label-body">Send a copy to yourself</span>
+						</label>
+						<input type="submit" value="Submit">
+					</div>
+				</form>
 			</div>
 		</div>
 
 		<!-- Lists -->
-		<div class="row">
-			<div class="twelve columns offset-by-two docs-section">
-				<h6 class="docs-header">Lists</h6>
-				<div class="row docs-example">
-					<div class="six columns alpha">
-						<ul>
-							<li>Unordered lists have basic styles</li>
-							<li>
-								They use the circle list style
-								<ul>
-									<li>Nested lists styled to feel right</li>
-									<li>Can nest either type of list into the other</li>
-								</ul>
-							</li>
-							<li>Just more list items mama san</li>
-						</ul>
-					</div>
-					<div class="six columns omega">
-						<ol>
-							<li>Ordered lists also have basic styles</li>
-							<li>
-								They use the decimal list style
-								<ul>
-									<li>Ordered and unordered can be nested</li>
-									<li>Can nest either type of list into the other</li>
-								</ul>
-							</li>
-							<li>Last list item just for the fun</li>
-						</ol>
-					</div>
+		<div class="docs-section">
+			<h6 class="docs-header">Lists</h6>
+			<div class="row docs-example">
+				<div class="six columns">
+					<ul>
+						<li>Unordered lists have basic styles</li>
+						<li>
+							They use the circle list style
+							<ul>
+								<li>Nested lists styled to feel right</li>
+								<li>Can nest either type of list into the other</li>
+							</ul>
+						</li>
+						<li>Just more list items mama san</li>
+					</ul>
+				</div>
+				<div class="six columns">
+					<ol>
+						<li>Ordered lists also have basic styles</li>
+						<li>
+							They use the decimal list style
+							<ul>
+								<li>Ordered and unordered can be nested</li>
+								<li>Can nest either type of list into the other</li>
+							</ul>
+						</li>
+						<li>Last list item just for the fun</li>
+					</ol>
 				</div>
 			</div>
 		</div>
 
 		<!-- Code -->
-		<div class="row">
-			<div class="twelve columns offset-by-two docs-section">
-				<h6 class="docs-header">Code</h6>
-				<p>Code styling was kept super basic – basically just wrap something in a <code>&lt;code&gt;</code> tag and it will look just like that code tag just did. For blocks of code just use a <code>&lt;pre&gt;</code> tag.</p>
-				<div class="docs-example">
-					<pre>.some-class {<br>&nbsp;&nbsp;background-color: red<br>}</pre>
-				</div>
+		<div class="row docs-section">
+			<h6 class="docs-header">Code</h6>
+			<p>Code styling was kept super basic – basically just wrap something in a <code>&lt;code&gt;</code> tag and it will look just like that code tag just did. For blocks of code just use a <code>&lt;pre&gt;</code> tag.</p>
+			<div class="docs-example">
+				<pre><code>.some-class {<br>&nbsp;&nbsp;background-color: red<br>}</code></pre>
 			</div>
 		</div>
 
 		<!-- Tables -->
-		<div class="row">
-			<div class="twelve columns offset-by-two docs-section">
-				<h6 class="docs-header">Tables</h6>
+		<div class="row docs-section">
+			<h6 class="docs-header">Tables</h6>
+			<p>Only most basic styling for tabular data. Remember to always use a proper table structure – check the code example if you're not sure about it.</p>
+			<div class="docs-example">
+				<table class="u-full-width">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Age</th>
+							<th>Sex</th>
+							<th>Location</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Dave Gamache</td>
+							<td>26</td>
+							<td>Male</td>
+							<td>San Francisco</td>
+						</tr>
+						<tr>
+							<td>Dwayne Johnson</td>
+							<td>42</td>
+							<td>Male</td>
+							<td>Hayward</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 
 		<!-- Queries -->
-		<div class="row">
-			<div class="twelve columns offset-by-two docs-section">
-				<h6 class="docs-header">Media queries</h6>
+		<div class="row docs-section">
+			<h6 class="docs-header">Media queries</h6>
+			<p>Skeleton uses media queries to serve the scalable grid, but also has a list of queries for convenience of styling your site across devices. There are two sets of queries, the first is mobile-first style, meaning they target <code>min-width</code> so all the base styles are mobile, then queries are used to enhance for larger screen sizes. Mobile-first queries are how Skeleton's grid is styled. I've also provided the same set of queries with <code>max-width</code> if that's your preference. The sizes for the queries are:</p>
+			<div class="docs-example row">
+				<div class="six columns">
+					<ul>
+						<li><strong>Desktop HD</strong>: 1200px</li>
+						<li><strong>Desktop</strong>: 1000px</li>
+						<li><strong>Tablet</strong>: 750px</li>
+					</ul>					
+				</div>
+				<div class="six columns">
+					<ul>
+						<li><strong>Phablet</strong>: 550px</li>
+						<li><strong>Mobile</strong>: 400px</li>
+					</ul>					
+				</div>
 			</div>
 		</div>
 
-		<!-- Other -->
-		<div class="row">
-			<div class="twelve columns offset-by-two docs-section">
-				<h6 class="docs-header">Miscellaneous</h6>
-				<p>hrs, images</p>
-			</div>
+		<!-- Examples -->
+		<div class="row docs-section">
+			<h6 class="docs-header">Examples of Skeleton sites</h6>
 		</div>
 
+		<!-- License & Log -->
+		<div class="row docs-section">
+			<h6 class="docs-header">License &amp; Log</h6>
+			<p>All parts of Skeleton are free to use and abuse under the <a href="http://opensource.org/licenses/mit-license.php">open-source MIT license</a>. More importantly, if you're into coding head over to the <a href="https://github.com/dhg/Skeleton">Github page</a> and contribute or fork this bad boy.</p>
+		</div>
 
-		<!-- ONES I SHOULD MAYBE DO? -->
-		<!-- nav -->
-		<!-- header -->
-		<!-- footer -->
-		<!-- iframe -->
-		<!-- video/object -->
-		<!-- audio? -->
-
+		<div class="code-toggler">
+			<span class="code-toggle"></span>
+			<span class="code-label">
+				<span class="code-label-show">Show </span>
+				<span class="code-label-hide">Hide </span>
+				code
+			</span>
+		</div>
 
 	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		
+		$(document).ready(function() {
+			
+
+			var codeIsActive = false,
+					$sections = $('.docs-section'),
+					$window = $(window)
+
+			$('.code-toggler').on('click', toggleCode)
+
+			function toggleCode() {
+				var windowScrollTop = $window.scrollTop()
+				var offsetHeight = windowScrollTop
+				$sections.each(function (i) { 
+					if($(this).children('.code-example').length > 0) {
+						var codeExampleHeight = $(this).children('.code-example').outerHeight(true),
+								sectionBottomPadding = parseInt($('.docs-section').css('padding-bottom'))
+						if(windowScrollTop > $(this).offset().top + $(this).outerHeight() - sectionBottomPadding) {
+							if(codeIsActive == false) {
+								offsetHeight += codeExampleHeight
+							} else {
+								offsetHeight -= codeExampleHeight
+							}
+						}
+					}
+				})
+				$('body').toggleClass('code-snippets-visible')
+				codeIsActive = !codeIsActive
+				$window.scrollTop(offsetHeight)
+			}
+
+	  });
+	</script>
 
 
 <!-- End Document
