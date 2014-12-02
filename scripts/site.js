@@ -1,10 +1,11 @@
 $(document).ready(function() {
 
   // Variables
-  var codeIsActive = true,
-      $codeSnippets = $('.code-example-body'),
-      $sections = $('.docs-section'),
+  var $codeSnippets = $('.code-example-body'),
+      $nav = $('.navbar'),
+      $body = $('body'),
       $window = $(window),
+      navOffsetTop = $nav.offset().top,
       entityMap = {
         "&": "&amp;",
         "<": "&lt;",
@@ -15,8 +16,22 @@ $(document).ready(function() {
       }
 
   function init() {
-    $('.code-toggler').on('click', toggleCode)
+    $window.on('scroll', onScroll)
+    $window.on('resize', resize)
     buildSnippets();
+  }
+
+  function resize() {
+    navOffsetTop = $nav.offset().top
+  }
+
+  function onScroll() {
+    if(navOffsetTop < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
+      $body.addClass('has-docked-nav')
+    }
+    if(navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
+      $body.removeClass('has-docked-nav')
+    }
   }
 
   function escapeHtml(string) {
@@ -32,26 +47,6 @@ $(document).ready(function() {
     })
   }
 
-  function toggleCode() {
-    var windowScrollTop = $window.scrollTop()
-    var offsetHeight = windowScrollTop
-    $sections.each(function (i) { 
-      if($(this).children('.code-example').length > 0) {
-        var codeExampleHeight = $(this).children('.code-example').outerHeight(true),
-            sectionBottomPadding = parseInt($('.docs-section').css('padding-bottom'))
-        if(windowScrollTop > $(this).offset().top + $(this).outerHeight() - sectionBottomPadding) {
-          if(codeIsActive == false) {
-            offsetHeight += codeExampleHeight
-          } else {
-            offsetHeight -= codeExampleHeight
-          }
-        }
-      }
-    })
-    $('body').toggleClass('code-snippets-visible')
-    codeIsActive = !codeIsActive
-    $window.scrollTop(offsetHeight)
-  }
 
   init();
 
