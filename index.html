@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your Page Title Here</title>
+  <title>Skeleton: Responsive CSS Boilerplate</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -33,6 +33,7 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
 
 </head>
 <body class="code-snippets-visible">
@@ -41,20 +42,24 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <section class="header">
-      <h3 class="title">A dead simple, responsive boilerplate.</h3>
+      <h2 class="title">A dead simple, responsive boilerplate.</h2>
       <a class="button button-primary">Download</a>
       <div class="value-props row">
-        <div class="four columns offset-by-two">
-          <img class="value-img" src="images/feathers.svg">
-          Super light at less than a kb &amp; built with mobile in mind.
+        <div class="four columns offset-by-two value-prop">
+          <img class="value-img" src="images/feather.svg">
+          Light as a feather at less than a kb &amp; built with mobile in mind.
+          <!-- Attr: http://thenounproject.com/term/feather/22073/ -->
         </div>
-        <div class="four columns">
-          <img class="value-img" src="images/frame.svg">
+        <div class="four columns value-prop">
+          <img class="value-img" src="images/pens.svg">
+          <!-- Attr: bottom pen - http://thenounproject.com/term/pen/32847/ -->
+          <!-- Attr: top pen - http://thenounproject.com/term/pen/21163/ -->
           Styles designed to be a starting point, not a UI framework.
         </div>
-        <div class="four columns">
-          <img class="value-img" src="images/frame.svg">
-          No compiling or installing necessary. Just vanilla CSS.
+        <div class="four columns value-prop">
+          <img class="value-img" src="images/watch.svg">
+          <!-- Attr: http://thenounproject.com/term/watch/48012/ -->
+          Quick to start with zero compiling or installing necessary.
         </div>
       </div>
     </section>
@@ -66,8 +71,8 @@
     <!-- Why use Skeleton -->
     <div class="docs-section">
       <h6 class="docs-header">Is Skeleton for you?</h6>
-      <p>You should use Skeleton if you're feeling like whole UI frameworks like Bootstrap and Foundation are overkill for your project and you just want the basics. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, <u>this site is built on Skeleton and has less than 100 lines of custom CSS.</u></p>
-      <p>Love Skeleton and want to share it, follow it, love it? Well, I appreciate that <3</p>
+      <p>You should use Skeleton if you're feeling like whole UI frameworks like Bootstrap and Foundation are overkill for your project and you just want the basics. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, <u>this site is built on Skeleton and has just over 100 lines of custom CSS.</u></p>
+      <p>Love Skeleton and want to Tweet it, share it, or star it? Well, I appreciate that <3</p>
       <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.getskeleton.com" data-text="Skeleton - A dead simple, responsive boilerplate." data-via="dhg" data-related="dhg">Tweet</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.getskeleton.com&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=151131931646052" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px; width:140px" allowTransparency="true"></iframe>
@@ -78,7 +83,7 @@
     <!-- Grid -->
     <div class="docs-section">
       <h6 class="docs-header">The grid</h6>
-      <p>The grid is just a <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes responsive implementation much, much easier. Go ahead, resize the browser. </p>
+      <p>The grid is a <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser. </p>
       <div class="example-grid docs-example">
         <div class="row">
           <div class="one column">One</div>
@@ -167,11 +172,11 @@
     <!-- Typography -->
     <div class="row docs-section">
       <h6 class="docs-header">Typography</h6>
-      <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships are responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Everything is still base 10 though so, an <code>&lt;h1&gt;</code> is <code>5.0rem</code>, which just means <code>50px</code>.</p>
+      <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Skeleton never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
       <div class="docs-example">
         <div class="row">
           <div class="six columns">
-            <p><strong>The typography base</strong> is 15rem (15px) over a 1.6 line height (24px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
+            <p><strong>The typography base</strong> is <a href="http://www.google.com/fonts/specimen/Raleway">Raleway</a> served by Google, set at 15rem (15px) over a 1.6 line height (24px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
             <p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>, <code>line-height</code>, and <code>margins</code>.</p>
           </div>
           <div class="six columns">
@@ -214,7 +219,7 @@
     <!-- Buttons -->
     <div class="row docs-section">
       <h6 class="docs-header">Buttons</h6>
-      <p>Buttons come in two basic flavors in Skeleton. The standard <code>&lt;button&gt;</code> element is plain, whereas the <code>.button-primary</code> button is vibrant and prominent.</p>
+      <p>Buttons come in two basic flavors in Skeleton. The standard <code>&lt;button&gt;</code> element is plain, whereas the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form elements, but can also be arbitrarily attached to anchors with a <code>.button</code> class.</p>
       <div class="docs-example">
         <div>
           <a class="button" href="#">Anchor button</a>
@@ -254,7 +259,7 @@
     <!-- Forms -->
     <div class="row docs-section">
       <h6 class="docs-header">Forms</h6>
-      <p>Forms are a huge pain, but hopefully these styles make it a bit easier.</p>
+      <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
       <div class="docs-example docs-example-forms">
         <form>
           <div class="row">
@@ -377,7 +382,7 @@
     <!-- Code -->
     <div class="row docs-section">
       <h6 class="docs-header">Code</h6>
-      <p>Code styling was kept super basic – basically just wrap something in a <code>&lt;code&gt;</code> tag and it will look just like that code tag just did. For blocks of code, wrap a <code>&lt;code&gt;</code> tag with a <code>&lt;pre&gt;</code> tag.</p>
+      <p>Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.</p>
       <div class="docs-example">
 <pre><code>.some-class {
   background-color: red;
@@ -402,7 +407,7 @@
     <!-- Tables -->
     <div class="row docs-section">
       <h6 class="docs-header">Tables</h6>
-      <p>Only super basic styling for tabular data. Using properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> is important here.</p>
+      <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
       <div class="docs-example">
         <table class="u-full-width">
           <thead>
@@ -467,7 +472,7 @@
     <!-- Queries -->
     <div class="row docs-section">
       <h6 class="docs-header">Media queries</h6>
-      <p>Skeleton uses media queries to serve the scalable grid, but also has a list of queries for convenience of styling your site across devices. There are two sets of queries, the first is mobile-first style, meaning they target <code>min-width</code> so all the base styles are mobile, then queries are used to enhance for larger screen sizes. Mobile-first queries are how Skeleton's grid is styled. I've also provided the same set of queries with <code>max-width</code> if that's your preference. The sizes for the queries are:</p>
+      <p>Skeleton uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. There are two sets of queries. The first set is mobile-first, meaning it targets <code>min-width</code>. The other set is desktop-first, meaning  it targets <code>max-width</code>. Mobile-first queries are how Skeleton's grid is built and is a preferrable method of organizing CSS. The sizes for the queries are:</p>
       <div class="docs-example row">
         <div class="six columns">
           <ul>
@@ -530,16 +535,61 @@
 
     </div>
 
+
+    <!-- Utilities and Misc. -->
+    <div class="row docs-section">
+      <h6 class="docs-header">Utilities</h6>
+      <p>Skeleton has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility class than create a whole new class just to float an element.</p>
+
+
+<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="code-example">
+<code class="code-example-body prettyprint">/* Utility Classes */
+
+/* Make element full width */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+
+/* Make sure elements don't run outside containers (great for images in columns) */
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+/* Float either direction */
+.u-pull-right {
+  float: right; }
+.u-pull-left {
+  float: left; }
+
+/* Clear a float */
+.u-cf { 
+  content: "";
+  display: table;
+  clear: both; }
+</code>
+</pre>
+<!-- ————————————————————————————————————————————————————— -->
+
+
+    </div>
+
     <!-- Examples -->
     <div class="row docs-section">
       <h6 class="docs-header">Examples of Skeleton sites</h6>
     </div>
 
-    <!-- License & Log -->
+    <!-- License -->
     <div class="row docs-section">
-      <h6 class="docs-header">License &amp; Log</h6>
+      <h6 class="docs-header">License</h6>
       <p>All parts of Skeleton are free to use and abuse under the <a href="http://opensource.org/licenses/mit-license.php">open-source MIT license</a>. More importantly, if you're into coding head over to the <a href="https://github.com/dhg/Skeleton">Github page</a> and contribute or fork this bad boy.</p>
       <p>Skeleton's version history is available <a href="#">on Github</a>.</p>
+    </div>
+
+    <!-- Colophon -->
+    <div class="row docs-section">
+      <h6 class="docs-header">Colophon</h6>
+      <p>Skeleton was built using <a href="http://www.sublimetext.com/3">Sublime Text 3</a> and designed with <a href="http://bohemiancoding.com/sketch/">Sketch</a>. The typeface <a href="http://www.google.com/fonts/specimen/Raleway">Raleway</a> was created by <a href="http://matt.cc/">Matt McInerney</a> and <a href="http://www.impallari.com/">Pablo Impallari</a>. Code highlighting by Google's Prettify library. Icons in the header are all derivative work of icon from <a href="thenounproject.com">The Noun Project</a>.<a href="http://thenounproject.com/term/feather/22073/"> Feather</a> by Zach VanDeHey, <a href="http://thenounproject.com/term/pen/21163/">Pen</a> (with cap) by Ed Harrison, <a href="http://thenounproject.com/term/pen/32847/">Pen</a> (with clicker) by Matthew Hall, and <a href="http://thenounproject.com/term/watch/48015/">Watch</a> by Julien Deveaux.</p>
     </div>
 
     <div class="code-toggler">
