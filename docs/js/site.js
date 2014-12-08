@@ -42,6 +42,7 @@ $(document).ready(function() {
 
   function openPopover(e) {
     e.preventDefault()
+    closePopover();
     var popover = $($(this).data('popover'));
     popover.toggleClass('open')
     e.stopImmediatePropagation();
@@ -60,7 +61,9 @@ $(document).ready(function() {
 });
 
   function resize() {
+    $body.removeClass('has-docked-nav')
     navOffsetTop = $nav.offset().top
+    onScroll()
   }
 
   function onScroll() {
