@@ -33,7 +33,7 @@ Skeleton is lightweight and simple. It styles only raw HTML elements (with a few
 - No compiling or installing...just vanilla CSS
 
 
-## Browser support {#browserSupport}
+## Browser support
 
 - Chrome latest
 - Firefox latest
