@@ -33,14 +33,15 @@ Skeleton is lightweight and simple. It styles only raw HTML elements (with a few
 - No compiling or installing...just vanilla CSS
 
 
-## Browser support
+## Browser support {#browserSupport}
 
-- Chrome
-- Firefox 5+
-- Opera 
-- Safari 6+
-- IE 8+
+- Chrome latest
+- Firefox latest
+- Opera latest
+- Safari latest
+- IE latest
 
+The above list is non-exhaustive. Skeleton works perfectly with almost all older versions of the browsers above, though IE certainly has large degradation prior to IE9.
 
 ## Acknowledgement
 

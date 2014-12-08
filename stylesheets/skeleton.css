@@ -46,6 +46,7 @@
 .row .columns:first-child { 
 	margin-left: 0; }
 
+/* For devices larger than 550px */
 @media (min-width: 550px) {
   
   .container .column,
