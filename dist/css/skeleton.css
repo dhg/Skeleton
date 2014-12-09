@@ -85,10 +85,10 @@
   .container .offset-by-ten        { margin-left: 86.6666666667%; }
   .container .offset-by-eleven     { margin-left: 95.3333333333%; }
 
-  .container .offset-by-one-third  { width: 34.6666666667%; }
-  .container .offset-by-two-thirds { width: 69.3333333333%; }
+  .container .offset-by-one-third  { margin-left: 34.6666666667%; }
+  .container .offset-by-two-thirds { margin-left: 69.3333333333%; }
 
-  .container .offset-by-one-half   { width: 52%; }
+  .container .offset-by-one-half   { margin-left: 52%; }
 
 }
 
