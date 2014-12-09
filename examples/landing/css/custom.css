@@ -148,10 +148,10 @@
   }
   .phone {
     top: -16rem;
-    max-height: 630px;
+    max-height: 615px;
   }
   .phone + .phone {
     top: -14rem;
-    max-height: 582px;
+    max-height: 570px;
   }
 }

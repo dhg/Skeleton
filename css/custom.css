@@ -54,6 +54,26 @@
 .code-example-body {
   white-space: pre;
   word-wrap: break-word }
+.examples {
+  position: relative; }
+.example-header {
+  font-weight: 600;
+  margin-top: 2rem; }
+.example-screenshot-wrapper {
+  position: absolute;
+  width: 48%;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 1px solid #eee; }
+.example-screenshot {
+  width: 100%;
+  height: auto;
+}
+.examples .column {
+  position: relative;
+}
 .navbar {
   display: none;
 }
