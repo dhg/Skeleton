@@ -1,433 +1,662 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
 
-	<!-- Basic Page Needs
-  ================================================== -->
-	<meta charset="utf-8">
-	<title>Skeleton: Beautiful Boilerplate for Responsive, Mobile-Friendly Development</title>
-	<meta name="description" content="Skeleton: Beautiful Boilerplate for Responsive, Mobile-Friendly Development">
-	<meta name="author" content="Dave Gamache">
-	<meta property="twitter:account_id" content="17346623" />
-	
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Skeleton: Responsive CSS Boilerplate</title>
+  <meta name="description" content="A dead simple, responsive boilerplate for starting any project.">
+  <meta name="author" content="Dave Gamache">
 
-	<!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="src/stylesheets/base.css">
-	<link rel="stylesheet" href="src/stylesheets/skeleton.css">
-	<link rel="stylesheet" href="src/stylesheets/layout.css">
-	<link rel="stylesheet" href="documentation-assets/docs.css">
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 
-	<!-- Favicon
-	================================================== -->
-	<link rel="shortcut icon" href="src/images/favicon.ico">
-	<link rel="apple-touch-icon" sizes="57x57" href="src/images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="src/images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="src/images/apple-touch-icon-114x114.png">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="dist/css/normalize.css">
+  <link rel="stylesheet" href="dist/css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="js/github-prettify-theme.css">
+  <script src="js/site.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="dist/images/favicon.png">
 
 </head>
-<body>
+<body class="code-snippets-visible">
 
-			<div class="container">
-				<div class="three columns sidebar">
-					<nav>
-						<h3 id="logo">Skeleton</h3>
-						<ul>
-							<li><a href="#whatAndWhy">What &amp; Why</a></li>
-							<li><a href="#grid">Grid</a></li>
-							<li><a href="#typography">Typography</a></li>
-							<li><a href="#buttons">Buttons</a></li>
-							<li><a href="#forms">Forms</a></li>
-							<li><a href="#mediaQueries">Media Queries</a></li>
-							<li><a href="#support">Support</a></li>
-							<li><a href="#examples">Examples</a></li>
-							<li><a href="#download">Download</a></li>
-							<li><a href="#licenseandlog">License &amp; Log</a></li>
-						</ul>
-						<div id="carbonads-container"><div class="carbonad"><div id="azcarbon"></div><script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/13109/azcarbon_2_1_0_VERT"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script></div></div>
-					</nav>
-					&nbsp;
-				</div>
-				<div class="twelve columns offset-by-one content">
-					<header>
-						<h1>A Beautiful Boilerplate for Responsive, Mobile-Friendly Development</h1>
-						<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.getskeleton.com" data-text="Skeleton - A Beautiful Boilerplate for Responsive, Mobile-Friendly Development" data-via="dhg" data-related="dhg">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-					</header>
-					<hr class="large" />
-					<div class="doc-section" id="whatAndWhy">
-						<h3>What Is It?</h3>
-						<p>Skeleton is a small collection of CSS files that can help you rapidly develop sites that look beautiful at any size, be it a 17" laptop screen or an iPhone. Skeleton is built on three core principles:</p>
-						<div class="row clearfix">
-							<div class="four columns alpha">
-								<img src="documentation-assets/images/responsive.jpg" alt="responsive" width="220" height="113" />
-							</div>
-							<div class="eight columns omega">
-								<h5>Responsive Grid Down To Mobile</h5>
-								<p>Skeleton has a familiar, lightweight 960 grid as its base, but elegantly scales down to downsized browser windows, tablets, mobile phones (in landscape and portrait). <strong>Go ahead, resize this page!</strong></p>
-							</div>
-						</div>
-						<div class="row clearfix">
-							<div class="four columns alpha">
-								<img src="documentation-assets/images/fast.jpg" alt="responsive" width="220" height="113" />
-							</div>
-							<div class="eight columns omega">
-								<h5>Fast to Start</h5>
-								<p>Skeleton is a tool for rapid development. Get started fast with CSS best practices, a well-structured grid that makes mobile consideration easy, an organized file structure and super basic UI elements like lightly styled forms, buttons, tabs and more.</p>
-							</div>
-						</div>
-						<div class="row clearfix">
-							<div class="four columns alpha">
-								<img src="documentation-assets/images/foundation.jpg" alt="responsive" width="220" height="113" />
-							</div>
-							<div class="eight columns omega">
-								<h5>Style Agnostic</h5>
-								<p>Skeleton is not a UI framework. It's a development kit that provides the most basic styles as a foundation, but is ready to adopt whatever your design or style is.</p>
-							</div>
-						</div>
-					</div>
-					<hr />
-					<div class="doc-section clearfix" id="grid">
-						<h3>The Grid</h3>
-						<p>Skeleton's base grid is a variation of the 960 grid system. The syntax is simple and it's effective cross browser, but the awesome part is that it also has the flexibility to go mobile like a champ. <strong>Go ahead, resize the browser and watch as the layout reacts!</strong></p>
-						<div class="example-grid">
-							<div class="one column alpha">One</div>
-							<div class="eleven columns omega">Eleven</div>
-							<div class="two columns alpha">Two</div>
-							<div class="ten columns omega">Ten</div>
-							<div class="three columns alpha">Three</div>
-							<div class="nine columns omega">Nine</div>
-							<div class="four columns alpha">Four</div>
-							<div class="eight columns omega">Eight</div>
-							<div class="five columns alpha">Five</div>
-							<div class="seven columns omega">Seven</div>
-							<div class="six columns alpha">Six</div>
-							<div class="six columns omega">Six</div>
-							<div class="seven columns alpha">Seven</div>
-							<div class="five columns omega">Five</div>
-							<div class="eight columns alpha">Eight</div>
-							<div class="four  columns omega">Four</div>
-							<div class="nine columns alpha">Nine</div>
-							<div class="three columns omega">Three</div>
-							<div class="ten columns alpha">Ten</div>
-							<div class="two columns omega">Two</div>
-							<div class="eleven columns alpha">Eleven</div>
-							<div class="one column omega">One</div>
-						</div>
-						<div class="hidden-code">
-							<a href="">Code Example</a>
-							<script src="https://gist.github.com/959632.js?file=Skeleton%20Grid"></script>
-						</div>
-					</div>
-					<hr />
-					<div class="doc-section clearfix" id="typography">
-						<h3>Typography</h3>
-						<p>The typography of Skeleton is designed to create a strong hierarchy with basic styles. The primary font is the classic Helvetica Neue, but the font stack can be easily changed with just a couple adjustments. Regular paragraphs are set at a 14px base with 21px line height.</p>
-						<div class="row">
-							<div class="seven columns alpha headings">
-								<h1>Heading &lt;h1&gt;</h1>
-								<h2>Heading &lt;h2&gt;</h2>
-								<h3>Heading &lt;h3&gt;</h3>
-								<h4>Heading &lt;h4&gt;</h4>
-								<h5>Heading &lt;h5&gt;</h5>
-								<h6>Heading &lt;h6&gt;</h6>
-							</div>
-							<div class="five columns omega">
-								<blockquote>
-									<p>This is a blockquote style example. It stands out, but is awesome</p>
-									<cite>Dave Gamache, Skeleton Creator</cite>
-								</blockquote>
-							</div>
-						</div>
-						<div class="hidden-code">
-							<a href="">Code Example</a>
-							<script src="https://gist.github.com/973460.js?file=typography"></script>
-						</div>
-					</div>
-					<hr />
-					<div class="doc-section" id="buttons">
-						<h3>Buttons</h3>
-						<p>Buttons are intended for action and thus should have appropriate weight. The standard button is given that weight with a little bit of depth and a strong hover.</p>
-						<a href="#" class="button">Click Me For Action</a>
-						<div class="hidden-code">
-							<a href="">Code Example</a>
-							<script src="https://gist.github.com/973448.js?file=buttons"></script>
-						</div>
-					</div>
-					<hr />
-					<div class="doc-section clearfix" id="forms">
-						<h3>Forms</h3>
-						<p>Forms can be one of the biggest pains for web developers, but just use these dead simple styles and you should be good to go. </p>
-						<div class="four columns alpha">
-							<form>
-								<label for="regularInput">Regular Input</label>
-								<input type="text" id="regularInput" />
-								<label for="regularTextarea">Regular Textarea</label>
-								<textarea id="regularTextarea"></textarea>
-								<label for="selectList">Select List</label>
-								<select id="selectList">
-									<option value="Option 1">Option 1</option>
-									<option value="Option 2">Option 2</option>
-									<option value="Option 3">Option 3</option>
-									<option value="Option 4">Option 4</option>
-								</select>
-								<fieldset>
-									<legend>Checkboxes</legend>
-									<label for="regularCheckbox">
-										<input type="checkbox" id="regularCheckbox" value="checkbox 1" />
-										<span>Regular Checkbox</span>
-									</label>
-									<label for="secondRegularCheckbox">
-										<input type="checkbox" id="secondRegularCheckbox" value="checkbox 2" />
-										<span>Regular Checkbox</span>
-									</label>
-								</fieldset>
-								<fieldset>
-									<legend>Radio Buttons</legend>
-									<label for="regularRadio">
-										<input type="radio" name="radios" id="regularRadio" value="radio 1" />
-										<span>Regular Radio</span>
-									</label>
-									<label for="secondRegularRadio">
-										<input type="radio" name="radios" id="secondRegularRadio" value="radio 2" />
-										<span>Regular Radio</span>
-									</label>
-								</fieldset>
-								<button type="submit">Submit Form</button>
-							</form>
-						</div>
-						<br class="clear" />
-						<div class="hidden-code">
-							<a href="">Code Example</a>
-							<script src="https://gist.github.com/973455.js?file=forms"></script>
-						</div>
-					</div>
-					<hr />
-					<div class="doc-section" id="mediaQueries">
-						<h3>Media Queries</h3>
-						<p>Skeleton uses a <strong>lot</strong> of media queries to serve the scalable grid, but also for the convenience of styling your site on different size screens. Skeleton's media queries are almost exclusively targeted at max and min widths rather than device sizes or orientations. The advantage of this is browsers and future mobile devices that don't map to exact set dimensions will still benefit from the styles. That being said, all of the queries were written to be optimal on Apple iOS devices. The built in media queries include:</p>
-						<ul class="square">
-							<li><strong>Smaller than 960</strong>: Smaller than the standard base grid</li>
-							<li><strong>Tablet Portrait</strong>: Between 768px and 959px</li>
-							<li><strong>All Mobile Sizes</strong>: Less than 767px</li>
-							<li><strong>Just Mobile Landscape</strong>: Between 480px and 767px</li>
-							<li><strong>Just Mobile Portrait</strong>: Less than 479px</li>
-						</ul>
-						<div class="hidden-code">
-							<a href="">Code Example</a>
-							<script src="https://gist.github.com/973467.js?file=media%20queries"></script>
-						</div>
-					</div>
-					<hr />
-					<div class="doc-section" id="support">
-						<h3>Support for Skeleton</h3>
-						<p>Skeleton has been tested across as many devices and browsers as I could get my hands on:</p>
-						<ul class="square add-bottom">
-							<li>Latest Chrome (Mac/PC)</li>
-							<li>Firefox 4.0, 3.6, 3.5, 3.0 (Mac/PC)</li>
-							<li>Latest Safari</li>
-							<li>IE9, IE8, IE7</li>
-							<li>iPhone (Retina)</li>
-							<li>Droid (Charge/Original)</li>
-							<li>iPad</li>
-						</ul>
-						<p>There is a small hiccup though - older non-CSS3 browsers aren't going to respond to the media-queries and thus will be served the standard 960 grid even if they are resized. In the spirit of graceful degradation though, I'm going to let this be instead of trying to implement a JS solution. If you are interested in one though, try the <a href="https://github.com/scottjehl/Respond">respond.js polyfill</a>.</p>
-						<p><strong>Notes on IE</strong>: We all know sometimes IE doesn't behave, so through the genius of conditional CSS I've added a class of "ie" to all versions of the browser, as well as specific targets for each (i.e. "ie6", "ie7", "ie8"). It's not a perfect world, but hopefully this will help make naughty IE behave.</p>
-					</div>
-					<hr />
-					<div class="doc-section" id="examples">
-						<h3>Examples &amp; Extensions</h3>
-						<p>Skeleton has been in the wild for quite a few months now and reception has been pretty awesome so far. Nothing pleases me more than receiving emails about projects using Skeleton or constructive feedback (this is really the reason Skeleton gets better). Here is a quick list of some of the most awesome sites using Skeleton:</p>
-						<div class="row clearfix">
-							<div class="four columns alpha">
-								<a href="http://www.eleventhedition.com/">
-									<img src="documentation-assets/images/eleventhedition.jpg" alt="eleventh edition" width="220" height="125" />
-									<h6>The Eleventh Edition</h6>
-								</a>
-							</div>
-							<div class="four columns">
-								<a href="http://neighborhoods.blink182.com/">
-									<img src="documentation-assets/images/blink182.jpg" alt="blink 182 neighborhoods" width="220" height="125" />
-									<h6>Blink 182 Neighborhoods</h6>
-								</a>
-							</div>
-							<div class="four columns omega">
-								<a href="http://artistic.ly/">
-									<img src="documentation-assets/images/artisticly.jpg" alt="artisticly" width="220" height="125" />
-									<h6>Artistic.ly</h6>
-								</a>
-							</div>
-						</div>
-						<div class="row clearfix">
-							<div class="four columns alpha">
-								<a href="http://www.ourhivemind.com/">
-									<img src="documentation-assets/images/hivemind.jpg" alt="Our Hivemind" width="220" height="125" />
-									<h6>Hivemind</h6>
-								</a>
-							</div>
-							<div class="four columns">
-								<a href="http://super-skeleton.mdnw.net/">
-									<img src="documentation-assets/images/superskeleton.jpg" alt="Super Skeleton Wordpress Theme" width="220" height="125" />
-									<h6>Super Skeleton WP Theme</h6>
-								</a>
-							</div>
-							<div class="four columns omega">
-								<a href="http://jim-nielsen.com/">
-									<img src="documentation-assets/images/jimnielson.jpg" alt="Jim Nielson" width="220" height="125" />
-									<h6>Jim Nielson</h6>
-								</a>
-							</div>
-						</div>
-						<p>Skeleton also has been extended in a number of ways! These are the extensions I've heard of so far!</p>
-						<ul class="square">
-							<li><a href="http://demos.simplethemes.com/skeleton/"><strong>Skeleton Wordpress</strong></a></li>
-							<li><a href="http://demo.drupalizing.com/?theme=skeleton"><strong>Skeleton on Drupal</strong></a></li>
-							<li><a href="https://github.com/wycks/WP-Skeleton-Theme"><strong>Alternate Skeleton Wordpress on Github</strong></a></li>
-							<li><a href="https://github.com/helios-technologies/skeleton-rails"><strong>Skeleton Rails Gem on Github</strong></a><small> or check it out on <a href=" https://rubygems.org/gems/skeleton-rails">Rubygems.org</a></small></li>
-						</ul>
-					</div>
-					<hr />
-					<div class="doc-section" id="download">
-						<h3>Downloads</h3>
-						<p>The Skeleton download is a zip file (~25kb) containing all the CSS groundwork to get started on any web project. </p>
-						<a href="https://github.com/dhgamache/Skeleton/tarball/master" class="remove-bottom button" onClick="_gaq.push(['_trackEvent', 'skeleton', 'download'])">Download Skeleton 1.2 from Github</a>
-						<div class="post-button-note half-bottom">or <a href="https://github.com/dhgamache/Skeleton">View Source on Github</a></div>
-						<a href="documentation-assets/Skeleton-Grid.psd.zip" class="button remove-bottom">Download Skeleton PSD Template</a>
-						<div class="post-button-note add-bottom">(A la <a href="http://www.960.gs">960.gs</a> PSD template)</div>
-						<p>The file structure for Skeleton is:</p>
-						<ul class="square">
-							<li><strong>index.html</strong>: The base html page that includes the necessary initial markup</li>
-							<li>
-								<strong>stylesheets</strong> <em>(folder)</em>
-								<ul class="circle">
-									<li><strong>base.css</strong>: Basic styles of Skeleton</li>
-									<li><strong>skeleton.css</strong>: The glorious Skeleton grid</li>
-									<li><strong>layout.css</strong>: File with no specific styles, but a variety of useful media queries</li>
-								</ul>
-							</li>
-							<li>
-								<strong>images</strong> <em>(folder):</em>
-								<ul class="circle">
-									<li><strong>favicon.ico</strong>: Standard 16x16 favicon</li>
-									<li><strong>apple-touch-icon (x3)</strong>: All three sizes of Apple touch icons for iPhone 3, iPad and iPhone 4 with retina.</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					<hr />
-					<div class="doc-section" id="licenseandlog">
-						<h3>License &amp; Log</h3>
-						<p>All parts of Skeleton are free to use and abuse under the open-source MIT license. The full licensing language can be found here: <a href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a>. More importantly, I would love to have a small community of contributors to Skeleton, so please feel free to jump over the <a href="https://github.com/dhgamache/Skeleton">Skeleton Github page</a> and contribute to make Skeleton a better boilerplate for everyone!</p>
-						<p><strong>A brief log of the history of Skeleton</strong></p>
-						<ul class="square">
-							<li>
-								<strong>V1.0.0</strong> <em>(5/15/2011)</em>: Initial release of Skeleton.
-							</li>
-							<li>
-								<strong>V1.0.1</strong> <em>(5/19/2011)</em>: Made some quick changes based on input from Github and fellow designers.
-									<ul class="square">
-									 <li>Refined the app.js to make faster and cleaner</li>
-									 <li>Added Apple touch icons</li>
-									 <li>Removed some bloated CSS lines from the base.css</li>
-									 <li>Added an :active button class</li>
-									 <li>Changed Skeleton favicon</li>
-									 <li>Added MIT licensing</li>
-									</ul>
-							</li>
-							<li>
-								<strong>V1.0.2</strong> <em>(5/20/2011)</em>: Added more input declarations to the .button styles and included legend in CSS
-							</li>
-							<li>
-								<strong>V1.0.3</strong> <em>(7/17/2011)</em>: Fixed the issue of failed "zooming" on browsers.
-							</li>
-							<li>
-								<strong>V1.1</strong> <em>(8/17/2011)</em>: A lot of cleanup changes. I finally feel comfortable throwing a 1.1 on this bad boy.
-									<ul class="square">
-									 <li>App.js is now just tabs.js</li>
-									 <li>Tab CSS now works perfectly on IE7+</li>
-									 <li>Rewrote layout.css media-query spaces to be easier to understand</li>
-									 <li>Stripping some rogue whitespace and reformatting a bit</li>
-									 <li>Fixing broken doctype declaration</li>
-									</ul>
-							</li>
-							<li>
-								<strong>V1.2</strong> <em>(6/20/2012)</em>: Pruning Skeleton down to some more bare bones :)
-									<ul class="square">
-									 <li>Remove tabs and all JS</li>
-									</ul>
-							</li>
-						</ul>
-					</div>
-				</div><!-- content -->
-			</div><!-- container -->
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <section class="header">
+      <h2 class="title">A dead simple, responsive boilerplate.</h2>
+      <a class="button button-primary" href="https://github.com/dhg/Skeleton/releases/download/v2.0/Skeleton.2.0.zip" onClick="_gaq.push(['_trackEvent', 'skeleton', 'download'])">Download</a>
+      <div class="value-props row">
+        <div class="four columns offset-by-two value-prop">
+          <img class="value-img" src="images/feather.svg">
+          Light as a feather at ~400 lines &amp; built with mobile in mind.
+        </div>
+        <div class="four columns value-prop">
+          <img class="value-img" src="images/pens.svg">
+          Styles designed to be a starting point, not a UI framework.
+        </div>
+        <div class="four columns value-prop">
+          <img class="value-img" src="images/watch.svg">
+          Quick to start with zero compiling or installing necessary.
+        </div>
+      </div>
+    </section>
 
-			<div class="resize"></div>
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="#intro">Intro</a></li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#" data-popover="#codeNavPopover">Code</a>
+            <div id="codeNavPopover" class="popover">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a class="popover-link" href="#grid">Grid</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#typography">Typography</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#buttons">Buttons</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#forms">Forms</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#lists">Lists</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#code">Code</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#tables">Tables</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#queries">Queries</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#utilities">Utilities</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar-item"><a class="navbar-link" href="#examples">Examples</a></li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#" data-popover="#moreNavPopover">More</a>
+            <div id="moreNavPopover" class="popover">
+              <ul class="popover-list">
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton">On Github</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="https://github.com/dhg/Skeleton/tree/v-2.0#browser-support">Browsers</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#">License</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#">Versions</a>
+                </li>
+                <li class="popover-item">
+                  <a class="popover-link" href="#">Colophon</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Why use Skeleton -->
+    <div class="docs-section" id="intro">
+      <h6 class="docs-header">Is Skeleton for you?</h6>
+      <p>You should use Skeleton if you're overwhelmed by UI frameworks like Bootstrap and Foundation or if you're embarking on a smaller project. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, <u>this site is built on Skeleton and has ~200 lines of custom CSS</u> (half of which is the docking navigation).</p>
+      <p>Love Skeleton and want to Tweet it, share it, or star it? Well, I appreciate that <3</p>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.getskeleton.com" data-text="Skeleton - A dead simple, responsive boilerplate." data-via="dhg" data-related="dhg">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.getskeleton.com&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=151131931646052" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px; width:140px" allowTransparency="true"></iframe>
+      <iframe src="http://ghbtns.com/github-btn.html?user=dhg&repo=Skeleton&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+      <iframe src="http://ghbtns.com/github-btn.html?user=dhg&repo=Skeleton&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+    </div>
+
+    <!-- Grid -->
+    <div class="docs-section" id="grid">
+      <h6 class="docs-header">The grid</h6>
+      <p>The grid is a <u>12-column fluid grid with a max width of 960px</u>, that shrinks with the browser/device at smaller sizes. The max width can be changed with one line of CSS and all columns will resize accordingly. The syntax is simple and it makes coding responsive much easier. Go ahead, resize the browser. </p>
+      <div class="example-grid docs-example">
+        <div class="row">
+          <div class="one column">One</div>
+          <div class="eleven columns">Eleven</div>
+        </div>
+        <div class="row">
+          <div class="two columns">Two</div>
+          <div class="ten columns">Ten</div>
+        </div>
+        <div class="row">
+          <div class="three columns">Three</div>
+          <div class="nine columns">Nine</div>
+        </div>
+        <div class="row">
+          <div class="four columns">Four</div>
+          <div class="eight columns">Eight</div>
+        </div>
+        <div class="row">
+          <div class="five columns">Five</div>
+          <div class="seven columns">Seven</div>
+        </div>
+        <div class="row">
+          <div class="six columns">Six</div>
+          <div class="six columns">Six</div>
+        </div>
+        <div class="row">
+          <div class="seven columns">Seven</div>
+          <div class="five columns">Five</div>
+        </div>
+        <div class="row">
+          <div class="eight columns">Eight</div>
+          <div class="four  columns">Four</div>
+        </div>
+        <div class="row">
+          <div class="nine columns">Nine</div>
+          <div class="three columns">Three</div>
+        </div>
+        <div class="row">
+          <div class="ten columns">Ten</div>
+          <div class="two columns">Two</div>
+        </div>
+        <div class="row">
+          <div class="eleven columns">Eleven</div>
+          <div class="one column">One</div>
+        </div>
+      </div>
+      
+
+<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="code-example">
+<code class="code-example-body prettyprint"><!-- .container is main centered wrapper -->
+<div class="container">
+  
+  <!-- all columns must be wrapped in a .row -->
+  <div class="row">
+    <div class="one column">One</div>
+    <div class="eleven columns">Eleven</div>
+  </div>
+
+  <!-- just use a number and class 'column' or 'columns' -->
+  <div class="row">
+    <div class="two columns">Two</div>
+    <div class="ten columns">Ten</div>
+  </div>
+
+  <!-- there are a few shorthand columns widths as well -->
+  <div class="row">
+    <div class="one-third columns">1/3</div>
+    <div class="two-thirds columns">2/3</div>
+  </div>
+  <div class="row">
+    <div class="one-half columns">1/2</div>
+    <div class="one-half columns">1/2</div>
+  </div>
+
+</div>
+
+<!-- Note: columns *cannot* be nested, but you shouldn't ever need to -->
+</code>
+</pre>
+<!-- ————————————————————————————————————————————————————— -->
 
 
+    </div>    
+
+    <!-- Typography -->
+    <div class="row docs-section" id="typography">
+      <h6 class="docs-header">Typography</h6>
+      <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Skeleton never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
+      <div class="docs-example">
+        <div class="row">
+          <div class="six columns">
+            <p><strong>The typography base</strong> is <a href="http://www.google.com/fonts/specimen/Raleway">Raleway</a> served by Google, set at 15rem (15px) over a 1.6 line height (24px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
+            <p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>, <code>line-height</code>, and <code>margins</code>.</p>
+          </div>
+          <div class="six columns">
+            <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 50rem</span></h1>
+            <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 42rem</span></h2>
+            <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 36rem</span></h3>
+            <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 30rem</span></h4>
+            <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 24rem</span></h5>
+            <h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> 15rem</span></h6>
+          </div>
+        </div>
+      </div>
 
 
+<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="code-example">
+<code class="code-example-body prettyprint"><!-- Standard Headings -->
+<h1>Heading</h1>
+<h2>Heading</h2>
+<h3>Heading</h3>
+<h4>Heading</h4>
+<h5>Heading</h5>
+<h6>Heading</h6>
+
+<!-- Base type size -->
+<p>The base type is 15px over 1.6 line height (24px)</p>
+
+<!-- Other styled text tags -->
+<strong>Bolded</strong>
+<em>Italicized</em>
+<a>Colored</a>
+<u>Underlined</u>
+</code>
+</pre>
+<!-- ————————————————————————————————————————————————————— -->
 
 
-		<!-- JS
-		================================================== -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    </div>
+
+    <!-- Buttons -->
+    <div class="row docs-section" id="buttons">
+      <h6 class="docs-header">Buttons</h6>
+      <p>Buttons come in two basic flavors in Skeleton. The standard <code>&lt;button&gt;</code> element is plain, whereas the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form elements, but can also be arbitrarily attached to anchors with a <code>.button</code> class.</p>
+      <div class="docs-example">
+        <div>
+          <a class="button" href="#">Anchor button</a>
+          <button>Button element</button>
+          <input type="submit" value="submit input">
+          <input type="button" value="button input">
+        </div>
+        <div>
+          <a class="button button-primary" href="#">Anchor button</a>
+          <button class="button-primary">Button element</button>
+          <input class="button-primary" type="submit" value="submit input">
+          <input class="button-primary" type="button" value="button input">
+        </div>
+      </div>
 
 
-		<script>
-			$('.hidden-code').click(function(e) {
-				e.preventDefault();
-				$(this).children('.gist').slideToggle();
-			})
+<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="code-example">
+<code class="code-example-body prettyprint"><!-- Standard buttons -->
+<a class="button" href="#">Anchor button</a>
+<button>Button element</button>
+<input type="submit" value="submit input">
+<input type="button" value="button input">
 
-			var originalText;
-			$('.example-grid').children().hover(
-				function() {
-					originalText = $(this).text();
-					$(this).html($(this).width()+'px');
-				},
-				function() {
-					$(this).html(originalText);
-				})
-		</script>
+<!-- Primary buttons -->
+<a class="button button-primary" href="#">Anchor button</a>
+<button class="button-primary">Button element</button>
+<input class="button-primary" type="submit" value="submit input">
+<input class="button-primary" type="button" value="button input">
+</code>
+</pre>
+<!-- ————————————————————————————————————————————————————— -->
 
-		<!-- Google Analytics -->
-		<script type="text/javascript">
 
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-33397759-1']);
-		  _gaq.push(['_trackPageview']);
+    </div>  
 
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
+    <!-- Forms -->
+    <div class="row docs-section" id="forms">
+      <h6 class="docs-header">Forms</h6>
+      <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
+      <div class="docs-example docs-example-forms">
+        <form>
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleEmailInput">Your email</label>
+              <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+            </div>
+            <div class="six columns">
+              <label for="exampleRecipientInput">Reason for contacting</label>
+              <select class="u-full-width">
+                <option value="Option 1">Questions</option>
+                <option value="Option 2">Admiration</option>
+                <option value="Option 3">Can I get your number?</option>
+              </select>
+            </div>
+          </div>
+          <label for="exampleMessage">Message</label>
+          <textarea class="u-full-width" placeholder="Hi Dave &hellip;" id="exampleMessage"></textarea>
+          <label class="example-send-yourself-copy">
+            <input type="checkbox">
+            <span class="label-body">Send a copy to yourself</span>
+          </label>
+          <input class="button-primary" type="submit" value="Submit">
+        </form>
+      </div>
 
-		</script>
 
-		<script type="text/javascript">
-		  var _gauges = _gauges || [];
-		  (function() {
-		    var t   = document.createElement('script');
-		    t.type  = 'text/javascript';
-		    t.async = true;
-		    t.id    = 'gauges-tracker';
-		    t.setAttribute('data-site-id', '4d806d7410cafd7fa4000011');
-		    t.src = '//secure.gaug.es/track.js';
-		    var s = document.getElementsByTagName('script')[0];
-		    s.parentNode.insertBefore(t, s);
-		  })();
-		</script>
+<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="code-example">
+<code class="code-example-body prettyprint"><!-- The above form looks like this -->
+<form>
+  <div class="row">
+    <div class="six columns">
+      <label for="exampleEmailInput">Your email</label>
+      <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+    </div>
+    <div class="six columns">
+      <label for="exampleRecipientInput">Reason for contacting</label>
+      <select class="u-full-width">
+        <option value="Option 1">Questions</option>
+        <option value="Option 2">Admiration</option>
+        <option value="Option 3">Can I get your number?</option>
+      </select>
+    </div>
+  </div>
+  <label for="exampleMessage">Message</label>
+  <textarea class="u-full-width" placeholder="Hi Dave &hellip;" id="exampleMessage"></textarea>
+  <label class="example-send-yourself-copy">
+    <input type="checkbox">
+    <span class="label-body">Send a copy to yourself</span>
+  </label>
+  <input class="button-primary" type="submit" value="Submit">
+</form>
 
-	</body>
+<!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
+
+<!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
+</code>
+</pre>
+<!-- ————————————————————————————————————————————————————— -->
+
+
+    </div>
+
+    <!-- Lists -->
+    <div class="docs-section" id="lists">
+      <h6 class="docs-header">Lists</h6>
+      <div class="row docs-example">
+        <div class="six columns">
+          <ul>
+            <li>Unordered lists have basic styles</li>
+            <li>
+              They use the circle list style
+              <ul>
+                <li>Nested lists styled to feel right</li>
+                <li>Can nest either type of list into the other</li>
+              </ul>
+            </li>
+            <li>Just more list items mama san</li>
+          </ul>
+        </div>
+        <div class="six columns">
+          <ol>
+            <li>Ordered lists also have basic styles</li>
+            <li>
+              They use the decimal list style
+              <ul>
+                <li>Ordered and unordered can be nested</li>
+                <li>Can nest either type of list into the other</li>
+              </ul>
+            </li>
+            <li>Last list item just for the fun</li>
+          </ol>
+        </div>
+      </div>
+
+
+<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="code-example">
+<code class="code-example-body prettyprint"><ul>
+  <li>Item 1</li>
+  <li>
+    Item 2
+    <ul>
+      <li>Item 2.1</li>
+      <li>Item 2.2</li>
+    </ul>
+  </li>
+  <li>Item 3</li>
+</ul>
+
+<!-- Easily substitute any <ul> or an <ol> to get number lists or sublists. Skeleton doesn't support lists nested deeper than 2 levels -->
+</code>
+</pre>
+<!-- ————————————————————————————————————————————————————— -->
+
+
+    </div>
+
+    <!-- Code -->
+    <div class="row docs-section" id="code">
+      <h6 class="docs-header">Code</h6>
+      <p>Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.</p>
+      <div class="docs-example">
+<pre><code>.some-class {
+  background-color: red;
+}</code></pre>
+      </div>
+
+
+<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="code-example">
+<code class="code-example-body prettyprint"><pre><code>.some-class {
+  background-color: red;
+}</code></pre>
+
+<!-- Remember every whitespace and break will be preserved in a <pre>, including indentation in your code -->
+</code>
+</pre>
+<!-- ————————————————————————————————————————————————————— -->
+
+
+    </div>
+
+    <!-- Tables -->
+    <div class="row docs-section" id="tables">
+      <h6 class="docs-header">Tables</h6>
+      <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
+      <div class="docs-example">
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Sex</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dave Gamache</td>
+              <td>26</td>
+              <td>Male</td>
+              <td>San Francisco</td>
+            </tr>
+            <tr>
+              <td>Dwayne Johnson</td>
+              <td>42</td>
+              <td>Male</td>
+              <td>Hayward</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="code-example">
+<code class="code-example-body prettyprint"><table class="u-full-width">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Sex</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dave Gamache</td>
+      <td>26</td>
+      <td>Male</td>
+      <td>San Francisco</td>
+    </tr>
+    <tr>
+      <td>Dwayne Johnson</td>
+      <td>42</td>
+      <td>Male</td>
+      <td>Hayward</td>
+    </tr>
+  </tbody>
+</table>
+</code>
+</pre>
+<!-- ————————————————————————————————————————————————————— -->
+
+
+    </div>
+
+    <!-- Queries -->
+    <div class="row docs-section" id="queries">
+      <h6 class="docs-header">Media queries</h6>
+      <p>Skeleton uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. The queries are mobile-first, meaning they target <code>min-width</code>. Mobile-first queries are how Skeleton's grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The sizes for the queries are:</p>
+      <div class="docs-example row">
+        <div class="six columns">
+          <ul>
+            <li><strong>Desktop HD</strong>: 1200px</li>
+            <li><strong>Desktop</strong>: 1000px</li>
+            <li><strong>Tablet</strong>: 750px</li>
+          </ul>         
+        </div>
+        <div class="six columns">
+          <ul>
+            <li><strong>Phablet</strong>: 550px</li>
+            <li><strong>Mobile</strong>: 400px</li>
+          </ul>         
+        </div>
+      </div>
+
+
+<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="code-example">
+<code class="code-example-body prettyprint">/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+
+</code>
+</pre>
+<!-- ————————————————————————————————————————————————————— -->
+
+
+    </div>
+
+
+    <!-- Utilities and Misc. -->
+    <div class="row docs-section" id="utilities">
+      <h6 class="docs-header">Utilities</h6>
+      <p>Skeleton has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility class than create a whole new class just to float an element.</p>
+
+
+<!-- CODE EXAMPLE ———————————————————————————————————————— -->
+<pre class="code-example">
+<code class="code-example-body prettyprint">/* Utility Classes */
+
+/* Make element full width */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+
+/* Make sure elements don't run outside containers (great for images in columns) */
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+/* Float either direction */
+.u-pull-right {
+  float: right; }
+.u-pull-left {
+  float: left; }
+
+/* Clear a float */
+.u-cf { 
+  content: "";
+  display: table;
+  clear: both; }
+</code>
+</pre>
+<!-- ————————————————————————————————————————————————————— -->
+
+
+    </div>
+
+    <!-- Examples -->
+    <div class="docs-section examples" id="examples">
+      <h6 class="docs-header">Examples</h6>
+      <div class="row example">
+        <a class="example-screenshot-wrapper" target="_blank" href="examples/landing">
+          <img class="example-screenshot" src="images/examples/landing.jpg">
+        </a>
+        <div class="one-half offset-by-one-half column">
+          <h6 class="example-header">Demo Landing Page</h6>
+          <p class="example-description">This template is an example of how easy it can be to create a landing page with just the Skeleton grid and a few custom styles. The entire demo is ~150 lines of CSS including comments (most of which is positioning the phones at the top).</p>
+          <a class="button" href="examples/landing" target="_blank">Demo</a>
+          <a class="button" href="examples/landing" target="_blank">Source</a>
+        </div>
+      </div>
+      <div class="row example">
+        <div class="example-screenshot-wrapper">
+          <div class="example-screenshot coming-soon"></div>
+        </div>
+        <div class="one-half offset-by-one-half column">
+          <h6 class="example-header">More Coming Soon!</h6>
+          <p class="example-description">More examples will be added to help anyone get started or more familiar with how Skeleton works. The goal is education. If you're more interested in real, live examples of Skeleton sites, check out the Built on Skeleton tumblr.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33397759-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
 </html>
