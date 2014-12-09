@@ -4,7 +4,7 @@
 * www.getskeleton.com
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
-* 11/25/2014
+* 12/9/2014
 */
 
 
@@ -28,7 +28,6 @@
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 .container {
   position: relative; 
   width: 80%; 
@@ -102,7 +101,6 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html { 
   font-size: 62.5%; } 
 body {
-  background: #fff;
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
@@ -134,8 +132,7 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 }
 
 p {
-  margin-top: 0;
-}
+  margin-top: 0; }
 
 
 /* Links
@@ -253,9 +250,9 @@ input[type="checkbox"],
 input[type="radio"] {
   display: inline; }
 label > .label-body {
+  display: inline-block;
   font-weight: normal;
-  margin-left: .5rem;
-  display: inline-block; }
+  margin-left: .5rem; }
 
 
 /* Lists
@@ -382,7 +379,7 @@ there.
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
-/* Larger than phablet */
+/* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {}
 
 /* Larger than tablet */
@@ -393,18 +390,3 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
-
-/* Smaller than Desktop HD */
-@media (max-width: 1199px) {}
-
-/* Smaller than desktop */
-@media (max-width: 999px) {}
-
-/* Smaller than tablet */
-@media (max-width: 749px) {}
-
-/* Smaller than phablet */
-@media (max-width: 549px) {}
-
-/* Smaller than mobile */
-@media (max-width: 399px) {}

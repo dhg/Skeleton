@@ -1,5 +1,5 @@
 .container {
-  max-width: 760px; }
+  max-width: 800px; }
 .header {
   margin-top: 6rem;
   text-align: center; }
@@ -54,20 +54,23 @@
 .code-example-body {
   white-space: pre;
   word-wrap: break-word }
+
 .example {
   position: relative; 
-  margin-bottom: 4rem; }
+  margin-top: 4rem; }
 .example-header {
   font-weight: 600;
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem;
+  margin-bottom: .5rem; }
+.example-description {
+  margin-bottom: 1.5rem; }
 .example-screenshot-wrapper {
-  position: absolute;
-  width: 48%;
-  height: 100%;
-  left: 0;
+  display: block;
+  position: relative;
   overflow: hidden;
   border-radius: 6px;
-  border: 1px solid #eee; }
+  border: 1px solid #eee;
+  height: 250px; }
 .example-screenshot {
   width: 100%;
   height: auto; }
@@ -78,8 +81,8 @@
   top: 5px;
   right: 5px;
   bottom: 5px;
-  left: 5px;
-}
+  left: 5px; }
+
 .navbar {
   display: none; }
 
@@ -99,8 +102,13 @@
     padding: 6rem 0; }
   .example-send-yourself-copy {
     float: right;
-    margin-top: 12px;
-  }
+    margin-top: 12px; }
+  .example-screenshot-wrapper {
+    position: absolute;
+    width: 48%;
+    height: 100%;
+    left: 0;
+    max-height: none; }
 }
 
 /* Larger than tablet */

@@ -128,7 +128,7 @@
     <!-- Why use Skeleton -->
     <div class="docs-section" id="intro">
       <h6 class="docs-header">Is Skeleton for you?</h6>
-      <p>You should use Skeleton if you're overwhelmed by UI frameworks like Bootstrap and Foundation or if you're embarking on a smaller project. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, <u>this site is built on Skeleton and has just over 100 lines of custom CSS.</u></p>
+      <p>You should use Skeleton if you're overwhelmed by UI frameworks like Bootstrap and Foundation or if you're embarking on a smaller project. Skeleton only styles a handful of standard HTML elements and includes a grid, but that's often more than enough to get started. In fact, <u>this site is built on Skeleton and has ~200 lines of custom CSS</u> (half of which is the docking navigation).</p>
       <p>Love Skeleton and want to Tweet it, share it, or star it? Well, I appreciate that <3</p>
       <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.getskeleton.com" data-text="Skeleton - A dead simple, responsive boilerplate." data-via="dhg" data-related="dhg">Tweet</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -529,7 +529,7 @@
     <!-- Queries -->
     <div class="row docs-section" id="queries">
       <h6 class="docs-header">Media queries</h6>
-      <p>Skeleton uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. There are two sets of queries. The first set is mobile-first, meaning it targets <code>min-width</code>. The other set is desktop-first, meaning  it targets <code>max-width</code>. Mobile-first queries are how Skeleton's grid is built and is a preferrable method of organizing CSS. The sizes for the queries are:</p>
+      <p>Skeleton uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. The queries are mobile-first, meaning they target <code>min-width</code>. Mobile-first queries are how Skeleton's grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The sizes for the queries are:</p>
       <div class="docs-example row">
         <div class="six columns">
           <ul>
@@ -567,24 +567,6 @@
 @media (min-width: 1200px) {}
 
 
-/* Desktop first queries */
-
-/* Smaller than Desktop HD */
-@media (max-width: 1199px) {}
-
-/* Smaller than desktop */
-@media (max-width: 999px) {}
-
-/* Smaller than tablet */
-@media (max-width: 749px) {}
-
-/* Smaller than phablet */
-@media (max-width: 549px) {}
-
-/* Smaller than mobile */
-@media (max-width: 399px) {}
-
-/* Note: Values are 1px less on desktop first queries so there's no overriding in case you use both types of queries  */
 </code>
 </pre>
 <!-- ————————————————————————————————————————————————————— -->
@@ -635,14 +617,14 @@
     <div class="docs-section examples" id="examples">
       <h6 class="docs-header">Examples</h6>
       <div class="row example">
-        <a class="example-screenshot-wrapper" href="examples/landing.html">
+        <a class="example-screenshot-wrapper" target="_blank" href="examples/landing">
           <img class="example-screenshot" src="images/examples/landing.jpg">
         </a>
         <div class="one-half offset-by-one-half column">
           <h6 class="example-header">Demo Landing Page</h6>
           <p class="example-description">This template is an example of how easy it can be to create a landing page with just the Skeleton grid and a few custom styles. The entire demo is ~150 lines of CSS including comments (most of which is positioning the phones at the top).</p>
-          <a class="button" href="examples/landing.html">Demo</a>
-          <a class="button" href="examples/landing.html">Source</a>
+          <a class="button" href="examples/landing" target="_blank">Demo</a>
+          <a class="button" href="examples/landing" target="_blank">Source</a>
         </div>
       </div>
       <div class="row example">
@@ -651,7 +633,7 @@
         </div>
         <div class="one-half offset-by-one-half column">
           <h6 class="example-header">More Coming Soon!</h6>
-          <p class="example-description">I will be adding more examples here to help anyone get started or more familiar with how Skeleton works. The goal is education, not necessarily template you should be building off of, though it's totally fine if you do!</p>
+          <p class="example-description">More examples will be added to help anyone get started or more familiar with how Skeleton works. The goal is education. If you're more interested in real, live examples of Skeleton sites, check out the Built on Skeleton tumblr.</p>
         </div>
       </div>
     </div>
