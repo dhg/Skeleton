@@ -19,10 +19,10 @@ skeleton/
 ├── index.html
 ├── css/
 │   ├── normalize.min.css
-│   ├── skeleton.css
-│   └── skeleton.min.css
-└── images/
-    └── favicon.ico
+│   └── skeleton.css
+├── images/
+│   └── favicon.ico
+└── README.md
 ```
 
 ### Why it's awesome
