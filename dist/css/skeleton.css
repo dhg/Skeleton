@@ -72,6 +72,24 @@
 
   .container .one-half.column      { width: 48%; }
 
+  /* Offsets */
+  .container .offset-by-one        { margin-left: 8.66666666667%; }
+  .container .offset-by-two        { margin-left: 17.3333333333%; }
+  .container .offset-by-three      { margin-left: 26%;            }
+  .container .offset-by-four       { margin-left: 34.6666666667%; }
+  .container .offset-by-five       { margin-left: 43.3333333333%; }
+  .container .offset-by-six        { margin-left: 52%;            }
+  .container .offset-by-seven      { margin-left: 60.6666666667%; }
+  .container .offset-by-eight      { margin-left: 69.3333333333%; }
+  .container .offset-by-nine       { margin-left: 78.0%;          }
+  .container .offset-by-ten        { margin-left: 86.6666666667%; }
+  .container .offset-by-eleven     { margin-left: 95.3333333333%; }
+
+  .container .offset-by-one-third  { width: 34.6666666667%; }
+  .container .offset-by-two-thirds { width: 69.3333333333%; }
+
+  .container .offset-by-one-half   { width: 52%; }
+
 }
 
 

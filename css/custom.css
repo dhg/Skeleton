@@ -69,14 +69,9 @@
   border: 1px solid #eee; }
 .example-screenshot {
   width: 100%;
-  height: auto;
-}
-.examples .column {
-  position: relative;
-}
+  height: auto; }
 .navbar {
-  display: none;
-}
+  display: none; }
 
 /* Larger than phone */
 @media (min-width: 550px) {
