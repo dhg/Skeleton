@@ -120,7 +120,6 @@
   .navbar-spacer {
     display: block;
     width: 100%;
-    height: 6.5rem;
     background: #fff;
     z-index: 99;
     border-top: 1px solid #eee;
@@ -139,11 +138,12 @@
   .navbar-link {
     text-transform: uppercase;
     font-size: 11px;
+    display:block;
     font-weight: 600;
     letter-spacing: .2rem;
+    padding:2.25rem 0;
     margin-right: 35px;
     text-decoration: none;
-    line-height: 6.3rem;
     color: #222; }
   .navbar-link.active {
     color: #33C3F0; }
