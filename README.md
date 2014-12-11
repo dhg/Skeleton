@@ -5,10 +5,16 @@ Check out <http://getskeleton.com> for documentation and details.
 
 ## Getting started
 
-There are a couple ways to download Skeleton:
-- [Download the zip](https://github.com/dhg/Skeleton/releases/download/v2.0/Skeleton.2.0.zip)
-- Clone the repo: `git clone https://github.com/dhg/Skeleton.git`
+### Install Global Dependancies
+  * [Node.js](http://nodejs.org)
+  * [bower](http://bower.io): `[sudo] npm install bower -g`
+  * [grunt.js](http://grunt.js); `[sudo] npm install -g grunt-cli`
 
+### Install Local Dependancies
+  * Download zip or clone the repo
+  * cd to project folder
+  * run `[sudo] npm install` (first time users)
+  * run `grunt` (to watch and compile less files)
 
 ### What's in the download?
 
@@ -20,9 +26,12 @@ skeleton/
 ├── css/
 │   ├── normalize.min.css
 │   └── skeleton.css
+├── less/
+│   └── skeleton.css
 ├── images/
 │   └── favicon.ico
 └── README.md
+
 ```
 
 ### Why it's awesome
