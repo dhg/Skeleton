@@ -46,7 +46,7 @@ The above list is non-exhaustive. Skeleton works perfectly with almost all older
 
 ## License
 
-All parts of Skeleton are free to use and abuse under the [open-source MIT license](http://opensource.org/licenses/mit-license.php).
+All parts of Skeleton are free to use and abuse under the [open-source MIT license](https://github.com/dhg/Skeleton/blob/master/LICENSE.md).
 
 
 ## Colophon
