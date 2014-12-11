@@ -106,6 +106,8 @@ body {
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
+body * {
+  -webkit-font-smoothing: antialiased; }
 
 
 /* Typography
