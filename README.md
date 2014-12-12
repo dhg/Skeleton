@@ -9,13 +9,6 @@ There are a couple ways to download Skeleton:
 - [Download the zip](https://github.com/dhg/Skeleton/releases/download/v2.0.1/Skeleton-2.0.1.zip)
 - Clone the repo: `git clone https://github.com/dhg/Skeleton.git`
 
-### What about Less and Sass?
-
-You can get the same, simple goodness of skeleton in both Less and Sass.
-- [Skeleton-Sass](https://github.com/whatsnewsaes/Skeleton-Sass)
-- [Skeleton-Less](https://github.com/whatsnewsaes/Skeleton-less)
-
-
 ### What's in the download?
 
 The download includes Skeleton's CSS, Normalize CSS as a reset, a sample favicon, and an index.html as a starting point.
@@ -30,6 +23,12 @@ skeleton/
 │   └── favicon.ico
 └── README.md
 ```
+
+### What about Less and Sass?
+
+You can get the same, simple goodness of skeleton in both Less and Sass.
+- [Skeleton-Sass](https://github.com/whatsnewsaes/Skeleton-Sass)
+- [Skeleton-Less](https://github.com/whatsnewsaes/Skeleton-less)
 
 ### Why it's awesome
 
