@@ -30,64 +30,67 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative; 
-  width: 80%; 
+  width: 100%;
   max-width: 960px; 
   margin: 0 auto; 
-  padding: 0; }
-.container .column,        
-.container .columns { 
-  float: left; 
-  width: 100%; 
+  padding: 0 15px; 
   box-sizing: border-box; }
 .row { 
-  margin-bottom: 2rem; }
-.row .column:first-child,        
-.row .columns:first-child { 
-  margin-left: 0; }
+  margin: 0 -15px 2rem; }
+.row .column,        
+.row .columns { 
+  float: left; 
+  width: 100%; 
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box; }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-  
-  .container .column,
-  .container .columns {
-    margin-left: 4%; }
-  
-  .container .one.column,
-  .container .one.columns          { width: 4.66666666667%; }
-  .container .two.columns          { width: 13.3333333333%; }
-  .container .three.columns        { width: 22%;            }
-  .container .four.columns         { width: 30.6666666667%; }
-  .container .five.columns         { width: 39.3333333333%; }
-  .container .six.columns          { width: 48%;            }
-  .container .seven.columns        { width: 56.6666666667%; }
-  .container .eight.columns        { width: 65.3333333333%; }
-  .container .nine.columns         { width: 74.0%;          }
-  .container .ten.columns          { width: 82.6666666667%; }
-  .container .eleven.columns       { width: 91.3333333333%; }
-  .container .twelve.columns       { width: 100%; margin-left: 0; }
 
-  .container .one-third.column     { width: 30.6666666667%; }
-  .container .two-thirds.column    { width: 65.3333333333%; }
+  .column,
+  .columns {
+    border: 1px solid red;
+  }
 
-  .container .one-half.column      { width: 48%; }
+  .container { width: 90%; }
+  
+  .row .one.column,
+  .row .one.columns          { width: 8.33333333334%; }
+  .row .two.columns          { width: 16.6666666667%; }
+  .row .three.columns        { width: 25%;            }
+  .row .four.columns         { width: 33.3333333334%; }
+  .row .five.columns         { width: 41.6666666667%; }
+  .row .six.columns          { width: 50%;            }
+  .row .seven.columns        { width: 58.3333333334%; }
+  .row .eight.columns        { width: 66.6666666667%; }
+  .row .nine.columns         { width: 75.0%;          }
+  .row .ten.columns          { width: 83.3333333334%; }
+  .row .eleven.columns       { width: 91.6666666667%; }
+  .row .twelve.columns       { width: 100%; margin-left: 0; }
+
+  .row .one-third.column     { width: 33.3333333334%; }
+  .row .two-thirds.column    { width: 66.6666666667%; }
+
+  .row .one-half.column      { width: 50%; }
 
   /* Offsets */
-  .container .row .offset-by-one        { margin-left: 8.66666666667%; }
-  .container .row .offset-by-two        { margin-left: 17.3333333333%; }
-  .container .row .offset-by-three      { margin-left: 26%;            }
-  .container .row .offset-by-four       { margin-left: 34.6666666667%; }
-  .container .row .offset-by-five       { margin-left: 43.3333333333%; }
-  .container .row .offset-by-six        { margin-left: 52%;            }
-  .container .row .offset-by-seven      { margin-left: 60.6666666667%; }
-  .container .row .offset-by-eight      { margin-left: 69.3333333333%; }
-  .container .row .offset-by-nine       { margin-left: 78.0%;          }
-  .container .row .offset-by-ten        { margin-left: 86.6666666667%; }
-  .container .row .offset-by-eleven     { margin-left: 95.3333333333%; }
+  .row .offset-by-one        { margin-left: 8.33333333334%; }
+  .row .offset-by-two        { margin-left: 16.6666666667%; }
+  .row .offset-by-three      { margin-left: 25%;            }
+  .row .offset-by-four       { margin-left: 33.3333333334%; }
+  .row .offset-by-five       { margin-left: 41.6666666667%; }
+  .row .offset-by-six        { margin-left: 50%;            }
+  .row .offset-by-seven      { margin-left: 58.3333333334%; }
+  .row .offset-by-eight      { margin-left: 66.6666666667%; }
+  .row .offset-by-nine       { margin-left: 75.0%;          }
+  .row .offset-by-ten        { margin-left: 83.3333333334%; }
+  .row .offset-by-eleven     { margin-left: 91.6666666667%; }
 
-  .container .row .offset-by-one-third  { margin-left: 34.6666666667%; }
-  .container .row .offset-by-two-thirds { margin-left: 69.3333333333%; }
+  .row .offset-by-one-third  { margin-left: 33.3333333334%; }
+  .row .offset-by-two-thirds { margin-left: 66.6666666667%; }
 
-  .container .row .offset-by-one-half   { margin-left: 52%; }
+  .row .offset-by-one-half   { margin-left: 50%; }
 
 }
 
