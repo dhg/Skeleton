@@ -48,11 +48,6 @@
 /* For devices larger than 550px */
 @media (min-width: 550px) {
 
-  .column,
-  .columns {
-    border: 1px solid red;
-  }
-
   .container { width: 90%; }
   
   .row .one.column,
