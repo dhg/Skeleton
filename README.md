@@ -6,8 +6,8 @@ Check out <http://getskeleton.com> for documentation and details.
 ## Getting started
 
 There are a couple ways to download Skeleton:
-- [Download the zip](https://github.com/dhg/Skeleton/releases/download/v2.0.1/Skeleton-2.0.1.zip)
-- Clone the repo: `git clone https://github.com/dhg/Skeleton.git`
+- [Download the zip](https://github.com/dhg/Skeleton/releases/download/v2.0.2/Skeleton-2.0.2.zip)
+- Clone the repo: `git clone https://github.com/dhg/Skeleton.git` (Note: this is under active development, so if you're looking for stable and safe, use the zipped download)
 
 
 ### What's in the download?
@@ -15,20 +15,20 @@ There are a couple ways to download Skeleton:
 The download includes Skeleton's CSS, Normalize CSS as a reset, a sample favicon, and an index.html as a starting point.
 
 ```
-skeleton/
+Skeleton/
 ├── index.html
 ├── css/
 │   ├── normalize.min.css
 │   └── skeleton.css
-├── images/
-│   └── favicon.ico
-└── README.md
+└── images/
+    └── favicon.ico
+
 ```
 
 ### Why it's awesome
 
 Skeleton is lightweight and simple. It styles only raw HTML elements (with a few exceptions) and provides a responsive grid. Nothing more. 
-- Minified, it's less than a kb
+- Around 400 lines of CSS unminified and with comments
 - It's a starting point, not a UI framework 
 - No compiling or installing...just vanilla CSS
 
