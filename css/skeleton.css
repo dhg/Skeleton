@@ -41,17 +41,20 @@
   width: 100%; 
   box-sizing: border-box; }
 
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 90%; }
+}
+
 /* For devices larger than 550px */
 @media (min-width: 550px) {
-
   .container {
-    width: 90%;
-  }
-  
+    padding: 0;
+    width: 80%; }
   .column,
   .columns {
     margin-left: 4%; }
-
   .column:first-child,        
   .columns:first-child { 
     margin-left: 0; }
