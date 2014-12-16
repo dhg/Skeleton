@@ -68,13 +68,13 @@
 
 /* Bigger than 550 */
 @media (min-width: 550px) {
-  .hero {
-    padding: 12rem 0;
-    text-align: left;
-    height: 165px;
-  }
   .section {
     padding: 12rem 0 11rem;
+  }
+  .hero {
+    padding-bottom: 12rem;
+    text-align: left;
+    height: 165px;
   }
   .phone {
     position: absolute;
