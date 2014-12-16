@@ -55,6 +55,8 @@ The following are extensions to Skeleton built by the community. They are not of
 - [Skeleton on LESS](https://github.com/whatsnewsaes/Skeleton-less): Skeleton built with LESS for easier replacement of grid, color, and media queries. (Last update was to match v2.0.1)
 - [Skeleton on SASS](https://github.com/whatsnewsaes/Skeleton-Sass): Skeleton built with SASS for easier replacement of grid, color, and media queries. (Last update was to match v2.0.1)
 
+Have an extension you want to see here? Just shoot an email to hi@getskeleton.com with your extension!
+
 
 ## Colophon
 
