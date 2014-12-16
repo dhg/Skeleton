@@ -194,7 +194,7 @@
 <code class="code-example-body prettyprint"><!-- .container is main centered wrapper -->
 <div class="container">
   
-  <!-- all columns must be wrapped in a .row -->
+  <!-- columns should be the immediate child of a .row -->
   <div class="row">
     <div class="one column">One</div>
     <div class="eleven columns">Eleven</div>
@@ -218,7 +218,7 @@
 
 </div>
 
-<!-- Note: columns *cannot* be nested since that's tough with % based grid -->
+<!-- Note: columns can be nested, but it's not recommended since Skeleton's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) -->
 </code>
 </pre>
 <!-- ————————————————————————————————————————————————————— -->
@@ -227,7 +227,7 @@
     </div>    
 
     <!-- Typography -->
-    <div class="row docs-section" id="typography">
+    <div class="docs-section" id="typography">
       <h6 class="docs-header">Typography</h6>
       <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Skeleton never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
       <div class="docs-example">
@@ -274,7 +274,7 @@
     </div>
 
     <!-- Buttons -->
-    <div class="row docs-section" id="buttons">
+    <div class="docs-section" id="buttons">
       <h6 class="docs-header">Buttons</h6>
       <p>Buttons come in two basic flavors in Skeleton. The standard <code>&lt;button&gt;</code> element is plain, whereas the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form elements, but can also be arbitrarily attached to anchors with a <code>.button</code> class.</p>
       <div class="docs-example">
@@ -314,7 +314,7 @@
     </div>  
 
     <!-- Forms -->
-    <div class="row docs-section" id="forms">
+    <div class="docs-section" id="forms">
       <h6 class="docs-header">Forms</h6>
       <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
       <div class="docs-example docs-example-forms">
@@ -437,7 +437,7 @@
     </div>
 
     <!-- Code -->
-    <div class="row docs-section" id="code">
+    <div class="docs-section" id="code">
       <h6 class="docs-header">Code</h6>
       <p>Code styling is kept basic – just wrap anything in a <code>&lt;code&gt;</code> and it will appear like <code>this</code>. For blocks of code, wrap a <code>&lt;code&gt;</code> with a <code>&lt;pre&gt;</code>.</p>
       <div class="docs-example">
@@ -462,7 +462,7 @@
     </div>
 
     <!-- Tables -->
-    <div class="row docs-section" id="tables">
+    <div class="docs-section" id="tables">
       <h6 class="docs-header">Tables</h6>
       <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>
       <div class="docs-example">
@@ -527,7 +527,7 @@
     </div>
 
     <!-- Queries -->
-    <div class="row docs-section" id="queries">
+    <div class="docs-section" id="queries">
       <h6 class="docs-header">Media queries</h6>
       <p>Skeleton uses media queries to serve its scalable grid, but also has a list of queries for convenience of styling your site across devices. The queries are mobile-first, meaning they target <code>min-width</code>. Mobile-first queries are how Skeleton's grid is built and is the preferrable method of organizing CSS. It means all styles outside of a query apply to all devices, then larger devices are targeted for enhancement. This prevents small devices from having to parse tons of unused CSS. The sizes for the queries are:</p>
       <div class="docs-example row">
@@ -576,7 +576,7 @@
 
 
     <!-- Utilities and Misc. -->
-    <div class="row docs-section" id="utilities">
+    <div class="docs-section" id="utilities">
       <h6 class="docs-header">Utilities</h6>
       <p>Skeleton has a number of small utility classes that act as easy-to-use helpers. Sometimes it's better to use a utility class than create a whole new class just to float an element.</p>
 
