@@ -9,7 +9,7 @@
 
 
 /* Table of contents
-–––––––––––––––––––––––––––––––––––––––––––––––––– 
+––––––––––––––––––––––––––––––––––––––––––––––––––
 - Grid
 - Base Styles
 - Typography
@@ -29,16 +29,16 @@
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
-  position: relative; 
-  width: 100%; 
-  max-width: 960px; 
-  margin: 0 auto; 
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
-.column,        
-.columns { 
-  width: 100%; 
-  float: left; 
+.column,
+.columns {
+  width: 100%;
+  float: left;
   box-sizing: border-box; }
 
 /* For devices larger than 400px */
@@ -55,10 +55,10 @@
   .column,
   .columns {
     margin-left: 4%; }
-  .column:first-child,        
-  .columns:first-child { 
+  .column:first-child,
+  .columns:first-child {
     margin-left: 0; }
-  
+
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
   .two.columns                    { width: 13.3333333333%; }
@@ -116,10 +116,10 @@
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton 
+html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
-html { 
-  font-size: 62.5%; } 
+html {
+  font-size: 62.5%; }
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
@@ -130,7 +130,7 @@ body {
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-h1, h2, h3, h4, h5, h6 { 
+h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300; }
@@ -157,13 +157,13 @@ p {
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a { 
+a {
   color: #1EAEDB; }
-a:hover { 
+a:hover {
   color: #0FA0CE; }
 
 
-/* Buttons 
+/* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button,
 button,
@@ -179,7 +179,7 @@ input[type="button"] {
   font-weight: 600;
   line-height: 38px;
   letter-spacing: .1rem;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
@@ -284,18 +284,18 @@ label > .label-body {
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul { 
+ul {
   list-style: circle inside; }
-ol { 
+ol {
   list-style: decimal inside; }
 ol, ul {
   padding-left: 0;
   margin-top: 0; }
-ul ul, 
+ul ul,
 ul ol,
-ol ol, 
-ol ul { 
-  margin: 1.5rem 0 1.5rem 3rem; 
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%; }
 li {
   margin-bottom: 1rem; }
@@ -378,7 +378,7 @@ hr {
   margin-bottom: 3.5rem;
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
-  
+
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -386,7 +386,7 @@ hr {
 /* Self Clearing Goodness */
 .container:after,
 .row:after,
-.u-cf { 
+.u-cf {
   content: "";
   display: table;
   clear: both; }
@@ -395,10 +395,10 @@ hr {
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
-Note: The best way to structure the use of media queries is to create the queries 
+Note: The best way to structure the use of media queries is to create the queries
 near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it 
-there. 
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
 */
 
 
