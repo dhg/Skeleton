@@ -9,17 +9,23 @@ There are a couple ways to download Skeleton:
 - [Download the zip](https://github.com/dhg/Skeleton/releases/download/v2.0.2/Skeleton-2.0.2.zip)
 - Clone the repo: `git clone https://github.com/dhg/Skeleton.git` (Note: this is under active development, so if you're looking for stable and safe, use the zipped download)
 
+### Build
+```
+$ git clone git@github.com:dhg/Skeleton.git && cd Skeleton
+$ npm install
+$ gulp build
+```
 
 ### What's in the download?
 
-The download includes Skeleton's CSS, Normalize CSS as a reset, a sample favicon, and an index.html as a starting point.
+The download includes Skeleton's CSS, a sample favicon, and an index.html as a starting point.
 
 ```
-Skeleton/
+dist/
 ├── index.html
 ├── css/
-│   ├── normalize.min.css
-│   └── skeleton.css
+│   ├── skeleton.css
+│   └── skeleton.min.css
 └── images/
     └── favicon.ico
 
