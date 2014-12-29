@@ -240,7 +240,7 @@ select {
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
-/* Removes awkard default styles on some inputs for iOS */
+/* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="search"],
 input[type="text"],
@@ -344,7 +344,6 @@ fieldset {
   margin-bottom: 1.5rem; }
 pre,
 blockquote,
-form,
 dl,
 figure,
 table,
@@ -353,8 +352,6 @@ ul,
 ol,
 form {
   margin-bottom: 2.5rem; }
-p {
-  margin-top: 0; }
 
 
 /* Utilities
