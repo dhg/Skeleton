@@ -2,14 +2,6 @@
   "name": "Skeleton",
   "version": "2.0.0",
   "description": "Skeleton: A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
-  "style": "css/skeleton.css",
-  "files": [
-    "css/skeleton.css"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dhg/Skeleton.git"
-  },
   "keywords": [
     "css",
     "framework",
@@ -23,5 +15,19 @@
   "bugs": {
     "url": "https://github.com/dhg/Skeleton/issues"
   },
-  "homepage": "https://github.com/dhg/Skeleton"
+  "homepage": "https://github.com/dhg/Skeleton",
+  "repository": "dhg/Skeleton",
+  "main": "index.js",
+  "style": "css/skeleton.css",
+  "files": [
+    "css/skeleton.css",
+    "index.js",
+    "LICENSE.md"
+  ],
+  "browserify": {
+    "transform": ["brfs"]
+  },
+  "dependencies": {
+    "brfs": "^1.2.0"
+  }
 }
