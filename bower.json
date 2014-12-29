@@ -12,7 +12,7 @@
   "description": "Skeleton is a dead-simple, responsive boilerplate to kickstart any responsive project.",
   "main": [
     "css/skeleton.css",
-    "index.html",
+    "index.html"
   ],
   "dependencies": {
     "normalize.css": "3.x.x"
