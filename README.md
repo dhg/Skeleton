@@ -6,7 +6,7 @@ Check out <http://getskeleton.com> for documentation and details.
 ## Getting started
 
 There are a couple ways to download Skeleton:
-- [Download the zip](https://github.com/dhg/Skeleton/releases/download/v2.0.2/Skeleton-2.0.2.zip)
+- [Download the zip](https://github.com/dhg/Skeleton/releases/download/2.0.4/Skeleton-2.0.4.zip)
 - Clone the repo: `git clone https://github.com/dhg/Skeleton.git` (Note: this is under active development, so if you're looking for stable and safe, use the zipped download)
 
 
@@ -27,9 +27,9 @@ Skeleton/
 
 ### Why it's awesome
 
-Skeleton is lightweight and simple. It styles only raw HTML elements (with a few exceptions) and provides a responsive grid. Nothing more. 
+Skeleton is lightweight and simple. It styles only raw HTML elements (with a few exceptions) and provides a responsive grid. Nothing more.
 - Around 400 lines of CSS unminified and with comments
-- It's a starting point, not a UI framework 
+- It's a starting point, not a UI framework
 - No compiling or installing...just vanilla CSS
 
 
@@ -53,7 +53,7 @@ All parts of Skeleton are free to use and abuse under the [open-source MIT licen
 
 The following are extensions to Skeleton built by the community. They are not officially supported, but all have been tested and are compatible with v2.0 (exact release noted):
 - [Skeleton on LESS](https://github.com/whatsnewsaes/Skeleton-less): Skeleton built with LESS for easier replacement of grid, color, and media queries. (Last update was to match v2.0.1)
-- [Skeleton on SASS](https://github.com/whatsnewsaes/Skeleton-Sass): Skeleton built with SASS for easier replacement of grid, color, and media queries. (Last update was to match v2.0.1)
+- [Skeleton on Sass](https://github.com/whatsnewsaes/Skeleton-Sass): Skeleton built with Sass for easier replacement of grid, color, and media queries. (Last update was to match v2.0.1)
 
 Have an extension you want to see here? Just shoot an email to hi@getskeleton.com with your extension!
 
