@@ -1,10 +1,10 @@
 /*
-* Skeleton V2.0.2
+* Skeleton V2.0.3
 * Copyright 2014, Dave Gamache
 * www.getskeleton.com
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
-* 12/15/2014
+* 12/29/2014
 */
 
 
@@ -226,10 +226,10 @@ input[type="button"].button-primary:focus {
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
+input[type="number"],
 input[type="search"],
 input[type="text"],
 input[type="tel"],
-input[type="number"],
 input[type="url"],
 input[type="password"],
 textarea,
@@ -243,10 +243,10 @@ select {
   box-sizing: border-box; }
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
+input[type="number"],
 input[type="search"],
 input[type="text"],
 input[type="tel"],
-input[type="number"],
 input[type="url"],
 input[type="password"],
 textarea {
@@ -258,10 +258,10 @@ textarea {
   padding-top: 6px;
   padding-bottom: 6px; }
 input[type="email"]:focus,
+input[type="number"]:focus,
 input[type="search"]:focus,
 input[type="text"]:focus,
 input[type="tel"]:focus,
-input[type="number"],
 input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
