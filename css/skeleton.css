@@ -251,8 +251,7 @@ input[type="url"],
 input[type="password"],
 textarea {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; }
+     -moz-appearance: none; }
 textarea {
   min-height: 65px;
   padding-top: 6px;
