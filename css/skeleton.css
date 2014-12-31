@@ -317,11 +317,16 @@ code {
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
-  white-space: pre; }
+  white-space: pre;
+  overflow: auto; }
 
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; }
 th,
 td {
   padding: 12px 15px;
