@@ -184,7 +184,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 4px;
-  border: 1px solid #bbb;
+  border: 1px solid #BBB;
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,
@@ -236,7 +236,7 @@ textarea,
 select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
+  background-color: #FFF;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
   box-shadow: none;
