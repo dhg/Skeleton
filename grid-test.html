@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Grid Test</title>
+    <meta name="description" content="Page setup to test the grid system">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+    <style>
+      .demo-col {
+        background-color: #00b7ff;
+        width: 100%;
+        height: 60px;
+      }
+      .demo-col-lg {
+        background-color: #00b7ff;
+        width: 100%;
+        height: 300px;
+      }
+      .demo-col-md {
+        background-color: #00b7ff;
+        width: 100%;
+        height: 200px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="container" style="margin-top: 25px;">
+
+      <div class="row">
+        <div class="four columns md-six">
+          <div class="demo-col"></div>
+        </div>
+        <div class="eight columns md-two">
+          <div class="demo-col"></div>
+        </div>
+      </div><!-- end of row -->
+
+      <div class="row">
+        <div class="twelve columns">
+          <div class="demo-col-lg"></div>
+        </div>
+      </div><!-- end of row -->
+
+      <div class="row">
+        <div class="four columns md-four">
+          <div class="demo-col-md"></div>
+        </div>
+        <div class="four columns md-four">
+          <div class="demo-col-md"></div>
+        </div>
+        <div class="four columns md-eight">
+          <div class="demo-col-md"></div>
+        </div>
+      </div><!-- end of row -->
+
+      <div class="row">
+        <div class="six columns">
+          <div class="demo-col-md"></div>
+        </div>
+        <div class="six columns">
+          <div class="demo-col-md"></div>
+        </div>
+      </div><!-- end of row -->
+
+      <div class="row">
+        <div class="six columns offset-by-three md-full">
+          <div class="demo-col"></div>
+        </div>
+      </div><!-- end of row -->
+
+    </div>
+
+  </body>
+</html>
