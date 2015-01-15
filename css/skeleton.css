@@ -31,25 +31,40 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 1280px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 1%;
   box-sizing: border-box; }
 .row {
-  margin: 0 -1% 2rem; }
-.row .column,
+  margin: 0 -0.5% 1rem;  }
 .row .columns {
   float: left;
   width: 100%;
-  padding: 0 1%;
-  box-sizing: border-box; }
+  padding:0 0.5%;
+  box-sizing: border-box;
+  margin-bottom: 0;  }
 
-/* For devices larger than 600px */
-@media (min-width: 600px) {
+  /* Small Grid */
+  .row .sm-one.columns,
+  .row .small-one.columns        { width: 25% }
+  .row .sm-two.columns,
+  .row .small-two.columns        { width: 50% }
+  .row .sm-three.columns,
+  .row .small-three.columns      { width: 75% }
+  .row .sm-four.columns,
+  .row .small-four.columns       { width: 100% }
+  
 
-  .container { width: 96%; }
+/* Large Grid */
+@media (min-width: 550px) {
 
-  .row .one.column,
+  .row { margin: 0 -1% .5rem; }
+  .row .columns {
+    padding: 0 1%;
+    margin-bottom: 1.5%;}
+
+  .container { width: 90%; }
+
   .row .one.columns          { width: 8.33333333334%; }
   .row .two.columns          { width: 16.6666666667%; }
   .row .three.columns        { width: 25%;            }
@@ -67,8 +82,43 @@
   .row .two-thirds.column    { width: 66.6666666667%; }
 
   .row .one-half.column      { width: 50%; }
+}
 
-  /* Offsets */
+/* Medium Grid */
+@media (min-width: 550px) and (max-width: 960px){
+  .row { margin: 0 -0.75% .5rem; }
+  .row .columns { padding: 0 0.75%; }
+
+  .container { width: 95%; }
+
+  .row .md-one.columns,
+  .row .medium-one.columns     { width: 12.5% }
+  .row .md-two.columns,
+  .row .medium-two.columns     { width: 25%   }
+  .row .md-three.columns,
+  .row .medium-three.columns   { width: 37.5% }
+  .row .md-four.columns,
+  .row .medium-four.columns    { width: 50%   }
+  .row .md-five.columns,
+  .row .medium-five.columns    { width: 62.5% }
+  .row .md-six.columns,
+  .row .medium-six.columns     { width: 75%   }
+  .row .md-seven.columns,
+  .row .medium-seven.columns   { width: 87.5% }
+  .row .md-eight.columns,
+  .row .medium-eight.columns   { width: 100%  }
+
+  .row .md-full.columns,
+  .row .medium-full.columns    { width: 100%; }
+  .row .md-half.columns,
+  .row .medium-half.columns    { width: 50%;  }
+
+}
+
+/* Offsets */
+@media (min-width: 960px) {
+
+  Offsets
   .row .offset-by-one        { margin-left: 8.33333333334%; }
   .row .offset-by-two        { margin-left: 16.6666666667%; }
   .row .offset-by-three      { margin-left: 25%;            }
