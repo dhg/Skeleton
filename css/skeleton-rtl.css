@@ -1,0 +1,88 @@
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.columns {
+  width: 100%;
+  float: right;
+  box-sizing: border-box; }
+
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .column,
+  .columns {
+    margin-right: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-right: 0; }
+
+  .twelve.columns                 { width: 100%; margin-right: 0; }
+
+  .offset-by-one.column,
+  .offset-by-one.columns          { margin-right: 8.66666666667%; }
+  .offset-by-two.column,
+  .offset-by-two.columns          { margin-right: 17.3333333333%; }
+  .offset-by-three.column,
+  .offset-by-three.columns        { margin-right: 26%;            }
+  .offset-by-four.column,
+  .offset-by-four.columns         { margin-right: 34.6666666667%; }
+  .offset-by-five.column,
+  .offset-by-five.columns         { margin-right: 43.3333333333%; }
+  .offset-by-six.column,
+  .offset-by-six.columns          { margin-right: 52%;            }
+  .offset-by-seven.column,
+  .offset-by-seven.columns        { margin-right: 60.6666666667%; }
+  .offset-by-eight.column,
+  .offset-by-eight.columns        { margin-right: 69.3333333333%; }
+  .offset-by-nine.column,
+  .offset-by-nine.columns         { margin-right: 78.0%;          }
+  .offset-by-ten.column,
+  .offset-by-ten.columns          { margin-right: 86.6666666667%; }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns       { margin-right: 95.3333333333%; }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns    { margin-right: 34.6666666667%; }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns   { margin-right: 69.3333333333%; }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { margin-right: 52%; }
+
+}
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+
+
+body {
+	direction:rtl;
+}
+
+label > .label-body {
+  display: inline-block;
+  margin-right: .5rem;
+  font-weight: normal; }
+
+
+ol, ul {
+  padding-right: 0;
+  margin-top: 0; }
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+th,
+td {
+  padding: 12px 15px;
+  text-align: right;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-right: 0; }
+th:last-child,
+td:last-child {
+  padding-left: 0; }
+
