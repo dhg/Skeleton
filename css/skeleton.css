@@ -33,13 +33,11 @@
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; }
+  padding: 0 20px; }
 .column,
 .columns {
   width: 100%;
-  float: left;
-  box-sizing: border-box; }
+  float: left; }
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
@@ -119,7 +117,10 @@
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
+  box-sizing: border-box;
   font-size: 62.5%; }
+*, *:before, *:after {
+  box-sizing: inherit; }
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
@@ -185,8 +186,7 @@ input[type="button"] {
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid #bbb;
-  cursor: pointer;
-  box-sizing: border-box; }
+  cursor: pointer; }
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -239,8 +239,7 @@ select {
   background-color: #fff;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box; }
+  box-shadow: none; }
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="number"],
@@ -360,11 +359,9 @@ form {
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
-  width: 100%;
-  box-sizing: border-box; }
+  width: 100%; }
 .u-max-full-width {
-  max-width: 100%;
-  box-sizing: border-box; }
+  max-width: 100%; }
 .u-pull-right {
   float: right; }
 .u-pull-left {
