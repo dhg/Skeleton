@@ -36,10 +36,20 @@
   padding: 0 20px;
   box-sizing: border-box; }
 .column,
-.columns {
+.columns,
+.non-responsive-column {
   width: 100%;
   float: left;
   box-sizing: border-box; }
+
+/* used for grid structures that need to be maintained in mobile */
+.non-responsive-column             { margin-left: 4%;       }
+.non-responsive-column:first-child { margin-left: 0;        }
+
+.one-fourth.non-responsive-column  { width: 22%;            }
+.one-third.non-responsive-column   { width: 30.6666666667%; }
+.two-thirds.non-responsive-column  { width: 65.3333333333%; }
+.one-half.non-responsive-column    { width: 48%;            }
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
