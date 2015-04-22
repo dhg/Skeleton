@@ -54,10 +54,10 @@
     width: 80%; }
   .column,
   .columns {
-    margin-left: 4%; }
-  .column:first-child,
-  .columns:first-child {
-    margin-left: 0; }
+    margin-right: 4%; }
+  .column:last-child,
+  .columns:last-child {
+    margin-right: 0; }
 
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
@@ -71,7 +71,7 @@
   .nine.columns                   { width: 74.0%;          }
   .ten.columns                    { width: 82.6666666667%; }
   .eleven.columns                 { width: 91.3333333333%; }
-  .twelve.columns                 { width: 100%; margin-left: 0; }
+  .twelve.columns                 { margin-right: 0; }
 
   .one-third.column               { width: 30.6666666667%; }
   .two-thirds.column              { width: 65.3333333333%; }
