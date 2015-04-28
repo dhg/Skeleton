@@ -9,6 +9,7 @@ blocks
 .block-style {
     padding-top: 3em;
     padding-bottom: 3em;
+    width: 100%;
 }
 
 /* =====================================================================================================================
@@ -38,7 +39,18 @@ Fonts
     font-weight: bold;
 }
 
-.opt-small {
-    font-size: 10px;
+.opt-big {
+    font-size: 1.2em;
 }
 
+.opt-medium {
+    font-size: 1em;
+}
+
+.opt-small {
+    font-size: .8em;
+}
+
+.opt-red {
+    color: red;  
+}
