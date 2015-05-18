@@ -54,3 +54,19 @@ Fonts
 .opt-red {
     color: red;  
 }
+
+/**
+ * Adding CSS rules for WYSIWYG HTML 5 Support
+ * https://github.com/xing/wysihtml5/wiki/Supported-Commands
+ */
+ .wysiwyg-text-align-center {
+  text-align: center;
+}
+
+.wysiwyg-text-align-left {
+  text-align: left;
+}
+
+.wysiwyg-text-align-right {
+  text-align: right;
+}
