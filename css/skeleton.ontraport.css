@@ -47,19 +47,19 @@ Skeleton Grid Size Extension
 	}
 	
 	.tablet-three.columns {
-		width: 21.3333333%;
+		width: 21.2333333%;
 	}
 	.tablet-three.columns:nth-child(4n + 1) {
 		margin-left: 0;
 	}
 	.tablet-four.columns {
-		width: 30.222222%
+		width: 30.111112%
 	}
 	.tablet-four.columns:nth-child(3n + 1) {
 		margin-left: 0;
 	}
 	.tablet-six.columns {
-		width: 47.66666667%;
+		width: 47.56666667%;
 	}
 	.tablet-six.columns:nth-child(odd) {
 		margin-left: 0;
