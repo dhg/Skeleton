@@ -2,7 +2,69 @@
 @brief ONTRAPORT's skeleton extension file
 ===================================================================================================================== */
 
-
+/* =====================================================================================================================
+Skeleton Grid Size Extension
+	1) Adds new column sizes for rows with 7, 8, or 9 columns.
+	2) Adds a tablet responsive size for screens 850px - 550px wide.
+		a) For Multi-Item the tablet is as follows:
+		
+				12 colums -> 4 columns -> 1 column
+				11 colums -> 4 columns -> 1 column
+				10 colums -> 4 columns -> 1 column
+				9 colums -> 3 columns -> 1 column
+				8 colums -> 3 columns -> 1 column
+				7 colums -> 3 columns -> 1 column
+				6 colums -> 2 columns -> 1 column
+				5 colums -> 2 columns -> 1 column
+				4 colums -> 2 columns -> 1 column
+				3 columns -> 3 columns -> 1 column
+				2 columns -> 2 columns -> 1 column
+				1 column -> 1 column -> 1 column
+				
+===================================================================================================================== */
+@media (min-width: 550px) {
+	/* For rows 7 columns accross */
+	.one-and-half.columns {
+		width: 10.6666667%;
+	}
+	/* For rows 8 columns accross */
+	.one-and-third.columns {
+		width: 8.6666667%;
+	}
+	/* For rows 9 columns accross */
+	.one-and-fourth.columns {
+		width: 7.3333333%;
+	}
+}
+/* For devices smaller than 768px */
+@media (min-width: 550px) and (max-width: 850px) {
+	.u-cf {
+		text-align: center;
+	}
+	[class*="tablet-"].columns {
+		float: none;
+		display: inline-block;
+	}
+	
+	.tablet-three.columns {
+		width: 22%;
+	}
+	.tablet-three.columns:nth-child(4n + 1) {
+		margin-left: 0;
+	}
+	.tablet-four.columns {
+		width: 30.6666666667%
+	}
+	.tablet-four.columns:nth-child(3n + 1) {
+		margin-left: 0;
+	}
+	.tablet-six.columns {
+		width: 48%;
+	}
+	.tablet-six.columns:nth-child(odd) {
+		margin-left: 0;
+	}
+}
 /* =====================================================================================================================
 blocks
 ===================================================================================================================== */
