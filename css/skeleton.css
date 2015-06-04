@@ -369,6 +369,12 @@ form {
   float: right; }
 .u-pull-left {
   float: left; }
+.t-left {
+  text-align: left; }
+.t-center {
+  text-align: center; }
+.t-right {
+  text-align: right; }
 
 
 /* Misc
