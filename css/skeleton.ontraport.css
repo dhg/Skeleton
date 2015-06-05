@@ -23,6 +23,10 @@ Skeleton Grid Size Extension
 				
 ===================================================================================================================== */
 @media (min-width: 550px) {
+	.column.first-visible,
+	.columns.first-visible {
+		margin-left: 0; 
+	}
 	/* For rows 7 columns accross */
 	.one-and-half.columns {
 		width: 10.6666667%;
@@ -49,19 +53,19 @@ Skeleton Grid Size Extension
 	.tablet-three.columns {
 		width: 21.2333333%;
 	}
-	.tablet-three.columns:nth-child(4n + 1) {
+	.tablet-three.first-in-row.columns {
 		margin-left: 0;
 	}
 	.tablet-four.columns {
 		width: 30.111112%
 	}
-	.tablet-four.columns:nth-child(3n + 1) {
+	.tablet-four.first-in-row.columns {
 		margin-left: 0;
 	}
 	.tablet-six.columns {
 		width: 47.56666667%;
 	}
-	.tablet-six.columns:nth-child(odd) {
+	.tablet-six.first-in-row.columns {
 		margin-left: 0;
 	}
 }
