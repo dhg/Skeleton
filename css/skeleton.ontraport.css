@@ -82,10 +82,22 @@ blocks
 buttons
 ===================================================================================================================== */
 .button {
-  height: auto;
-  max-width: 100%;
-  padding: 5px 20px;
-  white-space: normal;
+	height: auto;
+	max-width: 100%;
+	padding: 5px 20px;
+	white-space: normal;
+	border: 0;
+	color: inherit;
+	text-transform: none;
+	border-radius: 0;
+	cursor: none;
+	letter-spacing: inherit;
+	text-align: inherit;
+	background-color: inherit;
+}
+.button:hover {
+	color: inherit;
+	border-color: inherit;
 }
 
 /* =====================================================================================================================
