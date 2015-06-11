@@ -84,13 +84,13 @@ buttons
 .button {
 	height: auto;
 	max-width: 100%;
-	padding: 5px 20px;
+	padding: 0;
 	white-space: normal;
 	border: 0;
 	color: inherit;
 	text-transform: none;
 	border-radius: 0;
-	cursor: none;
+	cursor: inherit;
 	letter-spacing: inherit;
 	text-align: inherit;
 	background-color: inherit;
@@ -98,6 +98,18 @@ buttons
 .button:hover {
 	color: inherit;
 	border-color: inherit;
+}
+.button-style {
+    padding: 10px 20px;
+    border-radius: 3px;
+    -webkit-transition: opacity .4s ease-in-out;
+    -moz-transition: opacity .4s ease-in-out;
+    -ms-transition: opacity .4s ease-in-out;
+    -o-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+}
+.button-style:hover {
+    opacity: .9;
 }
 
 /* =====================================================================================================================
