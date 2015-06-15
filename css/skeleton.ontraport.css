@@ -102,6 +102,7 @@ buttons
 .button-style {
     padding: 10px 20px;
     border-radius: 3px;
+    text-decoration: none;
     -webkit-transition: opacity .4s ease-in-out;
     -moz-transition: opacity .4s ease-in-out;
     -ms-transition: opacity .4s ease-in-out;
