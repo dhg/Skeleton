@@ -161,13 +161,19 @@ Fonts
  * https://github.com/xing/wysihtml5/wiki/Supported-Commands
  */
  .wysiwyg-text-align-center {
-  text-align: center;
+	 display: inline-block;
+	 width: 100%;
+	 text-align: center;
 }
 
 .wysiwyg-text-align-left {
-  text-align: left;
+	display: inline-block;
+	width: 100%;
+	text-align: left;
 }
 
 .wysiwyg-text-align-right {
-  text-align: right;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
 }
