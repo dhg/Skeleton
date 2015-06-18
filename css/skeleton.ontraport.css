@@ -99,6 +99,9 @@ buttons
 	color: inherit;
 	border-color: inherit;
 }
+.button--round{
+    border-radius: 500px;  
+}
 .button-style {
     padding: 10px 20px;
     border-radius: 3px;
