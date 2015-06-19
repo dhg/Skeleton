@@ -99,7 +99,8 @@ buttons
 	color: inherit;
 	border-color: inherit;
 }
-.button--round{
+.button--round,
+.button-style.button--round {
     border-radius: 500px;  
 }
 .button-style {
