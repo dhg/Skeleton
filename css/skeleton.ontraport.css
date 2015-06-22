@@ -39,6 +39,11 @@ Skeleton Grid Size Extension
 	.one-and-fourth.columns {
 		width: 7.3333333%;
 	}
+	
+	.offset-by-one.column.first-visible, 
+	.offset-by-one.columns.first-visible {
+		margin-left: 8.66666666667%;
+	}
 }
 /* For devices smaller than 768px */
 @media (min-width: 550px) and (max-width: 850px) {
@@ -66,6 +71,11 @@ Skeleton Grid Size Extension
 		width: 47.56666667%;
 	}
 	.tablet-six.first-in-row.columns {
+		margin-left: 0;
+	}
+	
+	.offset-by-one.column.first-visible, 
+	.offset-by-one.columns.first-visible {
 		margin-left: 0;
 	}
 }
