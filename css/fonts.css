@@ -1,1 +1,73 @@
-@import url('https://fonts.googleapis.com/css?family=Nixie+One|Dosis:400,700|Bubblegum+Sans|Parisienne|Lora:400,700|Fredericka+the+Great|Noto+Serif:400,700|La+Belle+Aurore|Lobster|Engagement|Shadows+Into+Light|Frijole|Alegreya+Sans:100,300,400,700,900|Monoton|Droid+Serif:400,700|Pacifico|Inconsolata:400,700|Oswald:400,700,300|Special+Elite|Montserrat:400,700|Open+Sans:400,300,600,700,800|Open+Sans+Condensed:300,700|Kranky|Crimson+Text:400,600,700|Indie+Flower|Alegreya:400,700,900|Raleway:400,900,100,300,700,600|Roboto+Condensed:400,700,300|Slabo+27px|Roboto:400,300,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Nixie+One|Dosis:400,700|Bubblegum+Sans|Parisienne|Lora:400,700|Fredericka+the+Great|Noto+Serif:400,700|La+Belle+Aurore|Lobster|Engagement|Shadows+Into+Light|Frijole|Alegreya+Sans:100,300,400,700,900|Monoton|Droid+Serif:400,700|Pacifico|Inconsolata:400,700|Oswald:400,700,300|Special+Elite|Montserrat:400,700|Open+Sans:400,300,600,700,800|Open+Sans+Condensed:300,700|Kranky|Crimson+Text:400,600,700|Indie+Flower|Alegreya:400,700,900|Raleway:400,900,100,300,700,600|Roboto+Condensed:400,700,300|Slabo+27px|Roboto:400,300,500,700,900|Lato:100,300,400,700,900|Bentham');
+
+@font-face {
+    font-family: 'aleo';
+    src: 
+        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/aleo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'aleo';
+    src: 
+        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/aleo-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'aleo';
+    src: 
+        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/aleo-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'aleo';
+    src: 
+        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/aleo-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'aleo';
+    src: 
+        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/aleo-light-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'aleo';
+    src: 
+        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/aleo-lightitalic-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'tex_gyre_heros';
+    src: 
+        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/texgyreheros-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tex_gyre_heros';
+    src: 
+        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/texgyreheros-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'tex_gyre_heros';
+    src: 
+        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/texgyreheros-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tex_gyre_heros';
+    src: 
+        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/texgyreheros-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
