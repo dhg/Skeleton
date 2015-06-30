@@ -3,42 +3,42 @@
 @font-face {
     font-family: 'aleo';
     src: 
-        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/aleo-regular-webfont.woff') format('woff');
+        url('../fonts/aleo/aleo-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'aleo';
     src: 
-        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/aleo-italic-webfont.woff') format('woff');
+        url('../fonts/aleo/aleo-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 @font-face {
     font-family: 'aleo';
     src: 
-        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/aleo-bold-webfont.woff') format('woff');
+        url('../fonts/aleo/aleo-bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'aleo';
     src: 
-        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/aleo-bolditalic-webfont.woff') format('woff');
+        url('../fonts/aleo/aleo-bolditalic-webfont.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
 @font-face {
     font-family: 'aleo';
     src: 
-        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/aleo-light-webfont.woff') format('woff');
+        url('../fonts/aleo/aleo-light-webfont.woff') format('woff');
     font-weight: 100;
     font-style: normal;
 }
 @font-face {
     font-family: 'aleo';
     src: 
-        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/aleo-lightitalic-webfont.woff') format('woff');
+        url('../fonts/aleo/aleo-lightitalic-webfont.woff') format('woff');
     font-weight: 100;
     font-style: italic;
 }
@@ -46,28 +46,28 @@
 @font-face {
     font-family: 'tex_gyre_heros';
     src: 
-        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/texgyreheros-regular-webfont.woff') format('woff');
+        url('../fonts/tex_gyre_heros/texgyreheros-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'tex_gyre_heros';
     src: 
-        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/texgyreheros-italic-webfont.woff') format('woff');
+        url('../fonts/tex_gyre_heros/texgyreheros-italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
 @font-face {
     font-family: 'tex_gyre_heros';
     src: 
-        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/texgyreheros-bold-webfont.woff') format('woff');
+        url('../fonts/tex_gyre_heros/texgyreheros-bold-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'tex_gyre_heros';
     src: 
-        url('/js/ontraport/opt_assets/blocks/common/skeleton/fonts/texgyreheros-bolditalic-webfont.woff') format('woff');
+        url('../fonts/tex_gyre_heros/texgyreheros-bolditalic-webfont.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
