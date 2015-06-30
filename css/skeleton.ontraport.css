@@ -104,6 +104,7 @@ buttons
 	letter-spacing: inherit;
 	text-align: inherit;
 	background-color: inherit;
+    margin-bottom: 0;
 }
 .button:hover {
 	color: inherit;
