@@ -123,6 +123,7 @@ buttons
     -ms-transition: opacity .4s ease-in-out;
     -o-transition: opacity .4s ease-in-out;
     transition: opacity .4s ease-in-out;
+    cursor: pointer;
 }
 .button-style:hover {
     opacity: .9;
