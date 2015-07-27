@@ -177,21 +177,24 @@ Fonts
  * https://github.com/xing/wysihtml5/wiki/Supported-Commands
  */
  .wysiwyg-text-align-center {
-	 display: inline-block;
-	 width: 100%;
-	 text-align: center;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	text-decoration: inherit;
 }
 
 .wysiwyg-text-align-left {
 	display: inline-block;
 	width: 100%;
 	text-align: left;
+	text-decoration: inherit;
 }
 
 .wysiwyg-text-align-right {
     display: inline-block;
     width: 100%;
     text-align: right;
+	text-decoration: inherit;
 }
 
 /* =====================================================================================================================
