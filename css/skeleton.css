@@ -243,6 +243,7 @@ select {
   box-sizing: border-box; }
 /* Removes awkward default styles on some inputs for iOS */
 input[type="button"],
+input[type="submit"],
 input[type="email"],
 input[type="number"],
 input[type="search"],
