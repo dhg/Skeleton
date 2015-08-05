@@ -200,7 +200,6 @@ input[type="button"]:focus {
   color: #333;
   border-color: #888;
   outline: 0; }
-
 .button:disabled {
   border: 1px solid #E3E3E3;
   color: #888;
