@@ -242,6 +242,7 @@ select {
   box-shadow: none;
   box-sizing: border-box; }
 /* Removes awkward default styles on some inputs for iOS */
+input[type="button"],
 input[type="email"],
 input[type="number"],
 input[type="search"],
