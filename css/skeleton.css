@@ -200,6 +200,11 @@ input[type="button"]:focus {
   color: #333;
   border-color: #888;
   outline: 0; }
+.button:disabled {
+  border: 1px solid #E3E3E3;
+  color: #888;
+  cursor: not-allowed;
+}
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -221,6 +226,15 @@ input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #1EAEDB;
   border-color: #1EAEDB; }
+.button.button-primary:disabled,
+button.button-primary:disabled,
+input[type="submit"].button-primary:disabled,
+input[type="reset"].button-primary:disabled,
+input[type="button"].button-primary:disabled {
+  color: #FFF;
+  cursor: not-allowed;
+  background-color: #7CD9F8;
+  border-color: #7CD9F8; }
 
 
 /* Forms
