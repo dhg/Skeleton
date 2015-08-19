@@ -86,6 +86,8 @@ blocks
     padding-top: 3em;
     padding-bottom: 3em;
     width: 100%;
+    background-size: cover;
+    background-position: center center;
 }
 
 /* =====================================================================================================================
