@@ -68,7 +68,7 @@
   .six.columns                    { width: 48%;            }
   .seven.columns                  { width: 56.6666666667%; }
   .eight.columns                  { width: 65.3333333333%; }
-  .nine.columns                   { width: 74.0%;          }
+  .nine.columns                   { width: 74%;          }
   .ten.columns                    { width: 82.6666666667%; }
   .eleven.columns                 { width: 91.3333333333%; }
   .twelve.columns                 { width: 100%; margin-left: 0; }
@@ -96,7 +96,7 @@
   .offset-by-eight.column,
   .offset-by-eight.columns        { margin-left: 69.3333333333%; }
   .offset-by-nine.column,
-  .offset-by-nine.columns         { margin-left: 78.0%;          }
+  .offset-by-nine.columns         { margin-left: 78%;          }
   .offset-by-ten.column,
   .offset-by-ten.columns          { margin-left: 86.6666666667%; }
   .offset-by-eleven.column,
