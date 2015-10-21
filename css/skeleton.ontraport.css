@@ -189,3 +189,7 @@ Forms
 textarea {
     max-width: 100%;
 }
+
+select[multiple] {
+    height: auto;
+}
