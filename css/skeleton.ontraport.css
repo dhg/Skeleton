@@ -193,3 +193,7 @@ textarea {
 select[multiple] {
     height: auto;
 }
+
+b, strong {
+    font-weight: bold;
+}
