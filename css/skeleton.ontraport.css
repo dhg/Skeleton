@@ -154,8 +154,16 @@ Fonts
     text-align: center;
 }
 
-.opt-bold {
+.opt-bold.opt-bold.opt-bold {
     font-weight: bold;
+}
+
+.opt-italic.opt-italic.opt-italic {
+	font-style: italic;
+}
+
+.opt-underline.opt-underline.opt-underline {
+	text-decoration: underline;
 }
 
 .opt-big {
