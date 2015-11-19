@@ -217,6 +217,7 @@ input[type="password"],
 textarea,
 select {
   font-size: 15px; 
+  color: #222;
  }
  
 input[type="date"] {
