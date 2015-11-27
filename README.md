@@ -39,6 +39,7 @@ Skeleton is lightweight and simple. It styles only raw HTML elements (with a few
 - Firefox latest
 - Opera latest
 - Safari latest
+- Edge latest
 - IE latest
 
 The above list is non-exhaustive. Skeleton works perfectly with almost all older versions of the browsers above, though IE certainly has large degradation prior to IE9.
