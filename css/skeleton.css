@@ -110,6 +110,31 @@
   .offset-by-one-half.column,
   .offset-by-one-half.columns     { margin-left: 52%; }
 
+  .offset-by-one.column:not(:first-child),
+  .offset-by-one.columns:not(:first-child)     { margin-left: 12.66666666667%; }
+  .offset-by-two.column:not(:first-child),
+  .offset-by-two.columns:not(:first-child)     { margin-left: 21.3333333333%; }
+  .offset-by-three.column:not(:first-child),
+  .offset-by-three.columns:not(:first-child)   { margin-left: 30%;            }
+  .offset-by-four.column:not(:first-child),
+  .offset-by-four.columns:not(:first-child)    { margin-left: 38.6666666667%; }
+  .offset-by-five.column:not(:first-child),
+  .offset-by-five.columns:not(:first-child)    { margin-left: 47.3333333333%; }
+  .offset-by-six.column:not(:first-child),
+  .offset-by-six.columns:not(:first-child)     { margin-left: 56%;            }
+  .offset-by-seven.column:not(:first-child),
+  .offset-by-seven.columns:not(:first-child)   { margin-left: 64.6666666667%; }
+  .offset-by-eight.column:not(:first-child),
+  .offset-by-eight.columns:not(:first-child)   { margin-left: 73.3333333333%; }
+  .offset-by-nine.column:not(:first-child),
+  .offset-by-nine.columns:not(:first-child)    { margin-left: 82.0%;          }
+  .offset-by-ten.column:not(:first-child),
+  .offset-by-ten.columns:not(:first-child)     { margin-left: 90.6666666667%; }
+
+  .offset-by-one-third.column:not(:first-child),
+  .offset-by-one-third.columns:not(:first-child)  { margin-left: 38.6666666667%; }
+  .offset-by-two-thirds.column:not(:first-child),
+  .offset-by-two-thirds.columns:not(:first-child) { margin-left: 73.3333333333%; }
 }
 
 
