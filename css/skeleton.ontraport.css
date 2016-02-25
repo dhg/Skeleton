@@ -1,0 +1,242 @@
+/* ====================================================================================================================
+@brief ONTRAPORT's skeleton extension file
+===================================================================================================================== */
+
+/* =====================================================================================================================
+Skeleton Grid Size Extension
+	1) Adds new column sizes for rows with 7, 8, or 9 columns.
+	2) Adds a tablet responsive size for screens 850px - 550px wide.
+		a) For Multi-Item the tablet is as follows:
+		
+				12 colums -> 4 columns -> 1 column
+				11 colums -> 4 columns -> 1 column
+				10 colums -> 4 columns -> 1 column
+				9 colums -> 3 columns -> 1 column
+				8 colums -> 3 columns -> 1 column
+				7 colums -> 3 columns -> 1 column
+				6 colums -> 2 columns -> 1 column
+				5 colums -> 2 columns -> 1 column
+				4 colums -> 2 columns -> 1 column
+				3 columns -> 3 columns -> 1 column
+				2 columns -> 2 columns -> 1 column
+				1 column -> 1 column -> 1 column
+				
+===================================================================================================================== */
+@media (min-width: 550px) {
+	.column.first-visible,
+	.columns.first-visible {
+		margin-left: 0; 
+	}
+	/* For rows 7 columns accross */
+	.one-and-half.columns {
+		width: 10.6666667%;
+	}
+	/* For rows 8 columns accross */
+	.one-and-third.columns {
+		width: 8.6666667%;
+	}
+	/* For rows 9 columns accross */
+	.one-and-fourth.columns {
+		width: 7.3333333%;
+	}
+	
+	.offset-by-one.column.first-visible, 
+	.offset-by-one.columns.first-visible {
+		margin-left: 8.66666666667%;
+	}
+}
+/* For devices smaller than 768px */
+@media (min-width: 550px) and (max-width: 850px) {
+	.u-cf {
+		text-align: center;
+	}
+	[class*="tablet-"].columns {
+		float: none;
+		display: inline-block;
+	}
+	
+	.tablet-three.columns {
+		width: 21.2333333%;
+	}
+	.tablet-three.first-in-row.columns {
+		margin-left: 0;
+	}
+	.tablet-four.columns {
+		width: 30.111112%
+	}
+	.tablet-four.first-in-row.columns {
+		margin-left: 0;
+	}
+	.tablet-six.columns {
+		width: 47.56666667%;
+	}
+	.tablet-six.first-in-row.columns {
+		margin-left: 0;
+	}
+	
+	.offset-by-one.column.first-visible, 
+	.offset-by-one.columns.first-visible {
+		margin-left: 0;
+	}
+}
+/* =====================================================================================================================
+blocks
+===================================================================================================================== */
+.block-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* =====================================================================================================================
+buttons
+===================================================================================================================== */
+.button {
+	height: auto;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal;
+	border: 0;
+	color: inherit;
+	text-transform: none;
+	border-radius: 0;
+	cursor: inherit;
+	letter-spacing: inherit;
+	text-align: inherit;
+	background-color: inherit;
+    margin-bottom: 0;
+}
+.button:hover {
+	color: inherit;
+	border-color: inherit;
+}
+.button--round,
+.button-style.button--round {
+    border-radius: 500px;  
+}
+.button-style {
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    -webkit-transition: opacity .4s ease-in-out;
+    -moz-transition: opacity .4s ease-in-out;
+    -ms-transition: opacity .4s ease-in-out;
+    -o-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+    cursor: pointer;
+}
+.button-style:hover {
+    opacity: .9;
+}
+
+/* =====================================================================================================================
+Images
+===================================================================================================================== */
+
+.opt-circle {
+  /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -webkit-border-radius: 500px; 
+
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 500px; 
+  
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 500px;  
+} 
+
+/* =====================================================================================================================
+Fonts 
+===================================================================================================================== */
+
+.opt-center {
+    text-align: center;
+}
+
+.opt-bold.opt-bold.opt-bold {
+    font-weight: bold;
+}
+
+.opt-italic.opt-italic.opt-italic {
+	font-style: italic;
+}
+
+.opt-underline.opt-underline.opt-underline {
+	text-decoration: underline;
+}
+
+.opt-big {
+    font-size: 1.2em;
+}
+
+.opt-medium {
+    font-size: 1em;
+}
+
+.opt-small {
+    font-size: .8em;
+}
+
+.opt-red {
+    color: red;  
+}
+
+/* =====================================================================================================================
+Container
+===================================================================================================================== */
+
+.container.container {
+    max-width: 1200px;
+}
+
+/* =====================================================================================================================
+Forms
+===================================================================================================================== */
+
+a[data-opf-trigger] {
+    cursor: pointer;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+select[multiple] {
+    height: auto;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="date"],
+input[type="password"],
+textarea,
+select {
+  font-size: 15px; 
+  color: #222;
+ }
+ 
+input[type="date"] {
+  height: 38px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; 
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; 
+}
+input[type="date"]:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; 
+}
