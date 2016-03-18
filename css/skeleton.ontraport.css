@@ -190,6 +190,20 @@ Container
     max-width: 1200px;
 }
 
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container.container {
+    max-width: 85%;
+  }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container.container {
+    max-width: 80%; 
+  }
+}
+
 /* =====================================================================================================================
 Forms
 ===================================================================================================================== */
