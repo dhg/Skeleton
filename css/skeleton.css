@@ -221,7 +221,10 @@ input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #1EAEDB;
   border-color: #1EAEDB; }
-
+button[disabled], 
+html input[disabled] {
+  opacity: .5;
+}
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
