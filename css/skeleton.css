@@ -221,10 +221,20 @@ input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #1EAEDB;
   border-color: #1EAEDB; }
-
+button[disabled], 
+html input[disabled] {
+  opacity: .5;
+}
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="color"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="datetime"],
+input[type="datetime-local"],
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -242,6 +252,13 @@ select {
   box-shadow: none;
   box-sizing: border-box; }
 /* Removes awkward default styles on some inputs for iOS */
+input[type="color"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="datetime"],
+input[type="datetime-local"],
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -257,6 +274,13 @@ textarea {
   min-height: 65px;
   padding-top: 6px;
   padding-bottom: 6px; }
+input[type="color"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,  
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
