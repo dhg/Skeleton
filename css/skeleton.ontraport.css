@@ -234,9 +234,15 @@ input[type="date"] {
   box-sizing: border-box; 
   -webkit-appearance: none;
      -moz-appearance: none;
-          appearance: none; 
+          appearance: none;
+
 }
 input[type="date"]:focus {
   border: 1px solid #33C3F0;
   outline: 0; 
+}
+
+/* Hide the up/down spinner control for Chrome. You can still use the keyboard to edit the values */
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
 }
