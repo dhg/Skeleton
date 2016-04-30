@@ -8,6 +8,13 @@ Check out <http://getskeleton.com> for documentation and details.
 There are a couple ways to download Skeleton:
 - [Download the zip](https://github.com/dhg/Skeleton/releases/download/2.0.4/Skeleton-2.0.4.zip)
 - Clone the repo: `git clone https://github.com/dhg/Skeleton.git` (Note: this is under active development, so if you're looking for stable and safe, use the zipped download)
+- Use code hosted by [SmallCDN](http://smallcdn.rocks)
+```html
+<head>
+    <link rel="stylesheet" href="http://cdn.smallcdn.rocks/normalize.css">
+    <link rel="stylesheet" href="http://cdn.smallcdn.rocks/skeleton.css">
+</head>
+```
 
 
 ### What's in the download?
