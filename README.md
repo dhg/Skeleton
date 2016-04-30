@@ -11,8 +11,8 @@ There are a couple ways to download Skeleton:
 - Use code hosted by [SmallCDN](http://smallcdn.rocks)
 ```html
 <head>
-    <link rel="stylesheet" href="http://c.smallcdn.rocks/normalize.css">
-    <link rel="stylesheet" href="http://c.smallcdn.rocks/skeleton.css">
+    <link rel="stylesheet" href="http://s.mlcdn.co/normalize.css">
+    <link rel="stylesheet" href="http://s.mlcdn.co/skeleton.css">
 </head>
 ```
 
