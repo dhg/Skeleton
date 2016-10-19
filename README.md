@@ -25,7 +25,7 @@ Skeleton/
 
 ```
 
-### Why it's awesome
+### Why it's awesome!
 
 Skeleton is lightweight and simple. It styles only raw HTML elements (with a few exceptions) and provides a responsive grid. Nothing more.
 - Around 400 lines of CSS unminified and with comments
