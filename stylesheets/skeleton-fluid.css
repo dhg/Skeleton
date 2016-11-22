@@ -1,0 +1,225 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+
+
+/* #Base 960 Grid
+================================================== */
+
+    .container                                  { position: relative; width:100%; max-width: 960px; margin: 0 auto; padding: 0; }
+    .container .column,
+    .container .columns                         { float: left; display: inline; margin-left: 1.041666666666667%; margin-right: 1.041666666666667%; }
+    .row                                        { margin-bottom: 4.166666666666667%; }
+
+    /* Nested Column Classes */
+    .column.alpha, .columns.alpha               { margin-left: 0; }
+    .column.omega, .columns.omega               { margin-right: 0; }
+
+    /* Base Grid */
+    .container .one.column,
+    .container .one.columns                     { width: 4.166666666666667%;  }
+    .container .two.columns                     { width: 10.41666666666667%; }
+    .container .three.columns                   { width: 16.66666666666667%; }
+    .container .four.columns                    { width: 22.91666666666667%; }
+    .container .five.columns                    { width: 29.16666666666667%; }
+    .container .six.columns                     { width: 35.41666666666667%; }
+    .container .seven.columns                   { width: 41.66666666666667%; }
+    .container .eight.columns                   { width: 47.91666666666667%; }
+    .container .nine.columns                    { width: 54.16666666666667%; }
+    .container .ten.columns                     { width: 60.41666666666667%; }
+    .container .eleven.columns                  { width: 66.66666666666667%; }
+    .container .twelve.columns                  { width: 72.91666666666667%; }
+    .container .thirteen.columns                { width: 79.16666666666667%; }
+    .container .fourteen.columns                { width: 85.41666666666667%; }
+    .container .fifteen.columns                 { width: 91.66666666666667%; }
+    .container .sixteen.columns                 { width: 97.91666666666667%; }
+
+    .container .one-third.column                { width: 31.25%; }
+    .container .two-thirds.column               { width: 64.58333333333333%; }
+
+    /* Offsets */
+    .container .offset-by-one                   { padding-left: 6.25%;  }
+    .container .offset-by-two                   { padding-left: 12.5%; }
+    .container .offset-by-three                 { padding-left: 18.75%; }
+    .container .offset-by-four                  { padding-left: 25%; }
+    .container .offset-by-five                  { padding-left: 31.25%; }
+    .container .offset-by-six                   { padding-left: 37.5%; }
+    .container .offset-by-seven                 { padding-left: 43.75%; }
+    .container .offset-by-eight                 { padding-left: 50%; }
+    .container .offset-by-nine                  { padding-left: 56.25%; }
+    .container .offset-by-ten                   { padding-left: 62.5%; }
+    .container .offset-by-eleven                { padding-left: 68.75%; }
+    .container .offset-by-twelve                { padding-left: 75%; }
+    .container .offset-by-thirteen              { padding-left: 81.25%; }
+    .container .offset-by-fourteen              { padding-left: 87.5%; }
+    .container .offset-by-fifteen               { padding-left: 93.75%; }
+
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        .container                                  { width: 100%; }
+        .container .column,
+        .container .columns                         { margin-left: 1.302083333333333%; margin-right: 1.302083333333333%;  }
+        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 1.302083333333333%; }
+        .column.omega, .columns.omega               { margin-right: 0; margin-left: 1.302083333333333%; }
+        .alpha.omega                                { margin-left: 0; margin-right: 0; }
+
+        .container .one.column,
+        .container .one.columns                     { width: 3.645833333333333%; }
+        .container .two.columns                     { width: 9.895833333333333%; }
+        .container .three.columns                   { width: 16.14583333333333%; }
+        .container .four.columns                    { width: 22.39583333333333%; }
+        .container .five.columns                    { width: 28.64583333333333%; }
+        .container .six.columns                     { width: 34.89583333333333%; }
+        .container .seven.columns                   { width: 41.14583333333333%; }
+        .container .eight.columns                   { width: 47.39583333333333%; }
+        .container .nine.columns                    { width: 53.64583333333333%; }
+        .container .ten.columns                     { width: 59.89583333333333%; }
+        .container .eleven.columns                  { width: 66.14583333333333%; }
+        .container .twelve.columns                  { width: 72.39583333333333%; }
+        .container .thirteen.columns                { width: 78.64583333333333%; }
+        .container .fourteen.columns                { width: 84.89583333333333%; }
+        .container .fifteen.columns                 { width: 91.14583333333333%; }
+        .container .sixteen.columns                 { width: 97.39583333333333%; }
+
+        .container .one-third.column                { width: 30.72916666666667%; }
+        .container .two-thirds.column               { width: 64.0625%; }
+
+    }
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+        .container { width: 92%; }
+        .container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column  { width: 100%; }
+
+        /* Offsets */
+        .container .offset-by-one,
+        .container .offset-by-two,
+        .container .offset-by-three,
+        .container .offset-by-four,
+        .container .offset-by-five,
+        .container .offset-by-six,
+        .container .offset-by-seven,
+        .container .offset-by-eight,
+        .container .offset-by-nine,
+        .container .offset-by-ten,
+        .container .offset-by-eleven,
+        .container .offset-by-twelve,
+        .container .offset-by-thirteen,
+        .container .offset-by-fourteen,
+        .container .offset-by-fifteen { padding-left: 0; }
+
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container { width: 92%; }
+        .container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column { width: 100%; }
+    }
+
+
+/* #Clearing
+================================================== */
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> 
+    Note: Or don't use the word clearfix at all because the word is horrible semantically.
+    Or use less/sass to extend this stylesheet instead.*/
+
+    .container:after,
+    .group:before,
+    .group:after,
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .container:after,
+    .row:after,
+    .clearfix:after,
+    .group:after {
+      clear: both; }
+    .row,
+    .clearfix,
+    .group {
+      zoom: 1; }
+
+    /* Removed .clear here to make sure that if you want to break columns out, 
+    you have a reason for doing so. (They should normally end up in a new row.) */
