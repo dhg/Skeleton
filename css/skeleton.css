@@ -192,6 +192,7 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
+input[type="file"]:hover,
 .button:focus,
 button:focus,
 input[type="submit"]:focus,
@@ -232,6 +233,7 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
+input[type="file"],
 textarea,
 select {
   height: 38px;
@@ -249,6 +251,7 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
+input[type="file"],
 textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
