@@ -391,6 +391,9 @@ hr {
   display: table;
   clear: both; }
 
+input:last-of-type, fieldset:last-of-type, button:last-of-type {
+  margin-bottom: 0;
+}
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
