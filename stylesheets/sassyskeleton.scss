@@ -1,0 +1,173 @@
+//---------------------------------------------------------------------------------------------------
+// a sassier skeleton
+// fixed-width - html whitespace not removed.
+// intended to be used as magic-classes, coupling markup&style.
+//
+//---------------------------------------------------------------------------------------------------
+//- Contents
+//--- Grid Variables
+//--- Grid Mixin
+//--- Desktop
+//--- Tablet
+//--- Mobile
+
+//-------------------------------------------------------------------------------------------------------
+// grid variables
+$gutter: 20px;
+$column-count: 16;
+$desktop-container-width: 960px;
+$tablet-container-width: 768px;
+$mobile-container-width: 90%;
+$mobile-column-width: 100%;
+
+//--------------------------------------------------------------------------------------------------------
+// grid mixin
+@mixin sassy-grid($grid-container-width, $grid-column-count:$column-count, $grid-gutter:$gutter) {
+
+  $grid-column-width: $grid-container-width/$grid-column-count;
+
+  .container {
+    width: $grid-container-width;
+    .columns, .column {
+      &.one         { width: (1*$grid-column-width - $grid-gutter); }
+      &.two         { width: (2*$grid-column-width - $grid-gutter); }
+      &.three       { width: (3*$grid-column-width - $grid-gutter); }
+      &.four        { width: (4*$grid-column-width - $grid-gutter); }
+      &.five        { width: (5*$grid-column-width - $grid-gutter); }
+      &.six         { width: (6*$grid-column-width - $grid-gutter); }
+      &.seven       { width: (7*$grid-column-width - $grid-gutter); }
+      &.eight       { width: (8*$grid-column-width - $grid-gutter); }
+      &.nine        { width: (9*$grid-column-width - $grid-gutter); }
+      &.ten         { width: (10*$grid-column-width - $grid-gutter); }
+      &.eleven      { width: (11*$grid-column-width - $grid-gutter); }
+      &.twelve      { width: (12*$grid-column-width - $grid-gutter); }
+      &.thirteen    { width: (13*$grid-column-width - $grid-gutter); }
+      &.fourteen    { width: (14*$grid-column-width - $grid-gutter); }
+      &.fifteen     { width: (15*$grid-column-width - $grid-gutter); }
+      &.sixteen     { width: (16*$grid-column-width - $grid-gutter); }
+      &.one-third    { width: ($grid-container-width/3) - $grid-gutter; }
+      &.two-thirds   { width: (($grid-container-width/3)*2) - $grid-gutter; }
+    }//.columns
+
+    .offset-by-one      { padding-left: $grid-column-width;  }
+    .offset-by-two      { padding-left: $grid-column-width*2; }
+    .offset-by-three    { padding-left: $grid-column-width*3; }
+    .offset-by-four     { padding-left: $grid-column-width*4; }
+    .offset-by-five     { padding-left: $grid-column-width*5; }
+    .offset-by-six      { padding-left: $grid-column-width*6; }
+    .offset-by-seven    { padding-left: $grid-column-width*7; }
+    .offset-by-eight    { padding-left: $grid-column-width*8; }
+    .offset-by-nine     { padding-left: $grid-column-width*9; }
+    .offset-by-ten      { padding-left: $grid-column-width*10; }
+    .offset-by-eleven   { padding-left: $grid-column-width*11; }
+    .offset-by-twelve   { padding-left: $grid-column-width*12; }
+    .offset-by-thirteen { padding-left: $grid-column-width*13; }
+    .offset-by-fourteen { padding-left: $grid-column-width*14; }
+    .offset-by-fifteen  { padding-left: $grid-column-width*15; }
+  }//.container
+}//@mixin
+
+//---------------------------------------------------------------------------------
+// desktop
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}//.container
+
+.column, .columns {
+  float: left;
+  display: inline;
+  margin-left: $gutter/2;
+  margin-right: $gutter/2;
+  &.alpha { margin-left: 0; }
+  &.omega { margin-right: 0; }
+}//.column,.columns
+
+.row { margin-bottom: $gutter; }
+
+@include sassy-grid($desktop-container-width, $column-count, $gutter);
+
+//-----------------------------------------------------------------------
+// #Tablet
+@media only screen and (max-width: 959px) {
+  @include sassy-grid($tablet-container-width, $column-count, $gutter);
+
+  .container { width: $tablet-container-width; }
+
+  .column, .columns {
+    &.alpha { margin-right: 10px; }
+    &.omega { margin-left: 10px; } }//.column,.columns
+
+  .alpha.omega {
+    margin-right: 0;
+    margin-left: 0; }//.alpha.omega
+}//@media
+
+//--------------------------------------------------------------------
+// #Mobile
+@media only screen and (max-width: 767px) {
+  .container {
+    width: $mobile-container-width;
+
+    .column, .columns {
+      margin: 0;
+      &.one,
+      &.two,
+      &.three,
+      &.four,
+      &.five,
+      &.six,
+      &.seven,
+      &.eight,
+      &.nine,
+      &.ten,
+      &.eleven,
+      &.twelve,
+      &.thirteen,
+      &.fourteen,
+      &.fifteen,
+      &.sixteen,
+      &.one-third,
+      &.two-thirds { width: $mobile-column-width; }
+    }//.column,.columns
+    .offset-by-one,
+    .offset-by-two,
+    .offset-by-three,
+    .offset-by-four,
+    .offset-by-five,
+    .offset-by-six,
+    .offset-by-seven,
+    .offset-by-eight,
+    .offset-by-nine,
+    .offset-by-ten,
+    .offset-by-eleven,
+    .offset-by-twelve,
+    .offset-by-thirteen,
+    .offset-by-fourteen,
+    .offset-by-fifteen { padding-left: 0; }
+  }//.container
+}//@media
+
+
+//------------------------------------------------------------
+// Use clearfix class on parent to clear nested columns,
+// or wrap each row of columns in a <div class="row">
+// You can also use a <br class="clear" /> to clear columns
+@mixin clearfix {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}//@mixin
+
+.clear { @include clearfix; }
+
+.clearfix, .row, .container {
+  &:before, &:after { content: ' '; @include clearfix; }
+}//.clearfix, .row
+// Note that the clearfix could be better placed in a utilities file.
+// However the context of grid layout does give some justification for the coupling.
+//---------------------------------------------------------------------------------------------------
