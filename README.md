@@ -18,7 +18,7 @@ The download includes Skeleton's CSS, Normalize CSS as a reset, a sample favicon
 Skeleton/
 ├── index.html
 ├── css/
-│   ├── normalize.min.css
+│   ├── normalize.css
 │   └── skeleton.css
 └── images/
     └── favicon.ico
