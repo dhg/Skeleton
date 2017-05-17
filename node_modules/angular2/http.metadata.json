@@ -1,0 +1,1 @@
+{"__symbolic":"module","module":"./http","metadata":{"HTTP_BINDINGS":{"__symbolic":"reference","name":"HTTP_PROVIDERS","module":"./http"},"JSON_BINDINGS":{"__symbolic":"reference","name":"JSONP_PROVIDERS","module":"./http"}}}

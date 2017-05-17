@@ -1,0 +1,1 @@
+{"__symbolic":"module","module":"./directive_resolver_mock","metadata":{"MockDirectiveResolver":{"__symbolic":"class","decorators":[{"__symbolic":"call","expression":{"__symbolic":"reference","name":"Injectable","module":"../core/di/decorators"}}]}}}

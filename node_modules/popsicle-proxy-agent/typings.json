@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "blue-tape": "github:typings/typed-blue-tape#a4e41a85d6f760e7c60088127968eae7d3a556fa",
+    "popsicle": "npm:popsicle"
+  },
+  "ambientDependencies": {
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#1c56e368e17bb28ca57577250624ca5bd561aa81"
+  },
+  "dependencies": {
+    "http-proxy-agent": "github:typings/typed-http-proxy-agent#b2cc033f660e62c3a7b8362898b16eefa3ad3939",
+    "https-proxy-agent": "github:typings/typed-https-proxy-agent#6e0cb6d6cfdeddffb06377c539790b9c501bce9b",
+    "server-address": "npm:server-address"
+  }
+}

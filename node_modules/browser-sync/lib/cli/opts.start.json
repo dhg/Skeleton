@@ -1,0 +1,120 @@
+{
+  "server": {
+    "alias": "s",
+    "desc": "Run a Local server (uses your cwd as the web root)"
+  },
+  "serveStatic": {
+    "type": "array",
+    "alias": "ss",
+    "desc": "Directories to serve static files from"
+  },
+  "port": {
+    "type": "number",
+    "desc": "Specify a port to use"
+  },
+  "proxy": {
+    "alias": "p",
+    "desc": "Proxy an existing server",
+    "example": "$0 shane is cool"
+  },
+  "ws": {
+    "type": "boolean",
+    "desc": "Proxy mode only - enable websocket proxying"
+  },
+  "browser": {
+    "type": "array",
+    "alias": "b",
+    "desc": "Choose which browser should be auto-opened"
+  },
+  "files": {
+    "type": "array",
+    "alias": "f",
+    "desc": "File paths to watch"
+  },
+  "index": {
+    "type": "string",
+    "desc": "Specify which file should be used as the index page"
+  },
+  "plugins": {
+    "type": "array",
+    "desc": "Load Browsersync plugins"
+  },
+  "extensions": {
+    "type": "array",
+    "desc": "Specify file extension fallbacks"
+  },
+  "startPath": {
+    "type": "string",
+    "desc": "Specify the start path for the opened browser"
+  },
+  "https": {
+    "desc": "Enable SSL for local development"
+  },
+  "directory": {
+    "type": "boolean",
+    "desc": "Show a directory listing for the server"
+  },
+  "xip": {
+    "type": "boolean",
+    "desc": "Use xip.io domain routing"
+  },
+  "tunnel": {
+    "desc": "Use a public URL"
+  },
+  "open": {
+    "type": "string",
+    "desc": "Choose which URL is auto-opened (local, external or tunnel), or provide a url"
+  },
+  "cors": {
+    "type": "boolean",
+    "desc": "Add Access Control headers to every request"
+  },
+  "config": {
+    "type": "string",
+    "alias": "c",
+    "desc": "Specify a path to a configuration file"
+  },
+  "host": {
+    "desc": "Specify a hostname to use"
+  },
+  "logLevel": {
+    "desc": "Set the logger output level (silent, info or debug)"
+  },
+  "reload-delay": {
+    "type": "number",
+    "desc": "Time in milliseconds to delay the reload event following file changes"
+  },
+  "reload-debounce": {
+    "type": "number",
+    "desc": "Restrict the frequency in which browser:reload events can be emitted to connected clients"
+  },
+  "ui-port": {
+    "type": "number",
+    "desc": "Specify a port for the UI to use"
+  },
+  "watchEvents": {
+    "type": "array",
+    "desc": "Specify which file events to respond to"
+  },
+  "no-notify": {
+    "desc": "Disable the notify element in browsers"
+  },
+  "no-open": {
+    "desc": "Don't open a new browser window"
+  },
+  "no-online": {
+    "desc": "Force offline usage"
+  },
+  "no-ui": {
+    "desc": "Don't start the user interface"
+  },
+  "no-ghost-mode": {
+    "desc": "Disable Ghost Mode"
+  },
+  "no-inject-changes": {
+    "desc": "Reload on every file change"
+  },
+  "no-reload-on-restart": {
+    "desc": "Don't auto-reload all browsers following a restart"
+  }
+}

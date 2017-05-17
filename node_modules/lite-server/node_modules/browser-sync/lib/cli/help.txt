@@ -1,0 +1,11 @@
+{cyan:Server Example:}
+{gray:---------------}
+Use current directory as root & watch CSS files
+
+    {gray:$} browser-sync start --server --files="css/*.css"
+
+{cyan:Proxy Example:}
+{gray:---------------}
+Proxy `localhost:8080` & watch CSS/HTML files
+
+    {gray:$} browser-sync start --proxy="localhost:8080" --files="*.html, css/*.css"

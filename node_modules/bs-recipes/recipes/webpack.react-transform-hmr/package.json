@@ -1,0 +1,25 @@
+{
+  "name": "webpack.react-transform-hmr",
+  "version": "1.0.0",
+  "description": "Webpack + React Transform HMR",
+  "main": "app.js",
+  "author": "Sergey Slipchenko <faergeek@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.16.0",
+    "browser-sync": "^2.8.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-transform-hmr": "^1.0.0",
+    "webpack": "^1.10.5",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.13.2"
+  }
+}

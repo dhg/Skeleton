@@ -1,0 +1,17 @@
+{
+  "name": "gulp.pug",
+  "version": "1.0.0",
+  "description": "Gulp, SASS + Pug Templates",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.1.0",
+    "gulp-sass": "^2.3.2"
+  }
+}

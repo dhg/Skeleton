@@ -1,0 +1,16 @@
+# .travis.yml
+language: node_js
+git:
+  depth: 1
+node_js:
+  - '6.3'
+  - '0.12'
+notifications:
+  email: false
+script: npm run travis
+deploy:
+  - provider: npm
+    email: jim@vigour.io
+    api_key: ${NPM_TOKEN}
+    on:
+      branch: master

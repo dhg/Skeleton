@@ -1,0 +1,1 @@
+{"__symbolic":"module","module":"./worker_render","metadata":{"WORKER_RENDER_APP":{"__symbolic":"reference","name":"WORKER_RENDER_APPLICATION","module":"../src/platform/worker_render"}}}

@@ -1,0 +1,1 @@
+{"__symbolic":"module","module":"./lifecycle_annotations","metadata":{"CanActivate":{"__symbolic":"call","expression":{"__symbolic":"reference","name":"makeDecorator","module":"../../core/util/decorators"},"arguments":[{"__symbolic":"reference","name":"CanActivateAnnotation","module":"./lifecycle_annotations_impl"}]}}}

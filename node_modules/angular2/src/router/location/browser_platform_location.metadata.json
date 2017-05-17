@@ -1,0 +1,1 @@
+{"__symbolic":"module","module":"./browser_platform_location","metadata":{"BrowserPlatformLocation":{"__symbolic":"class","decorators":[{"__symbolic":"call","expression":{"__symbolic":"reference","name":"Injectable","module":"../../core/di/decorators"}}]}}}

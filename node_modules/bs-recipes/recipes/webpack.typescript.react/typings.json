@@ -1,0 +1,9 @@
+{
+  "name": "webpack.typescript.react",
+  "version": false,
+  "dependencies": {},
+  "ambientDependencies": {
+    "react": "registry:dt/react#0.14.0+20160314090524",
+    "react-dom": "registry:dt/react-dom#0.14.0+20160314090524"
+  }
+}
