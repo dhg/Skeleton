@@ -1,0 +1,638 @@
+[
+    {
+        "dir": "grunt.html.injection",
+        "name": [
+            "grunt",
+            "html",
+            "injection"
+        ],
+        "pkg": {
+            "name": "bs-recipes-grunt-html-injection",
+            "version": "1.0.0",
+            "description": "Grunt, SASS, HTML/CSS injection example",
+            "main": "Gruntfile.js",
+            "scripts": {
+                "start": "grunt"
+            },
+            "license": "MIT",
+            "devDependencies": {
+                "bs-html-injector": "3.0.1",
+                "grunt": "^0.4.5",
+                "grunt-browser-sync": "^2.0.0",
+                "grunt-contrib-sass": "^0.9.2",
+                "grunt-contrib-watch": "^0.6.1"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/grunt.html.injection",
+        "title": "Grunt Html Injection"
+    },
+    {
+        "dir": "grunt.sass",
+        "name": [
+            "grunt",
+            "sass"
+        ],
+        "pkg": {
+            "name": "grunt.sass",
+            "version": "1.0.0",
+            "description": "Grunt & SASS",
+            "main": "Gruntfile.js",
+            "scripts": {
+                "start": "grunt"
+            },
+            "author": "",
+            "license": "ISC",
+            "devDependencies": {
+                "grunt": "^0.4.5",
+                "grunt-browser-sync": "^2.0.0",
+                "grunt-contrib-sass": "^0.9.2",
+                "grunt-contrib-watch": "^0.6.1"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/grunt.sass",
+        "title": "Grunt Sass"
+    },
+    {
+        "dir": "grunt.sass.autoprefixer",
+        "name": [
+            "grunt",
+            "sass",
+            "autoprefixer"
+        ],
+        "pkg": {
+            "name": "grunt.sass.autoprefixer",
+            "version": "1.0.0",
+            "description": "Grunt, SASS & Autoprefixer",
+            "main": "Gruntfile.js",
+            "scripts": {
+                "start": "grunt"
+            },
+            "author": "",
+            "license": "ISC",
+            "devDependencies": {
+                "grunt": "^0.4.5",
+                "grunt-autoprefixer": "^2.2.0",
+                "grunt-browser-sync": "^2.1.1",
+                "grunt-contrib-sass": "^0.9.2",
+                "grunt-contrib-watch": "^0.6.1"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/grunt.sass.autoprefixer",
+        "title": "Grunt Sass Autoprefixer"
+    },
+    {
+        "dir": "gulp.browserify",
+        "name": [
+            "gulp",
+            "browserify"
+        ],
+        "pkg": {
+            "name": "gulp.browserify",
+            "version": "1.0.0",
+            "description": "Browserify, Babelify + Watchify + Sourcemaps Example",
+            "main": "gulpfile.js",
+            "scripts": {
+                "start": "gulp"
+            },
+            "license": "MIT",
+            "devDependencies": {
+                "exorcist": "^0.4.0",
+                "babelify": "^6.1.2",
+                "browser-sync": "^2.2.1",
+                "browserify": "^8.1.3",
+                "gulp": "^3.8.11",
+                "gulp-util": "^3.0.3",
+                "vinyl-source-stream": "^1.0.0",
+                "watchify": "^2.3.0"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/gulp.browserify",
+        "title": "Gulp Browserify"
+    },
+    {
+        "dir": "gulp.pug",
+        "name": [
+            "gulp",
+            "pug"
+        ],
+        "pkg": {
+            "name": "gulp.pug",
+            "version": "1.0.0",
+            "description": "Gulp, SASS + Pug Templates",
+            "main": "gulpfile.js",
+            "scripts": {
+                "start": "gulp"
+            },
+            "author": "",
+            "license": "ISC",
+            "devDependencies": {
+                "browser-sync": "^2.17.5",
+                "gulp": "^3.9.1",
+                "gulp-pug": "^3.1.0",
+                "gulp-sass": "^2.3.2"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/gulp.pug",
+        "title": "Gulp Pug"
+    },
+    {
+        "dir": "gulp.ruby.sass",
+        "name": [
+            "gulp",
+            "ruby",
+            "sass"
+        ],
+        "pkg": {
+            "name": "gulp.ruby.sass",
+            "version": "1.0.0",
+            "description": "Gulp & Ruby SASS",
+            "main": "gulpfile.js",
+            "scripts": {
+                "start": "gulp"
+            },
+            "author": "",
+            "license": "ISC",
+            "devDependencies": {
+                "browser-sync": "^2.2.0",
+                "gulp": "^3.8.11",
+                "gulp-filter": "^2.0.2",
+                "gulp-ruby-sass": "^1.0.1",
+                "gulp-sass": "^1.3.3",
+                "gulp-sourcemaps": "^1.5.1"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/gulp.ruby.sass",
+        "title": "Gulp Ruby Sass"
+    },
+    {
+        "dir": "gulp.sass",
+        "name": [
+            "gulp",
+            "sass"
+        ],
+        "pkg": {
+            "name": "gulp.sass",
+            "version": "1.0.0",
+            "description": "Gulp & SASS",
+            "main": "gulpfile.js",
+            "scripts": {
+                "start": "gulp"
+            },
+            "author": "",
+            "license": "ISC",
+            "devDependencies": {
+                "browser-sync": "^2.2.0",
+                "gulp": "^3.8.11",
+                "gulp-sass": "^2.2.0"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/gulp.sass",
+        "title": "Gulp Sass"
+    },
+    {
+        "dir": "gulp.swig",
+        "name": [
+            "gulp",
+            "swig"
+        ],
+        "pkg": {
+            "name": "gulp.swig",
+            "version": "1.0.0",
+            "description": "Gulp & Swig Templates",
+            "main": "gulpfile.js",
+            "scripts": {
+                "start": "gulp"
+            },
+            "author": "",
+            "license": "ISC",
+            "devDependencies": {
+                "browser-sync": "^2.2.0",
+                "gulp": "^3.8.11",
+                "gulp-sass": "^1.3.3",
+                "gulp-swig": "^0.7.4"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/gulp.swig",
+        "title": "Gulp Swig"
+    },
+    {
+        "dir": "gulp.task.sequence",
+        "name": [
+            "gulp",
+            "task",
+            "sequence"
+        ],
+        "pkg": {
+            "name": "gulp.sass",
+            "version": "1.0.0",
+            "description": "Gulp, SASS + Slow running tasks",
+            "main": "gulpfile.js",
+            "scripts": {
+                "start": "gulp"
+            },
+            "author": "",
+            "license": "ISC",
+            "devDependencies": {
+                "browser-sync": "^2.2.0",
+                "gulp": "^3.8.11",
+                "gulp-sass": "^1.3.3",
+                "through2": "^0.6.3"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/gulp.task.sequence",
+        "title": "Gulp Task Sequence"
+    },
+    {
+        "dir": "html.injection",
+        "name": [
+            "html",
+            "injection"
+        ],
+        "pkg": {
+            "name": "bs-recipes-html-injection",
+            "version": "1.0.0",
+            "description": "HTML/CSS injection example",
+            "main": "app.js",
+            "scripts": {
+                "start": "node app.js"
+            },
+            "license": "MIT",
+            "devDependencies": {
+                "bs-html-injector": "^2.0.3",
+                "browser-sync": "^2.1.6"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/html.injection",
+        "title": "Html Injection"
+    },
+    {
+        "dir": "middleware.css.injection",
+        "name": [
+            "middleware",
+            "css",
+            "injection"
+        ],
+        "pkg": {
+            "name": "bs-recipes-server",
+            "version": "1.0.0",
+            "description": "Middleware + CSS example",
+            "main": "app.js",
+            "scripts": {
+                "start": "node app.js"
+            },
+            "license": "MIT",
+            "dependencies": {
+                "browser-sync": "^2.1.6",
+                "less": "^2.4.0"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/middleware.css.injection",
+        "title": "Middleware Css Injection"
+    },
+    {
+        "dir": "proxy.custom-css",
+        "name": [
+            "proxy",
+            "custom-css"
+        ],
+        "pkg": {
+            "name": "bs-recipes-server",
+            "version": "1.0.0",
+            "description": "Proxy example + injecting custom css file",
+            "main": "app.js",
+            "scripts": {
+                "start": "node app.js"
+            },
+            "license": "MIT",
+            "dependencies": {
+                "browser-sync": "^2.11.2"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/proxy.custom-css",
+        "title": "Proxy Custom-css"
+    },
+    {
+        "dir": "server",
+        "name": [
+            "server"
+        ],
+        "pkg": {
+            "name": "bs-recipes-server",
+            "version": "1.0.0",
+            "description": "Server example",
+            "main": "app.js",
+            "scripts": {
+                "start": "node app.js"
+            },
+            "license": "MIT",
+            "dependencies": {
+                "browser-sync": "^2.1.6"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/server",
+        "title": "Server"
+    },
+    {
+        "dir": "server.gzipped.assets",
+        "name": [
+            "server",
+            "gzipped",
+            "assets"
+        ],
+        "pkg": {
+            "name": "bs-recipes-server-with-gzipped-assets",
+            "version": "1.0.0",
+            "description": "Server with pre-gzipped assets example",
+            "main": "app.js",
+            "scripts": {
+                "start": "node app.js"
+            },
+            "license": "MIT",
+            "dependencies": {
+                "browser-sync": "^2.4.0",
+                "connect-gzip-static": "^1.0.0"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/server.gzipped.assets",
+        "title": "Server Gzipped Assets"
+    },
+    {
+        "dir": "server.includes",
+        "name": [
+            "server",
+            "includes"
+        ],
+        "pkg": {
+            "name": "bs-recipes-server-includes",
+            "version": "1.0.0",
+            "description": "Server includes example",
+            "main": "app.js",
+            "scripts": {
+                "start": "node app.js"
+            },
+            "license": "MIT",
+            "dependencies": {
+                "browser-sync": "^2.1.6"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/server.includes",
+        "title": "Server Includes"
+    },
+    {
+        "dir": "server.middleware",
+        "name": [
+            "server",
+            "middleware"
+        ],
+        "pkg": {
+            "name": "bs-recipes-server",
+            "version": "1.0.0",
+            "description": "Server + Logging + History API fallback middlewares Example",
+            "main": "app.js",
+            "scripts": {
+                "start": "node app.js"
+            },
+            "license": "MIT",
+            "dependencies": {
+                "browser-sync": "^2.1.6",
+                "connect-logger": "0.0.1",
+                "connect-history-api-fallback": "^1.1.0"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/server.middleware",
+        "title": "Server Middleware"
+    },
+    {
+        "dir": "webpack.babel",
+        "name": [
+            "webpack",
+            "babel"
+        ],
+        "pkg": {
+            "name": "webpack.babel",
+            "version": "1.0.0",
+            "description": "Webpack + Babel",
+            "main": "app.js",
+            "author": "Shane Osbourne",
+            "license": "MIT",
+            "scripts": {
+                "start": "node app"
+            },
+            "dependencies": {},
+            "devDependencies": {
+                "babel-core": "^6.1.2",
+                "babel-loader": "^6.1.0",
+                "babel-plugin-transform-runtime": "^6.1.2",
+                "babel-preset-es2015": "^6.1.2",
+                "babel-preset-stage-0": "^6.1.2",
+                "browser-sync": "^2.8.0",
+                "bs-fullscreen-message": "^1.0.0",
+                "strip-ansi": "^3.0.0",
+                "webpack": "^1.10.5",
+                "webpack-dev-middleware": "^1.2.0"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/webpack.babel",
+        "title": "Webpack Babel"
+    },
+    {
+        "dir": "webpack.monkey-hot-loader",
+        "name": [
+            "webpack",
+            "monkey-hot-loader"
+        ],
+        "pkg": {
+            "name": "webpack.monkey-hot-loader",
+            "version": "1.0.0",
+            "description": "Webpack + Monkey Hot Loader",
+            "main": "app.js",
+            "author": "Sergey Slipchenko <faergeek@gmail.com>",
+            "license": "MIT",
+            "scripts": {
+                "start": "node ."
+            },
+            "dependencies": {
+                "browser-sync": "^2.8.0",
+                "monkey-hot-loader": "0.0.3",
+                "webpack": "^1.10.5",
+                "webpack-dev-middleware": "^1.2.0",
+                "webpack-hot-middleware": "^1.1.0"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/webpack.monkey-hot-loader",
+        "title": "Webpack Monkey-hot-loader"
+    },
+    {
+        "dir": "webpack.preact-hot-loader",
+        "name": [
+            "webpack",
+            "preact-hot-loader"
+        ],
+        "pkg": {
+            "name": "webpack.preact-hot-loader",
+            "version": "1.0.0",
+            "description": "Webpack + Preact Hot Loader",
+            "main": "app.js",
+            "author": "Shane Osbourne",
+            "license": "MIT",
+            "scripts": {
+                "start": "node .",
+                "build": "webpack"
+            },
+            "dependencies": {
+                "babel": "^6.5.2",
+                "babel-core": "^6.14.0",
+                "babel-eslint": "^7.0.0",
+                "babel-loader": "^6.2.5",
+                "babel-plugin-transform-decorators-legacy": "^1.3.4",
+                "babel-plugin-transform-react-jsx": "^6.8.0",
+                "babel-preset-es2015": "^6.14.0",
+                "babel-register": "^6.14.0",
+                "babel-runtime": "^6.11.6",
+                "browser-sync": "^2.8.0",
+                "compression-webpack-plugin": "^0.3.2",
+                "preact": "^6.4.0",
+                "webpack": "^1.10.5",
+                "webpack-dev-middleware": "^1.2.0",
+                "webpack-hot-middleware": "^1.1.0"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/webpack.preact-hot-loader",
+        "title": "Webpack Preact-hot-loader"
+    },
+    {
+        "dir": "webpack.react-hot-loader",
+        "name": [
+            "webpack",
+            "react-hot-loader"
+        ],
+        "pkg": {
+            "name": "webpack.react-hot-loader",
+            "version": "1.0.0",
+            "description": "Webpack + React Hot Loader",
+            "main": "app.js",
+            "author": "Sergey Slipchenko <faergeek@gmail.com>",
+            "license": "MIT",
+            "scripts": {
+                "start": "node ."
+            },
+            "dependencies": {
+                "babel-core": "^6.21.0",
+                "babel-loader": "^6.2.10",
+                "babel-preset-es2015": "^6.9.0",
+                "babel-preset-react": "^6.16.0",
+                "browser-sync": "^2.8.0",
+                "react": "^15.4.1",
+                "react-dom": "^15.4.1",
+                "react-hot-loader": "^1.2.8",
+                "webpack": "^1.10.5",
+                "webpack-dev-middleware": "^1.2.0",
+                "webpack-hot-middleware": "^2.13.2"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/webpack.react-hot-loader",
+        "title": "Webpack React-hot-loader"
+    },
+    {
+        "dir": "webpack.react-transform-hmr",
+        "name": [
+            "webpack",
+            "react-transform-hmr"
+        ],
+        "pkg": {
+            "name": "webpack.react-transform-hmr",
+            "version": "1.0.0",
+            "description": "Webpack + React Transform HMR",
+            "main": "app.js",
+            "author": "Sergey Slipchenko <faergeek@gmail.com>",
+            "license": "MIT",
+            "scripts": {
+                "start": "node ."
+            },
+            "dependencies": {
+                "babel-core": "^6.21.0",
+                "babel-loader": "^6.2.10",
+                "babel-plugin-react-transform": "^2.0.2",
+                "babel-preset-es2015": "^6.9.0",
+                "babel-preset-react": "^6.16.0",
+                "browser-sync": "^2.8.0",
+                "react": "^15.4.1",
+                "react-dom": "^15.4.1",
+                "react-transform-hmr": "^1.0.0",
+                "webpack": "^1.10.5",
+                "webpack-dev-middleware": "^1.2.0",
+                "webpack-hot-middleware": "^2.13.2"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/webpack.react-transform-hmr",
+        "title": "Webpack React-transform-hmr"
+    },
+    {
+        "dir": "webpack.typescript",
+        "name": [
+            "webpack",
+            "typescript"
+        ],
+        "pkg": {
+            "name": "webpack.typescript",
+            "version": "1.0.0",
+            "description": "Webpack + TypeScript",
+            "main": "app.js",
+            "author": "Shane Osbourne and John Lindquist",
+            "license": "MIT",
+            "scripts": {
+                "start": "node app"
+            },
+            "dependencies": {},
+            "devDependencies": {
+                "ts-loader": "^0.8.1",
+                "typescript": "^1.7.5",
+                "browser-sync": "^2.8.0",
+                "bs-fullscreen-message": "^1.0.0",
+                "strip-ansi": "^3.0.0",
+                "webpack": "^1.10.5",
+                "webpack-dev-middleware": "^1.2.0"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/webpack.typescript",
+        "title": "Webpack Typescript"
+    },
+    {
+        "dir": "webpack.typescript.react",
+        "name": [
+            "webpack",
+            "typescript",
+            "react"
+        ],
+        "pkg": {
+            "name": "webpack.typescript.react",
+            "version": "1.0.0",
+            "description": "Webpack, TypeScript + React",
+            "main": "app.js",
+            "author": "Shane Osbourne",
+            "license": "MIT",
+            "scripts": {
+                "start": "node app",
+                "build": "webpack",
+                "preview": "npm run build && node preview"
+            },
+            "dependencies": {},
+            "devDependencies": {
+                "browser-sync": "^2.8.0",
+                "bs-fullscreen-message": "^1.0.0",
+                "compression": "1.6.1",
+                "react": "0.14.7",
+                "react-dom": "0.14.7",
+                "react-lite": "0.15.3",
+                "strip-ansi": "^3.0.0",
+                "ts-loader": "^0.8.1",
+                "typescript": "^1.7.5",
+                "typings": "0.7.9",
+                "webpack": "^1.10.5",
+                "webpack-dev-middleware": "^1.2.0"
+            }
+        },
+        "link": "https://github.com/Browsersync/recipes/tree/master/recipes/webpack.typescript.react",
+        "title": "Webpack Typescript React"
+    }
+]

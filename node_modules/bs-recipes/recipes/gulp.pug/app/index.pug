@@ -1,0 +1,10 @@
+html
+    head
+        title Gulp, SASS + Pug Templates
+        link(href='/css/main.css', rel='stylesheet')
+    body
+        h1 Gulp, SASS + Pug Templates
+        p Your gulpfile provides some context for Pug:
+        ul
+          each val, index in locals
+            li= index + ': ' + val

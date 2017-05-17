@@ -1,0 +1,1 @@
+{"__symbolic":"module","module":"./common_directives","metadata":{"COMMON_DIRECTIVES":[{"__symbolic":"reference","name":"CORE_DIRECTIVES","module":"directives/core_directives"},{"__symbolic":"reference","name":"FORM_DIRECTIVES","module":"forms/directives"}]}}

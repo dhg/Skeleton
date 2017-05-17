@@ -1,0 +1,16 @@
+{
+  "files": {
+    "desc": "File paths to reload",
+    "type": "array",
+    "alias": "f"
+  },
+  "port": {
+    "alias": "p",
+    "type": "number",
+    "desc": "Target a running instance by port number"
+  },
+  "url": {
+    "alias": "u",
+    "desc": "Provide the full the url to the running Browsersync instance"
+  }
+}

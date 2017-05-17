@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "blue-tape": "github:typings/typed-blue-tape#a4e41a85d6f760e7c60088127968eae7d3a556fa"
+  },
+  "ambientDependencies": {
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#8cf8164641be73e8f1e652c2a5b967c7210b6729"
+  },
+  "dependencies": {
+    "any-promise": "github:typings/typed-any-promise#74ba6cf22149ff4de39c2338a9cb84f9ded6f042",
+    "arrify": "github:typings/typed-arrify#32383d5fd3e6a8614abb6dba254a3aab07cd7424",
+    "concat-stream": "github:typings/typed-concat-stream#099a88b57dcc9968246e8b1b3651e914a1a2c324",
+    "form-data": "github:typings/typed-form-data#edc32200ec6065d98bfaa7ff9cfd104e17c5d3e4",
+    "make-error-cause": "npm:make-error-cause",
+    "methods": "github:typings/typed-methods#b902fa13683e95d54b2bb69188f68ea3525ec430",
+    "tough-cookie": "github:typings/typed-tough-cookie#3e37dc2e6d448130d2fa4be1026e195ffda2b398",
+    "xtend": "github:typings/typed-xtend#63cccadf3295b3c15561ee45617ac006edcca9e0"
+  }
+}

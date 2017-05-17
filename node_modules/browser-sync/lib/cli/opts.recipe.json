@@ -1,0 +1,6 @@
+{
+  "output": {
+    "alias": "o",
+    "desc": "Specify an output directory"
+  }
+}

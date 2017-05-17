@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "any-promise": "github:typings/typed-any-promise#74ba6cf22149ff4de39c2338a9cb84f9ded6f042",
+    "archy": "github:typings/typed-archy#3706c5e4df4efcc8cec8849a1c493cebd0830bea",
+    "chalk": "github:typings/typed-chalk#a7e422c5455e70292e5675a727d43a7b05fc3e58",
+    "columnify": "github:typings/typed-columnify#855f119ac0310bc0dc924b7c26dc1426e2aa43a5",
+    "listify": "registry:npm/listify#1.0.0+20160211003958",
+    "minimist": "github:typings/typed-minimist#9bfb8ebb1cf82abe2e16b00d6e0f59492224728e",
+    "typings-core": "npm:typings-core",
+    "update-notifier": "github:typings/typed-update-notifier#d3a027d90487f1b876157c75419f5c4a4a097a09",
+    "wordwrap": "github:typings/typed-wordwrap#c5852a5a23954e721246001d4bc47d19c283cd33",
+    "xtend": "github:typed-typings/npm-xtend#63cccadf3295b3c15561ee45617ac006edcca9e0"
+  },
+  "devDependencies": {
+    "blue-tape": "github:typings/typed-blue-tape#a4e41a85d6f760e7c60088127968eae7d3a556fa",
+    "nock": "github:typings/typed-nock#0b7c6be782a62fc36e74239fbecccf73c1aed98c"
+  },
+  "ambientDependencies": {
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#48c1e3c1d6baefa4f1a126f188c27c4fefd36bff"
+  }
+}

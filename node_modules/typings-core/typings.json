@@ -1,0 +1,44 @@
+{
+  "dependencies": {
+    "any-promise": "github:typings/typed-any-promise#74ba6cf22149ff4de39c2338a9cb84f9ded6f042",
+    "archy": "github:typings/typed-archy#3706c5e4df4efcc8cec8849a1c493cebd0830bea",
+    "array-uniq": "github:typings/typed-array-uniq#fe1767e9b1baa0fd9f7a55fbcbf2fd8f08296d42",
+    "configstore": "github:typed-typings/npm-configstore#765d015ab10c89ab6dd88c3a578be7b7fc3a2101",
+    "debug": "github:typings/typed-debug#0a12b05a76400107c70a266dcd4c2b656baa7dae",
+    "detect-indent": "github:typings/typed-detect-indent#5576659901b4219189fde838c94e5c73daa9bfc7",
+    "graceful-fs": "github:typings/typed-graceful-fs#84adcae7061f5f71409cac66fc6628929e536022",
+    "has": "github:typings/typed-has#baa49a87ea7b1b837b7c3179faa6ea69263a78a6",
+    "invariant": "github:typings/typed-invariant#58403cee078ebef52112c4227c4d23a97821ef5c",
+    "is-absolute": "github:typings/typed-is-absolute#229fe8976b51bb721e92da2353e34bceaae0c108",
+    "listify": "github:typings/typed-listify#ff7fcd328b8285b38c9e941945bde33e8f249147",
+    "lockfile": "github:typings/typed-lockfile#de6a705d24efa52c62cd0da4eadfeb3d642058bd",
+    "log-update": "github:typings/typed-log-update#e0e02e19ab2465c505337bdbb9f535a1d69fb817",
+    "make-error-cause": "npm:make-error-cause",
+    "mkdirp": "github:typings/typed-mkdirp#c22e0a7cf2597d5fc9122ca70af19b6638886fc0",
+    "object.pick": "github:typings/typed-object.pick#c588655f1889da2140b89ee4d42be3665ff3e164",
+    "parse-json": "github:typings/typed-parse-json#74152f9c8b831227fc4eb3533fcd01b8906e2694",
+    "popsicle": "npm:popsicle",
+    "popsicle-proxy-agent": "npm:popsicle-proxy-agent",
+    "popsicle-retry": "npm:popsicle-retry",
+    "popsicle-status": "npm:popsicle-status",
+    "promise-finally": "npm:promise-finally",
+    "rc": "github:typings/typed-rc#fc2dc197faa3acf82ad3aadba8c7fb535ec9ab61",
+    "rimraf": "github:typings/typed-rimraf#32ad9f36b16bef0480ce480e0233853ce68f6394",
+    "sort-keys": "github:typings/typed-sort-keys#168ea92a8450b3573470f3f5c0d58e6a97181673",
+    "string-template": "github:typings/typed-string-template#4620eee24201636ca45e6dbc2505066703c770da",
+    "strip-bom": "github:typings/typed-strip-bom#d1d42e7f43dcd9fce1cfd988c40421a1d37fa47b",
+    "thenify": "github:typings/typed-thenify#edbd46753be5bb34b916787fcede5e9b1281a2e2",
+    "throat": "github:typed-typings/npm-throat#20e2c3c157d87a90062a8a2f4d99ab4dc475b1fd",
+    "touch": "github:typings/typed-touch#9b10d0473fb5161c379df57d63d3d59fb5b62fb0",
+    "typescript": "npm:typescript",
+    "xtend": "github:typings/typed-xtend#63cccadf3295b3c15561ee45617ac006edcca9e0",
+    "zip-object": "github:typings/typed-zip-object#30843d188f5d1c3f5222c1ad366a09a28bf3188c"
+  },
+  "devDependencies": {
+    "blue-tape": "github:typings/typed-blue-tape#a4e41a85d6f760e7c60088127968eae7d3a556fa",
+    "nock": "github:typings/typed-nock#0b7c6be782a62fc36e74239fbecccf73c1aed98c"
+  },
+  "ambientDependencies": {
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#1c56e368e17bb28ca57577250624ca5bd561aa81"
+  }
+}

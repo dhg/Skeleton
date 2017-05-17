@@ -1,0 +1,1 @@
+{"__symbolic":"module","module":"./worker_app_common","metadata":{"WORKER_APP_PLATFORM":[{"__symbolic":"reference","name":"PLATFORM_COMMON_PROVIDERS","module":"../core/platform_common_providers"}]}}

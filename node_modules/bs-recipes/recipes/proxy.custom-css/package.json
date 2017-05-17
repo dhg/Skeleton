@@ -1,0 +1,13 @@
+{
+  "name": "bs-recipes-server",
+  "version": "1.0.0",
+  "description": "Proxy example + injecting custom css file",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.11.2"
+  }
+}

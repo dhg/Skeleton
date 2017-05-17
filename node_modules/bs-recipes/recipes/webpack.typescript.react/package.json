@@ -1,0 +1,28 @@
+{
+  "name": "webpack.typescript.react",
+  "version": "1.0.0",
+  "description": "Webpack, TypeScript + React",
+  "main": "app.js",
+  "author": "Shane Osbourne",
+  "license": "MIT",
+  "scripts": {
+    "start": "node app",
+    "build": "webpack",
+    "preview": "npm run build && node preview"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.8.0",
+    "bs-fullscreen-message": "^1.0.0",
+    "compression": "1.6.1",
+    "react": "0.14.7",
+    "react-dom": "0.14.7",
+    "react-lite": "0.15.3",
+    "strip-ansi": "^3.0.0",
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.7.5",
+    "typings": "0.7.9",
+    "webpack": "^1.10.5",
+    "webpack-dev-middleware": "^1.2.0"
+  }
+}

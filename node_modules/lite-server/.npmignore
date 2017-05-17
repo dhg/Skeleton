@@ -1,0 +1,4 @@
+node_modules
+.idea
+coverage/
+*.log
