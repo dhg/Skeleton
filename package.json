@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "postcss-loader": "^2.0.6"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.5",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "postcss": "^6.0.9",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^10.0.0",
+    "webpack": "^3.5.5"
+  }
+}
