@@ -1,12 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYpE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name ="description" content="A page for 3rd year computer science students to pick their modules">
+    <title>Computer Science</title>
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+  </head>
 
-  <!-- Basic Page Needs
+<!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here! :)</title>
-  <meta name="description" content="">
+  <title>King's College London Course Selection</title>
+  <meta name="description" content="Practice Project">
   <meta name="author" content="">
 
   <!-- Mobile Specific Metas
@@ -17,7 +22,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- CSS
+  <!-- CS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
@@ -25,9 +30,45 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
+  
+<style>
+.dropbtn {    
+	background-color: "#FFAFFF";
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+ }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
 
 </head>
-<body>
+<body bgcolor="#E6E6FA">
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -35,12 +76,89 @@
     <div class="row">
       <div class="one-half column" style="margin-top: 25%">
         <h4>Basic Page</h4>
-        <p>This index.html page is impossible to understand</p>
+        <p>Howdy, y'all! :)</p>
       </div>
     </div>
+    </div>
+    <div style="float:left;padding-left:30px;">
+    <img src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0013/8558/brand.gif?itok=Oj3vqw6k"
+    height = "175" width="175">
   </div>
-
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div style="float:right;padding-right:30px;">
+  <img src="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0013/8558/brand.gif?itok=Oj3vqw6k"
+  height = "175" width="175">
+  </div>
+
+    <div style="text-align:center;padding-top:20px;font-size:55px;font-family:calibri;letter-spacing:8px;">
+      <b>COMPUTER SCIENCE</b></div>
+      <div style="text-align:center;font-size:10px;font-family:arial;letter-spacing:2px;">
+        <b><i>COMPUTER SCIENCE BSC (HONS)<br>
+      COMPUTER SCIENCE WITH MANAGEMENT BSC (HONS)</i></b></div>
+
+        <div style="font-family:arial;font-size:8px;letter-spacing:1px;">
+          <div style="text-align:center;padding-top:20px;font-size:25px;letter-spacing:5px;">
+            <b>WELCOME TO KINGS</b></div>
+            <div style="padding: 10px 335px 20px 335px;text-align:justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum. This is about as much text that is allowed. A little
+              bit more...
+          </div></div>
+
+        <div class="wrapper">
+          <div class="box a"><div class ="dropdown"> <!-- style="float:left;"> -->
+  <button class="dropbtn">Choose a Course</button>
+  <div class="dropdown-content"  style="left:0;">
+    <a href="#">BSc Computer Science</a>
+    <a href="#">MSc Computer Science</a>
+    <a href="#">BSc Computer Science with Management</a>
+  </div>
+</div> </div>
+          <div class="box b">
+        Semester 1 Modules
+        <div>
+          <select>
+  <option value="module1" selected>module1</option>
+  <option value="module2">module2</option>
+  <option value="module3">module3</option>
+  <option value="module4">module4</option>
+  <option value="module5">module5</option>
+  <option value="module6">module6</option>
+  <option value="module7">module7</option>
+  <option value="module8">module8</option>
+  <option value="module9">module9</option>
+  <option value="module10">module10</option>
+  <option value="module11">module11</option>
+  <!--  #f99999 is a nice colour -->
+</select></div></div>
+          <div class="box c">Semester 2 Modules
+          <div>
+          <select>
+  <option value="module12" selected>module1</option>
+  <option value="module13">module2</option>
+  <option value="module14">module3</option>
+  <option value="module15">module4</option>
+  <option value="module16">module6</option>
+  <option value="module17">module7</option>
+  <option value="module18">module8</option>
+  <option value="module19">module9</option>
+  <option value="module20">module10</option>
+  <option value="module21">module11</option>
+  <option value="module22">module12</option>
+  
+  <!--  #f99999 is a nice colour -->
+</select></div></div>
+          <div class="box d">Module Details</div>
+          <div class="box e">Module Table</div>
+          <div class="box f">Suggestions</div>
+          <div class="box g">Contact Us</div>
+        </div>
+          <script src="javascriptCode.js" type="text/javascript">
+  </script>
 </body>
 </html>
