@@ -110,6 +110,51 @@
   .offset-by-one-half.column,
   .offset-by-one-half.columns     { margin-left: 52%; }
 
+  .offset-by-one.column:nth-child(n+2),
+  .offset-by-one.columns:nth-child(n+2)
+                                  { margin-left: 12.66666666667%; }
+  .offset-by-two.column:nth-child(n+2),
+  .offset-by-two.columns:nth-child(n+2)
+                                  { margin-left: 21.3333333333%; }
+  .offset-by-three.column:nth-child(n+2),
+  .offset-by-three.columns:nth-child(n+2)
+                                  { margin-left: 30%;            }
+  .offset-by-four.column:nth-child(n+2),
+  .offset-by-four.columns:nth-child(n+2)
+                                  { margin-left: 38.6666666667%; }
+  .offset-by-five.column:nth-child(n+2),
+  .offset-by-five.columns:nth-child(n+2)
+                                  { margin-left: 47.3333333333%; }
+  .offset-by-six.column:nth-child(n+2),
+  .offset-by-six.columns:nth-child(n+2)
+                                  { margin-left: 56%;            }
+  .offset-by-seven.column:nth-child(n+2),
+  .offset-by-seven.columns:nth-child(n+2)
+                                  { margin-left: 64.6666666667%; }
+  .offset-by-eight.column:nth-child(n+2),
+  .offset-by-eight.columns:nth-child(n+2)
+                                  { margin-left: 73.3333333333%; }
+  .offset-by-nine.column:nth-child(n+2),
+  .offset-by-nine.columns:nth-child(n+2)
+                                  { margin-left: 82.0%;          }
+  .offset-by-ten.column:nth-child(n+2),
+  .offset-by-ten.columns:nth-child(n+2)
+                                  { margin-left: 90.6666666667%; }
+  .offset-by-eleven.column:nth-child(n+2),
+  .offset-by-eleven.columns:nth-child(n+2)
+                                  { margin-left: 99.3333333333%; }
+
+  .offset-by-one-third.column:nth-child(n+2),
+  .offset-by-one-third.columns:nth-child(n+2)
+                                  { margin-left: 38.6666666667%; }
+  .offset-by-two-thirds.column:nth-child(n+2),
+  .offset-by-two-thirds.columns:nth-child(n+2)
+                                  { margin-left: 73.3333333333%; }
+
+  .offset-by-one-half.column:nth-child(n+2),
+  .offset-by-one-half.columns:nth-child(n+2)
+                                  { margin-left: 56%; }
+
 }
 
 
