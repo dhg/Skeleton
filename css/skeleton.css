@@ -313,7 +313,8 @@ code {
   white-space: nowrap;
   background: #F1F1F1;
   border: 1px solid #E1E1E1;
-  border-radius: 4px; }
+  border-radius: 4px;
+  overflow-x: auto;}
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
