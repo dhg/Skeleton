@@ -27,6 +27,21 @@
 
 @import "fonts.css";
 
+/* Usefull classes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Font weight */
+.strong { font-weight: 700; }
+
+.light { font-weight: 300; }
+
+/* Text style */
+.textU { text-transform: uppercase; }
+
+/* Colors */
+.black { color: #000; }
+
+.white { color: #fff; }
+
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
@@ -123,7 +138,7 @@ body {
     font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
     line-height: 1.6;
     font-weight: 400;
-    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #222;
 }
 
@@ -156,10 +171,18 @@ p { margin-top: 0; }
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a { color: #1EAEDB; }
+a {
+    color: #1EAEDB;
+    text-decoration: none;
+    transition: all ease 500ms;
+}
 
 a:hover,
-a:focus { color: #0FA0CE; }
+a:focus {
+    color: #0FA0CE;
+    text-decoration: none;
+    transition: all ease 500ms;
+}
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
