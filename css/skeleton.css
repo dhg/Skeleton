@@ -61,21 +61,35 @@
 
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
+  .two.column,
   .two.columns                    { width: 13.3333333333%; }
+  .three.column,
   .three.columns                  { width: 22%;            }
+  .four.column,
   .four.columns                   { width: 30.6666666667%; }
+  .five.column,
   .five.columns                   { width: 39.3333333333%; }
+  .six.column,
   .six.columns                    { width: 48%;            }
+  .seven.column,
   .seven.columns                  { width: 56.6666666667%; }
+  .eight.column,
   .eight.columns                  { width: 65.3333333333%; }
+  .nine.column,
   .nine.columns                   { width: 74.0%;          }
+  .ten.column,
   .ten.columns                    { width: 82.6666666667%; }
+  .eleven.column,
   .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.column,
   .twelve.columns                 { width: 100%; margin-left: 0; }
 
+  .one-third.columns,
   .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.columns,  
   .two-thirds.column              { width: 65.3333333333%; }
 
+  .one-half.columns,
   .one-half.column                { width: 48%; }
 
   /* Offsets */
