@@ -7,6 +7,7 @@ Building off of Skeleton's [awesomeness](https://github.com/dhg/Skeleton#why-its
 - Normalize.css added as a submodule to remain current
 - Updated to use CSS variables
 - Uses CSS Grid instead of 12-column grid system
+- Support for @media prefers-color-scheme (aka Dark Mode)
 - Pending Release: Uses CSS env() function
 - Possible: Add basic Nav boilerplate
 
