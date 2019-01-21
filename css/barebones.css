@@ -7,9 +7,9 @@
 * Free to use under the MIT license.
 */
 
-
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
+- Media Breakpoints
 - Variables
 - Grid
 - Base Styles
@@ -26,7 +26,19 @@
 - Media Queries
 */
 
-/* Variables
+/* ENV Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Media breakpoint variables for use in media queries
+* 	Note: this section is currently commented out pending release of 
+* 	final CSS env() spec
+*  Breakpoints based on 
+*	 https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
+* 
+*/
+
+
+
+/* CSS Variables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
 
@@ -39,12 +51,13 @@
 	--text-color-softer: hsl(var(--theme-hue), 0%, 33%);		/* #555555 		button color; button:hover border */
 
   --accent-color: hsl(var(--accent-hue), 86%, 57%);				/* #33C3F0 		link; button-primary bg+border; textarea,select:focus border */
-  --accent-color-hover: hsl(var(--accent-hue), 76%, 49%)	/* #1EAEDB 		link hover; button-primary:hover:focus bg+border */
+  --accent-color-hover: hsl(var(--accent-hue), 76%, 49%);	/* #1EAEDB 		link hover; button-primary:hover:focus bg+border */
 
   --border-color: hsl(var(--theme-hue), 0%, 73%);					/* #bbbbbb		button border */
 	--border-color-softer: hsl(var(--theme-hue), 0%, 82%);	/* #d1d1d1		textarea,select,code,td,hr border	 */
 	
 	--background-color: initial;														/* transparent body background; textarea,select background */
+	--background-color-softer: hsl(var(--theme-hue), 0%, 95%);
   --code-background: hsl(var(--theme-hue), 0%, 95%);			/* #f1f1f1 		code background*/
 
 	--button-primary-color: white;
@@ -58,7 +71,7 @@
 	--grid-max-width: 960px;
 }
 
-/* theme support */
+/* theme support
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (prefers-color-scheme: dark) {
 	:root {
@@ -67,21 +80,25 @@
 		--accent-hue: 194;			/* blue */
 
 		--text-color-richer: hsl(var(--theme-hue), 0%, 95%);		/* 		*/
-		--text-color-normal: hsl(var(--theme-hue), 0%, 87%);		/* text color; button:hover:focus color */
+		--text-color-normal: hsl(var(--theme-hue), 0%, 80%);		/* text color; button:hover:focus color */
 		--text-color-softer: hsl(var(--theme-hue), 0%, 67%);		/* button color; button:hover border */
 
-		--accent-color: hsl(var(--accent-hue), 86%, 57%);				/* link; button-primary bg+border; textarea,select:focus border */
-		--accent-color-hover: hsl(var(--accent-hue), 76%, 49%)	/* link hover; button-primary:hover:focus bg+border */
+		--accent-color: hsl(var(--accent-hue), 76%, 49%);				/* link; button-primary bg+border; textarea,select:focus border */
+		--accent-color-hover: hsl(var(--accent-hue), 86%, 57%);	/* link hover; button-primary:hover:focus bg+border */
 
 		--border-color: hsl(var(--theme-hue), 0%, 27%);					/* button border */
-		--border-color-softer: hsl(var(--theme-hue), 0%, 18%);	/* textarea,select,code,td,hr border	 */
+		--border-color-softer: hsl(var(--theme-hue), 0%, 20%);	/* textarea,select,code,td,hr border	 */
 	
-		--background-color: hsl(var(--theme-hue), 0%, 5%);			/* body background; textarea,select background */
+		--background-color: hsl(var(--theme-hue), 0%, 12%);			/* body background; textarea,select background */
+		--background-color-softer: hsl(var(--theme-hue), 0%, 18%);
 		--code-background: hsl(var(--theme-hue), 0%, 5%);				/* code background*/
 
 		--button-primary-color: white;
   }
 	
+	img.value-img {
+		filter: invert(0.8);
+	}
 	/* TODO - test dialing back image intensity on dark background
   img {
     opacity: .80;
@@ -101,7 +118,6 @@
 	 Any additional needs should be made using custom CSS directives */
 
 
-/* did not keep .container to prevent backwards compatibility problems */
 .grid-container {
 	position: relative;
 	width: 100%;
@@ -116,7 +132,7 @@
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-/* basic grid defaults */
+/* basic grids */
 .grid-container.quarters {
 	grid-template-columns: repeat(4, 1fr);
 }
@@ -129,9 +145,6 @@
 .grid-container.full {
 	grid-template-columns: 1fr;
 }
-
-
-
 
 
 
@@ -259,7 +272,7 @@ select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: var(--background-color);
-  border: 1px solid #var(--border-color-softer);
+  border: 1px solid var(--border-color-softer);
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
@@ -288,7 +301,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid ;
+  border: 1px solid var(--accent-color);
   outline: 0; }
 label,
 legend {
