@@ -40,7 +40,7 @@
 
 /* CSS Variables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-:root {
+html {
 
 	/* default theme: light background, dark text, blue accent */
 	--theme-hue: 0;					/* white */
@@ -56,7 +56,7 @@
   --border-color: hsl(var(--theme-hue), 0%, 73%);					/* #bbbbbb		button border */
 	--border-color-softer: hsl(var(--theme-hue), 0%, 82%);	/* #d1d1d1		textarea,select,code,td,hr border	 */
 	
-	--background-color: initial;														/* transparent body background; textarea,select background */
+	--background-color: white;														/* transparent body background; textarea,select background */
 	--background-color-softer: hsl(var(--theme-hue), 0%, 95%);
   --code-background: hsl(var(--theme-hue), 0%, 95%);			/* #f1f1f1 		code background*/
 
@@ -71,10 +71,12 @@
 	--grid-max-width: 960px;
 }
 
-/* theme support
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*  Dark Theme
+	Note: prefers-color-scheme selector support is still limited, but 
+	included for future and an example of defining a different base 'theme'
+*/
 @media (prefers-color-scheme: dark) {
-	:root {
+	:html {
 		/* dark theme: light background, dark text, blue accent */
 		--theme-hue: 0;					/* black */
 		--accent-hue: 194;			/* blue */
@@ -120,19 +122,22 @@
 
 .grid-container {
 	position: relative;
-	width: 100%;
 	max-width: var(--grid-max-width);
 	margin: 0 auto;
 	padding: 20px;
+	text-align: center;
 	display: grid;
 	grid-gap: 20px;
 	gap: 20px;
 	
 	/* by default use min 200px wide columns auto-fit into width */
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: minmax(200px, 1fr);
 }
 
 /* basic grids */
+.grid-container.fifths {
+	grid-template-columns: repeat(5, 1fr);
+}
 .grid-container.quarters {
 	grid-template-columns: repeat(4, 1fr);
 }
@@ -146,15 +151,23 @@
 	grid-template-columns: 1fr;
 }
 
+/* grids to 3 columns above mobile sizes */
+@media (min-width: 600px) {
+	.grid-container {
+		grid-template-columns: repeat(3, 1fr);
+		padding: 10px 0;
+	}
+}
 
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 html {
-  font-size: var(--base-font-size); 
+  font-size: var(--base-font-size);
+  scroll-behavior: smooth;
 }
 body {
-  font-size: 1.5em;
+  font-size: 1.6rem;		/* changed from 15px in orig skeleton */
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -177,7 +190,7 @@ h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 /* Larger than phablet */
-@media (min-width: 550px) {
+@media (min-width: 600px) {
   h1 { font-size: 5.0rem; }
   h2 { font-size: 4.2rem; }
   h3 { font-size: 3.6rem; }
@@ -329,14 +342,13 @@ ol {
 ol, ul {
   padding-left: 0;
   margin-top: 0; }
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-  margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%; }
+ul ul, ul ol, ol ol, ol ul {
+	font-size: 100%;
+	margin: 1rem 0 1rem 3rem;
+	color: var(--text-color-softer);
+}
 li {
-  margin-bottom: 1rem; }
+  margin-bottom: 0.5rem; }
 
 
 /* Code
@@ -352,7 +364,8 @@ code {
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
-  white-space: pre; }
+  white-space: pre; 
+  overflow: auto; }
 
 
 /* Tables
@@ -437,17 +450,12 @@ there.
 */
 
 
-/* Larger than mobile */
-@media (min-width: 400px) {}
+/* Larger than mobile (default point when grid becomes active) */
+@media (min-width: 600px) {}
 
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+/* Larger than phablet */
+@media (min-width: 900px) {}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
