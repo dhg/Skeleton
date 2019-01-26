@@ -134,30 +134,36 @@ html {
 	grid-template-columns: minmax(200px, 1fr);
 }
 
-/* basic grids */
-.grid-container.fifths {
-	grid-template-columns: repeat(5, 1fr);
-}
-.grid-container.quarters {
-	grid-template-columns: repeat(4, 1fr);
-}
-.grid-container.thirds {
-	grid-template-columns: repeat(3, 1fr);
-}
-.grid-container.halves {
-	grid-template-columns: repeat(2, 1fr);
-}
-.grid-container.full {
-	grid-template-columns: 1fr;
-}
-
 /* grids to 3 columns above mobile sizes */
 @media (min-width: 600px) {
 	.grid-container {
 		grid-template-columns: repeat(3, 1fr);
 		padding: 10px 0;
 	}
+	
+	/* basic grids */
+	.grid-container.fifths {
+		grid-template-columns: repeat(5, 1fr);
+	}
+	.grid-container.quarters {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.grid-container.thirds {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.grid-container.halves {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.grid-container.full {
+		grid-template-columns: 1fr;
+	}
+	
 }
+
+
+
+
+
 
 
 /* Base Styles
@@ -417,6 +423,10 @@ form {
   float: right; }
 .u-pull-left {
   float: left; }
+.u-align-left {
+	text-align: left; }
+.u-align-right {
+	text-align: right; }
 
 
 /* Misc
