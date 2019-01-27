@@ -5,9 +5,11 @@ While there are several other active forks of Skeleton, Barebones differs by req
 
 ## Getting started
 
-Barebones can be downloaded via zip file or the repo can be cloned:
-- [Download the zip](https://github.com/acahir/Barebones/archive/master.zip)
-- Clone the repo: `https://github.com/acahir/Barebones.git`
+
+Barebones can be downloaded via [zip file](https://github.com/acahir/Barebones/archive/master.zip) or the repo can be cloned using `git clone https://github.com/acahir/Barebones.git`.
+
+Once you have your bare hands on Barebones, use the [documentation and examples](https://acahir.github.io/Barebones/) to get started.
+
 
 ### What's in the download?
 
