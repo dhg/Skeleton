@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+      <!-- Page Needs & Sets --->
+      <meta charset="utf-8">
+      <!------------------------------------>
+      <title>Check</title>
+      <!------------------------------------>
+      <meta http-equiv="Content-Language" content="pt-br">
+      <!------------------------------------>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!------------------------------------>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!------------------------------------>
+      <meta http-equiv="expires" content="-1">
+      <!------------------------------------>
+      <meta http-equiv="pragma" content="no-cache">
+      <!------------------------------------>
+      <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate, max-age=0">
+      <!------------------------------------>
+      <meta name="author" content="Pedro Guilherme">
+      <!------------------------------------>
+      <meta name="description" content="Form">
+      <!------------------------------------>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!------------------------------------>
+      <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+      <!------------------------------------>
+      <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
+      <!------------------------------------>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <!------------------------------------>
+      <link rel="stylesheet" type="text/css" href="http://getskeleton.com/dist/css/skeleton.css">
+      <!------------------------------------>
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <!-- Favicon ---->
+      <link rel="icon" type="image/png" href="img/favicon.png">
+   </head>  
+   <body>
+      <!------------------------------------>
+      <a id="this" class="whatsapp" href="http://api.whatsapp.com/send?1=" class="float" target="_blank"><i class="fab fa-whatsapp"></i></i></a>
+      <!------------------------------------>
+      <div class="container">
+      <!------------------------------------>
+      <div class="logo">
+      <!------------------------------------>
+      <br>
+      <!------------------------------------>
+      <p id="logo">
+      <!------------------------------------>
+      <br>
+      <!------------------------------------>
+      <img width="100px" src=""> 
+      <!------------------------------------>
+      </p>
+      <!------------------------------------>
+      </div>
+      <!------------------------------------>
+      </div>
+      <!------------------------------------>
+      <hr>
+      <!------------------------------------>
+      </hr>
+      <!------------------------------------>
+      <div class="container">
+      <!------------------------------------>
+      <form id="check" autocomplete="off">
+      <!------------------------------------>
+      <div class="tree columns">
+      <!------------------------------------>
+      <label for="fullname">Full Name</label>
+      <!------------------------------------>
+      <input class="fullname u-full-width" type="text" id="fullname" autocomplete="off" required="true" />
+      <!------------------------------------>
+      <label for="cellphone">Cellphone</label>
+      <!------------------------------------>
+      <input class="cellphone u-full-width" type="text"  id="cellphone" maxlength="28" autocomplete="off" required="true" />   
+      <!------------------------------------>
+      <label for="mail">Mail</label>
+      <!------------------------------------>
+      <input class="mail u-full-width" type="email" id="mail"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" autocomplete="off" required="true" />
+      <!------------------------------------>
+      <label for="year">Year</label>
+      <!------------------------------------>
+      <input class="year u-full-width" type="text" id="year"  minlength="2" size="4"  autocomplete="off" required="true" />      
+      <!------------------------------------>
+      <label for="id_number">ID number</label>
+       <!------------------------------------>
+      <input class="id_number u-full-width" type="text" id="id_number"  maxlength="10" autocomplete="off" required="true" />
+      <!------------------------------------>
+      <label for="states">States</label>
+      <!------------------------------------>
+      <input class="states u-full-width" type="text" id="states"  maxlength="10" autocomplete="off" required="true" />    
+      <!------------------------------------>
+      <label for="driver_license">Driver's license</label>
+      <!------------------------------------>
+      <input class="cpf u-full-width" type="text" id="cpf" onkeyup="cpfCheck(this)" autocomplete="off" required="true" />
+      <!------------------------------------>
+      <label for="date_birth">Date of birth</label>
+      <!------------------------------------>
+      <input class="date_birth u-full-width" type="text" id="date_birth" maxlength="10" autocomplete="off" required="true" />    
+      <!------------------------------------>
+      <label for="father">Name of the Father</label>
+      <!------------------------------------>
+      <input class="father u-full-width" id="father" type="text" required="true" />    
+      <!------------------------------------>
+      <label for="mother">Nome da Mãe</label>
+      <!------------------------------------>
+      <input class="mother u-full-width" id="mother" type="text" required="true" />  
+      <!------------------------------------>
+      <label for="local">Local</label>
+      <!------------------------------------>
+      <input class="local u-full-width" id="local" type="text" maxlength="12" required="true" />
+      <!------------------------------------>
+      <label for="address">Address</label>
+      <!------------------------------------>
+      <input class="address u-full-width" id="address" type="text" maxlength="60" required="true" />
+      <!------------------------------------>
+      <label for="neighborhood">Neighborhood</label>
+      <!------------------------------------>
+      <input class="neighborhood u-full-width" type="text" id="neighborhood" autocomplete="off" required="true" />
+      <!------------------------------------>
+      <label for="addmore">Add More thing</label>
+      <!------------------------------------>
+      <input class="addmore u-full-width" id="addmore" type="text" maxlength="40" required="true" />
+      <!------------------------------------>
+      <label for="county">County</label>
+       <!------------------------------------>
+      <input class="county u-full-width" id="county" value="" type="text" required="true" />    
+      <!------------------------------------>
+      <label for="register">Register</label> 
+      <!------------------------------------>
+      <select class="register required u-full-width" id="register" required="true" >
+      <!------------------------------------>
+      <option value="">
+      <!------------------------------------>
+      </option>
+      <!------------------------------------>
+      </select>    
+      <!------------------------------------>
+      <label for="subscription">Subscription</label>
+      <!------------------------------------>
+      <select class="subscription required u-full-width" value="" class="subscription" id="subscription" autocomplete="off"  required="true">
+      	<!------------------------------------>
+        <option value=""></option>
+        <!------------------------------------>
+        <option class="local" id="local">Local</option>
+        <!------------------------------------>
+        <option class="online" id="online">Online</option>
+        <!------------------------------------>
+      </select> 
+      <!------------------------------------>
+      <label>Proof Date</label>
+      <!------------------------------------>
+      <select id="proof_date" class="proof_date u-full-width">
+      <!------------------------------------>
+      <option>Escolha a data</option>
+      <!------------------------------------>
+      <optgroup label="group_date1"></optgroup>
+      <!------------------------------------>
+      <option value="date1">26.05</option>
+      <!------------------------------------>
+      <option value="date1">21.07</option>
+      <!------------------------------------>
+      <option value="date1">22.09</option>
+      <!------------------------------------>
+      <option value="date1">24.11</option>
+      <!------------------------------------>
+      <optgroup label="group_date2"></optgroup>
+      <!------------------------------------>
+      <option value="data2">09.06</option>
+      <!------------------------------------>
+      <option value="data2">04.08</option>
+      <!------------------------------------>
+      <option value="data2">06.10</option>
+      <!------------------------------------>
+      <option value="data2">15.12</option>
+      <!------------------------------------>
+      <optgroup label="group_date3"></optgroup>
+      <!------------------------------------>
+      <option value="date3">16.06</option>
+      <!------------------------------------>
+      <option value="date3">18.08</option>
+      <!------------------------------------>
+      <option value="date3">20.10</option>
+      <!------------------------------------>
+      <option value="date3">08.12</option>
+     <!------------------------------------>
+</select>
+      <label for="school_1">School</label>
+      <!------------------------------------>
+      <select id="school_2" class="u-full-width">
+      <!------------------------------------>
+      <option value=""></option>
+      <!------------------------------------>
+      </select>     
+      <!------------------------------------>
+      <label for="unity">unity</label>
+      <!------------------------------------>
+      <select class="unity required u-full-width" class="unity" id="unity"  autocomplete="off" required="true" />
+      <!------------------------------------>
+        <option value=""></option>
+        <!------------------------------------>
+        <option id="unity_1">unity_1</option>
+        <!------------------------------------>
+        <option id="unity_2">unity_2</option>
+        <!------------------------------------>
+      </select>
+      <!------------------------------------>
+  </div>
+  <!------------------------------------>
+</div>
+     <!------------------------------------>
+     <div style="text-align: center;margin-left: 190px;margin-right: 190px;">
+     <!------------------------------------>
+     <button class="pdf button-primary" type="submit" id="pdf" style="width: 100%;">send</button> 
+     <!------------------------------------>
+     </div>
+      <!------------------------------------>
+     </form>
+      <!------------------------------------>
+  </div>
+      <!------------------------------------>
+   <hr>
+    <!------------------------------------>
+   <br/>
+   <!------------------------------------>
+   <p class="info" style="text-align: center;">
+   <!------------------------------------>
+   	<a href="https://github.com/pedroguilhermelima/check/" class="remover">
+    <!------------------------------------>
+   	Licença </a> 2019, Pedro Guilherme ( Skeleton CSS ). Todos os direitos reservados.</p>
+    <!------------------------------------>
+   	<br/>
+    <!------------------------------------>
+   	<br/> 
+   	<!------------------------------------>
+</body>
+</html>
