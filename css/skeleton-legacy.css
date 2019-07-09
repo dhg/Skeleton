@@ -1,0 +1,102 @@
+/* include this file if you want to duplicate all classes available
+ * the original skeleton boilerplate.
+ *
+ * Note: if you are creating a new site, this file is not needed 
+ * and simpler CSS Grid elements should be used without all the 
+ * additional classes on HTML elements. See the Readme for examples.
+*/
+
+
+/* Grid –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* 	Directives to replicate all skeleton.css functionality */
+/* .row becomes a grid container with 12 columns */
+.container, .row {
+	position: relative;
+	width: 100%;
+	max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.row {
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 4%;
+}
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+	.container {
+		width: 80%;
+	}
+  .row {
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 4%;
+    margin-bottom: 10px;
+  }
+
+  .one.column, .one.columns 	{ grid-column-end: span 1; }
+  .two.columns              	{ grid-column-end: span 2; }
+  .three.columns            	{ grid-column-end: span 3; }
+  .four.columns             	{ grid-column-end: span 4; }
+  .five.columns             	{ grid-column-end: span 5; }
+  .six.columns              	{ grid-column-end: span 6; }
+  .seven.columns            	{ grid-column-end: span 7; }
+  .eight.columns            	{ grid-column-end: span 8; }
+  .nine.columns             	{ grid-column-end: span 9; }
+  .ten.columns              	{ grid-column-end: span 10; }
+  .eleven.columns           	{ grid-column-end: span 11; }
+  .twelve.columns           	{ grid-column-end: span 12; }
+  .one-third.column           { grid-column-end: span 4; }
+  .two-thirds.column          { grid-column-end: span 8; }
+  .one-half.column            { grid-column-end: span 6; }
+
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns          { grid-column-start: 2; }
+  .offset-by-two.column,
+  .offset-by-two.columns          { grid-column-start: 3; }
+  .offset-by-three.column,
+  .offset-by-three.columns        { grid-column-start: 4; }
+  .offset-by-four.column,
+  .offset-by-four.columns         { grid-column-start: 5; }
+  .offset-by-five.column,
+  .offset-by-five.columns         { grid-column-start: 6; }
+  .offset-by-six.column,
+  .offset-by-six.columns          { grid-column-start: 7; }
+  .offset-by-seven.column,
+  .offset-by-seven.columns        { grid-column-start: 8; }
+  .offset-by-eight.column,
+  .offset-by-eight.columns        { grid-column-start: 9; }
+  .offset-by-nine.column,
+  .offset-by-nine.columns         { grid-column-start: 10; }
+  .offset-by-ten.column,
+  .offset-by-ten.columns          { grid-column-start: 11; }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns       { grid-column-start: 12; }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns    { grid-column-start: 5;}
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns   { grid-column-start: 9;}
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { grid-column-start: 7;}
+}
+

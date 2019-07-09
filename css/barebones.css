@@ -1,15 +1,16 @@
 /*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
+* Barebones V3
+* Copyright 2019 Steve Cochran
+*
+* Based of Skeleton by Dave Gamache
+*
 * Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/29/2014
 */
-
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
+- Media Breakpoints
+- Variables
 - Grid
 - Base Styles
 - Typography
@@ -25,107 +26,160 @@
 - Media Queries
 */
 
+/* ENV Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Media breakpoint variables for use in media queries
+* 	Note: this section is currently commented out pending release of 
+* 	final CSS env() spec
+*  Breakpoints based on 
+*	 https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
+* 
+*/
+
+
+
+/* CSS Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html {
+
+	/* default theme: light background, dark text, blue accent */
+	--theme-hue: 0;					/* white */
+	--accent-hue: 194;			/* blue */
+
+	--text-color-richer: hsl(var(--theme-hue), 0%, 5%);			/* #0d0d0d		*/
+	--text-color-normal: hsl(var(--theme-hue), 0%, 13%);		/* #222222 		text color; button:hover:focus color */
+	--text-color-softer: hsl(var(--theme-hue), 0%, 33%);		/* #555555 		button color; button:hover border */
+
+  --accent-color: hsl(var(--accent-hue), 86%, 57%);				/* #33C3F0 		link; button-primary bg+border; textarea,select:focus border */
+  --accent-color-hover: hsl(var(--accent-hue), 76%, 49%);	/* #1EAEDB 		link hover; button-primary:hover:focus bg+border */
+
+  --border-color: hsl(var(--theme-hue), 0%, 73%);					/* #bbbbbb		button border */
+	--border-color-softer: hsl(var(--theme-hue), 0%, 82%);	/* #d1d1d1		textarea,select,code,td,hr border	 */
+	
+	--background-color: white;														/* transparent body background; textarea,select background */
+	--background-color-softer: hsl(var(--theme-hue), 0%, 95%);
+  --code-background: hsl(var(--theme-hue), 0%, 95%);			/* #f1f1f1 		code background*/
+
+	--button-primary-color: white;
+  
+	
+	/* Note: Skeleton was based off a 10px font sizing for REM  */
+	/* 62.5% of typical 16px browser default = 10px */
+	--base-font-size: 62.5%;
+	
+	/* Grid Defaults - default to match orig skeleton settings */
+	--grid-max-width: 960px;
+}
+
+/*  Dark Theme
+	Note: prefers-color-scheme selector support is still limited, but 
+	included for future and an example of defining a different base 'theme'
+*/
+@media (prefers-color-scheme: dark) {
+	:html {
+		/* dark theme: light background, dark text, blue accent */
+		--theme-hue: 0;					/* black */
+		--accent-hue: 194;			/* blue */
+
+		--text-color-richer: hsl(var(--theme-hue), 0%, 95%);		/* 		*/
+		--text-color-normal: hsl(var(--theme-hue), 0%, 80%);		/* text color; button:hover:focus color */
+		--text-color-softer: hsl(var(--theme-hue), 0%, 67%);		/* button color; button:hover border */
+
+		--accent-color: hsl(var(--accent-hue), 76%, 49%);				/* link; button-primary bg+border; textarea,select:focus border */
+		--accent-color-hover: hsl(var(--accent-hue), 86%, 57%);	/* link hover; button-primary:hover:focus bg+border */
+
+		--border-color: hsl(var(--theme-hue), 0%, 27%);					/* button border */
+		--border-color-softer: hsl(var(--theme-hue), 0%, 20%);	/* textarea,select,code,td,hr border	 */
+	
+		--background-color: hsl(var(--theme-hue), 0%, 12%);			/* body background; textarea,select background */
+		--background-color-softer: hsl(var(--theme-hue), 0%, 18%);
+		--code-background: hsl(var(--theme-hue), 0%, 5%);				/* code background*/
+
+		--button-primary-color: white;
+  }
+	
+	img.value-img {
+		filter: invert(0.8);
+	}
+	/* TODO - test dialing back image intensity on dark background
+  img {
+    opacity: .80;
+    transition: opacity .5s ease-in-out;
+  }
+  img:hover {
+    opacity: 1;
+  }
+  */
+}
+
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; }
-.column,
-.columns {
-  width: 100%;
-  float: left;
-  box-sizing: border-box; }
+/* CSS Grid depends much more on CSS than HTML, so there is less boilerplate
+	 than with skeleton. Only basic 1-4 column grids are included.
+	 Any additional needs should be made using custom CSS directives */
 
-/* For devices larger than 400px */
-@media (min-width: 400px) {
-  .container {
-    width: 85%;
-    padding: 0; }
+
+.grid-container {
+	position: relative;
+	max-width: var(--grid-max-width);
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	display: grid;
+	grid-gap: 20px;
+	gap: 20px;
+	
+	/* by default use min 200px wide columns auto-fit into width */
+	grid-template-columns: minmax(200px, 1fr);
 }
 
-/* For devices larger than 550px */
-@media (min-width: 550px) {
-  .container {
-    width: 80%; }
-  .column,
-  .columns {
-    margin-left: 4%; }
-  .column:first-child,
-  .columns:first-child {
-    margin-left: 0; }
-
-  .one.column,
-  .one.columns                    { width: 4.66666666667%; }
-  .two.columns                    { width: 13.3333333333%; }
-  .three.columns                  { width: 22%;            }
-  .four.columns                   { width: 30.6666666667%; }
-  .five.columns                   { width: 39.3333333333%; }
-  .six.columns                    { width: 48%;            }
-  .seven.columns                  { width: 56.6666666667%; }
-  .eight.columns                  { width: 65.3333333333%; }
-  .nine.columns                   { width: 74.0%;          }
-  .ten.columns                    { width: 82.6666666667%; }
-  .eleven.columns                 { width: 91.3333333333%; }
-  .twelve.columns                 { width: 100%; margin-left: 0; }
-
-  .one-third.column               { width: 30.6666666667%; }
-  .two-thirds.column              { width: 65.3333333333%; }
-
-  .one-half.column                { width: 48%; }
-
-  /* Offsets */
-  .offset-by-one.column,
-  .offset-by-one.columns          { margin-left: 8.66666666667%; }
-  .offset-by-two.column,
-  .offset-by-two.columns          { margin-left: 17.3333333333%; }
-  .offset-by-three.column,
-  .offset-by-three.columns        { margin-left: 26%;            }
-  .offset-by-four.column,
-  .offset-by-four.columns         { margin-left: 34.6666666667%; }
-  .offset-by-five.column,
-  .offset-by-five.columns         { margin-left: 43.3333333333%; }
-  .offset-by-six.column,
-  .offset-by-six.columns          { margin-left: 52%;            }
-  .offset-by-seven.column,
-  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
-  .offset-by-eight.column,
-  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
-  .offset-by-nine.column,
-  .offset-by-nine.columns         { margin-left: 78.0%;          }
-  .offset-by-ten.column,
-  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
-  .offset-by-eleven.column,
-  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
-
-  .offset-by-one-third.column,
-  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
-  .offset-by-two-thirds.column,
-  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
-
-  .offset-by-one-half.column,
-  .offset-by-one-half.columns     { margin-left: 52%; }
-
+/* grids to 3 columns above mobile sizes */
+@media (min-width: 600px) {
+	.grid-container {
+		grid-template-columns: repeat(3, 1fr);
+		padding: 10px 0;
+	}
+	
+	/* basic grids */
+	.grid-container.fifths {
+		grid-template-columns: repeat(5, 1fr);
+	}
+	.grid-container.quarters {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.grid-container.thirds {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.grid-container.halves {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.grid-container.full {
+		grid-template-columns: 1fr;
+	}
+	
 }
+
+
+
+
+
 
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton
-are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%; }
+  font-size: var(--base-font-size);
+  scroll-behavior: smooth;
+}
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.6rem;		/* changed from 15px in orig skeleton */
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  color: var(--text-color-normal); 
+  background-color: var(--background-color);;
+}
 
 
 /* Typography
@@ -142,7 +196,7 @@ h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 /* Larger than phablet */
-@media (min-width: 550px) {
+@media (min-width: 600px) {
   h1 { font-size: 5.0rem; }
   h2 { font-size: 4.2rem; }
   h3 { font-size: 3.6rem; }
@@ -158,9 +212,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: var(--accent-color); }
 a:hover {
-  color: #0FA0CE; }
+  color: var(--accent-color-hover); }
 
 
 /* Buttons
@@ -173,7 +227,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555;
+  color: var(--text-color-softer);
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -184,7 +238,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 4px;
-  border: 1px solid #bbb;
+  border: 1px solid var(--border-color);
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,
@@ -197,17 +251,17 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
+  color: var(--text-color-normal);
+  border-color: var(--text-color-softer);
   outline: 0; }
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  color: var(--button-primary-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color); }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -218,9 +272,9 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  color: var(--button-primary-color);
+  background-color: var(--accent-color-hover);
+  border-color: var(--accent-color-hover); }
 
 
 /* Forms
@@ -236,8 +290,8 @@ textarea,
 select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color-softer);
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
@@ -249,6 +303,8 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
+input[type="button"],
+input[type="submit"],
 textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -266,7 +322,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid var(--accent-color);
   outline: 0; }
 label,
 legend {
@@ -294,14 +350,13 @@ ol {
 ol, ul {
   padding-left: 0;
   margin-top: 0; }
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-  margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%; }
+ul ul, ul ol, ol ol, ol ul {
+	font-size: 100%;
+	margin: 1rem 0 1rem 3rem;
+	color: var(--text-color-softer);
+}
 li {
-  margin-bottom: 1rem; }
+  margin-bottom: 0.5rem; }
 
 
 /* Code
@@ -311,13 +366,14 @@ code {
   margin: 0 .2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: #F1F1F1;
-  border: 1px solid #E1E1E1;
+  background: var(--code-background);
+  border: 1px solid var(--border-color-softer);
   border-radius: 4px; }
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
-  white-space: pre; }
+  white-space: pre; 
+  overflow: auto; }
 
 
 /* Tables
@@ -326,7 +382,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #E1E1E1; }
+  border-bottom: 1px solid var(--border-color-softer); }
 th:first-child,
 td:first-child {
   padding-left: 0; }
@@ -369,6 +425,10 @@ form {
   float: right; }
 .u-pull-left {
   float: left; }
+.u-align-left {
+	text-align: left; }
+.u-align-right {
+	text-align: right; }
 
 
 /* Misc
@@ -377,7 +437,7 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+  border-top: 1px solid var(--border-color-softer); }
 
 
 /* Clearing
@@ -402,17 +462,12 @@ there.
 */
 
 
-/* Larger than mobile */
-@media (min-width: 400px) {}
+/* Larger than mobile (default point when grid becomes active) */
+@media (min-width: 600px) {}
 
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+/* Larger than phablet */
+@media (min-width: 900px) {}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
