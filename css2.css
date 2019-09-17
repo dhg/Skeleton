@@ -1,0 +1,114 @@
+.riddle {
+border-style: double;
+border-width: 2px;
+border-color: green;
+padding: 7px;
+}
+.navigation	{
+background-color: #ffffff;
+background-image: url(‘images/desert.jpg’);
+}
+.dumbledore {
+border-style: dashed;
+border-width: 7px;
+border-color: purple;
+padding-top: 3px;
+padding-bottom: 3px;
+padding-left: 3px;
+}
+.navigation	{
+background-color: #ffffff;
+background-image: url(‘images/smiley.gif’);
+}
+.background-repeat: no repeat;
+.background-position: bottom left;
+}
+.big-margin	{
+margin: 5in 2in 1.5in 2in;
+}
+.iucrimson {
+	color: crimson;
+}
+.purdueyellow {
+	color: yellow;
+}
+.potter {
+padding-top: 4px;
+padding-bottom: 4px;
+padding-left: 4px;
+}
+.big-margin	{
+margin: 6in 1.5in 2in 4in;
+}
+.navigation	{
+background-color: #red;
+background-image: url(‘images/rock.jpg’);
+}
+.font {
+font-style: italic;
+color: white;
+}
+.container { border: 2px solid green; }
+.row { border: 2px solid orange; }
+.columns { border: 2px solid pink; }
+}
+.ron {
+padding-top: 6px;
+padding-bottom: 6px;
+padding-left: 6px;
+}
+.big-margin	{
+margin: 4in 2in 3in 5in;
+}
+.navigation	{
+background-color: #blue;
+background-image: url(‘images/scissors.jpg.png’);
+}
+.font {
+font-style: oblique;
+color: yellow;
+}
+.container { border: 3px solid brown; }
+.row { border: 3px solid black; }
+.columns { border: 3px solid purple; }
+}
+.potter {
+padding-top: 7px;
+padding-bottom: 7px;
+padding-left: 7px;
+}
+.big-margin	{
+margin: 3in 2.5in 2in 6in;
+}
+.navigation	{
+background-color: #orange;
+background-image: url(‘images/cat.jpg’);
+}
+.font {
+font-style: normal;
+color: maroon;
+}
+.container { border: 5px solid violet; }
+.row { border: 5px solid gray; }
+.columns { border: 5px solid yellow; }
+}
+.ron {
+padding-top: 8px;
+padding-bottom: 8px;
+padding-left: 8px;
+}
+.big-margin	{
+margin: 8in 3in 3.5in 7in;
+}
+.navigation	{
+background-color: #tan;
+background-image: url(‘images/paper.jpg.png’);
+}
+.font {
+font-style: times;
+color: powderblue;
+}
+.container { border: 8px solid lightblue; }
+.row { border: 8px solid darkblue; }
+.columns { border: 8px solid white; }
+}
