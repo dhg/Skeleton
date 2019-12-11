@@ -1,0 +1,16 @@
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #f1f1f1;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+}
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+}
