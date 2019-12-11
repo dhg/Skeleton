@@ -9,6 +9,7 @@
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
+- Normalize CSS
 - Grid
 - Base Styles
 - Typography
@@ -25,6 +26,12 @@
 - Media Queries
 */
 
+/* Normalize.css
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import 'node_modules/normalize.css/normalize';
+
+/* Skeleton
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @import 'grid';
 @import 'base-styles';
 @import 'typography';
