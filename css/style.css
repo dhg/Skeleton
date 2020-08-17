@@ -114,8 +114,8 @@ html {
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-family: "Open Sans" "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #181818; }
 
 
@@ -124,7 +124,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
-  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
   color: #0F212E;
   }
 h1 { font-size: 4.6rem; line-height: 1.2;  letter-spacing: -.1rem;}
@@ -136,7 +137,7 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-  h1 { font-size: 5.0rem; }
+  h1 { font-size: 4.8rem; }
   h2 { font-size: 4.2rem; }
   h3 { font-size: 3.6rem; }
   h4 { font-size: 3.0rem; }
@@ -146,16 +147,21 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-    h1 { font-size: 5.6rem; }
-    h2 { font-size: 4.6rem; }
-    h3 { font-size: 4.0rem; }
-    h4 { font-size: 3.0rem; }
-    h5 { font-size: 3.4rem; }
-    h6 { font-size: 2.5rem; }
+    h1 { font-size: 5.0rem; }
+    h2 { font-size: 4.4rem; }
+    h3 { font-size: 3.8rem; }
+    h4 { font-size: 2.8rem; }
+    h5 { font-size: 2.2rem; }
+    h6 { font-size: 1.3rem; }
   }
 
 p {
   margin-top: 0; }
+
+  /* Larger than Desktop HD */
+  @media (min-width: 1200px) {
+      p { font-size: 1.8  rem; }
+    }
 
 
 /* Links
