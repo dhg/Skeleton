@@ -1,12 +1,3 @@
-/*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/29/2014
-*/
-
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -124,8 +115,8 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  font-family: "Open Sans" "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #181818; }
 
 
 /* Typography
@@ -133,8 +124,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
-  font-weight: 300; }
-h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+  font-weight: 600;
+  color: #0F212E;
+  }
+h1 { font-size: 4.6rem; line-height: 1.2;  letter-spacing: -.1rem;}
 h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
 h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
 h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
@@ -151,6 +144,16 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
   h6 { font-size: 1.5rem; }
 }
 
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+    h1 { font-size: 5.6rem; }
+    h2 { font-size: 4.6rem; }
+    h3 { font-size: 4.0rem; }
+    h4 { font-size: 3.0rem; }
+    h5 { font-size: 3.4rem; }
+    h6 { font-size: 2.5rem; }
+  }
+
 p {
   margin-top: 0; }
 
@@ -158,9 +161,25 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #3D70B2;
+  text-decoration: none;
+  }
+
 a:hover {
-  color: #0FA0CE; }
+  color: #24436A;
+  outline: none;
+  background-color: inherit;
+  box-shadow: none;
+  text-decoration: underline;
+  }
+
+a:focus {
+  color: #fbe9e5;
+  outline: none;
+  background: #dd2c00;
+  box-shadow: 0px 4px 0 0px #9a1e00;
+  text-decoration: none;
+  }
 
 
 /* Buttons
@@ -173,7 +192,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555;
+  color: #24436A;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -184,7 +203,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 4px;
-  border: 1px solid #bbb;
+  border: 1px solid #444444;
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,
@@ -197,17 +216,17 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
+  color: #24436A;
+  border-color: #444444;
   outline: 0; }
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  color: #24436A;
+  background-color: #24436A;
+  border-color: #444444; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -218,9 +237,9 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  color: #24436A;
+  background-color: #3D70B2;
+  border-color: #444444; }
 
 
 /* Forms
@@ -237,7 +256,7 @@ select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
-  border: 1px solid #D1D1D1;
+  border: 1px solid #3D70B2;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
@@ -266,7 +285,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid #3D70B2;
   outline: 0; }
 label,
 legend {
@@ -288,7 +307,8 @@ label > .label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  list-style: circle inside; }
+  list-style: disc;
+}
 ol {
   list-style: decimal inside; }
 ol, ul {
