@@ -416,3 +416,146 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+/* Custom Bootstrap Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*
+This are just a set of button styles that follow nearly the same concept of that
+of Bootstrap, added by LokotamaTheMastermind
+*/
+
+/* Button type -> Warning
+––––––––––––––––––––––––––––––––––––––––––––––––––
+Bootstrap based: btn btn-warning-outline */
+
+/* Warning based button (outline), main colors -> yellow, white
+-––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.button-warning-outline {
+  color: white;
+  background: none;
+  border: 1px solid orange;
+}
+
+/* It hover attributes */
+
+.button-warning-outline:hover {
+  color: white;
+  background: orange;
+  transition: .5s;
+}
+
+/* Bootstrap based: btn btn-warning
+––––––––––––––––––––––––––––––––––––––––––––––––––
+Warning based button (filled), main colors -> yellow, white */
+
+.button-warning {
+  color: white;
+  background: orange;
+  outline: none;
+}
+
+/* It hover attributes */
+
+.button-warning:hover {
+  color: white;
+  background: none;
+  transition: .5s;
+  border: 1px solid orange;
+}
+
+
+/* Overrides the .button class, main colors -> black, white */
+
+.button-full {
+  color: black;
+  background: #fff;
+  outline: none;
+}
+
+/* It hover properties */
+
+.button-full:hover {
+  color: white;
+  background: none;
+  transition: .5s;
+}
+
+/* Bootstrap based: btn btn-info
+––––––––––––––––––––––––––––––––––––––––––––––––––
+Warning based button (outline), main colors -> royalblue, white */
+
+.button-info-outline {
+  color: white;
+  background: none;
+  outline: 1px solid royalblue;
+}
+
+/* It hover attributes */
+
+.button-info-outline:hover {
+  color: white;
+  background: royalblue;
+  transition: .5s;
+}
+
+/* Bootstrap based: btn btn-info
+––––––––––––––––––––––––––––––––––––––––––––––––––
+Warning based button (filled), main colors -> royalblue, white */
+
+.button-info {
+  color: white;
+  background: royalblue;
+}
+
+/* It hover attributes */
+
+.button-info:hover {
+  transition: .5s;
+  background: none;
+  color: white;
+  border: 1px solid royalblue;
+}
+
+/* Bootstrap based: btn btn-danger
+––––––––––––––––––––––––––––––––––––––––––––––––––
+Warning based button (filled), main colors -> red, white */
+
+.button-error{
+  color: white;
+  background: #D10000;
+}
+
+/* It hover attributes */
+
+.button-error:hover {
+  transition: .5s;
+  color: white;
+  background: none;
+  border: 1px solid #D10000;
+}
+
+/* Bootstrap based: btn btn-danger-outline
+––––––––––––––––––––––––––––––––––––––––––––––––––
+Warning based button (outline), main colors -> red, white */
+
+.button-error-outline {
+  color: white;
+  background: none;
+  border: 1px solid #D10000;
+}
+
+/* It hover attributes */
+
+.button-error-outline:hover {
+  color: white;
+  transition: .5s;
+  background: #D10000;
+}
+
+/* NOTE: I hope the side notes and comments are enough */
+
+/* NOTE: Please if you accept this pull requests remove this comment but before
+––––––––––––––––––––––––––––––––––––––––––––––––––-----------------------------
+that help remove redundant CSS rules ... */
