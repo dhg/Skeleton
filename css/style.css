@@ -24,7 +24,7 @@
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
   box-sizing: border-box; }
 .column,
 .columns {
@@ -35,8 +35,6 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 90%;
-    padding: 0; }
 }
 
 /* For devices larger than 550px */
@@ -123,7 +121,7 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 900;
   color: #14263C;
@@ -135,24 +133,34 @@ h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
+/* Larger than mobile */
+@media (min-width: 400px) {
+  h1 { font-size: 4.2rem; }
+  h2 { font-size: 3.4rem; }
+  h3 { font-size: 3.0rem; }
+  h4 { font-size: 2.4rem; }
+  h5 { font-size: 1.8rem; }
+  h6 { font-size: 1.5rem; }
+}
+
 /* Larger than phablet */
 @media (min-width: 550px) {
   h1 { font-size: 5.0rem; }
-  h2 { font-size: 4.2rem; }
-  h3 { font-size: 3.6rem; }
-  h4 { font-size: 3.0rem; }
-  h5 { font-size: 2.4rem; }
-  h6 { font-size: 1.5rem; }
+  h2 { font-size: 4.4rem; }
+  h3 { font-size: 4.0rem; }
+  h4 { font-size: 3.4rem; }
+  h5 { font-size: 2.8rem; }
+  h6 { font-size: 2.5rem; }
 }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-    h1 { font-size: 6.0rem; }
-    h2 { font-size: 4.4rem; }
-    h3 { font-size: 3.8rem; }
-    h4 { font-size: 2.8rem; }
-    h5 { font-size: 2.2rem; }
-    h6 { font-size: 1.3rem; }
+    h1 { font-size: 6.6rem; }
+    h2 { font-size: 5.4rem; }
+    h3 { font-size: 5.0rem; }
+    h4 { font-size: 4.4rem; }
+    h5 { font-size: 3.8rem; }
+    h6 { font-size: 3.5rem; }
   }
 
 p {
@@ -318,14 +326,14 @@ ul {
 ol {
   list-style: decimal inside; }
 ol, ul {
-  padding-left: 6;
+  padding-left: 60;
   margin-top: 0; }
 ul ul,
 ul ol,
 ol ol,
 ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 110%; }
+  font-size: 90%; }
 li {
   margin-bottom: 1rem;
   font-size: 1.6rem;
