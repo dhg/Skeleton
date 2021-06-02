@@ -12,7 +12,7 @@ There are a couple ways to download Skeleton:
 
 ### What's in the download?
 
-The download includes Skeleton's CSS ans SCSS, Normalize CSS as a reset, a sample favicon, and an index.html as a starting point.
+The download includes Skeleton's CSS and SCSS, Normalize CSS as a reset, a sample favicon, and an index.html as a starting point.
 
 ```
 Skeleton/
