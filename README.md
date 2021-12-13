@@ -21,7 +21,7 @@ Skeleton/
 │   ├── normalize.min.css
 │   └── skeleton.css
 └── images/
-    └── favicon.ico
+    └── favicon.png
 
 ```
 
