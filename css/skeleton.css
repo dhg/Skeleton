@@ -225,6 +225,9 @@ input[type="button"].button-primary:focus {
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+textarea{
+  height: auto !important;
+}
 input[type="email"],
 input[type="number"],
 input[type="search"],
