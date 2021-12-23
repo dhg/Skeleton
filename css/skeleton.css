@@ -389,8 +389,58 @@ hr {
 .u-cf {
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+}
+ 
+.dropdown{
+	display: grid;
+	margin: auto;
+	width: 50%;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+ 
+.dropdown-menu{
+	display: none;
+	/* display: grid; */
+    border: 1px solid #bbb;	
+	border-radius: 2px;
+	margin-right: 2px;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
 
+.dropdown:hover  .dropdown-menu{
+	display: grid;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+
+.dropdown-button{
+	margin-bottom:0px;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+
+.dropdown-item{
+	display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -400,7 +450,6 @@ near the relevant code. For example, if you wanted to change the styles for butt
 on small devices, paste the mobile query code up in the buttons section and style it
 there.
 */
-
 
 /* Larger than mobile */
 @media (min-width: 400px) {}
