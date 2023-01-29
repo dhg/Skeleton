@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
+  <title>Theme preview</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -19,28 +20,202 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="dist/skeleton.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
+
 <body>
 
   <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      <div class="twelve columns">
+        <br />
+        <h4>Preview</h4>
+        <p>Change your variables in the scss files and see the results here.</p>
       </div>
     </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="twelve columns">
+        <h4>Typography</h4>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <p>Paragraph</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="twelve columns">
+        <h4>Buttons</h4>
+
+        <!-- Standard buttons -->
+        <a class="button" href="#table">Anchor button</a>
+        <button>Button element</button>
+        <input type="submit" value="submit input">
+        <input type="button" value="button input">
+
+        <br />
+        <!-- Primary buttons -->
+        <a class="button button-primary" href="#table">Anchor button</a>
+        <button class="button-primary">Button element</button>
+        <input class="button-primary" type="submit" value="submit input">
+        <input class="button-primary" type="button" value="button input">
+      </div>
+
+      <a href="#">Click me!</a>
+    </div>
+
+    <hr />
+
+    <div class="row" id="table">
+      <div class="twelve columns">
+        <h4>Table</h4>
+
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Sex</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dave Gamache</td>
+              <td>26</td>
+              <td>Male</td>
+              <td>San Francisco</td>
+            </tr>
+            <tr>
+              <td>Dwayne Johnson</td>
+              <td>42</td>
+              <td>Male</td>
+              <td>Hayward</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="twelve columns">
+        <h4>Media Queries</h4>
+        <p>Please check the breakpoints section at <code>scss/_variables.scss</code> to get the real values</p>
+        <ul>
+          <li><span><strong>Mobile:</strong></span> 425px</li>
+          <li><span><strong>Phablet:</strong></span> 640px</li>
+          <li><span><strong>Tablet:</strong></span> 768px</li>
+          <li><span><strong>Desktop:</strong></span> 1024px</li>
+          <li><span><strong>Desktop HD: </strong></span> 1280px</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="twelve columns">
+        <h4>Lists</h4>
+        <div class="row">
+          <div class="six columns">
+            <h5>Unordered list</h5>
+            <ul>
+              <li>Item 1</li>
+              <li>
+                Item 2
+                <ul>
+                  <li>Item 2.1</li>
+                  <li>Item 2.2</li>
+                </ul>
+              </li>
+              <li>Item 3</li>
+            </ul>
+          </div>
+          <div class="six columns">
+            <h5>Ordered list</h5>
+            <ol>
+              <li>Item 1</li>
+              <li>
+                Item 2
+                <ul>
+                  <li>Item 2.1</li>
+                  <li>Item 2.2</li>
+                </ul>
+              </li>
+              <li>Item 3</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="twelve columns">
+        <h4>Forms</h4>
+        <form>
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleEmailInput">Your email</label>
+              <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+            </div>
+            <div class="six columns">
+              <label for="exampleRecipientInput">Reason for contacting</label>
+              <select class="u-full-width" id="exampleRecipientInput">
+                <option value="Option 1">Questions</option>
+                <option value="Option 2">Admiration</option>
+                <option value="Option 3">Can I get your number?</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <input type="radio" id="option1" name="option" value="option1">
+            <label for="option1">Option 1</label>
+            <input type="radio" id="option2" name="option" value="option2">
+            <label for="option2">Option 2</label>
+            <input type="radio" id="option3" name="option" value="option3">
+            <label for="option3">Option 3</label>
+          </div>
+
+          <label for="exampleMessage">Message</label>
+          <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+
+          <label class="example-send-yourself-copy">
+            <input type="checkbox">
+            <span class="label-body">Send a copy to yourself</span>
+          </label>
+
+          <input class="button-primary" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+
+    <hr />
   </div>
 
-<!-- End Document
+  </div>
+
+  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+
 </html>

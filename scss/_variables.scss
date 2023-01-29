@@ -1,0 +1,35 @@
+@use "sass:math";
+
+/* Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// Breakpoints
+$mobile: 425px !default;
+$phablet: 640px !default;
+$tablet: 768px !default;
+$desktop: 1024px !default;
+$desktophd: 1280px !default;
+
+// Colors
+$white: #fff !default;
+$black: #000 !default;
+
+$light-grey: #e1e1e1 !default;
+$dark-grey: #333 !default;
+
+$primary-color: #33c3f0 !default;
+$secondary-color: lighten($dark-grey, 13.5%) !default;
+
+$btn-color: #555 !default;
+$btn-border-color: #888 !default;
+
+$border-color: #bbb !default;
+$link-color: #1eaedb !default;
+$font-color: #222 !default;
+
+// Typography
+$font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+  sans-serif !default;
+
+// Misc
+$global-radius: 4px !default;
