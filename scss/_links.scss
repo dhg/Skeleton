@@ -1,8 +1,8 @@
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1eaedb;
-}
-a:hover {
-  color: #0fa0ce;
+  color: $link-color;
+  &:hover {
+    color: darken($link-color, 5%);
+  }
 }

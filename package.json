@@ -22,9 +22,16 @@
     "url": "https://github.com/renansigolo/Skeleton/issues"
   },
   "scripts": {
+    "preview": "sass -w scss/skeleton.scss:dist/skeleton.css & browser-sync start -s -w index.html",
+    "build": "sass scss/skeleton.scss dist/skeleton.min.css --style compressed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "modern-normalize": "1.1.0",
+    "normalize.css": "8.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "2.27.11",
+    "sass": "1.57.1"
   }
 }

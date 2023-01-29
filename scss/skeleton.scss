@@ -30,19 +30,31 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @import "normalize";
 
+/* Theme Variables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import "variables";
+
 /* Skeleton
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@import 'grid';
-@import 'base-styles';
-@import 'typography';
-@import 'links';
-@import 'buttons';
-@import 'forms';
-@import 'lists';
-@import 'code';
-@import 'tables';
-@import 'spacing';
-@import 'utilities';
-@import 'misc';
-@import 'clearing';
-@import 'media-queries';
+@import "grid";
+@import "base-styles";
+@import "typography";
+@import "links";
+@import "buttons";
+@import "forms";
+@import "lists";
+@import "code";
+@import "tables";
+@import "spacing";
+@import "utilities";
+@import "misc";
+@import "clearing";
+@import "media-queries";
+
+:root {
+  accent-color: $primary-color;
+}
+
+html {
+  scroll-behavior: smooth;
+}

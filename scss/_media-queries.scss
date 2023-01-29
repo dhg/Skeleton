@@ -8,21 +8,21 @@ there.
 */
 
 /* Larger than mobile */
-@media (min-width: 400px) {
+@media (min-width: $mobile) {
 }
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {
+@media (min-width: $phablet) {
 }
 
 /* Larger than tablet */
-@media (min-width: 750px) {
+@media (min-width: $tablet) {
 }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {
+@media (min-width: $desktop) {
 }
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {
+@media (min-width: $desktophd) {
 }
