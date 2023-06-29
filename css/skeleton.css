@@ -11,21 +11,21 @@
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
+
+/ * NOTE
+elements below will start with anything that involves a hex value / color first. */
 :root{
   --elementname-style-state: variable example;
-  
-  --p-marginbottom:1em;
-  
-  --body-color: #222;
-  --body-fontsize: 1.5em;
-  --body-fontfamily: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  1.6var(--body-lineheight)
-  
-  /* a:LoVe a:HAte */
+
   --a-color-linkvisited: #1EAEDB;
   --a-color-hoveractive: #0FA0CE;
   --a-textdecoration-linkvisited: inherit;
   --a-textdecoration-hoveractive: inherit;  
+  
+  --body-color: #222;
+  --body-fontsize: 1.5em;
+  --body-fontfamily: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --body-lineheight: 1.6em;
   
   --button-color: #555;
   --button-marginbutton:1rem;
@@ -34,6 +34,8 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
   --h1-margin:0 inherit 2rem;
   --hr-margin:3rem inherit 3.5rem;
   --hr-bordertop: 1px solid var(--hr-bordercolor);
+  
+  --p-marginbottom:1em;  
 }
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
