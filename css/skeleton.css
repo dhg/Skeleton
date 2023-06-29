@@ -8,6 +8,33 @@
 */
 
 
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+:root{
+  --elementname-style-state: variable example;
+  
+  --p-marginbottom:1em;
+  
+  --body-color: #222;
+  --body-fontsize: 1.5em;
+  --body-fontfamily: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  1.6var(--body-lineheight)
+  
+  /* a:LoVe a:HAte */
+  --a-color-linkvisited: #1EAEDB;
+  --a-color-hoveractive: #0FA0CE;
+  --a-textdecoration-linkvisited: inherit;
+  --a-textdecoration-hoveractive: inherit;  
+  
+  --button-color: #555;
+  --button-marginbutton:1rem;
+  
+  --hr-bordercolor: #E1E1E1;
+  --h1-margin:0 inherit 2rem;
+  --hr-margin:3rem inherit 3.5rem;
+  --hr-bordertop: 1px solid var(--hr-bordercolor);
+}
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 - Grid
@@ -121,18 +148,19 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
+  font-size: var(--body-fontsize); /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: var(--body-lineheight);
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  font-family: var(--body-fontfam);
+  color: var(--body-color); }
 
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem
+  margin:var(--h1-margin);
   font-weight: 300; }
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
 h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
@@ -152,16 +180,21 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 }
 
 p {
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: var(--p-marginbottom);
+}
 
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  color: #1EAEDB; }
-a:hover {
-  color: #0FA0CE; }
-
+a:link, a:visited{
+  color: var(--a-color-linkvisited);
+  text-decoration: var(--a-textdecoration-linkvisited);
+}
+a:hover, a:active {
+  color: var(--a-color-hoveractive);
+  text-decoration: var(--a-textdecoration-hoveractive);
+}
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -173,7 +206,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555;
+  color: var(--button-color-default);
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -339,7 +372,7 @@ td:last-child {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
 .button {
-  margin-bottom: 1rem; }
+  margin-bottom: var(--button-marginbottom); }
 input,
 textarea,
 select,
@@ -374,10 +407,9 @@ form {
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
+  margin: var(--hr-margin);
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+  border-top: var(--hr-bordertop); }
 
 
 /* Clearing
