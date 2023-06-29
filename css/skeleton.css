@@ -13,7 +13,7 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 
 / * NOTE
-elements below will start with anything that involves a hex value / color first. */
+elements below will start with anything that involves a color first. */
 :root{
   --elementname-style-state: variable example;
 
