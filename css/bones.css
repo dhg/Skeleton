@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-/*
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); /*
 Bones.css - Easy grid system with configurable styles, using CSS variables, grd.css and Skeleton.css (A Responsive Boilerplate)
 
 * Skeleton V2.0.4
@@ -10,73 +8,14 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
 * http://www.opensource.org/licenses/mit-license.php
 * 12/29/2014
 */
-*,
-*:before,
-*:after,
-html,
-body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    padding: 0;
-    margin: 0;
-    font-stretch: normal;
-    font-optical-sizing: auto;
-    text-align: start;
-    opacity: 1; }
+*, *:before, *:after, html, body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; padding: 0; margin: 0; font-stretch: normal; font-optical-sizing: auto; text-align: start; opacity: 1; }
+
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 /* NOTE
 elements below will start with anything that involves a color first. */
-:root {
-    --elementname-style-state: variable example;
-
-    --a-color-linkvisited: inherit;
-    --a-color-hoveractive: #0079d1;
-    --a-textdecoration-linkvisited: underline;
-    --a-textdecoration-hoveractive: none;
-
-    --body-color: #222;
-    --body-padding: 1em;
-    --body-fontsize: 1.5em;
-    --body-fontfamily: 'Anybody', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --body-lineheight: 1.6em;
-
-    --button-color: #555;
-    --button-background: #e1e1e1;
-    --button-marginbutton: 1rem;
-    --button-border: 1px solid #bbb;
-    --button-padding: 0 30px;
-    --button-height: 38px;
-    --button-fontsize: 11px;
-    --button-letterspacing: .1rem;
-  
-    --button-color-hoverfocus: #333;
-    --button-border-hoverfocus: 1px solid #888;
-  
-    --button-color-primary: #FFF;
-    --button-background-primary: #b31212;
-    --button-bordercolor-primary: #b31212;
-  
-    --button-color-primary-hoverfocus: #FFF;
-    --button-background-primary-hoverfocus: #930000;
-    --button-border-primary-hoverfocus: #930000;
-
-    --Cell-padding: 1em;
-
-    --headings-margin: 0 inherit 2rem;
-
-    --hr-margin: .5em 0;
-    --hr-border: 1px solid #E1E1E1;
-
-    --p-margin: 0 0 1em;
-
-    --code_span-boxshadow: 0 0 0 2px #000;
-    --code_span-padding: .5em 1em;
-    --code_span-background: #F1F1F1;
-    --code_span-margin: 0 .2rem;
-
-    --transition: all .02s cubic-bezier(0.4, 0, 1, 1); }
+:root { --elementname-style-state: variable example; --a-color-linkvisited: inherit; --a-color-hoveractive: #b35050; --a-textdecoration-linkvisited: underline; --a-textdecoration-hoveractive: none; --body-color: #222; --body-padding: 1em; --body-fontsize: 1.5em; --body-fontfamily: "Anybody", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; --body-lineheight: 1.6em; --button-color: #555; --button-background: #e1e1e1; --button-margin: 0.64em 0.32em 0.64em 0; --button-border: 1px solid #bbb; --button-padding: 0 30px; --button-height: 38px; --button-fontsize: 11px; --button-letterspacing: 0.1rem; --button-color-hoverfocus: #333; --button-border-hoverfocus: 1px solid #888; --button-color-primary: #fff; --button-background-primary: #b31212; --button-bordercolor-primary: #b31212; --button-color-primary-hoverfocus: #fff; --button-background-primary-hoverfocus: #930000; --button-border-primary-hoverfocus: #930000; --Cell-padding: 1em; --headings-margin: 0 0 0.24em; --hr-margin: 0.56em 0; --hr-border: 1px solid #e1e1e1; --p-margin: 0 0 1em; --code_span-boxshadow: 0 0 0 2px #000; --code_span-padding: 0.56em 1em; --code_span-background: #f1f1f1; --code_span-margin: 0.56em 0 0.56em; --transition: all 0.02s cubic-bezier(0.4, 0, 1, 1); }
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -95,55 +34,67 @@ elements below will start with anything that involves a color first. */
 - Utilities
 - Media Queries
 */
-/* General Classes
+/* General Classes & Styling
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+::selection { background: #efddc5; color: #b35050; }
+
+.no-margin-top *:first-child { margin-top: 0; }
+
+.no-margin-bottom *:last-child { margin-bottom: 0; }
+
 .font-weight-100 { font-weight: 100; }
+
 .font-weight-200 { font-weight: 200; }
+
 .font-weight-300 { font-weight: 300; }
+
 .font-weight-400 { font-weight: 400; }
+
 .font-weight-500 { font-weight: 500; }
+
 .font-weight-600 { font-weight: 600; }
+
 .font-weight-700 { font-weight: 700; }
+
 .font-weight-800 { font-weight: 800; }
+
 .font-style-italic { font-style: italic; }
+
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.Grid {
-    display: flex;
-    flex-wrap: wrap;
-    box-shadow: inset 0 0 0 1px #000;
-    word-break: break-word; }
+.Grid { display: flex; flex-wrap: wrap; box-shadow: inset 0 0 0 1px #000; word-break: break-word; }
 
-.Cell {
-    overflow:hidden;
-    box-sizing: border-box;
-    flex-shrink: 0;
-    padding: var(--Cell-padding);
-    box-shadow: inset 1px 1px 0 0 #000;
-    position: relative;
-    /* use relative to be able to position: absolute; on sub-elements */ }
-.Cell.\-absolute { 
-    position: absolute;
-    top: var(--Cell-padding);
-    left: top:var(--Cell-padding); }
-.Cell.\-2of12 {  width: calc(100% * 2 / 12);  }
-.Cell.\-3of12 {  width: calc(100% * 3 / 12);  }
-.Cell.\-4of12 {  width: calc(100% * 4 / 12);  }
-.Cell.\-5of12 {  width: calc(100% * 5 / 12);  }
-.Cell.\-6of12 {  width: calc(100% * 6 / 12);  }
-.Cell.\-7of12 {  width: calc(100% * 7 / 12);  }
-.Cell.\-8of12 {  width: calc(100% * 8 / 12);  }
-.Cell.\-9of12 {  width: calc(100% * 9 / 12);  }
+.Cell { overflow: hidden; box-sizing: border-box; flex-shrink: 0; padding: var(--Cell-padding); box-shadow: inset 1px 1px 0 0 #000; position: relative; /* use relative to be able to position: absolute; on sub-elements */ }
+
+.Cell.\-absolute { position: absolute; }
+
+.Cell.\-2of12 { width: calc(100% * 2 / 12); }
+
+.Cell.\-3of12 { width: calc(100% * 3 / 12); }
+
+.Cell.\-4of12 { width: calc(100% * 4 / 12); }
+
+.Cell.\-5of12 { width: calc(100% * 5 / 12); }
+
+.Cell.\-6of12 { width: calc(100% * 6 / 12); }
+
+.Cell.\-7of12 { width: calc(100% * 7 / 12); }
+
+.Cell.\-8of12 { width: calc(100% * 8 / 12); }
+
+.Cell.\-9of12 { width: calc(100% * 9 / 12); }
+
 .Cell.\-10of12 { width: calc(100% * 10 / 12); }
+
 .Cell.\-12of12 { width: 100%; }
 
 /* Cell Heights */
-.Cell-height-100vh {
-    min-height: 100vh; }
-.Cell-height-50vh {
-    min-height: 50vh; }
-.Cell-height-33vh {
-    min-height: 33.33vh; }
+.Cell-height-100vh { min-height: 100vh; }
+
+.Cell-height-50vh { min-height: 50vh; }
+
+.Cell-height-33vh { min-height: 33.33vh; }
+
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
@@ -151,193 +102,73 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html { font-size: 62.5%; }
 
-body {
-    font-size: var(--body-fontsize);
-    /* currently ems cause chrome bug misinterpreting rems on body element */
-    line-height: var(--body-lineheight);
-    font-family: var(--body-fontfamily);
-    color: var(--body-color);
-    padding: var(--body-padding);
-    font-weight: normal;
-}
+body { font-size: var(--body-fontsize); /* currently ems cause chrome bug misinterpreting rems on body element */
+    line-height: var(--body-lineheight); font-family: var(--body-fontfamily); color: var(--body-color); padding: var(--body-padding); font-weight: normal; }
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin-top: 0;
-    margin: var(--headings-margin);
-  font-weight: 600;
-    line-height: 1; }
+h1, h2, h3, h4, h5, h6 { margin: var(--headings-margin); font-weight: 600; line-height: 1; }
 
-h1 { font-size: 4.0rem;
-    letter-spacing: -0.26rem; }
-h2 { font-size: 3.6rem;
-    letter-spacing: -0.23rem; }
-h3 { font-size: 3.0rem;
-    letter-spacing: -.20rem; }
-h4 { font-size: 2.4rem;
-    letter-spacing: -.17rem; }
-h5 { font-size: 1.8rem;
-    letter-spacing: -.14rem; }
-h6 { font-size: 1.5rem;
-    letter-spacing: 0; }
+h1 { font-size: 4rem; letter-spacing: -0.26rem; }
+
+h2 { font-size: 3.6rem; letter-spacing: -0.23rem; }
+
+h3 { font-size: 3rem; letter-spacing: -0.2rem; }
+
+h4 { font-size: 2rem; letter-spacing: 0; }
 
 /* Larger than phablet */
-@media (min-width: 550px) {
-    h1 { font-size: 5.0rem; }
+@media (min-width: 550px) { h1 { font-size: 5rem; }
 
     h2 { font-size: 4.2rem; }
 
     h3 { font-size: 3.6rem; }
 
-    h4 { font-size: 3.0rem; }
-
-    h5 { font-size: 2.4rem; }
-
-    h6 { font-size: 1.5rem; } }
+    h4 { font-size: 3rem; } }
 
 p { margin: var(--p-margin); }
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a:link,
-a:visited { color: var(--a-color-linkvisited);
-    text-decoration: var(--a-textdecoration-linkvisited);
-    transition: var(--transition); }
+a:link, a:visited { color: var(--a-color-linkvisited); text-decoration: var(--a-textdecoration-linkvisited); transition: var(--transition); }
 
-a:hover,
-a:active { color: var(--a-color-hoveractive);
-    text-decoration: var(--a-textdecoration-hoveractive); }
+a:hover, a:active { color: var(--a-color-hoveractive); text-decoration: var(--a-textdecoration-hoveractive); }
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.button,
-button,
-input[type = 'submit'],
-input[type = 'reset'],
-input[type = 'button'] { color: var(--button-color);
-    border: var(--button-border);
-    padding: var(--button-padding);
-    height: var(--button-height);
-    font-size: var(--button-fontsize);
-    letter-spacing: var(--button-letterspacing);
-    background: var(--button-background);
-    transition: var(--transition);
-    display: inline-block;
-    text-align: center;
-    font-weight: 600;
-    line-height: 38px;
-    text-transform: uppercase;
-    text-decoration: none;
-    white-space: nowrap;
-    border-radius: 4px;
-    cursor: pointer;
-    box-sizing: border-box;
-    vertical-align: bottom;
-    margin-right: .5em; }
+button, .button { margin: var(--button-margin); text-transform: uppercase; }
 
-.button:hover,
-button:hover,
-input[type = 'submit']:hover,
-input[type = 'reset']:hover,
-input[type = 'button']:hover,
-.button:focus,
-button:focus,
-input[type = 'submit']:focus,
-input[type = 'reset']:focus,
-input[type = 'button']:focus {
-    color: var(--button-color-hoverfocus);
-    border: var(--button-border-hoverfocus);
-    outline: 0; }
+.button, button, select, input[type = "submit"], input[type = "email"], input[type = "text"], input[type = "reset"], input[type = "button"] { color: var(--button-color); border: var(--button-border); padding: var(--button-padding); height: var(--button-height); font-size: var(--button-fontsize); letter-spacing: var(--button-letterspacing); background: var(--button-background); transition: var(--transition); display: inline-block; text-align: center; font-weight: 600; line-height: 38px; text-decoration: none; white-space: nowrap; border-radius: 4px; cursor: pointer; box-sizing: border-box; vertical-align: bottom; margin-right: 0.5em; }
 
-.button.button-primary,
-button.button-primary,
-input[type = 'submit'].button-primary,
-input[type = 'reset'].button-primary,
-input[type = 'button'].button-primary {
-    color: var(--button-color-primary);
-    background: var(--button-background-primary);
-    border: var(--button-border-primary); }
+.button:hover, button:hover, input[type = "submit"]:hover, input[type = "reset"]:hover, input[type = "button"]:hover, .button:focus, button:focus, input[type = "submit"]:focus, input[type = "reset"]:focus, input[type = "button"]:focus { color: var(--button-color-hoverfocus); border: var(--button-border-hoverfocus); outline: 0; }
 
-.button.button-primary:hover,
-button.button-primary:hover,
-input[type = 'submit'].button-primary:hover,
-input[type = 'reset'].button-primary:hover,
-input[type = 'button'].button-primary:hover,
-.button.button-primary:focus,
-button.button-primary:focus,
-input[type = 'submit'].button-primary:focus,
-input[type = 'reset'].button-primary:focus,
-input[type = 'button'].button-primary:focus {
-    color: var(--button-color-primary-hoverfocus);
-    background: var(--button-background-primary-hoverfocus);
-    border: var(--button-border-primary-hoverfocus); }
+.button.button-primary, button.button-primary, input[type = "submit"].button-primary, input[type = "reset"].button-primary, input[type = "button"].button-primary { color: var(--button-color-primary); background: var(--button-background-primary); border: var(--button-border-primary); }
+
+.button.button-primary:hover, button.button-primary:hover, input[type = "submit"].button-primary:hover, input[type = "reset"].button-primary:hover, input[type = "button"].button-primary:hover, .button.button-primary:focus, button.button-primary:focus, input[type = "submit"].button-primary:focus, input[type = "reset"].button-primary:focus, input[type = "button"].button-primary:focus { color: var(--button-color-primary-hoverfocus); background: var(--button-background-primary-hoverfocus); border: var(--button-border-primary-hoverfocus); }
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-input[type = 'email'],
-input[type = 'number'],
-input[type = 'search'],
-input[type = 'text'],
-input[type = 'tel'],
-input[type = 'url'],
-input[type = 'password'],
-textarea,
-select { height: 38px;
-    padding: 6px 10px;
-    /* The 6px vertically centers text on FF, ignored by Webkit */
-    background-color: #fff;
-    border: 1px solid #D1D1D1;
-    border-radius: 4px;
-    box-shadow: none;
-    box-sizing: border-box; }
+input[type = "email"], input[type = "text"], input[type = "number"], input[type = "search"], input[type = "tel"], input[type = "url"], input[type = "password"], textarea, select { font-weight: inherit; padding: 0.56em; /* The 6px vertically centers text on FF, ignored by Webkit */
+    background-color: #fff; border: 1px solid #d1d1d1; border-radius: 4px; box-shadow: none; box-sizing: border-box; text-align: left; font-family: inherit; font-size: 100%; color: inherit; display: block; min-width: 100%; margin: 0.32em 0; }
+
+select option { font-family: inherit; font-size: 100%; font-weight: inherit; }
 
 /* Removes awkward default styles on some inputs for iOS */
-input[type = 'email'],
-input[type = 'number'],
-input[type = 'search'],
-input[type = 'text'],
-input[type = 'tel'],
-input[type = 'url'],
-input[type = 'password'],
-textarea { -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; }
+input[type = "submit"], input[type = "email"], input[type = "text"], input[type = "number"], input[type = "search"], input[type = "tel"], input[type = "url"], input[type = "password"], textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
-textarea { min-height: 65px;
-    padding-top: 6px;
-    padding-bottom: 6px; }
+textarea { min-height: 2em; padding-top: 0.64em; padding-bottom: 0.64em; }
 
-input[type = 'email']:focus,
-input[type = 'number']:focus,
-input[type = 'search']:focus,
-input[type = 'text']:focus,
-input[type = 'tel']:focus,
-input[type = 'url']:focus,
-input[type = 'password']:focus,
-textarea:focus,
-select:focus { border: 1px solid #33C3F0;
-    outline: 0; }
+input[type = "submit"]:focus, input[type = "email"]:focus input[type = "number"]:focus, input[type = "search"]:focus, input[type = "text"]:focus, input[type = "tel"]:focus, input[type = "url"]:focus, input[type = "password"]:focus, textarea:focus, select:focus { border: 1px solid #33c3f0; outline: 0; }
 
-label,
-legend { display: block;
-    margin-bottom: .5rem;
-    font-weight: 600; }
+label, legend { display: block; margin: 1em 0 0.24em; font-weight: 600; }
 
-fieldset { padding: 0;
-    border-width: 0; }
+fieldset { padding: 0; border-width: 0; }
 
-input[type = 'checkbox'],
-input[type = 'radio'] { display: inline; }
+input[type = "checkbox"], input[type = "radio"] { display: inline; }
 
-label > .label-body { display: inline-block;
-    margin-left: .5rem;
-    font-weight: normal; }
+label > .label-body { display: inline-block; margin-left: 0.5rem; font-weight: normal; }
+
+input[type = "button"], input[type = "submit"], input[type = "reset"] { cursor: pointer; -webkit-appearance: button; -moz-appearance: button; appearance: auto; min-width: auto; }
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -345,81 +176,39 @@ ul { list-style: circle inside; }
 
 ol { list-style: decimal inside; }
 
-ol,
-ul { padding-left: 0;
-    margin-top: 0; }
+ol, ul { padding-left: 0; margin-top: 0; }
 
-ul ul,
-ul ol,
-ol ol,
-ol ul { margin: 1.5rem 0 1.5rem 3rem;
-    font-size: 90%; }
+ul ul, ul ol, ol ol, ol ul { margin: 1.5rem 0 1.5rem 3rem; font-size: 90%; }
 
 li { margin-bottom: 1rem; }
 
 /* Code + Span
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-span {
-    display: block;
-    padding: var(--code_span-padding);
-    margin: var(--code_span-margin);
-    background: var(--code_span-background);
-    border: var(--code_span-border);
-}
-code {
-    font-size: 90%;
-    border-radius: 4px;
-    white-space: nowrap;
-    padding: var(--code_span-padding);
-    margin: var(--code_span-margin);
-    background: var(--code_span-background);
-}
+span { display: block; padding: var(--code_span-padding); margin: var(--code_span-margin); background: var(--code_span-background); border: var(--code_span-border); }
 
-pre > code {
-    display: block;
-    padding: var(--code_span-padding);
-    white-space: pre; }
+code { font-size: 90%; border-radius: 4px; white-space: nowrap; padding: var(--code_span-padding); margin: var(--code_span-margin); background: var(--code_span-background); overflow: hidden; overflow-x: scroll; }
+
+pre > code { margin: var(--code_span-margin); overflow: hidden; overflow-x: scroll; display: block; padding: var(--code_span-padding); white-space: pre; }
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-th,
-td { padding: 12px 15px;
-    text-align: left;
-    border-bottom: 1px solid #E1E1E1; }
+th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #e1e1e1; }
 
-th:first-child,
-td:first-child { padding-left: 0; }
+th:first-child, td:first-child { padding-left: 0; }
 
-th:last-child,
-td:last-child { padding-right: 0; }
+th:last-child, td:last-child { padding-right: 0; }
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-button,
-.button { margin-bottom: var(--button-marginbottom); }
+input, textarea, select, fieldset { margin-bottom: 0.12em; }
 
-input,
-textarea,
-select,
-fieldset { margin-bottom: 1.5rem; }
-
-pre,
-blockquote,
-dl,
-figure,
-table,
-p,
-ul,
-ol,
-form { margin-bottom: 2.5rem; }
+pre, blockquote, figure, table, p, ul, ol, form { margin: 0 0 0.64em 0; }
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-full-width { width: 100%;
-    box-sizing: border-box; }
+.u-full-width { width: 100%; box-sizing: border-box; }
 
-.u-max-full-width { max-width: 100%;
-    box-sizing: border-box; }
+.u-max-full-width { max-width: 100%; box-sizing: border-box; }
 
 .u-pull-right { float: right; }
 
@@ -427,22 +216,9 @@ form { margin-bottom: 2.5rem; }
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-hr { 
-    margin: var(--hr-margin);
-    border: var(--hr-border);
-}
+hr { margin: var(--hr-margin); border: var(--hr-border); }
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on smaller devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
-/* Smaller than phablet (also point when grid becomes active) */
-@media only screen and (max-width: 550px) {
-    .Cell {
-        width: 100% !important;
-        display: block !important; }
-}
+/* Smaller than phablet */
+@media (max-width: 550px) { .Cell { width: 100%!important; display: block!important; } }
