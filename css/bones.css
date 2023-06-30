@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*
-Bones.css - Easily configure styles and grid system for Skeleton.css using CSS variables and grd.css.
-skeleton + grd.css + css variables = bones.css
+Bones.css - Easy grid system with configurable styles, using CSS variables, grd.css and Skeleton.css (A Responsive Boilerplate)
 
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
@@ -32,10 +31,10 @@ elements below will start with anything that involves a color first. */
 :root {
     --elementname-style-state: variable example;
 
-    --a-color-linkvisited: #1EAEDB;
-    --a-color-hoveractive: #0FA0CE;
-    --a-textdecoration-linkvisited: inherit;
-    --a-textdecoration-hoveractive: inherit;
+    --a-color-linkvisited: inherit;
+    --a-color-hoveractive: #0079d1;
+    --a-textdecoration-linkvisited: underline;
+    --a-textdecoration-hoveractive: none;
 
     --body-color: #222;
     --body-padding: 1em;
@@ -51,27 +50,31 @@ elements below will start with anything that involves a color first. */
     --button-height: 38px;
     --button-fontsize: 11px;
     --button-letterspacing: .1rem;
+  
     --button-color-hoverfocus: #333;
     --button-border-hoverfocus: 1px solid #888;
+  
     --button-color-primary: #FFF;
-    --button-background-primary: #33C3F0;
-    --button-bordercolor-primary: #33C3F0;
+    --button-background-primary: #b31212;
+    --button-bordercolor-primary: #b31212;
+  
     --button-color-primary-hoverfocus: #FFF;
-    --button-background-primary-hoverfocus: #1EAEDB;
-    --button-border-primary-hoverfocus: #1EAEDB;
+    --button-background-primary-hoverfocus: #930000;
+    --button-border-primary-hoverfocus: #930000;
 
     --Cell-padding: 1em;
 
     --headings-margin: 0 inherit 2rem;
 
-    --hr-bordercolor: #E1E1E1;
-    --hr-margin: 3rem inherit 3.5rem;
-    --hr-bordertop: 1px solid var(--hr-bordercolor);
+    --hr-margin: .5em 0;
+    --hr-border: 1px solid #E1E1E1;
 
     --p-margin: 0 0 1em;
 
-    --span-box-shadow: 0 0 0 2px;
-    --span-padding: .5em 1em;
+    --code_span-boxshadow: 0 0 0 2px #000;
+    --code_span-padding: .5em 1em;
+    --code_span-background: #F1F1F1;
+    --code_span-margin: 0 .2rem;
 
     --transition: all .02s cubic-bezier(0.4, 0, 1, 1); }
 
@@ -90,7 +93,6 @@ elements below will start with anything that involves a color first. */
 - Tables
 - Spacing
 - Utilities
-- Clearing
 - Media Queries
 */
 /* General Classes
@@ -106,38 +108,33 @@ elements below will start with anything that involves a color first. */
 .font-style-italic { font-style: italic; }
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.Grid { display: flex;
+.Grid {
+    display: flex;
     flex-wrap: wrap;
     box-shadow: inset 0 0 0 1px #000;
     word-break: break-word; }
 
 .Cell {
+    overflow:hidden;
     box-sizing: border-box;
     flex-shrink: 0;
     padding: var(--Cell-padding);
     box-shadow: inset 1px 1px 0 0 #000;
     position: relative;
     /* use relative to be able to position: absolute; on sub-elements */ }
-.Cell.\-absolute { position: absolute;
+.Cell.\-absolute { 
+    position: absolute;
     top: var(--Cell-padding);
     left: top:var(--Cell-padding); }
-.Cell.\-fill { width: 0;
-    min-width: 0;
-    flex-grow: 1; }
-.Cell.\-2of12 { width: calc(100% * 2 / 12);
-    box-shadow: inset 1px 1px 0 0 #000; }
-.Cell.\-3of12 { width: calc(100% * 3 / 12); }
-.Cell.\-4of12 { width: calc(100% * 4 / 12);
-    box-shadow: inset 1px 1px 0 0 #000; }
-.Cell.\-5of12 { width: calc(100% * 5 / 12); }
-.Cell.\-6of12 { width: calc(100% * 6 / 12);
-    box-shadow: inset 1px 1px 0 0 #000; }
-.Cell.\-7of12 { width: calc(100% * 7 / 12); }
-.Cell.\-8of12 { width: calc(100% * 8 / 12);
-    box-shadow: inset 1px 1px 0 0 #000; }
-.Cell.\-9of12 { width: calc(100% * 9 / 12); }
-.Cell.\-10of12 { width: calc(100% * 10 / 12);
-    box-shadow: inset 1px 1px 0 0 #000; }
+.Cell.\-2of12 {  width: calc(100% * 2 / 12);  }
+.Cell.\-3of12 {  width: calc(100% * 3 / 12);  }
+.Cell.\-4of12 {  width: calc(100% * 4 / 12);  }
+.Cell.\-5of12 {  width: calc(100% * 5 / 12);  }
+.Cell.\-6of12 {  width: calc(100% * 6 / 12);  }
+.Cell.\-7of12 {  width: calc(100% * 7 / 12);  }
+.Cell.\-8of12 {  width: calc(100% * 8 / 12);  }
+.Cell.\-9of12 {  width: calc(100% * 9 / 12);  }
+.Cell.\-10of12 { width: calc(100% * 10 / 12); }
 .Cell.\-12of12 { width: 100%; }
 
 /* Cell Heights */
@@ -161,7 +158,8 @@ body {
     font-family: var(--body-fontfamily);
     color: var(--body-color);
     padding: var(--body-padding);
-    font-weight: normal; }
+    font-weight: normal;
+}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -173,7 +171,7 @@ h5,
 h6 {
     margin-top: 0;
     margin: var(--headings-margin);
-    font-weight: 500;
+  font-weight: 600;
     line-height: 1; }
 
 h1 { font-size: 4.0rem;
@@ -362,21 +360,24 @@ li { margin-bottom: 1rem; }
 /* Code + Span
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 span {
-    position: absolute;
-    box-shadow: var(--span-box-shadow);
-    padding: var(--span-padding);
-    bottom: var(--Cell-padding);
-    left: var(--Cell-padding); }
-code { padding: .2rem .5rem;
-    margin: 0 .2rem;
+    display: block;
+    padding: var(--code_span-padding);
+    margin: var(--code_span-margin);
+    background: var(--code_span-background);
+    border: var(--code_span-border);
+}
+code {
     font-size: 90%;
+    border-radius: 4px;
     white-space: nowrap;
-    background: #F1F1F1;
-    border: 1px solid #E1E1E1;
-    border-radius: 4px; }
+    padding: var(--code_span-padding);
+    margin: var(--code_span-margin);
+    background: var(--code_span-background);
+}
 
-pre > code { display: block;
-    padding: 1rem 1.5rem;
+pre > code {
+    display: block;
+    padding: var(--code_span-padding);
     white-space: pre; }
 
 /* Tables
@@ -426,40 +427,22 @@ form { margin-bottom: 2.5rem; }
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-hr { margin: var(--hr-margin);
-    border-top: var(--hr-bordertop);
-    border-width: 0; }
-
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* Self Clearing Goodness */
-.container:after,
-.row:after,
-.u-cf { content: '';
-    display: table;
-    clear: both; }
+hr { 
+    margin: var(--hr-margin);
+    border: var(--hr-border);
+}
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
 Note: The best way to structure the use of media queries is to create the queries
 near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
+on smaller devices, paste the mobile query code up in the buttons section and style it
 there.
 */
-/* Smaller than mobile */
-@media (max-width: 400px) {}
-
-/* Larger than phablet (also point when grid becomes active) */
+/* Smaller than phablet (also point when grid becomes active) */
 @media only screen and (max-width: 550px) {
     .Cell {
         width: 100% !important;
-        display: block !important; } }
-/* Larger than tablet */
-@media (min-width: 750px) {}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+        display: block !important; }
+}
