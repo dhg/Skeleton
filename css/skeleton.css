@@ -44,7 +44,7 @@ elements below will start with anything that involves a color first. */
     --button-backgroundcolor-primary: #33C3F0;
     --button-bordercolor-primary: #33C3F0;
        
-     --columncolumns-margin: 0 0 0 4%;
+    --columncolumns-margin: 0 0 0 4%;
        
     --headings-margin: 0 inherit 2rem;
        
@@ -52,7 +52,8 @@ elements below will start with anything that involves a color first. */
     --hr-margin: 3rem inherit 3.5rem;
     --hr-bordertop: 1px solid var(--hr-bordercolor);
        
-    --p-margin:0 0 1em; }
+    --p-margin:0 0 1em;
+}
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -72,66 +73,20 @@ elements below will start with anything that involves a color first. */
 */
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container { position: relative;
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-           }
+.Grid            { display: flex; flex-wrap: wrap; box-shadow:inset 0 0 0 1px #000; word-break: break-word; }
 
-.column,
-.columns { width: 100%;
-    float: left;
-    box-sizing: border-box;
-         }
-
-/* For devices larger than 400px */
-@media (min-width: 400px) { .container { width: 85%;
-        padding: 0; }
-                          }
-
-/* For devices larger than 550px */
-@media (min-width: 550px) { .container { width: 80%; }
-
-    .column,
-    .columns { margin: var(--columncolumns-margin); }
-
-    .column:first-child,
-    .columns:first-child { margin-left: 0; }
-
-    .one.column,
-    .one.columns { width: 4.66666666667%; }
-
-    .two.columns { width: 13.3333333333%; }
-
-    .three.columns { width: 22%; }
-
-    .four.columns { width: 30.6666666667%; }
-
-    .five.columns { width: 39.3333333333%; }
-
-    .six.columns { width: 48%; }
-
-    .seven.columns { width: 56.6666666667%; }
-
-    .eight.columns { width: 65.3333333333%; }
-
-    .nine.columns { width: 74.0%; }
-
-    .ten.columns { width: 82.6666666667%; }
-
-    .eleven.columns { width: 91.3333333333%; }
-
-    .twelve.columns { width: 100%;
-        margin-left: 0; }
-
-    .one-third.column { width: 30.6666666667%; }
-
-    .two-thirds.column { width: 65.3333333333%; }
-
-    .one-half.column { width: 48%; }
-
+.Cell            { box-sizing: border-box; flex-shrink: 0; padding:1em; box-shadow:inset 1px 1px 0 0 #000; }
+.Cell.\-fill     { width: 0; min-width: 0; flex-grow: 1; }
+.Cell.\-2of12    { width: calc(100% * 2 / 12); }
+.Cell.\-3of12    { width: calc(100% * 3 / 12); }
+.Cell.\-4of12    { width: calc(100% * 4 / 12); }
+.Cell.\-5of12    { width: calc(100% * 5 / 12); }
+.Cell.\-6of12    { width: calc(100% * 6 / 12); }
+.Cell.\-7of12    { width: calc(100% * 7 / 12); }
+.Cell.\-8of12    { width: calc(100% * 8 / 12); }
+.Cell.\-9of12    { width: calc(100% * 9 / 12); }
+.Cell.\-10of12   { width: calc(100% * 10 / 12); }
+.Cell.\-12of12   { width: 100%; }
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
@@ -139,12 +94,14 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html { font-size: 62.5%; }
 
-body { font-size: var(--body-fontsize);
+body { 
+    font-size: var(--body-fontsize);
     /* currently ems cause chrome bug misinterpreting rems on body element */
     line-height: var(--body-lineheight);
     font-weight: 400;
     font-family: var(--body-fontfamily);
-    color: var(--body-color); }
+    color: var(--body-color);
+}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -173,7 +130,8 @@ h6 { font-size: 1.5rem;
     letter-spacing: 0; }
 
 /* Larger than phablet */
-@media (min-width: 550px) { h1 { font-size: 5.0rem; }
+@media (min-width: 550px) { 
+    h1 { font-size: 5.0rem; }
 
     h2 { font-size: 4.2rem; }
 
@@ -417,12 +375,16 @@ near the relevant code. For example, if you wanted to change the styles for butt
 on small devices, paste the mobile query code up in the buttons section and style it
 there.
 */
-/* Larger than mobile */
-@media (min-width: 400px) {}
+/* Smaller than mobile */
+@media (max-width: 400px) {}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
+@media only screen and (max-width: 550px) {
+  .Cell {
+    width: 100% !important;
+    display: block !important;
+  }
+}
 /* Larger than tablet */
 @media (min-width: 750px) {}
 
