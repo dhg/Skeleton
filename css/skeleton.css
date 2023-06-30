@@ -1,16 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*
+Bones.css - Easily configure styles for Skeleton.css using CSS variables.
+skeleton + css variables = bones.css
+
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
 * www.getskeleton.com
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
 * 12/29/2014
-
-skeleton + css variables = bones.css
 */
+
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
+
 /* NOTE
 elements below will start with anything that involves a color first. */
 :root { 
@@ -23,7 +28,7 @@ elements below will start with anything that involves a color first. */
 
     --body-color: #222;
     --body-fontsize: 1.5em;
-    --body-fontfamily: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --body-fontfamily: 'Anybody', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --body-lineheight: 1.6em;
        
     --button-color: #555;
@@ -72,16 +77,19 @@ elements below will start with anything that involves a color first. */
     max-width: 960px;
     margin: 0 auto;
     padding: 0 20px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+           }
 
 .column,
 .columns { width: 100%;
     float: left;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+         }
 
 /* For devices larger than 400px */
 @media (min-width: 400px) { .container { width: 85%;
-        padding: 0; } }
+        padding: 0; }
+                          }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) { .container { width: 80%; }
@@ -123,49 +131,6 @@ elements below will start with anything that involves a color first. */
     .two-thirds.column { width: 65.3333333333%; }
 
     .one-half.column { width: 48%; }
-
-    /* Offsets */
-    .offset-by-one.column,
-    .offset-by-one.columns { margin-left: 8.66666666667%; }
-
-    .offset-by-two.column,
-    .offset-by-two.columns { margin-left: 17.3333333333%; }
-
-    .offset-by-three.column,
-    .offset-by-three.columns { margin-left: 26%; }
-
-    .offset-by-four.column,
-    .offset-by-four.columns { margin-left: 34.6666666667%; }
-
-    .offset-by-five.column,
-    .offset-by-five.columns { margin-left: 43.3333333333%; }
-
-    .offset-by-six.column,
-    .offset-by-six.columns { margin-left: 52%; }
-
-    .offset-by-seven.column,
-    .offset-by-seven.columns { margin-left: 60.6666666667%; }
-
-    .offset-by-eight.column,
-    .offset-by-eight.columns { margin-left: 69.3333333333%; }
-
-    .offset-by-nine.column,
-    .offset-by-nine.columns { margin-left: 78.0%; }
-
-    .offset-by-ten.column,
-    .offset-by-ten.columns { margin-left: 86.6666666667%; }
-
-    .offset-by-eleven.column,
-    .offset-by-eleven.columns { margin-left: 95.3333333333%; }
-
-    .offset-by-one-third.column,
-    .offset-by-one-third.columns { margin-left: 34.6666666667%; }
-
-    .offset-by-two-thirds.column,
-    .offset-by-two-thirds.columns { margin-left: 69.3333333333%; }
-
-    .offset-by-one-half.column,
-    .offset-by-one-half.columns { margin-left: 52%; } }
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -236,9 +201,9 @@ a:active { color: var(--a-color-hoveractive);
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button,
 button,
-input[type = "submit"],
-input[type = "reset"],
-input[type = "button"] { color: var(--button-color);
+input[type = 'submit'],
+input[type = 'reset'],
+input[type = 'button'] { color: var(--button-color);
     border: var(--button-border);
     padding: var(--button-padding);
     height: var(--button-height);
@@ -259,47 +224,47 @@ input[type = "button"] { color: var(--button-color);
 
 .button:hover,
 button:hover,
-input[type = "submit"]:hover,
-input[type = "reset"]:hover,
-input[type = "button"]:hover,
+input[type = 'submit']:hover,
+input[type = 'reset']:hover,
+input[type = 'button']:hover,
 .button:focus,
 button:focus,
-input[type = "submit"]:focus,
-input[type = "reset"]:focus,
-input[type = "button"]:focus { color: var(--button-color-hoverfocus);
+input[type = 'submit']:focus,
+input[type = 'reset']:focus,
+input[type = 'button']:focus { color: var(--button-color-hoverfocus);
     border-color: var(--button-bordercolor-hoverfocus);
     outline: 0; }
 
 .button.button-primary,
 button.button-primary,
-input[type = "submit"].button-primary,
-input[type = "reset"].button-primary,
-input[type = "button"].button-primary { color: var(--button-color-primary);
+input[type = 'submit'].button-primary,
+input[type = 'reset'].button-primary,
+input[type = 'button'].button-primary { color: var(--button-color-primary);
     background-color: var(--button-backgroundcolor-primary);
     border-color: var(--button-bordercolor-primary); }
 
 .button.button-primary:hover,
 button.button-primary:hover,
-input[type = "submit"].button-primary:hover,
-input[type = "reset"].button-primary:hover,
-input[type = "button"].button-primary:hover,
+input[type = 'submit'].button-primary:hover,
+input[type = 'reset'].button-primary:hover,
+input[type = 'button'].button-primary:hover,
 .button.button-primary:focus,
 button.button-primary:focus,
-input[type = "submit"].button-primary:focus,
-input[type = "reset"].button-primary:focus,
-input[type = "button"].button-primary:focus { color: #FFF;
+input[type = 'submit'].button-primary:focus,
+input[type = 'reset'].button-primary:focus,
+input[type = 'button'].button-primary:focus { color: #FFF;
     background-color: #1EAEDB;
     border-color: #1EAEDB; }
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-input[type = "email"],
-input[type = "number"],
-input[type = "search"],
-input[type = "text"],
-input[type = "tel"],
-input[type = "url"],
-input[type = "password"],
+input[type = 'email'],
+input[type = 'number'],
+input[type = 'search'],
+input[type = 'text'],
+input[type = 'tel'],
+input[type = 'url'],
+input[type = 'password'],
 textarea,
 select { height: 38px;
     padding: 6px 10px;
@@ -311,13 +276,13 @@ select { height: 38px;
     box-sizing: border-box; }
 
 /* Removes awkward default styles on some inputs for iOS */
-input[type = "email"],
-input[type = "number"],
-input[type = "search"],
-input[type = "text"],
-input[type = "tel"],
-input[type = "url"],
-input[type = "password"],
+input[type = 'email'],
+input[type = 'number'],
+input[type = 'search'],
+input[type = 'text'],
+input[type = 'tel'],
+input[type = 'url'],
+input[type = 'password'],
 textarea { -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none; }
@@ -326,13 +291,13 @@ textarea { min-height: 65px;
     padding-top: 6px;
     padding-bottom: 6px; }
 
-input[type = "email"]:focus,
-input[type = "number"]:focus,
-input[type = "search"]:focus,
-input[type = "text"]:focus,
-input[type = "tel"]:focus,
-input[type = "url"]:focus,
-input[type = "password"]:focus,
+input[type = 'email']:focus,
+input[type = 'number']:focus,
+input[type = 'search']:focus,
+input[type = 'text']:focus,
+input[type = 'tel']:focus,
+input[type = 'url']:focus,
+input[type = 'password']:focus,
 textarea:focus,
 select:focus { border: 1px solid #33C3F0;
     outline: 0; }
@@ -345,8 +310,8 @@ legend { display: block;
 fieldset { padding: 0;
     border-width: 0; }
 
-input[type = "checkbox"],
-input[type = "radio"] { display: inline; }
+input[type = 'checkbox'],
+input[type = 'radio'] { display: inline; }
 
 label > .label-body { display: inline-block;
     margin-left: .5rem;
@@ -440,7 +405,7 @@ hr { margin: var(--hr-margin);
 /* Self Clearing Goodness */
 .container:after,
 .row:after,
-.u-cf { content: "";
+.u-cf { content: '';
     display: table;
     clear: both; }
 
