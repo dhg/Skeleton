@@ -15,7 +15,45 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 /* NOTE
 elements below will start with anything that involves a color first. */
-:root { --elementname-style-state: variable example; --a-color-linkvisited: inherit; --a-color-hoveractive: #b35050; --a-textdecoration-linkvisited: underline; --a-textdecoration-hoveractive: none; --body-color: #222; --body-padding: 1em; --body-fontsize: 1.5em; --body-fontfamily: "Anybody", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; --body-lineheight: 1.6em; --button-color: #555; --button-background: #e1e1e1; --button-margin: 0.64em 0.32em 0.64em 0; --button-border: 1px solid #bbb; --button-padding: 0 30px; --button-height: 38px; --button-fontsize: 11px; --button-letterspacing: 0.1rem; --button-color-hoverfocus: #333; --button-border-hoverfocus: 1px solid #888; --button-color-primary: #fff; --button-background-primary: #b31212; --button-bordercolor-primary: #b31212; --button-color-primary-hoverfocus: #fff; --button-background-primary-hoverfocus: #930000; --button-border-primary-hoverfocus: #930000; --Cell-padding: 1em; --headings-margin: 0 0 0.24em; --hr-margin: 0.56em 0; --hr-border: 1px solid #e1e1e1; --p-margin: 0 0 1em; --code_span-boxshadow: 0 0 0 2px #000; --code_span-padding: 0.56em 1em; --code_span-background: #f1f1f1; --code_span-margin: 0.56em 0 0.56em; --transition: all 0.02s cubic-bezier(0.4, 0, 1, 1); }
+:root { --elementname-style-state: variable example; 
+       --a-color-linkvisited: inherit; 
+       --a-color-hoveractive: #b35050; 
+       --a-textdecoration-linkvisited: underline; 
+       --a-textdecoration-hoveractive: none; 
+       
+       --body-color: #222; 
+       --body-padding: 1em; 
+       --body-fontsize: 1.5em; 
+       --body-fontfamily: "Anybody", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+       --body-lineheight: 1.6em; --button-color: #555; 
+       
+       --button-background: #e1e1e1; 
+       --button-margin: 0.64em 0.32em 0.64em 0; 
+       --button-border: 1px solid #bbb; 
+       --button-padding: 0 30px; 
+       --button-height: 38px; 
+       --button-fontsize: 11px; 
+       --button-letterspacing: 0.1rem; 
+       --button-color-hoverfocus: #333; 
+       --button-border-hoverfocus: 1px solid #888; 
+       --button-color-primary: #fff; 
+       --button-background-primary: #b31212; 
+       --button-bordercolor-primary: #b31212; 
+       --button-color-primary-hoverfocus: #fff; 
+       --button-background-primary-hoverfocus: #930000; 
+       --button-border-primary-hoverfocus: #930000; 
+       
+       --Cell-padding: 1em; 
+       
+       --headings-margin: 0 0 0.24em; 
+       
+       --hr-margin: 0.56em 0; --hr-border: 1px solid #e1e1e1; 
+       
+       --p-margin: 0 0 1em; 
+       
+       --code_span-boxshadow: 0 0 0 2px #000; --code_span-padding: 0.56em 1em; --code_span-background: #f1f1f1; --code_span-margin: 0.56em 0 0.56em; 
+       
+       --transition: all 0.02s cubic-bezier(0.4, 0, 1, 1); }
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -203,16 +241,6 @@ th:last-child, td:last-child { padding-right: 0; }
 input, textarea, select, fieldset { margin-bottom: 0.12em; }
 
 pre, blockquote, figure, table, p, ul, ol, form { margin: 0 0 0.64em 0; }
-
-/* Utilities
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-full-width { width: 100%; box-sizing: border-box; }
-
-.u-max-full-width { max-width: 100%; box-sizing: border-box; }
-
-.u-pull-right { float: right; }
-
-.u-pull-left { float: left; }
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
