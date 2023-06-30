@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*
 Bones.css - Easily configure styles for Skeleton.css using CSS variables.
 skeleton + css variables = bones.css
@@ -14,60 +15,95 @@ skeleton + css variables = bones.css
 *:before,
 *:after,
 html,
-body { -webkit-font-smoothing: antialiased;
+body {
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding: 0;
-    margin: 0; }
-
+    margin: 0;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+    text-align: start;
+    opacity: 1; }
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 /* NOTE
 elements below will start with anything that involves a color first. */
-:root { --elementname-style-state: variable example;
+:root {
+    --elementname-style-state: variable example;
+
     --a-color-linkvisited: #1EAEDB;
     --a-color-hoveractive: #0FA0CE;
     --a-textdecoration-linkvisited: inherit;
     --a-textdecoration-hoveractive: inherit;
+
     --body-color: #222;
+    --body-padding: 1em;
     --body-fontsize: 1.5em;
     --body-fontfamily: 'Anybody', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --body-lineheight: 1.6em;
+
     --button-color: #555;
-    --button-background: transparent;
+    --button-background: #e1e1e1;
     --button-marginbutton: 1rem;
     --button-border: 1px solid #bbb;
     --button-padding: 0 30px;
     --button-height: 38px;
     --button-fontsize: 11px;
+    --button-letterspacing: .1rem;
     --button-color-hoverfocus: #333;
-    --button-bordercolor-hoverfocus: #888;
+    --button-border-hoverfocus: 1px solid #888;
     --button-color-primary: #FFF;
-    --button-backgroundcolor-primary: #33C3F0;
+    --button-background-primary: #33C3F0;
     --button-bordercolor-primary: #33C3F0;
+    --button-color-primary-hoverfocus: #FFF;
+    --button-background-primary-hoverfocus: #1EAEDB;
+    --button-border-primary-hoverfocus: #1EAEDB;
+
     --Cell-padding: 1em;
+
     --headings-margin: 0 inherit 2rem;
+
     --hr-bordercolor: #E1E1E1;
     --hr-margin: 3rem inherit 3.5rem;
     --hr-bordertop: 1px solid var(--hr-bordercolor);
-    --p-margin: 0 0 1em; }
+
+    --p-margin: 0 0 1em;
+
+    --span-box-shadow: 0 0 0 2px;
+    --span-padding: .5em 1em;
+
+    --transition: all .02s cubic-bezier(0.4, 0, 1, 1); }
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
+- General Classes
 - Grid
+- Cells
 - Base Styles
 - Typography
 - Links
 - Buttons
 - Forms
 - Lists
-- Code
+- Code + Span
 - Tables
 - Spacing
 - Utilities
 - Clearing
 - Media Queries
 */
+/* General Classes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.font-weight-100 { font-weight: 100; }
+.font-weight-200 { font-weight: 200; }
+.font-weight-300 { font-weight: 300; }
+.font-weight-400 { font-weight: 400; }
+.font-weight-500 { font-weight: 500; }
+.font-weight-600 { font-weight: 600; }
+.font-weight-700 { font-weight: 700; }
+.font-weight-800 { font-weight: 800; }
+.font-style-italic { font-style: italic; }
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .Grid { display: flex;
@@ -75,41 +111,42 @@ elements below will start with anything that involves a color first. */
     box-shadow: inset 0 0 0 1px #000;
     word-break: break-word; }
 
-.Cell { box-sizing: border-box;
+.Cell {
+    box-sizing: border-box;
     flex-shrink: 0;
     padding: var(--Cell-padding);
     box-shadow: inset 1px 1px 0 0 #000;
     position: relative;
     /* use relative to be able to position: absolute; on sub-elements */ }
-
 .Cell.\-absolute { position: absolute;
     top: var(--Cell-padding);
     left: top:var(--Cell-padding); }
-
 .Cell.\-fill { width: 0;
     min-width: 0;
     flex-grow: 1; }
-
-.Cell.\-2of12 { width: calc(100% * 2 / 12); }
-
+.Cell.\-2of12 { width: calc(100% * 2 / 12);
+    box-shadow: inset 1px 1px 0 0 #000; }
 .Cell.\-3of12 { width: calc(100% * 3 / 12); }
-
-.Cell.\-4of12 { width: calc(100% * 4 / 12); }
-
+.Cell.\-4of12 { width: calc(100% * 4 / 12);
+    box-shadow: inset 1px 1px 0 0 #000; }
 .Cell.\-5of12 { width: calc(100% * 5 / 12); }
-
-.Cell.\-6of12 { width: calc(100% * 6 / 12); }
-
+.Cell.\-6of12 { width: calc(100% * 6 / 12);
+    box-shadow: inset 1px 1px 0 0 #000; }
 .Cell.\-7of12 { width: calc(100% * 7 / 12); }
-
-.Cell.\-8of12 { width: calc(100% * 8 / 12); }
-
+.Cell.\-8of12 { width: calc(100% * 8 / 12);
+    box-shadow: inset 1px 1px 0 0 #000; }
 .Cell.\-9of12 { width: calc(100% * 9 / 12); }
-
-.Cell.\-10of12 { width: calc(100% * 10 / 12); }
-
+.Cell.\-10of12 { width: calc(100% * 10 / 12);
+    box-shadow: inset 1px 1px 0 0 #000; }
 .Cell.\-12of12 { width: 100%; }
 
+/* Cell Heights */
+.Cell-height-100vh {
+    min-height: 100vh; }
+.Cell-height-50vh {
+    min-height: 50vh; }
+.Cell-height-33vh {
+    min-height: 33.33vh; }
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
@@ -117,12 +154,14 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html { font-size: 62.5%; }
 
-body { font-size: var(--body-fontsize);
+body {
+    font-size: var(--body-fontsize);
     /* currently ems cause chrome bug misinterpreting rems on body element */
     line-height: var(--body-lineheight);
-    font-weight: 400;
     font-family: var(--body-fontfamily);
-    color: var(--body-color); }
+    color: var(--body-color);
+    padding: var(--body-padding);
+    font-weight: normal; }
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -131,35 +170,28 @@ h2,
 h3,
 h4,
 h5,
-h6 { margin: var(--headings-margin);
-    font-weight: 300; }
+h6 {
+    margin-top: 0;
+    margin: var(--headings-margin);
+    font-weight: 500;
+    line-height: 1; }
 
 h1 { font-size: 4.0rem;
-    line-height: 1.2;
-    letter-spacing: -.1rem; }
-
+    letter-spacing: -0.26rem; }
 h2 { font-size: 3.6rem;
-    line-height: 1.25;
-    letter-spacing: -.1rem; }
-
+    letter-spacing: -0.23rem; }
 h3 { font-size: 3.0rem;
-    line-height: 1.3;
-    letter-spacing: -.1rem; }
-
+    letter-spacing: -.20rem; }
 h4 { font-size: 2.4rem;
-    line-height: 1.35;
-    letter-spacing: -.08rem; }
-
+    letter-spacing: -.17rem; }
 h5 { font-size: 1.8rem;
-    line-height: 1.5;
-    letter-spacing: -.05rem; }
-
+    letter-spacing: -.14rem; }
 h6 { font-size: 1.5rem;
-    line-height: 1.6;
     letter-spacing: 0; }
 
 /* Larger than phablet */
-@media (min-width: 550px) { h1 { font-size: 5.0rem; }
+@media (min-width: 550px) {
+    h1 { font-size: 5.0rem; }
 
     h2 { font-size: 4.2rem; }
 
@@ -177,7 +209,8 @@ p { margin: var(--p-margin); }
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a:link,
 a:visited { color: var(--a-color-linkvisited);
-    text-decoration: var(--a-textdecoration-linkvisited); }
+    text-decoration: var(--a-textdecoration-linkvisited);
+    transition: var(--transition); }
 
 a:hover,
 a:active { color: var(--a-color-hoveractive);
@@ -194,8 +227,9 @@ input[type = 'button'] { color: var(--button-color);
     padding: var(--button-padding);
     height: var(--button-height);
     font-size: var(--button-fontsize);
-    letter-spacing: .1rem;
-    letter-spacing: var(--button-fontsize);
+    letter-spacing: var(--button-letterspacing);
+    background: var(--button-background);
+    transition: var(--transition);
     display: inline-block;
     text-align: center;
     font-weight: 600;
@@ -203,10 +237,11 @@ input[type = 'button'] { color: var(--button-color);
     text-transform: uppercase;
     text-decoration: none;
     white-space: nowrap;
-    background-color: var(--button-background);
     border-radius: 4px;
     cursor: pointer;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    vertical-align: bottom;
+    margin-right: .5em; }
 
 .button:hover,
 button:hover,
@@ -217,17 +252,19 @@ input[type = 'button']:hover,
 button:focus,
 input[type = 'submit']:focus,
 input[type = 'reset']:focus,
-input[type = 'button']:focus { color: var(--button-color-hoverfocus);
-    border-color: var(--button-bordercolor-hoverfocus);
+input[type = 'button']:focus {
+    color: var(--button-color-hoverfocus);
+    border: var(--button-border-hoverfocus);
     outline: 0; }
 
 .button.button-primary,
 button.button-primary,
 input[type = 'submit'].button-primary,
 input[type = 'reset'].button-primary,
-input[type = 'button'].button-primary { color: var(--button-color-primary);
-    background-color: var(--button-backgroundcolor-primary);
-    border-color: var(--button-bordercolor-primary); }
+input[type = 'button'].button-primary {
+    color: var(--button-color-primary);
+    background: var(--button-background-primary);
+    border: var(--button-border-primary); }
 
 .button.button-primary:hover,
 button.button-primary:hover,
@@ -238,9 +275,10 @@ input[type = 'button'].button-primary:hover,
 button.button-primary:focus,
 input[type = 'submit'].button-primary:focus,
 input[type = 'reset'].button-primary:focus,
-input[type = 'button'].button-primary:focus { color: #FFF;
-    background-color: #1EAEDB;
-    border-color: #1EAEDB; }
+input[type = 'button'].button-primary:focus {
+    color: var(--button-color-primary-hoverfocus);
+    background: var(--button-background-primary-hoverfocus);
+    border: var(--button-border-primary-hoverfocus); }
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -321,8 +359,14 @@ ol ul { margin: 1.5rem 0 1.5rem 3rem;
 
 li { margin-bottom: 1rem; }
 
-/* Code
+/* Code + Span
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+span {
+    position: absolute;
+    box-shadow: var(--span-box-shadow);
+    padding: var(--span-padding);
+    bottom: var(--Cell-padding);
+    left: var(--Cell-padding); }
 code { padding: .2rem .5rem;
     margin: 0 .2rem;
     font-size: 90%;
@@ -403,9 +447,19 @@ near the relevant code. For example, if you wanted to change the styles for butt
 on small devices, paste the mobile query code up in the buttons section and style it
 there.
 */
-/* Smaller than phablet */
+/* Smaller than mobile */
+@media (max-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
 @media only screen and (max-width: 550px) {
     .Cell {
         width: 100% !important;
-        display: block !important; }
-}
+        display: block !important; } }
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
