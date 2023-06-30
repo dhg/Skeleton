@@ -143,7 +143,7 @@ body { font-size: var(--body-fontsize);
     /* currently ems cause chrome bug misinterpreting rems on body element */
     line-height: var(--body-lineheight);
     font-weight: 400;
-    font-family: var(--body-fontfam);
+    font-family: var(--body-fontfamily);
     color: var(--body-color); }
 
 /* Typography
