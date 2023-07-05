@@ -1,24 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Arimo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*
 Bones.css - Easy grid system with configurable styles, using CSS variables, grd.css and Skeleton.css
-
+* --------------------------
 * Bones V0.0.1
 * Copyright 2024, Calvin Morett
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
 * 07/05/2023
-*
+* --------------------------
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
 * www.getskeleton.com
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
 */
-*,
-*:before,
-*:after,
-html,
-body {
+*,*:before,*:after,html,body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
@@ -29,7 +25,6 @@ body {
   opacity: 1;
   text-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
-
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 - :root / CSS Variables
@@ -50,6 +45,8 @@ body {
 /* :root / CSS Variables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
+  --border-boxshadow-color:#000;
+/*   var(--border-boxshadow-color) */
   --elementname-style-state: variable example;
   --a-color-linkvisited: #0093ff;
   --a-color-hoveractive: #b35050;
@@ -60,7 +57,7 @@ body {
   --body-color: #222;
   --body-padding: 1em;
   --body-fontsize: 1.5em;
-  --body-fontfamily:'Arimo', "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --body-fontfamily: Arial, sans-serif;
   --body-lineheight: 1.6em;
   --button-color: #555;
   --button-background: #e1e1e1;
@@ -81,16 +78,18 @@ body {
   --button-letterspacing: 0.1rem;
    --Cell-padding: 1em;
   --code_span-background: #f1f1f1;
-  --code_span-boxshadow: 0 0 0 2px #000;
+  --code_span-boxshadow: 0 0 0 2px var(--border-boxshadow-color);
   --code_span-padding: 0.56em 1em;
   --code_span-margin: 0.56em 0 0.56em;
-  --span-fontweight: 700;
+  --span-fontweight: bold;
+  --form-inputborder:#d1d1d1;
   --headings-fontfamily: "Anybody", cursive;
-  --headings-margin: 0 0 0.24em;
+  --headings-margin: .24em 0;
   --headings-fontweight: 600;
-  --hr-border: 1px solid #e1e1e1;
+  --hr-border: 1px dotted #e1e1e1;
   --hr-margin: 0.56em 0;
   --p-margin: 0 0 1em;
+  --td-border-color:#e1e1e1;
   --transition: all 0.02s cubic-bezier(0.4, 0, 1, 1);
 }
 /* General Classes & Styling
@@ -111,13 +110,12 @@ body {
 .font-weight-700 {  font-weight: 700;}
 .font-weight-800 {  font-weight: 800;}
 .font-style-italic {  font-style: italic;}
-
 /* Grid & Cell
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .Grid {
   display: flex;
   flex-wrap: wrap;
-  box-shadow: inset 0 0 0 1px #000;
+  box-shadow: inset 0 0 0 1px var(--border-boxshadow-color);
   word-break: break-word;
   margin-top: 1em;
 }
@@ -127,7 +125,7 @@ body {
   box-sizing: border-box;
   flex-shrink: 0;
   padding: var(--Cell-padding);
-  box-shadow: inset 1px 1px 0 0 #000;
+  box-shadow: inset 1px 1px 0 0 var(--border-boxshadow-color);
   position: relative; /* use relative to be able to position: absolute; on sub-elements */
 }
 .Cell.\-absolute {  position: absolute;}
@@ -141,19 +139,16 @@ body {
 .Cell.\-9of12 {  width: calc(100% * 9 / 12);}
 .Cell.\-10of12 {  width: calc(100% * 10 / 12);}
 .Cell.\-12of12 {  width: 100%;}
-
 /* Cell Heights */
 .Cell-height-100vh {  min-height: 100vh;}
 .Cell-height-50vh {  min-height: 50vh;}
 .Cell-height-33vh {  min-height: 33.33vh;}
-
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
-html {  font-size: 62.5%;}
-
+html {  font-size: 62.5%; }
 body {
   font-size: var(--body-fontsize);
   line-height: var(--body-lineheight);
@@ -162,19 +157,14 @@ body {
   padding: var(--body-padding);
   font-weight: normal;
 }
-
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-h1,
-h2,
-h3,
-h4 {
+h1,h2,h3,h4 {
   font-family: var(--headings-fontfamily);
   margin: var(--headings-margin);
   font-weight: var(--headings-fontweight);
   line-height: 1;
 }
-
 h1 {
   font-size: 4rem;
   letter-spacing: -0.26rem;
@@ -192,45 +182,33 @@ h4 {
   letter-spacing: 0;
   line-height: 1.05;
 }
-
 /* Larger than phablet */
 @media (min-width: 550px) {
   h1 { font-size: 5rem;}
-
   h2 { font-size: 4.2rem;}
-
   h3 { font-size: 3.6rem;}
-
   h4 { font-size: 3rem;}
 }
-
 p {  margin: var(--p-margin);}
-
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a:link,
-a:visited {
+a:link, a:visited {
   color: var(--a-color-linkvisited);
   text-decoration: var(--a-textdecoration-linkvisited);
   transition: var(--transition);
 }
-
-a:hover,
-a:active {
+a:hover, a:active {
   color: var(--a-color-hoveractive);
   text-decoration: var(--a-textdecoration-hoveractive);
 }
-
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-button,
-.button {
+button,.button {
   margin: var(--button-margin);
   text-transform: uppercase;
   border-radius: 200px;
   font-family: var(--body-fontfamily);
 }
-
 .button,
 button,
 select,
@@ -257,7 +235,6 @@ input[type="button"] {
   vertical-align: bottom;
   margin-right: 0.5em;
 }
-
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -272,7 +249,6 @@ input[type="button"]:focus {
   border: var(--button-border-hoverfocus);
   outline: 0;
 }
-
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
@@ -282,7 +258,6 @@ input[type="button"].button-primary {
   background: var(--button-background-primary);
   border: var(--button-border-primary);
 }
-
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -297,7 +272,6 @@ input[type="button"].button-primary:focus {
   background: var(--button-background-primary-hoverfocus);
   border: var(--button-border-primary-hoverfocus);
 }
-
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],
@@ -310,7 +284,7 @@ input[type="password"],
 textarea,
 select {
   background-color: #fff;
-  border: 1px solid #d1d1d1;
+  border: 1px solid var(--form-inputborder);
   font-weight: inherit;
   font-family: inherit;
   color: inherit;
@@ -324,7 +298,6 @@ select {
   min-width: 100%;
   margin: 0.32em 0;
 }
-
 select option {
   font-family: inherit;
   font-weight: inherit;
@@ -345,15 +318,13 @@ textarea {
   -moz-appearance: none;
   appearance: none;
 }
-
 textarea {
   min-height: 2em;
   padding-top: 0.64em;
   padding-bottom: 0.64em;
 }
-
 input[type="submit"]:focus,
-input[type="email"]:focus input[type="number"]:focus,
+input[type="email"]:focus, input[type="number"]:focus,
 input[type="search"]:focus,
 input[type="text"]:focus,
 input[type="tel"]:focus,
@@ -361,33 +332,27 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33c3f0;
+  border: 1px solid var(--a-color-linkvisited);
   outline: 0;
 }
-
-label,
-legend {
+label,legend {
   display: block;
   margin: 1em 0 0.24em;
   font-weight: 600;
 }
-
 fieldset {
   padding: 0;
   border-width: 0;
 }
-
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
 }
-
 label > .label-body {
   display: inline-block;
   margin-left: 0.5rem;
   font-weight: normal;
 }
-
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
@@ -397,18 +362,12 @@ input[type="reset"] {
   appearance: auto;
   min-width: auto;
 }
-
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul {
-  list-style: circle inside;
-}
-ol {
-  list-style: decimal inside;
-}
-li,
-ol,
-ul {
+ul {  list-style: circle inside; }
+ol {  list-style: decimal inside; }
+
+li,ol,ul {
   padding-left: 0;
   margin-top: 0;
 }
@@ -419,13 +378,8 @@ ul li,
 ol li {
   margin: 0.5em 0 0 2em;
 }
-li:first-child {
-  margin-top: 1.24em;
-}
-li:last-child {
-  margin-bottom: 1.24em;
-}
-
+li:first-child {  margin-top: 1.24em; }
+li:last-child {  margin-bottom: 1.24em; }
 /* Code + Span
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 span {
@@ -453,7 +407,6 @@ pre > code {
   padding: var(--code_span-padding);
   white-space: pre;
 }
-
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 table {
@@ -466,37 +419,18 @@ td {
   text-align: center;
   border-bottom: 1px solid #e1e1e1;
 }
-th:first-child,
-td:first-child {
+th:first-child,td:first-child {
   padding-left: 0;
 }
-th:last-child,
-td:last-child {
+th:last-child,td:last-child {
   padding-right: 0;
 }
-
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-input,
-textarea,
-select,
-fieldset {
-  margin: 0.32em 0 0.4em;
-}
-fieldset {
-  margin: 1em 0;
-}
-pre,
-blockquote,
-figure,
-figcaption,
-table,
-p,
-ul,
-ol,
-form {
-  margin: 0 0 0.64em 0;
-}
+input,textarea,select,fieldset {  
+  margin: 0.32em 0 0.4em; }
+fieldset {  margin: 1em 0; }
+pre,blockquote,figure,figcaption,table,p,ul,ol,form {  margin: 0 0 0.64em 0; }
 
 blockquote {
   box-shadow: inset 4px 0 0 0 var(--blockquote-color);
@@ -512,19 +446,16 @@ blockquote {
   float: left;
   margin: 0 1.32em 0.7em 0;
 }
-blockquote:before,
-blockquote:after {
+blockquote:before,blockquote:after {
   color: var(--blockquote-color);
 }
-blockquote:before {
-  content: "❝";
-}
-blockquote:after {
-  content: "❞";
-}
+blockquote:before { content: "❝"; }
+blockquote:after { content: "❞"; }
 figure {
   width: calc(100% + 1.84em);
-  border: 1px solid #000;
+  border: 1px solid transparent;
+  box-shadow:0 1px 0 0 var(--border-boxshadow-color);
+  padding-bottom:.12em;
   margin: -1em;
 }
 figcaption {
@@ -539,18 +470,18 @@ img {
   width: 100%;
   position: relative;
 }
-
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
   margin: var(--hr-margin);
-  border: var(--hr-border);
+  border:none;
+  border-top: var(--hr-border);
+  padding:0;
 }
-
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (max-width: 700px) {
-  .Cell {
+  .Cell { 
     width: 100% !important;
     display: block !important;
   }
