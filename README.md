@@ -1,3 +1,8 @@
+![bones.css](images/bones.css.png)
+
+
+
+
 # [Skeleton](http://getskeleton.com)
 Skeleton is a simple, responsive boilerplate to kickstart any responsive project.
 
