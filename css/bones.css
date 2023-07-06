@@ -44,7 +44,7 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
 /* :root / CSS Variables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
-  --border-boxshadow-color:#000;
+  --border-boxshadow-color:#fff;
 /*   var(--border-boxshadow-color) */
   --elementname-style-state: variable example;
   --a-color-linkvisited: #0093ff;
@@ -91,6 +91,7 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
   --td-border-color:#e1e1e1;
   --transition: all 0.02s cubic-bezier(0.4, 0, 1, 1);
 }
+
 /* General Classes & Styling
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ::selection {
@@ -490,7 +491,8 @@ hr {
 }
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (max-width: 700px) {
+@media (max-width: 700px) { 
+	body { padding:1em 2em; }
   .Cell { 
     width: 100% !important;
     display: block !important;
