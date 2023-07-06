@@ -489,7 +489,8 @@ hr {
 }
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (max-width: 700px) {
+@media (max-width: 700px) { 
+	body { padding:1em 2em; }
   .Cell { 
     width: 100% !important;
     display: block !important;
