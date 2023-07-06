@@ -21,7 +21,6 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
   margin: 0;
   font-stretch: normal;
   font-optical-sizing: auto;
-  text-align: start;
   opacity: 1;
   text-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
@@ -58,7 +57,7 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
   --body-padding: 1em;
   --body-fontsize: 1.5em;
   --body-fontfamily: Arial, sans-serif;
-  --body-lineheight: 1.6em;
+  --body-lineheight: 1.24em;
   --button-color: #555;
   --button-background: #e1e1e1;
   --button-color-hoverfocus: #333;
@@ -100,7 +99,9 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
 }
 .no-margin-top *:first-child {  margin-top: 0;}
 .no-margin-bottom *:last-child {  margin-bottom: 0;}
-
+.textaligncenter .Cell{
+	text-align:center;
+}
 .font-weight-100 {  font-weight: 100;}
 .font-weight-200 {  font-weight: 200;}
 .font-weight-300 {  font-weight: 300;}
@@ -140,9 +141,9 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
 .Cell.\-10of12 {  width: calc(100% * 10 / 12);}
 .Cell.\-12of12 {  width: 100%;}
 /* Cell Heights */
-.Cell-height-100vh {  min-height: 100vh;}
-.Cell-height-50vh {  min-height: 50vh;}
-.Cell-height-33vh {  min-height: 33.33vh;}
+.Cell-height-100vh {  min-height: 100vh; }
+.Cell-height-50vh {  min-height: 50vh; }
+.Cell-height-33vh {  min-height: 33.33vh; }
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
@@ -164,22 +165,19 @@ h1,h2,h3,h4 {
   margin: var(--headings-margin);
   font-weight: var(--headings-fontweight);
   line-height: 1;
+  letter-spacing: -0.1rem;
 }
 h1 {
   font-size: 4rem;
-  letter-spacing: -0.26rem;
 }
 h2 {
   font-size: 3.6rem;
-  letter-spacing: -0.23rem;
 }
 h3 {
   font-size: 3rem;
-  letter-spacing: -0.2rem;
 }
 h4 {
   font-size: 2rem;
-  letter-spacing: 0;
   line-height: 1.05;
 }
 /* Larger than phablet */
@@ -189,7 +187,7 @@ h4 {
   h3 { font-size: 3.6rem;}
   h4 { font-size: 3rem;}
 }
-p {  margin: var(--p-margin);}
+p {  margin: var(--p-margin); }
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a:link, a:visited {
