@@ -1,6 +1,6 @@
-![bones.css](images/bones.css.png)
+![bones.css](images/bones.jpg)
 
-
+![bones.css](images/bones-example.png)
 
 
 # [Skeleton](http://getskeleton.com)
