@@ -20,9 +20,7 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
   padding: 0;
   margin: 0;
   font-stretch: normal;
-  font-optical-sizing: auto;
   opacity: 1;
-  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -44,7 +42,7 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
 /* :root / CSS Variables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
-  --border-boxshadow-color:#fff;
+  --border-boxshadow-color:#000;
 /*   var(--border-boxshadow-color) */
   --elementname-style-state: variable example;
   --a-color-linkvisited: #0093ff;
@@ -56,8 +54,8 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
   --body-color: #222;
   --body-padding: 1em;
   --body-fontsize: 1.5em;
-  --body-fontfamily: Arial, sans-serif;
-  --body-lineheight: 1.24em;
+  --body-fontfamily: Arial,Roboto,Helvetica Neue,sans-serif;
+  --body-lineheight: 1.5em;
   --button-color: #555;
   --button-background: #e1e1e1;
   --button-color-hoverfocus: #333;
@@ -78,20 +76,20 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
    --Cell-padding: 1em;
   --code_span-background: #f1f1f1;
   --code_span-boxshadow: 0 0 0 2px var(--border-boxshadow-color);
-  --code_span-padding: 0.12em 1em;
-  --code_span-margin: 0.12em 0 1em;
+  --code-padding: 0.12em 1em;
+  --span-padding: .5em 1em;
+  --code_span-margin: .32em 0 .5em;
   --span-fontweight: bold;
   --form-inputborder:#d1d1d1;
   --headings-fontfamily: "Anybody", cursive;
   --headings-margin: .24em 0 .12em;
   --headings-fontweight: 600;
   --hr-border: 1px dotted #e1e1e1;
-  --hr-margin: 0.56em 0;
-  --p-margin: .64em 0 .48em;
+  --hr-margin: .5em 0;
+  --p-margin:0 0 .5em;
   --td-border-color:#e1e1e1;
   --transition: all 0.02s cubic-bezier(0.4, 0, 1, 1);
 }
-
 /* General Classes & Styling
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ::selection {
@@ -387,7 +385,7 @@ li:last-child {  margin-bottom: 1.24em; }
 span {
   display: block;
   font-weight: var(--span-fontweight);
-  padding: var(--code_span-padding);
+  padding: var(--span-padding);
   margin: var(--code_span-margin);
   background: var(--code_span-background);
   border: var(--code_span-border);
@@ -395,18 +393,18 @@ span {
 code {
   border-radius: 4px;
   white-space: nowrap;
-  padding: var(--code_span-padding);
+  padding: var(--code-padding);
   margin: var(--code_span-margin);
   background: var(--code_span-background);
   overflow: hidden;
   overflow-x: scroll;
 }
 pre > code {
-  margin: var(--code_span-margin);
+  margin:1em .24em;
   overflow: hidden;
   overflow-x: scroll;
   display: block;
-  padding: var(--code_span-padding);
+  padding: var(--code-padding);
   white-space: pre;
 }
 /* Tables
@@ -491,8 +489,7 @@ hr {
 }
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (max-width: 700px) { 
-	body { padding:1em 2em; }
+@media (max-width: 700px) {
   .Cell { 
     width: 100% !important;
     display: block !important;
