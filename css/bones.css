@@ -471,6 +471,15 @@ img {
   width: 100%;
   position: relative;
 }
+.imgCellhalf img{
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+}
+.imgCell img{
+    margin: 0 auto;
+    display: block;
+}
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
