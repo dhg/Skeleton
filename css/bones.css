@@ -87,7 +87,7 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
   --headings-fontweight: 600;
   --hr-border: 1px dotted #e1e1e1;
   --hr-margin: 0.56em 0;
-  --p-margin: 0 0 1em;
+  --p-margin: .64em 0 .48em;
   --td-border-color:#e1e1e1;
   --transition: all 0.02s cubic-bezier(0.4, 0, 1, 1);
 }
@@ -431,7 +431,7 @@ th:last-child,td:last-child {
 input,textarea,select,fieldset {  
   margin: 0.32em 0 0.4em; }
 fieldset {  margin: 1em 0; }
-pre,blockquote,figure,figcaption,table,p,ul,ol,form {  margin: 0 0 0.64em 0; }
+pre,blockquote,figure,figcaption,table,ul,ol,form {  margin: 0 0 0.64em 0; }
 
 blockquote {
   box-shadow: inset 4px 0 0 0 var(--blockquote-color);
