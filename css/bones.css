@@ -78,12 +78,12 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
    --Cell-padding: 1em;
   --code_span-background: #f1f1f1;
   --code_span-boxshadow: 0 0 0 2px var(--border-boxshadow-color);
-  --code_span-padding: 0.56em 1em;
-  --code_span-margin: 0.56em 0 0.56em;
+  --code_span-padding: 0.12em 1em;
+  --code_span-margin: 0.12em 0 1em;
   --span-fontweight: bold;
   --form-inputborder:#d1d1d1;
   --headings-fontfamily: "Anybody", cursive;
-  --headings-margin: .24em 0;
+  --headings-margin: .24em 0 .12em;
   --headings-fontweight: 600;
   --hr-border: 1px dotted #e1e1e1;
   --hr-margin: 0.56em 0;
@@ -99,8 +99,11 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
 }
 .no-margin-top *:first-child {  margin-top: 0;}
 .no-margin-bottom *:last-child {  margin-bottom: 0;}
-.textaligncenter .Cell{
+.centertext .Cell{
 	text-align:center;
+}
+.whitespace .Cell:first-child{
+	padding:20rem 0 19rem;
 }
 .font-weight-100 {  font-weight: 100;}
 .font-weight-200 {  font-weight: 200;}
@@ -110,7 +113,7 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
 .font-weight-600 {  font-weight: 600;}
 .font-weight-700 {  font-weight: 700;}
 .font-weight-800 {  font-weight: 800;}
-.font-style-italic {  font-style: italic;}
+.italic {  font-style: italic;}
 /* Grid & Cell
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .Grid {
