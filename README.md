@@ -1,6 +1,6 @@
 This was designed for simplicity. In the end, I want to eliminate having the dev make a million different decisions to design a simple site. I don't want them to think about class names or how to follow a convention. Too many boilerplates that are suppose to make responsive design easier, contain inside utility classes you need to learn, memorize and think about. My success for this project would be so you don't think about it, you style the page with simple, inline elements. I want to eliminate the hurdle to learning many different utility class names. I don't want to keep redesigning the stylesheet to continue implementing custom classes that fit certain pages. 
 
-It's still a work in progress, but my end goal would be something that is designed in HTML like this:
+It's still a work in progress, but my end goal would be something simple to read that is designed in HTML like this, and still looks good:
 ```
 <html>
 <head>
@@ -9,13 +9,13 @@ It's still a work in progress, but my end goal would be something that is design
 
 <body>
     <Grid>
-        <div class="Cell -7of12">
+        <Cell -7of12>
           <h1>This is a heading</h1>
           <p>This is a paragraph.</p>
-        </div>
-        <div class="Cell -5of12">
+        </Cell>
+        <Cell -5of12>
             <figure><img src="img.jpg"></figure>            
-        </div>
+        </Cell>
     </Grid>
 </body>
 </html>
