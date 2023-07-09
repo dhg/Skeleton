@@ -1,5 +1,5 @@
-- [Example Index Page(codepen.io)]([](https://codepen.io/CalvinMorett/full/NWEjNQr))
-- [Example Landing Page(codepen.io)]([](https://codepen.io/CalvinMorett/full/RwqZYbb))
+- [Example Index Page(codepen.io)]([https://codepen.io/CalvinMorett/full/NWEjNQr](https://codepen.io/CalvinMorett/full/NWEjNQr))
+- [Example Landing Page(codepen.io)]([https://codepen.io/CalvinMorett/full/RwqZYbb](https://codepen.io/CalvinMorett/full/RwqZYbb))
 
 ![bones.css](images/bones.jpg)
 
