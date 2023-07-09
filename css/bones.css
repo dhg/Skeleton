@@ -35,7 +35,8 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
 - Lists
 - Code + Span
 - Tables
-- Spacing
+- General Spacing, Grid & Cell Spacing, Figures become 50% of Cell's if Cell is less than -6of12
+- Blockquote, Figure Img
 - Misc
 - Media Queries
 */
@@ -67,13 +68,13 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
   --button-background-primary-hoverfocus: #930000;
   --button-border-primary-hoverfocus: #930000;
   --button-border: 1px solid #bbb;
-  --button-margin: 0.64em 0.32em 0.64em 0;
+  --button-margin: 0.5em 0.32em 0.5em 0;
   --button-padding: 0 30px;
   --button-height: 38px;
   --button-fontsize: 11px;
   --button-fontweight: 600:
   --button-letterspacing: 0.1rem;
-   --Cell-padding: 1em;
+  --Cell-padding: 1em;
   --code_span-background: #f1f1f1;
   --code_span-boxshadow: 0 0 0 2px var(--border-boxshadow-color);
   --code-padding: 0.12em 1em;
@@ -85,8 +86,8 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
   --headings-margin: .24em 0 .12em;
   --headings-fontweight: 600;
   --hr-border: 1px dotted #e1e1e1;
-  --hr-margin: .5em 0;
-  --p-margin:0 0 .5em;
+  --hr-margin: .5em 0 1em;
+  --p-margin: 0 0 1em;
   --td-border-color:#e1e1e1;
   --transition: all 0.02s cubic-bezier(0.4, 0, 1, 1);
 }
@@ -96,23 +97,19 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
   background: #efddc5;
   color: #b35050;
 }
-.no-margin-top *:first-child {  margin-top: 0;}
-.no-margin-bottom *:last-child {  margin-bottom: 0;}
-.centertext .Cell{
-	text-align:center;
-}
-.whitespace .Cell:first-child{
-	padding:20rem 0 19rem;
-}
-.font-weight-100 {  font-weight: 100;}
-.font-weight-200 {  font-weight: 200;}
-.font-weight-300 {  font-weight: 300;}
-.font-weight-400 {  font-weight: 400;}
-.font-weight-500 {  font-weight: 500;}
-.font-weight-600 {  font-weight: 600;}
-.font-weight-700 {  font-weight: 700;}
-.font-weight-800 {  font-weight: 800;}
-.italic {  font-style: italic;}
+/* You can also, use .center to center text, anywhere. */
+.center{ text-align: center; }
+.whitespace .Cell:first-child{ padding:20rem 0 19rem; }
+/* First, get a font that uses this many font weights. */
+.font-weight-100 { font-weight: 100;}
+.font-weight-200 { font-weight: 200;}
+.font-weight-300 { font-weight: 300;}
+.font-weight-400 { font-weight: 400;}
+.font-weight-500 { font-weight: 500;}
+.font-weight-600 { font-weight: 600;}
+.font-weight-700 { font-weight: 700;}
+.font-weight-800 { font-weight: 800;}
+.italic { font-style: italic;}
 /* Grid & Cell
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .Grid {
@@ -122,7 +119,6 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
   word-break: break-word;
   margin-top: 1em;
 }
-.Grid:nth-of-type(1) {  margin-top: 0;}
 .Cell {
   overflow: hidden;
   box-sizing: border-box;
@@ -132,26 +128,27 @@ Bones.css - Easy grid system with configurable styles, using CSS variables, grd.
   position: relative; /* use relative to be able to position: absolute; on sub-elements */
 }
 .Cell.\-absolute {  position: absolute;}
-.Cell.\-2of12 {  width: calc(100% * 2 / 12);}
-.Cell.\-3of12 {  width: calc(100% * 3 / 12);}
-.Cell.\-4of12 {  width: calc(100% * 4 / 12);}
-.Cell.\-5of12 {  width: calc(100% * 5 / 12);}
-.Cell.\-6of12 {  width: calc(100% * 6 / 12);}
-.Cell.\-7of12 {  width: calc(100% * 7 / 12);}
-.Cell.\-8of12 {  width: calc(100% * 8 / 12);}
-.Cell.\-9of12 {  width: calc(100% * 9 / 12);}
-.Cell.\-10of12 {  width: calc(100% * 10 / 12);}
-.Cell.\-12of12 {  width: 100%;}
+.Cell.\-2of12 { width: calc(100% * 2 / 12);}
+.Cell.\-3of12 { width: calc(100% * 3 / 12);}
+.Cell.\-4of12 { width: calc(100% * 4 / 12);}
+.Cell.\-5of12 { width: calc(100% * 5 / 12);}
+.Cell.\-6of12 { width: calc(100% * 6 / 12);}
+.Cell.\-7of12 { width: calc(100% * 7 / 12);}
+.Cell.\-8of12 { width: calc(100% * 8 / 12);}
+.Cell.\-9of12 { width: calc(100% * 9 / 12);}
+.Cell.\-10of12 { width: calc(100% * 10 / 12);}
+.Cell.\-12of12 { width: 100%;}
+
 /* Cell Heights */
-.Cell-height-100vh {  min-height: 100vh; }
-.Cell-height-50vh {  min-height: 50vh; }
-.Cell-height-33vh {  min-height: 33.33vh; }
+.Cell-height-100vh { min-height: 100vh; }
+.Cell-height-50vh { min-height: 50vh; }
+.Cell-height-33vh { min-height: 33.33vh; }
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
-html {  font-size: 62.5%; }
+html { font-size: 62.5%; }
 body {
   font-size: var(--body-fontsize);
   line-height: var(--body-lineheight);
@@ -169,25 +166,16 @@ h1,h2,h3,h4 {
   line-height: 1;
   letter-spacing: -0.1rem;
 }
-h1 {
-  font-size: 4rem;
-}
-h2 {
-  font-size: 3.6rem;
-}
-h3 {
-  font-size: 3rem;
-}
-h4 {
-  font-size: 2rem;
-  line-height: 1.05;
-}
+h1 {  font-size: 4rem; }
+h2 {  font-size: 3.6rem; }
+h3 {  font-size: 3rem; }
+h4 {  font-size: 2rem; line-height: 1.05; }
 /* Larger than phablet */
 @media (min-width: 550px) {
-  h1 { font-size: 5rem;}
-  h2 { font-size: 4.2rem;}
-  h3 { font-size: 3.6rem;}
-  h4 { font-size: 3rem;}
+  h1 { font-size: 5rem; }
+  h2 { font-size: 4.2rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3rem; }
 }
 p {  margin: var(--p-margin); }
 /* Links
@@ -249,25 +237,25 @@ input[type="button"]:focus {
   border: var(--button-border-hoverfocus);
   outline: 0;
 }
-.button.button-primary,
-button.button-primary,
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
-input[type="button"].button-primary {
+.button.primary,
+button.primary,
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary {
   color: var(--button-color-primary);
   background: var(--button-background-primary);
   border: var(--button-border-primary);
 }
-.button.button-primary:hover,
-button.button-primary:hover,
-input[type="submit"].button-primary:hover,
-input[type="reset"].button-primary:hover,
-input[type="button"].button-primary:hover,
-.button.button-primary:focus,
-button.button-primary:focus,
-input[type="submit"].button-primary:focus,
-input[type="reset"].button-primary:focus,
-input[type="button"].button-primary:focus {
+.button.primary:hover,
+button.primary:hover,
+input[type="submit"].primary:hover,
+input[type="reset"].primary:hover,
+input[type="button"].primary:hover,
+.button.primary:focus,
+button.primary:focus,
+input[type="submit"].primary:focus,
+input[type="reset"].primary:focus,
+input[type="button"].primary:focus {
   color: var(--button-color-primary-hoverfocus);
   background: var(--button-background-primary-hoverfocus);
   border: var(--button-border-primary-hoverfocus);
@@ -323,15 +311,11 @@ textarea {
   padding-top: 0.64em;
   padding-bottom: 0.64em;
 }
-input[type="submit"]:focus,
-input[type="email"]:focus, input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-textarea:focus,
-select:focus {
+input[type="submit"]:focus, input[type="email"]:focus, input[type="number"]:focus,
+input[type="search"]:focus, input[type="text"]:focus,
+input[type="tel"]:focus, input[type="url"]:focus,
+input[type="password"]:focus, 
+textarea:focus, select:focus {
   border: 1px solid var(--a-color-linkvisited);
   outline: 0;
 }
@@ -344,10 +328,7 @@ fieldset {
   padding: 0;
   border-width: 0;
 }
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline;
-}
+input[type="checkbox"], input[type="radio"] { display: inline; }
 label > .label-body {
   display: inline-block;
   margin-left: 0.5rem;
@@ -378,6 +359,7 @@ ul li,
 ol li {
   margin: 0.5em 0 0 2em;
 }
+/* Because the ul / ol respectively, don't have a margin, these first-child elements will maintain spacing from elements above and below the list. */
 li:first-child {  margin-top: 1.24em; }
 li:last-child {  margin-bottom: 1.24em; }
 /* Code + Span
@@ -400,9 +382,6 @@ code {
   overflow-x: scroll;
 }
 pre > code {
-  margin:1em .24em;
-  overflow: hidden;
-  overflow-x: scroll;
   display: block;
   padding: var(--code-padding);
   white-space: pre;
@@ -413,30 +392,40 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-th,
-td {
+th, td {
   padding: 0.5em 1em;
   text-align: center;
   border-bottom: 1px solid #e1e1e1;
 }
-th:first-child,td:first-child {
-  padding-left: 0;
-}
-th:last-child,td:last-child {
-  padding-right: 0;
-}
-/* Spacing
+th:first-child,td:first-child { padding-left: 0; }
+th:last-child,td:last-child { padding-right: 0; }
+/* General Spacing, Grid & Cell Spacing, Figures become 50% of Cell's if Cell is less than -6of12 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input,textarea,select,fieldset {  
   margin: 0.32em 0 0.4em; }
 fieldset {  margin: 1em 0; }
-pre,blockquote,figure,figcaption,table,ul,ol,form {  margin: 0 0 0.64em 0; }
+pre,blockquote,figure,figcaption,table,ul,ol,form {  margin: 1em 0; }
 
+/* Any .Cell's smaller than -6of12 automatically get an image 50% of the Cell's width. */
+.Cell.\-2of12 figure img,.Cell.\-3of12 figure img,.Cell.\-4of12 figure img,.Cell.\-5of12 figure img{ 
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+}
+
+/* Grid and Cell first-childs to maintain padding. */
+/* Removing the margin from .Grid, will maintain the padding space from the body. */
+.Grid:nth-of-type(1) {  margin-top: 0; }
+/* Remove the margin from all Cell's first item, so padding space is maintained within the .Cell. */
+/* Except, figures being the first element, to maintain figure > img's are full width and heighth of the Cell, if they're the first element (And also not contained within a Cell divider less than -6of12, see classes below where the figure > img if it's in that Cell will be changed to contain only 50% of the Cell) */
+.Cell *:first-child:not(figure) {  margin-top: 0; }
+/* Blockquote, Figure Img
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 blockquote {
   box-shadow: inset 4px 0 0 0 var(--blockquote-color);
   color: var(--blockquote-color);
   background: var(--blockquote-background);
-  padding: 0.32em 1em;
+  padding: 1em;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   font-weight: bold;
@@ -446,9 +435,7 @@ blockquote {
   float: left;
   margin: 0 1.32em 0.7em 0;
 }
-blockquote:before,blockquote:after {
-  color: var(--blockquote-color);
-}
+blockquote:before, blockquote:after { color: var(--blockquote-color); }
 blockquote:before { content: "❝"; }
 blockquote:after { content: "❞"; }
 figure {
@@ -470,15 +457,7 @@ img {
   width: 100%;
   position: relative;
 }
-.imgCellhalf img{
-    margin: 0 auto;
-    display: block;
-    width: 50%;
-}
-.imgCell img{
-    margin: 0 auto;
-    display: block;
-}
+
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
@@ -495,4 +474,15 @@ hr {
     width: 100% !important;
     display: block !important;
   }
+  blockquote {
+    border-top: 14px solid transparent;
+    border-radius:0;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 1.5;
+    width: auto;
+    float: none;
+    margin: 0 1em 1em 0;
+    display: block;
+}
 }
