@@ -8,14 +8,46 @@ It's still a work in progress, but my end goal would be something simple to read
 </head>
 
 <body>
+<!-- Grid is a based on the number 12. To get a complete row, you need to equal 12. With your rows. -->
+<!-- E.g. Cell7 + Cell5, or Cell4, 3 times, to equal 12. -->
+<!-- Consider Grid, to be your new <section> for layouts. -->
     <Grid>
-        <Cell -7of12>
+        <Cell7>
           <h1>This is a heading</h1>
           <p>This is a paragraph.</p>
-        </Cell>
-        <Cell -5of12>
+        </Cell7>
+
+        <Cell5>
             <figure><img src="img.jpg"></figure>            
-        </Cell>
+        </Cell5>
+    </Grid>
+    
+    <Grid class="center values">
+      	<Cell4>
+      		<h1>67%</h1>
+      		<h4>Purchase Increase </h4>
+      		<p>Percentage of users more likely to purchase on mobile friendly site.</p>
+      	</Cell4>
+          	
+      	<Cell4>
+      		<h1>90%</h1>
+      		<h4>Multi-device Users</h4>
+      		<p>Most of the world accesses the internet on multiple devices.</p>
+      	</Cell4>
+      	
+      	<Cell4>
+      		<h1>66%</h1>
+      		<h4>Sad Users</h4>
+      		<p>Percentage of users that are frustrated with page load times.</p>
+        <Cell4>
+    </Grid>
+    	
+    <Grid class="center whitespace">
+         <Cell12>
+            <h4>Need help getting started?</h4>
+              <p>Bones is an amazingly easy place to start with responsive development. If you want to learn more, just visit the documentation!</p>
+            <button class="primary">View Bones Docs</button>
+          </Cell12>
     </Grid>
 </body>
 </html>
