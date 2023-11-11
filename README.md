@@ -1,3 +1,8 @@
+# Bones.css
+Bones.css is a simple, responsive boilerplate to kickstart any responsive project.
+
+---
+
 This was designed for simplicity. In the end, I want to eliminate having the dev make a million different decisions to design a simple site. I don't want them to think about class names or how to follow a convention. Too many boilerplates that are suppose to make responsive design easier, contain inside utility classes you need to learn, memorize and think about. My success for this project would be so you don't think about it, you style the page with simple, inline elements. I want to eliminate the hurdle to learning many different utility class names. I don't want to keep redesigning the stylesheet to continue implementing custom classes that fit certain pages. 
 
 It's still a work in progress, but my end goal would be something simple to read that is designed in HTML like this, and still looks good:
@@ -60,11 +65,6 @@ It's still a work in progress, but my end goal would be something simple to read
 
 ![bones.css](images/bones-ex.jpg)
 
-
-# [Skeleton](http://getskeleton.com)
-Skeleton is a simple, responsive boilerplate to kickstart any responsive project.
-
-Check out <http://getskeleton.com> for documentation and details.
 
 ## Getting started
 
