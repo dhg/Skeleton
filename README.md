@@ -1,5 +1,5 @@
 # Bones.css
-Bones.css is a simple, responsive boilerplate to kickstart any responsive project.
+Bones.css is an easy responsive boilerplate, configurable styles with CSS variables, to kickstart any responsive project.
 
 ---
 
