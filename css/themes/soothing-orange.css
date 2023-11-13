@@ -1,0 +1,31 @@
+/* Dark grey theme with orange highlights */
+
+.soothing-orange {
+  /* Colors used for primary elements such as primary buttons and links */
+  --primary: #f3b252;
+  --primary-focus: #ebac4d;
+  --primary-background: #ffab2e;
+  --primary-text: #161616;
+
+  /* The color of non-primary elements such as standard buttons */
+  --muted: #9d9d9d;
+  --muted-border: #808080;
+  --muted-focus: #e1e1e1;
+  --muted-border-focused: #cecece;
+
+  /* Text color on page for all elements */
+  --text: #FFFFFF;
+
+  /* Page background color and highlights */
+  --background: #2B2B2B;
+  --background-highlight: #242323;
+
+  /* Code blocks */
+  --code: #FFFFFF;
+  --code-background: #242323;
+  --code-border: #313030;
+
+  /* Forms */
+  --form-background: #1f1f1f;
+  --form-border: #242424;
+}

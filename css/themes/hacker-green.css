@@ -1,0 +1,31 @@
+/* Matrix dark theme for those late nights */
+
+.hacker-green {
+  /* Colors used for primary elements such as primary buttons and links */
+  --primary: #880e7b;
+  --primary-focus: #821476;
+  --primary-background: #591051;
+  --primary-text: #adabab;
+
+  /* The color of non-primary elements such as standard buttons */
+  --muted: #555;
+  --muted-border: #bbb;
+  --muted-focus: #333;
+  --muted-border-focused: #888;
+
+  /* Text color on page for all elements */
+  --text: #ccc6b4;
+
+  /* Page background color and highlights */
+  --background: #000000;
+  --background-highlight: #161616;
+
+  /* Code blocks */
+  --code: #64ea27;
+  --code-background: #000;
+  --code-border: #041;
+
+  /* Forms */
+  --form-background: #131212;
+  --form-border: #1a1919;
+}
