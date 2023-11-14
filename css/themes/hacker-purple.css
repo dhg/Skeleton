@@ -1,0 +1,31 @@
+/* Github inspired dark theme */
+
+.hacker-purple {
+  /* Colors used for primary elements such as primary buttons and links */
+  --primary: #7b4dcf;
+  --primary-focus: #7549c7;
+  --primary-background: #6f40c8;
+  --primary-text: #ffffff;
+
+  /* The color of non-primary elements such as standard buttons */
+  --muted: #888f99;
+  --muted-border: #4a4d51;
+  --muted-focus: #8f97a3;
+  --muted-border-focused: #4f5357;
+
+  /* Text color on page for all elements */
+  --text: #ffffff;
+
+  /* Page background color and highlights */
+  --background: #0d1116;
+  --background-highlight: #25292e;
+
+  /* Code blocks */
+  --code: #c1c1c1;
+  --code-background: #11171e;
+  --code-border: #30363d;
+
+  /* Forms */
+  --form-background: #161b22;
+  --form-border: #30363d;
+}
