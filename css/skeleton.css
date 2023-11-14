@@ -10,6 +10,7 @@
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
+- Theme
 - Grid
 - Base Styles
 - Typography
@@ -25,6 +26,41 @@
 - Media Queries
 */
 
+/* Theme
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+:root {
+  /* Standard Skeleton color theme. These can be overwritten if 
+     another theme is applied */
+
+  /* Colors used for primary elements such as primary buttons and links */
+  --primary: #1EAEDB;
+  --primary-focus: #0FA0CE;
+  --primary-background: #33C3F0;
+  --primary-text: #FFF;
+
+  /* The color of non-primary elements such as standard buttons */
+  --muted: #555;
+  --muted-border: #bbb;
+  --muted-focus: #333;
+  --muted-border-focused: #888;
+
+  /* Text color on page for all elements */
+  --text: #222;
+
+  /* Page background color and highlights */
+  --background: #FFF;
+  --background-highlight: #E1E1E1;
+
+  /* Code blocks */
+  --code: #222;
+  --code-background: #F1F1F1;
+  --code-border: #E1E1E1;
+
+  /* Forms */
+  --form-background: #FFF;
+  --form-border: #D1D1D1;
+}
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -125,7 +161,8 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  color: var(--text); 
+  background-color: var(--background); }
 
 
 /* Typography
@@ -158,9 +195,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: var(--primary); }
 a:hover {
-  color: #0FA0CE; }
+  color: var(--primary-focus); }
 
 
 /* Buttons
@@ -173,7 +210,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555;
+  color: var(--muted);
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -184,7 +221,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 4px;
-  border: 1px solid #bbb;
+  border: 1px solid var(--muted-border);
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,
@@ -197,17 +234,17 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
+  color: var(--muted-focus);
+  border-color: var(--muted-border-focused);
   outline: 0; }
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  color: var(--primary-text);
+  background-color: var(--primary-background);
+  border-color: var(--primary-background); }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -218,9 +255,9 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  color: var(--primary-text);
+  background-color: var(--primary);
+  border-color: var(--primary); }
 
 
 /* Forms
@@ -236,8 +273,8 @@ textarea,
 select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
+  background-color: var(--form-background);
+  border: 1px solid var(--form-border);
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
@@ -266,7 +303,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid var(--primary-background);
   outline: 0; }
 label,
 legend {
@@ -311,8 +348,9 @@ code {
   margin: 0 .2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: #F1F1F1;
-  border: 1px solid #E1E1E1;
+  color: var(--code);
+  background: var(--code-background);
+  border: 1px solid var(--code-border);
   border-radius: 4px; }
 pre > code {
   display: block;
@@ -326,7 +364,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #E1E1E1; }
+  border-bottom: 1px solid var(--background-highlight); }
 th:first-child,
 td:first-child {
   padding-left: 0; }
@@ -377,7 +415,7 @@ hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+  border-top: 1px solid var(--background-highlight); }
 
 
 /* Clearing

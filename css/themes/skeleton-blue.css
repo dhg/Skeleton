@@ -1,0 +1,31 @@
+/* Classic bone chilling blue */
+
+.skeleton-blue {
+  /* Colors used for primary elements such as primary buttons and links */
+  --primary: #1EAEDB;
+  --primary-focus: #0FA0CE;
+  --primary-background: #33C3F0;
+  --primary-text: #FFF;
+
+  /* The color of non-primary elements such as standard buttons */
+  --muted: #555;
+  --muted-border: #bbb;
+  --muted-focus: #333;
+  --muted-border-focused: #888;
+
+  /* Text color on page for all elements */
+  --text: #222;
+
+  /* Page background color and highlights */
+  --background: #FFF;
+  --background-highlight: #E1E1E1;
+
+  /* Code blocks */
+  --code: #222;
+  --code-background: #F1F1F1;
+  --code-border: #E1E1E1;
+
+  /* Forms */
+  --form-background: #FFF;
+  --form-border: #D1D1D1;
+}
